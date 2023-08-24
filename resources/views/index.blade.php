@@ -16,8 +16,8 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
         <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link 1</a>
