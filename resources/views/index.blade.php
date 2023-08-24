@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  href="#">Navbar</a>
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link 1</a>
@@ -33,15 +33,24 @@
     </nav>
     <nav class="navbar sub navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav fw-bold">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link 1</a>
+                    <a class="nav-link" href="#">HTML</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link 2</a>
+                    <a class="nav-link" href="#">CSS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link 3</a>
+                    <a class="nav-link" href="#">PHP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MySql</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PHP</a>
                 </li>
             </ul>
         </div>
