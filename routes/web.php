@@ -37,6 +37,16 @@ Route::get('/belajar/html',function(){
     return view('belajar.html.index');
 });
 
+Route::get('/belajar/html/dasar',function(){
+    return view('belajar.html.html-dasar');
+});
+Route::get('/belajar/html/element',function(){
+    return view('belajar.html.html-element');
+});
+Route::get('/belajar/html/styling',function(){
+    return view('belajar.html.html-styling');
+});
+
 Route::get('/alur-belajar/front-end', function(){
     return view('alur-belajar.front-end.index');
 });

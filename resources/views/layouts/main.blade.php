@@ -36,6 +36,10 @@
     row-gap: 24px;
 }
 
+.side-list a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 @media (min-width: 992px) {
   .sidenavbar,
   .sidenavbar-collapse {
