@@ -41,7 +41,9 @@
 
 <body>
     @include('layouts.navbar')
-    @yield('content')
+    <div class="px-5">
+        @yield('content')
+    </div>
 </body>
 
 </html>
