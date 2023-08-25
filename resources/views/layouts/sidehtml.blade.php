@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('content')
+@section('sidebar')
 <div class="row">
     <div class="col-2">
 
@@ -39,10 +39,10 @@
                     <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
+        </nav>
     </div>
     <div class="col-10">
         @yield('kelasHTML')
     </div>
 </div>
-</nav>
 @endsection

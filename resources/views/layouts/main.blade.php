@@ -66,6 +66,7 @@
     <div class="px-5">
         @yield('content')
     </div>
+    @yield('sidebar')
 </body>
 
 </html>
