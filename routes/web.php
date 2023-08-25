@@ -94,18 +94,27 @@ Route::get('/alur-belajar/mobile-app-dev', function(){
     return view('alur-belajar.mobile-app-dev.index');
 });
 
+//Route Latihan HTML
 Route::get('/latihan/html',function(){
     return view('latihan.html.index');
 });
+
+//Route Latihan CSS
 Route::get('/latihan/css',function(){
     return view('latihan.css.index');
 });
+
+//Route Latihan SQL
 Route::get('/latihan/sql',function(){
     return view('latihan.sql.index');
 });
+
+//Route Latihan JS
 Route::get('/latihan/js',function(){
     return view('latihan.js.index');
 });
+
+//Route Latihan PHP
 Route::get('/latihan/php',function(){
     return view('latihan.php.index');
 });
