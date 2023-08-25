@@ -59,6 +59,10 @@ Route::get('/belajar/html/styling',function(){
     return view('belajar.html.html-styling');
 });
 
+Route::get('/belajar/css',function(){
+    return view('belajar.css.index');
+});
+
 Route::get('/alur-belajar/front-end', function(){
     return view('alur-belajar.front-end.index');
 });
