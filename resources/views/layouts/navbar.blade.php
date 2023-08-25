@@ -10,7 +10,7 @@
             <ul class="navbar-nav">
                 <li class="nav-item d-flex flex-column justify-content-start align-items-start dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="listKelasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Kelas
+                    Tutorial
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="listKelasDropdown">
                         <li class="dropdown-item">
@@ -86,72 +86,20 @@
                         <li class="dropdown-item">
                             <div class="row row-cols-lg-3 row-cols-2 dd-item-list">
                                 <div class="col">
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
+                                    <a href="{{ url('/latihan/html') }}">
+                                        <p>Latihan HTML</p>
                                     </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
+                                    <a href="{{ url('/latihan/css') }}">
+                                        <p>Latihan CSS</p>
                                     </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
+                                    <a href="{{ url('/latihan/php') }}">
+                                        <p>Latihan PHP</p>
                                     </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
+                                    <a href="{{ url('/latihan/js') }}">
+                                        <p>Latihan JS</p>
                                     </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
-                                    </a>
-                                    <a href="https://buildwithangga.com/belajar/uiux-design">
-                                        <p>UI/UX Design</p>
+                                    <a href="{{ url('/latihan/sql') }}">
+                                        <p>Latihan SQL</p>
                                     </a>
                                 </div>
                             </div>
@@ -159,7 +107,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Post</a>
+                    <a class="nav-link" href="Kelas">Kelas</a>
                 </li>
             </ul>
             <ul class="navbar-nav right-menu ms-auto">
