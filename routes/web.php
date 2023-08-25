@@ -32,3 +32,13 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/alur-belajar/front-end', function(){
+    return view('alur-belajar.front-end.index');
+});
+Route::get('/alur-belajar/back-end', function(){
+    return view('alur-belajar.back-end.index');
+});
+Route::get('/alur-belajar/mobile-app-dev', function(){
+    return view('alur-belajar.mobile-app-dev.index');
+});
