@@ -38,7 +38,7 @@
 
 .side-list a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 @media (min-width: 992px) {
   .sidenavbar,
@@ -56,7 +56,7 @@
   .sidenavbar-brand {
     margin-left: 0.5em;
     padding-bottom: 0;
-    border-bottom: 4px solid #464646;
+    border-bottom: 4px solid #9b9b9b;
   }
   form input {
     margin-bottom: 0.7em;
@@ -67,7 +67,7 @@
 
 <body>
     @include('layouts.navbar')
-    <div class="px-5">
+    <div class="">
         @yield('content')
     </div>
 </body>

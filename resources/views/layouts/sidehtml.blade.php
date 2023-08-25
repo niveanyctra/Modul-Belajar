@@ -1,18 +1,22 @@
 @extends('layouts.main')
 @section('content')
 <div class="row">
-    <div class="container col-2">
+    <div class=" col-2">
 
-        <nav class="container ps-3 sidenavbar sidenavbar-expand-lg navbar-light bs-side-navbar" style="background-color:rgb(147, 152, 161);">
-            <a class="sidenavbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="side-list"><a href="{{url('/belajar/html/dasar')}}">HTML Dasar</a></div>
-            <div class="side-list"><a href="{{url('/belajar/html/element')}}">HTML Element</a></div>
-            <div class="side-list"><a href="{{url('/belajar/html/styling')}}">HTML Styling</a></div>
+        <nav class="container ps-3 sidenavbar sidenavbar-expand-lg navbar-light bs-side-navbar" style="background-color:rgb(241, 241, 241);">
+            <h6 class="pt-2">HTML Dasar</h6>
+            <div class="side-list"><a href="{{url('/belajar/html/perkenalan')}}">Perkenalan HTML</a></div>
+            <div class="side-list"><a href="{{url('/belajar/html/dasar')}}">Dasar HTML</a></div>
+            <div class="side-list"><a href="{{url('/belajar/html/elemen')}}">Elemen HTML</a></div>
+            <div class="side-list"><a href="{{url('/belajar/html/atribut')}}">Atribut HTML</a></div>
+            <div class="side-list"><a href="{{url('/belajar/html/heading')}}">Heading HTML</a></div>
+            <div class="side-list"><a href="{{url('/belajar/html/paragraf')}}">Paragraf HTML</a></div>
+            <h6 class="pt-2">HTML Menengah</h6>
+            <div class="side-list"><a href="{{url('/belajar/html/style')}}">Style HTML</a></div>
+            <div class="side-list"><a href="{{url('/belajar/html/formatting')}}">Formatting HTML</a></div>
+            <div class="side-list"><a href="{{url('/belajar/html/style')}}">Style HTML</a></div>
+            <div class="side-list"><a href="{{url('/belajar/html/style')}}">Style HTML</a></div>
+            <div class="side-list"><a href="{{url('/belajar/html/style')}}">Style HTML</a></div>
         </nav>
         </div>
     <div class="col-10">
