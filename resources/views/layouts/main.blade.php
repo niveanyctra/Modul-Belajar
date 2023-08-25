@@ -36,6 +36,28 @@
     row-gap: 24px;
 }
 
+@media (min-width: 992px) {
+  .sidenavbar,
+  .sidenavbar-collapse {
+    flex-direction: column;
+  }
+  .sidenavbar-expand-lg .sidenavbar-nav {
+    flex-direction: column;
+  }
+  .sidenavbar {
+    width: 100%;
+    height: 100vh;
+    align-items: flex-start;
+  }
+  .sidenavbar-brand {
+    margin-left: 0.5em;
+    padding-bottom: 0;
+    border-bottom: 4px solid #464646;
+  }
+  form input {
+    margin-bottom: 0.7em;
+  }
+}
     </style>
 </head>
 
