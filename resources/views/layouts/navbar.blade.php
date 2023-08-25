@@ -107,7 +107,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Kelas">Kelas</a>
+                    <a class="nav-link" href="/kelas-mentor">Kelas Mentor</a>
                 </li>
             </ul>
             <ul class="navbar-nav right-menu ms-auto">

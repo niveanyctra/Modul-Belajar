@@ -109,3 +109,7 @@ Route::get('/latihan/js',function(){
 Route::get('/latihan/php',function(){
     return view('latihan.php.index');
 });
+
+Route::get('/kelas-mentor',function(){
+    return view('kelas-mentor.index');
+});
