@@ -70,6 +70,7 @@
     <div class="">
         @yield('content')
     </div>
+    @yield('sidebar')
 </body>
 
 </html>

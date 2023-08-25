@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('content')
+@section('sidebar')
 <div class="row">
     <div class=" col-2">
 

@@ -16,8 +16,20 @@
                         <li class="dropdown-item">
                             <div class="row row-cols-lg-3 row-cols-2 dd-item-list">
                                 <div class="col">
-                                    <a href="{{url('/belajar/html')}}">
+                                    <a href="{{ url('/belajar/html') }}">
                                         <p>Belajar HTML</p>
+                                    </a>
+                                    <a href="{{ url('/belajar/css') }}">
+                                        <p>Belajar CSS</p>
+                                    </a>
+                                    <a href="{{ url('/belajar/php') }}">
+                                        <p>Belajar PHP</p>
+                                    </a>
+                                    <a href="{{ url('/belajar/js') }}">
+                                        <p>Belajar JS</p>
+                                    </a>
+                                    <a href="{{ url('/belajar/sql') }}">
+                                        <p>Belajar SQL</p>
                                     </a>
                                 </div>
                             </div>
@@ -31,10 +43,10 @@
                     <ul class="dropdown-menu __2022" aria-labelledby="listAlurBelajarDropdown">
                         <div class="dd-item-list">
                         <li class="dropdown-item">
-                        <a href="/alur-belajar/front-end">
+                        <a href="{{ url('/alur-belajar/front-end') }}">
                         <img src="https://buildwithangga.com/themes/front/images/ic_appcode.svg" class="icon" alt="bwa-icon">
                         </a>
-                        <a href="/alur-belajar/front-end">
+                        <a href="{{ url('/alur-belajar/front-end') }}">
                         <h3 class="title">Front End</h3>
                         <p class="subtitle">
                         Rekomendasi oleh mentor expert
@@ -42,10 +54,10 @@
                         </a>
                         </li>
                         <li class="dropdown-item">
-                        <a href="/alur-belajar/back-end">
+                        <a href="{{ url('/alur-belajar/back-end') }}">
                         <img src="https://buildwithangga.com/themes/front/images/ic_design.svg" class="icon" alt="bwa-icon">
                         </a>
-                        <a href="/alur-belajar/back-end">
+                        <a href="{{ url('/alur-belajar/back-end') }}">
                         <h3 class="title">Back End</h3>
                         <p class="subtitle">
                         Rekomendasi oleh mentor expert
@@ -53,10 +65,10 @@
                         </a>
                         </li>
                         <li class="dropdown-item">
-                        <a href="/alur-belajar/mobile-app-dev">
+                        <a href="{{ url('/alur-belajar/mobile-app-dev') }}">
                         <img src="https://buildwithangga.com/themes/front/images/ic_flutter.svg" class="icon" alt="bwa-icon">
                         </a>
-                        <a href="/alur-belajar/mobile-app-dev">
+                        <a href="{{ url('/alur-belajar/mobile-app-dev') }}">
                         <h3 class="title">Mobile App Developer</h3>
                         <p class="subtitle">
                         Rekomendasi oleh mentor expert

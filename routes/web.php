@@ -36,6 +36,18 @@ require __DIR__.'/auth.php';
 Route::get('/belajar/html',function(){
     return view('belajar.html.index');
 });
+Route::get('/belajar/css',function(){
+    return view('belajar.css.index');
+});
+Route::get('/belajar/sql',function(){
+    return view('belajar.sql.index');
+});
+Route::get('/belajar/js',function(){
+    return view('belajar.js.index');
+});
+Route::get('/belajar/php',function(){
+    return view('belajar.php.index');
+});
 
 Route::get('/belajar/html/dasar',function(){
     return view('belajar.html.html-dasar');
