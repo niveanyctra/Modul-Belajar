@@ -1,4 +1,4 @@
 @extends('layouts.sidehtml')
 @section('kelasHTML')
-page dasar
+page styling
 @endsection
