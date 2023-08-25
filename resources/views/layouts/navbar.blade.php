@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg  px-5">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <img src="{{ url('img/logo.png') }}" width="40" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
