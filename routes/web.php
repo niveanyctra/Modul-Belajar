@@ -33,6 +33,10 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
+Route::get('/belajar/html',function(){
+    return view('belajar.html.index');
+});
+
 Route::get('/alur-belajar/front-end', function(){
     return view('alur-belajar.front-end.index');
 });

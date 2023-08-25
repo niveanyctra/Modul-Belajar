@@ -16,7 +16,7 @@
                         <li class="dropdown-item">
                             <div class="row row-cols-lg-3 row-cols-2 dd-item-list">
                                 <div class="col">
-                                    <a href="#">
+                                    <a href="{{url('/belajar/html')}}">
                                         <p>Belajar HTML</p>
                                     </a>
                                 </div>
