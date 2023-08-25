@@ -31,7 +31,7 @@
         </nav>
         </div>
     <div class="col-10">
-        @yield('kelasHTML')
+        @yield('belajarHTML')
     </div>
 </div>
 @endsection

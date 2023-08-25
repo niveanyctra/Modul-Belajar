@@ -29,7 +29,7 @@
 
     </div>
     <div class="col-10">
-        @yield('kelasCSS')
+        @yield('belajarCSS')
     </div>
 </div>
 @endsection

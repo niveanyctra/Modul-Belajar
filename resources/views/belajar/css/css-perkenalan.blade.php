@@ -1,4 +1,4 @@
-@extends('layouts.sidecss')
-@section('kelasCSS')
+@extends('layouts.belajar.sidecss')
+@section('belajarCSS')
 <div>Halaman perkenalan CSS</div>
 @endsection

@@ -1,4 +1,4 @@
-@extends('layouts.sidehtml')
-@section('kelasHTML')
+@extends('layouts.belajar.sidehtml')
+@section('belajarHTML')
 page element
 @endsection

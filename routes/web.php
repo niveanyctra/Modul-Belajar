@@ -68,6 +68,21 @@ Route::get('/belajar/css/perkenalan',function(){
     return view('belajar.css.css-perkenalan');
 });
 
+//Route Belajar PHP
+Route::get('/belajar/php/dasar',function(){
+    return view('belajar.php.php-dasar');
+});
+
+//Route Belajar JS
+Route::get('belajar/js/dasar',function(){
+    return view('belajar.js.js-dasar');
+});
+
+//Route Belajar SQL
+Route::get('belajar/sql/dasar',function(){
+    return view('belajar.sql.sql-dasar');
+});
+
 //Route Alur Belajar
 Route::get('/alur-belajar/front-end', function(){
     return view('alur-belajar.front-end.index');
