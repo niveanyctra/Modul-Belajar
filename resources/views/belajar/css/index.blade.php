@@ -1,4 +1,4 @@
-@extends('layouts.sidecss')
+@extends('layouts.belajar.sidecss')
 @section('kelasCSS')
 
 @endsection

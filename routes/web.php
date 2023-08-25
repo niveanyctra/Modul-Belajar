@@ -78,3 +78,19 @@ Route::get('/alur-belajar/back-end', function(){
 Route::get('/alur-belajar/mobile-app-dev', function(){
     return view('alur-belajar.mobile-app-dev.index');
 });
+
+Route::get('/latihan/html',function(){
+    return view('latihan.html.index');
+});
+Route::get('/latihan/css',function(){
+    return view('latihan.css.index');
+});
+Route::get('/latihan/sql',function(){
+    return view('latihan.sql.index');
+});
+Route::get('/latihan/js',function(){
+    return view('latihan.js.index');
+});
+Route::get('/latihan/php',function(){
+    return view('latihan.php.index');
+});
