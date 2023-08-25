@@ -2,7 +2,6 @@
 @section('sidebar')
 <div class="row">
     <div class="col-2">
-<<<<<<< HEAD
                 <nav class="container ps-3 sidenavbar sidenavbar-expand-lg navbar-light bs-side-navbar" style="background-color:rgb(241, 241, 241);">
             <h6 class="pt-2">CSS Dasar</h6>
             <div class="side-list"><a href="{{url('/belajar/css/perkenalan')}}">Perkenalan CSS</a></div>
@@ -27,12 +26,7 @@
             <h6 class="pt-2">CSS Lanjutan</h6>
             <div class="side-list"><a href="{{url('/belajat/css/media')}}">Media CSS</a></div>
             <div class="side-list"><a href="{{url('/belajat/css/method')}}">Method HTTP</a></div>
-=======
-        <nav class="container ps-3 sidenavbar sidenavbar-expand-lg navbar-light bs-side-navbar" style="background-color:rgb(241, 241, 241);">
-            <h6 class="pt-2">CSS Dasar</h6>
-            <div class="side-list"><a href="{{url('/belajar/css')}}">Perkenalan CSS</a></div>
->>>>>>> 0f9f3c6700322c70e74d514b79356384bf16997a
-        </nav>
+
     </div>
     <div class="col-10">
         @yield('kelasCSS')

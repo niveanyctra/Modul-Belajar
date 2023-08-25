@@ -32,7 +32,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
-
+// Route Belajar
 Route::get('/belajar/html',function(){
     return view('belajar.html.index');
 });
@@ -49,6 +49,7 @@ Route::get('/belajar/php',function(){
     return view('belajar.php.index');
 });
 
+//Route Belajar HTML
 Route::get('/belajar/html/dasar',function(){
     return view('belajar.html.html-dasar');
 });
@@ -59,10 +60,15 @@ Route::get('/belajar/html/styling',function(){
     return view('belajar.html.html-styling');
 });
 
+//Route Belajar CSS
 Route::get('/belajar/css',function(){
     return view('belajar.css.index');
 });
+Route::get('/belajar/css/perkenalan',function(){
+    return view('belajar.css.css-perkenalan');
+});
 
+//Route Alur Belajar
 Route::get('/alur-belajar/front-end', function(){
     return view('alur-belajar.front-end.index');
 });
