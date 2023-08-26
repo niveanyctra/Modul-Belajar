@@ -32,24 +32,12 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
-// Route Belajar
+
+
+//Route Belajar HTML
 Route::get('/belajar/html',function(){
     return view('belajar.html.index');
 });
-Route::get('/belajar/css',function(){
-    return view('belajar.css.index');
-});
-Route::get('/belajar/sql',function(){
-    return view('belajar.sql.index');
-});
-Route::get('/belajar/js',function(){
-    return view('belajar.js.index');
-});
-Route::get('/belajar/php',function(){
-    return view('belajar.php.index');
-});
-
-//Route Belajar HTML
 Route::get('/belajar/html/dasar',function(){
     return view('belajar.html.html-dasar');
 });
@@ -64,21 +52,33 @@ Route::get('/belajar/html/styling',function(){
 Route::get('/belajar/css',function(){
     return view('belajar.css.index');
 });
+Route::get('/belajar/css',function(){
+    return view('belajar.css.index');
+});
 Route::get('/belajar/css/perkenalan',function(){
     return view('belajar.css.css-perkenalan');
 });
 
 //Route Belajar PHP
+Route::get('/belajar/php',function(){
+    return view('belajar.php.index');
+});
 Route::get('/belajar/php/dasar',function(){
     return view('belajar.php.php-dasar');
 });
 
 //Route Belajar JS
+Route::get('/belajar/js',function(){
+    return view('belajar.js.index');
+});
 Route::get('belajar/js/dasar',function(){
     return view('belajar.js.js-dasar');
 });
 
 //Route Belajar SQL
+Route::get('/belajar/sql',function(){
+    return view('belajar.sql.index');
+});
 Route::get('belajar/sql/dasar',function(){
     return view('belajar.sql.sql-dasar');
 });
@@ -119,6 +119,27 @@ Route::get('/latihan/php',function(){
     return view('latihan.php.index');
 });
 
-Route::get('/kelas-mentor',function(){
-    return view('kelas-mentor.index');
+//Route Kelas Mentor HTML
+Route::get('/kelas-mentor/html',function(){
+    return view('kelas-mentor.html.index');
+});
+
+//Route Kelas Mentor CSS
+Route::get('/kelas-mentor/css',function(){
+    return view('kelas-mentor.css.index');
+});
+
+//Route Kelas Mentor PHP
+Route::get('/kelas-mentor/php',function(){
+    return view('kelas-mentor.php.index');
+});
+
+//Route Kelas Mentor JS
+Route::get('/kelas-mentor/js',function(){
+    return view('kelas-mentor.js.index');
+});
+
+//Route Kelas Mentor SQL
+Route::get('/kelas-mentor/sql',function(){
+    return view('kelas-mentor.sql.index');
 });

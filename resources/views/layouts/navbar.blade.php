@@ -37,52 +37,52 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="listKelasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="listAlurBelajarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Alur Belajar
                     </a>
                     <ul class="dropdown-menu __2022" aria-labelledby="listAlurBelajarDropdown">
                         <div class="dd-item-list">
-                        <li class="dropdown-item">
-                        <a href="{{ url('/alur-belajar/front-end') }}">
-                        <img src="https://buildwithangga.com/themes/front/images/ic_appcode.svg" class="icon" alt="bwa-icon">
-                        </a>
-                        <a href="{{ url('/alur-belajar/front-end') }}">
-                        <h3 class="title">Front End</h3>
-                        <p class="subtitle">
-                        Rekomendasi oleh mentor expert
-                        </p>
-                        </a>
-                        </li>
-                        <li class="dropdown-item">
-                        <a href="{{ url('/alur-belajar/back-end') }}">
-                        <img src="https://buildwithangga.com/themes/front/images/ic_design.svg" class="icon" alt="bwa-icon">
-                        </a>
-                        <a href="{{ url('/alur-belajar/back-end') }}">
-                        <h3 class="title">Back End</h3>
-                        <p class="subtitle">
-                        Rekomendasi oleh mentor expert
-                        </p>
-                        </a>
-                        </li>
-                        <li class="dropdown-item">
-                        <a href="{{ url('/alur-belajar/mobile-app-dev') }}">
-                        <img src="https://buildwithangga.com/themes/front/images/ic_flutter.svg" class="icon" alt="bwa-icon">
-                        </a>
-                        <a href="{{ url('/alur-belajar/mobile-app-dev') }}">
-                        <h3 class="title">Mobile App Developer</h3>
-                        <p class="subtitle">
-                        Rekomendasi oleh mentor expert
-                        </p>
-                        </a>
-                        </li>
+                            <li class="dropdown-item">
+                                <a href="{{ url('/alur-belajar/front-end') }}">
+                                    <img src="https://buildwithangga.com/themes/front/images/ic_appcode.svg" class="icon" alt="bwa-icon">
+                                </a>
+                                <a href="{{ url('/alur-belajar/front-end') }}">
+                                    <h3 class="title">Front End</h3>
+                                    <p class="subtitle">
+                                    Rekomendasi oleh para mentor
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="{{ url('/alur-belajar/back-end') }}">
+                                    <img src="https://buildwithangga.com/themes/front/images/ic_design.svg" class="icon" alt="bwa-icon">
+                                </a>
+                                <a href="{{ url('/alur-belajar/back-end') }}">
+                                    <h3 class="title">Back End</h3>
+                                    <p class="subtitle">
+                                    Rekomendasi oleh para mentor
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="{{ url('/alur-belajar/mobile-app-dev') }}">
+                                    <img src="https://buildwithangga.com/themes/front/images/ic_flutter.svg" class="icon" alt="bwa-icon">
+                                </a>
+                                <a href="{{ url('/alur-belajar/mobile-app-dev') }}">
+                                    <h3 class="title">Mobile App Developer</h3>
+                                    <p class="subtitle">
+                                    Rekomendasi oleh para mentor
+                                    </p>
+                                </a>
+                            </li>
                         </div>
-                        </ul>
+                    </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="listKelasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="listLatihanDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Latihan
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="listKelasDropdown">
+                    <ul class="dropdown-menu" aria-labelledby="listLatihanDropdown">
                         <li class="dropdown-item">
                             <div class="row row-cols-lg-3 row-cols-2 dd-item-list">
                                 <div class="col">
@@ -106,8 +106,33 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/kelas-mentor">Kelas Mentor</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="listKelasMentorDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Kelas Mentor
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="listKelasMentorDropdown">
+                        <li class="dropdown-item">
+                            <div class="row row-cols-lg-3 row-cols-2 dd-item-list">
+                                <div class="col">
+                                    <a href="{{ url('/kelas-mentor/html') }}">
+                                        <p>Kelas HTML</p>
+                                    </a>
+                                    <a href="{{ url('/kelas-mentor/css') }}">
+                                        <p>Kelas CSS</p>
+                                    </a>
+                                    <a href="{{ url('/kelas-mentor/php') }}">
+                                        <p>Kelas PHP</p>
+                                    </a>
+                                    <a href="{{ url('/kelas-mentor/js') }}">
+                                        <p>Kelas JS</p>
+                                    </a>
+                                    <a href="{{ url('/kelas-mentor/sql') }}">
+                                        <p>Kelas SQL</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <ul class="navbar-nav right-menu ms-auto">
