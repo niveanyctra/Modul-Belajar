@@ -16,18 +16,21 @@
                 <div class="side-list"><a href="{{url('/belajar/css/padding')}}">Padding CSS</a></div>
                 <div class="side-list"><a href="{{url('/belajar/css/ukuran')}}">Ukuran CSS</a></div>
                 <h6 class="pt-2">CSS Menengah</h6>
-                <div class="side-list"><a href="{{url('/belajar/css/style')}}">Style CSS</a></div>
+                <div class="side-list"><a href="{{url('/belajar/css/boxmodel')}}">Box Model CSS</a></div>
                 <div class="side-list"><a href="{{url('/belajar/css/formatting')}}">Formatting CSS</a></div>
-                <div class="side-list"><a href="{{url('/belajar/css/hyperlink')}}">Hyperlink CSS</a></div>
-                <div class="side-list"><a href="{{url('/belajar/css/table')}}">Table CSS</a></div>
-                <div class="side-list"><a href="{{url('/belajar/css/list')}}">List CSS</a></div>
-                <div class="side-list"><a href="{{url('/belajar/css/image')}}">Image CSS</a></div>
-                <div class="side-list"><a href="{{url('/belajar/css/form')}}">Form CSS</a></div>
-                <div class="side-list"><a href="{{url('/belajar/css/class')}}">Class CSS</a></div>
-                <div class="side-list"><a href="{{url('/belajar/css/id')}}">Id CSS</a></div>
+                <div class="side-list"><a href="{{url('/belajar/css/links')}}">Links CSS</a></div>
+                <div class="side-list"><a href="{{url('/belajar/css/display')}}">Display CSS</a></div>
+                <div class="side-list"><a href="{{url('/belajar/css/posisi')}}">Posisi CSS</a></div>
+                <div class="side-list"><a href="{{url('/belajar/css/zindex')}}">Z-index CSS</a></div>
+                <div class="side-list"><a href="{{url('/belajar/css/overflow')}}">Overflow CSS</a></div>
+                <div class="side-list"><a href="{{url('/belajar/css/display')}}">Display CSS</a></div>
+                <div class="side-list"><a href="{{url('/belajar/css/responsive')}}">Responsive CSS</a></div>
                 <h6 class="pt-2">CSS Lanjutan</h6>
-                <div class="side-list"><a href="{{url('/belajat/css/media')}}">Media CSS</a></div>
-                <div class="side-list"><a href="{{url('/belajat/css/method')}}">Method HTTP</a></div>
+                <div class="side-list"><a href="{{url('/belajar/css/mquery')}}">Media Query CSS</a></div>
+                <div class="side-list"><a href="{{url('/belajar/css/variable')}}">Variabel CSS</a></div>
+                <div class="side-list"><a href="{{url('/belajar/css/shadow')}}">Shadow CSS</a></div>
+                <div class="side-list"><a href="{{url('/belajar/css/animasi')}}">Animasi CSS</a></div>
+                <div class="side-list"><a href="{{url('/belajar/css/flexbox')}}">Flexbox CSS</a></div>
 
         </div>
         <div class="col-8">
