@@ -16,6 +16,7 @@
     <style>
         .wrapper-sidebar{
             max-width: 100vh;
+
         }
     .dropdown-menu .dropdown-item {
         align-items: center;
@@ -53,7 +54,7 @@
   }
   .sidenavbar {
     width: 100%;
-    height: 100vh;
+    min-height: 100%;
     align-items: flex-start;
   }
   .sidenavbar-brand {
