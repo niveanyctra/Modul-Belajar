@@ -14,61 +14,124 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        .wrapper-sidebar{
-            max-width: 100vh;
-
-        }
-    .dropdown-menu .dropdown-item {
-        align-items: center;
-        display: flex;
-        gap: 14px;
-        min-width: 300px;
-        /* padding: 53px 33px 52px 34px!important; */
-        min-width: -webkit-max-content;
-        min-width: -moz-max-content;
-        min-width: max-content;
-        position: relative;
-        transition: all .3s ease-in-out;
-        white-space: normal!important;
-        width: -webkit-max-content;
-        width: -moz-max-content;
-        width: max-content;
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+    [class*="fontawesome-"]:before {
+      font-family: "fontawesome", sans-serif;
     }
-    .dropdown-menu[aria-labelledby=listAlurBelajarDropdown] .dd-item-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 24px;
+
+    html, body {
+      height: 100%;
+    }
+
+
+header {
+    height: 30px;
+  color: #fff;
+  background-color: #000;
 }
 
-.side-list a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-@media (min-width: 992px) {
-  .sidenavbar,
-  .sidenavbar-collapse {
-    flex-direction: column;
-  }
-  .sidenavbar-expand-lg .sidenavbar-nav {
-    flex-direction: column;
-  }
-  .sidenavbar {
-    width: 100%;
-    min-height: 100vh;
-    max-height: 100%;
-    align-items: flex-start;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-  }
-  .sidenavbar-brand {
-    margin-left: 0.5em;
-    padding-bottom: 0;
-    border-bottom: 4px solid #9b9b9b;
-  }
-  form input {
-    margin-bottom: 0.7em;
-  }
-}
+    .sub-nav{
+        margin-left: 10px;
+    }
+    .sidebar, .main {
+      transition: all 0.3s ease-out;
+      overflow: scroll;
+      -webkit-overflow-scrolling: touch;
+      position: absolute;
+      top: 64px;
+      bottom: 0;
+    }
+
+    .sidebar {
+        margin-top: 30px;
+      width: 260px;
+      background-color: #333;
+      left: 0;
+    }
+
+    .main {
+        margin-top: 30px;
+      background-color: #f5f5f5;
+      position: absolute;
+      left: 260px;
+      right: 0;
+      padding: 20px;
+    }
+
+    .sidebar-header {
+      background-color: #555;
+      color: #ccc;
+      margin: 0;
+      padding: 0 20px;
+      font-weight: normal;
+      line-height: 2;
+      text-transform: uppercase;
+      font-size: 90%;
+    }
+
+    .toggle-menu {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 50px;
+      float: left;
+      display: block;
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s ease-out;
+    }
+    .toggle-menu:hover {
+      color: #fff;
+    }
+    .toggle-menu:before {
+      height: 64px;
+      width: 64px;
+      display: block;
+      text-align: center;
+      line-height: 64px;
+      font-size: 24px;
+    }
+
+    .nav-side a {
+      color: #ccc;
+      background-color: #333;
+      margin-bottom: 1px;
+      border-left: 10px solid transparent;
+    }
+    .nav-side a.active {
+      border-color: #e35205;
+    }
+
+    @media all and (max-width: 1024px) {
+    .sidebar.toggled {
+        left: 0;
+        z-index: 10;
+        box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.8);
+      }
+      .sidebar.toggled + .main {
+        overflow: hidden;
+      }
+
+      .sidebar {
+        left: -260px;
+      }
+
+      .main {
+        margin-top: 30px;
+        left: 0;
+      }
+
+      .toggle-menu {
+        margin-top: -18px;
+        z-index: 1;
+        opacity: 1;
+      }
+      .sub-nav {
+        margin-left: 60px;
+      }
+    }
+
     </style>
 </head>
 
@@ -78,6 +141,14 @@
         @yield('content')
     </div>
     @yield('sidebar')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script id="rendered-js">
+    $(function(){
+      $('.toggle-menu').click(function(e){
+        e.preventDefault();
+        $('.sidebar').toggleClass('toggled');
+      });
+    });
+</script>
 </body>
-
 </html>
