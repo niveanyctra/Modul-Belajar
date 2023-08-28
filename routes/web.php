@@ -123,6 +123,9 @@ Route::get('/latihan/php',function(){
 Route::get('/kelas-mentor/html',function(){
     return view('kelas-mentor.html.index');
 });
+Route::get('/kelas-mentor/html/layout',function(){
+    return view('kelas-mentor.html.detail');
+});
 
 //Route Kelas Mentor CSS
 Route::get('/kelas-mentor/css',function(){
