@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('title', 255);
             $table->enum('category',['html','css','php','js','mysql'])->default('html');
             $table->string('content', 255);
+            $table->text('id_yt');
             $table->timestamps();
         });
     }
