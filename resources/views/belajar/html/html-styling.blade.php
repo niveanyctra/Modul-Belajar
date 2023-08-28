@@ -19,7 +19,7 @@
             <a href="{{url('/belajar/html/paragraf')}}">Paragraf HTML</a>
             <a href="{{url('/belajar/html/br')}}">Baris Baru HTML</a>
         <h3 class="sidebar-header">HTML Menengah</h3>
-            <a href="{{url('/belajar/html/styling')}}">Style HTML</a>
+            <a href="{{url('/belajar/html/styling')}}" class="active">Style HTML</a>
             <a href="{{url('/belajar/html/formatting')}}">Formatting HTML</a>
             <a href="{{url('/belajar/html/block')}}">Block Element HTML</a>
             <a href="{{url('/belajar/html/inline')}}">Inline Element HTML</a>

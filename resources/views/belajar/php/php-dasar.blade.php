@@ -10,8 +10,27 @@
 </header>
 <aside class="sidebar">
     <nav class="nav-side">
-        <h3 class="sidebar-header">Contents</h3>
-        <a href="" class="active">Link</a>
+        <h3 class="sidebar-header">PHP Dasar</h3>
+            <a href="{{url('/belajar/php')}}">Perkenalan PHP</a>
+            <a href="{{url('/belajar/php/dasar')}}" class="active">Dasar PHP</a>
+            <a href="{{url('/belajar/php/variabel')}}">Variabel PHP</a>
+            <a href="{{url('/belajar/php/tipedata')}}">Tipe data PHP</a>
+            <a href="{{url('/belajar/php/operator')}}">Operator PHP</a>
+            <a href="{{url('/belajar/php/ifswitch')}}">If dan Switch Clause PHP</a>
+            <a href="{{url('/belajar/php/looping')}}">Looping PHP</a>
+            <a href="{{url('/belajar/php/Array')}}">Array PHP</a>
+        <h3 class="sidebar-header">PHP Menengah</h3>
+            <a href="{{url('/belajar/php/global')}}">Global Variable PHP</a>
+            <a href="{{url('/belajar/php/form')}}">Form Handling PHP</a>
+            <a href="{{url('/belajar/php/include')}}">Include PHP</a>
+            <a href="{{url('/belajar/php/cookies')}}">Cookies PHP</a>
+            <a href="{{url('/belajar/php/session')}}">Session PHP</a>
+        <h3 class="sidebar-header">PHP Lanjutan</h3>
+            <a href="{{url('/belajar/php/oop')}}">OOP PHP</a>
+            <a href="{{url('/belajar/php/classobject')}}">Class dan Object PHP</a>
+            <a href="{{url('/belajar/php/function')}}">Function PHP</a>
+            <a href="{{url('/belajar/php/inheritance')}}">Inheritance PHP</a>
+            <a href="{{url('/belajar/php/encapsulation')}}">Encapsulation PHP</a>
     </nav>
 </aside>
 
