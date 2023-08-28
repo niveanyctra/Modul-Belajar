@@ -16,6 +16,7 @@ return new class extends Migration
             // $table->foreign('mentor_id')->references('id')->on('mentors')->onDelete('cascade');
             $table->string('author',255);
             $table->string('title', 255);
+            $table->enum('category',['html','css','php','js','mysql'])->default('html');
             $table->string('content', 255);
             $table->timestamps();
         });
