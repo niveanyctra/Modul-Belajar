@@ -7,6 +7,7 @@
         <div class="col-sm-3 text-center">
              <a href="{{ url('/kelas-mentor/html/'.$data->id)}}">{{$data->title}} </a><br>
             <h6>{{$data->author}}</h6>
+          
         </div>
         @endforeach
     </div>
