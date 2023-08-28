@@ -52,12 +52,6 @@ Route::get('/belajar/html/styling',function(){
 Route::get('/belajar/css',function(){
     return view('belajar.css.index');
 });
-Route::get('/belajar/css',function(){
-    return view('belajar.css.index');
-});
-Route::get('/belajar/css/perkenalan',function(){
-    return view('belajar.css.css-perkenalan');
-});
 
 //Route Belajar PHP
 Route::get('/belajar/php',function(){

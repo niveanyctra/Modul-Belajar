@@ -13,7 +13,7 @@
         <h3 class="sidebar-header">HTML Dasar</h3>
             <a href="{{url('/belajar/html')}}">Perkenalan HTML</a>
             <a href="{{url('/belajar/html/dasar')}}">Dasar HTML</a>
-            <a href="{{url('/belajar/html/elemen')}}">Elemen HTML</a>
+            <a href="{{url('/belajar/html/elemen')}}" class="active">Elemen HTML</a>
             <a href="{{url('/belajar/html/atribut')}}">Atribut HTML</a>
             <a href="{{url('/belajar/html/heading')}}">Heading HTML</a>
             <a href="{{url('/belajar/html/paragraf')}}">Paragraf HTML</a>

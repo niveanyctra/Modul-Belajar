@@ -10,8 +10,9 @@
 </header>
 <aside class="sidebar">
     <nav class="nav-side">
-        <h3 class="sidebar-header">Contents</h3>
-        <a href="" class="active">Link</a>
+        <h3 class="sidebar-header">SQL Dasar</h3>
+            <a href="{{url('/belajar/sql')}}" class="active">Perkenalan SQL</a>
+            <a href="{{url('/belajar/sql/dasar')}}">dasar SQL</a>
     </nav>
 </aside>
 
