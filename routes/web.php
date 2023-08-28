@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -120,12 +121,8 @@ Route::get('/latihan/php',function(){
 });
 
 //Route Kelas Mentor HTML
-Route::get('/kelas-mentor/html',function(){
-    return view('kelas-mentor.html.index');
-});
-Route::get('/kelas-mentor/html/layout',function(){
-    return view('kelas-mentor.html.detail');
-});
+Route::get('/kelas-mentor/html',[PostController::class,"indexHTML"])->name('indexHTML');
+Route::get('/kelas-mentor/html/{post:id}',[PostController::class,"detailHTML"])->name('detailHTML');
 
 //Route Kelas Mentor CSS
 Route::get('/kelas-mentor/css',function(){
