@@ -10,8 +10,9 @@
 </header>
 <aside class="sidebar">
     <nav class="nav-side">
-        <h3 class="sidebar-header">Contents</h3>
-        <a href="" class="active">Link</a>
+        <h3 class="sidebar-header">JavaScript Dasar</h3>
+            <a href="{{url('/belajar/js')}}">Perkenalan JavaScript</a>
+            <a href="{{url('/belajar/js/dasar')}}" class="active">Dasar JavaScript</a>
     </nav>
 </aside>
 
