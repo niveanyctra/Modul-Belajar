@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,12 +52,6 @@ Route::get('/belajar/html/styling',function(){
 //Route Belajar CSS
 Route::get('/belajar/css',function(){
     return view('belajar.css.index');
-});
-Route::get('/belajar/css',function(){
-    return view('belajar.css.index');
-});
-Route::get('/belajar/css/perkenalan',function(){
-    return view('belajar.css.css-perkenalan');
 });
 
 //Route Belajar PHP
@@ -120,26 +115,21 @@ Route::get('/latihan/php',function(){
 });
 
 //Route Kelas Mentor HTML
-Route::get('/kelas-mentor/html',function(){
-    return view('kelas-mentor.html.index');
-});
+Route::get('/kelas-mentor/html',[PostController::class,"indexHTML"])->name('indexHTML');
+Route::get('/kelas-mentor/html/{post:id}',[PostController::class,"detailHTML"])->name('detailHTML');
 
 //Route Kelas Mentor CSS
-Route::get('/kelas-mentor/css',function(){
-    return view('kelas-mentor.css.index');
-});
+Route::get('/kelas-mentor/css',[PostController::class,"indexCSS"])->name('indexCSS');
+Route::get('/kelas-mentor/css/{post:id}',[PostController::class,"detailCSS"])->name('detailCSS');
 
 //Route Kelas Mentor PHP
-Route::get('/kelas-mentor/php',function(){
-    return view('kelas-mentor.php.index');
-});
+Route::get('/kelas-mentor/php',[PostController::class,"indexPHP"])->name('indexPHP');
+Route::get('/kelas-mentor/php/{post:id}',[PostController::class,"detailPHP"])->name('detailPHP');
 
 //Route Kelas Mentor JS
-Route::get('/kelas-mentor/js',function(){
-    return view('kelas-mentor.js.index');
-});
+Route::get('/kelas-mentor/js',[PostController::class,"indexJS"])->name('indexJS');
+Route::get('/kelas-mentor/js/{post:id}',[PostController::class,"detailJS"])->name('detailJS');
 
 //Route Kelas Mentor SQL
-Route::get('/kelas-mentor/sql',function(){
-    return view('kelas-mentor.sql.index');
-});
+Route::get('/kelas-mentor/sql',[PostController::class,"indexSQL"])->name('indexSQL');
+Route::get('/kelas-mentor/sql/{post:id}',[PostController::class,"detailSQL"])->name('detailSQL');
