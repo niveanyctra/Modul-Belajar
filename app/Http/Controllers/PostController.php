@@ -9,12 +9,26 @@ class PostController extends Controller
 {
         //Fungsi Kelas Mentor HTML
     public function indexHTML(){
-        $posts = Post::Where('category','html')->get();
+        if (request('level')) {
+            # code...
+            $posts = Post::Where('category','html')
+                           ->where('level',request('level'))
+                           ->get();
+        }
+        else {
+
+            $posts = Post::Where('category','html')->get();
+        }
+
         return view('kelas-mentor.html.index',[
             'posts' => $posts,
         ]);
     }
     public function detailHTML(Post $post){
+        if ($tools = Post::Where('tool','like','%html%')) {
+            
+            # code...
+        }
         return view('kelas-mentor.html.detail',[
             'posts' => $post,
         ]);
@@ -59,6 +73,8 @@ class PostController extends Controller
             'posts' => $post,
         ]);
     }
+
+    //Fungsi Kelas Mentor SQL
     public function indexSQL(){
         $posts = Post::Where('category','mysql')->get();
         return view('kelas-mentor.sql.index',[
@@ -70,4 +86,9 @@ class PostController extends Controller
             'posts' => $post,
         ]);
     }
+
+    //fungsi sort
+    // public function sort(Request $request, $mudah, $menengah, $lanjutan){
+    //     $posts = Post::Where('category','html','&','');
+    // }
 }

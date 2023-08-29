@@ -1,15 +1,48 @@
 @extends('layouts.main')
 @section('content')
+<div class="wrapper-sidebar">
 
-<div class="row">
-    @foreach ($posts as $data)
-
-        <div class="col-sm-3 text-center">
-             <a href="{{ url('/kelas-mentor/html/'.$data->id)}}">{{$data->title}} </a><br>
-            <h6>{{$data->author}}</h6>
-          
+    <div class="row">
+        {{-- sidebar --}}
+        <div class="col-4 bg-primary ps-4" style="min-height: 100vh; height: 100%">
+            <h6 class="pt-2">Urutkan</h6>
+            <div class="fw-semibold">
+                @csrf
+                <form action="{{route('indexHTML')}}">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="level" id="mudah" value="mudah">
+                    <label class="form-check-label" for="mudah">
+                        Mudah
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="level" id="menengah" value="menengah">
+                    <label class="form-check-label" for="menengah">
+                        Menengah
+                    </label>
+                </div>
+                <input class="form-control btn btn-sm btn-info" type="submit" value="Urutkan">
+                </form>
+            </div>
         </div>
-        @endforeach
-    </div>
+        {{-- main content --}}
+        <div class="col-8">
 
+            <div class="row">
+                @foreach ($posts as $data)
+
+                    <div class="col-sm-3  text-center">
+                         <a href="{{ url('/kelas-mentor/html/'.$data->id)}}">{{$data->title}} </a><br>
+                        <h6>{{$data->author}}</h6>
+
+                    </div>
+                    @endforeach
+                </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+</script>
 @endsection

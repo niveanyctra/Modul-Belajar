@@ -20,6 +20,8 @@ class PostFactory extends Factory
             'title' => $this->faker->word,
             'author' => $this->faker->name,
             'category' => $this->faker->randomElement(['html', 'css', 'php', 'js', 'mysql']),
+            'level' => $this->faker->randomElement(['mudah','menengah']),
+            'tool' => $this->faker->text(5),
             'id_yt' => $this->faker->text(5),
             'content' => $this->faker->text(255)
         ];
