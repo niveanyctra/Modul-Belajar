@@ -20,20 +20,29 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('admin.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
-Route::get('/post', function () {
-    return view('post');
-})->middleware(['auth', 'verified'])->name('post');
 
 Route::middleware('auth')->group(function () {
+    //Profile
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    //Post
+    Route::get('/post', [PostController::class, 'index'])->name('post');
+    Route::get('/post/create', [PostController::class, 'create'])->name('post.create');
+    Route::post('/post/store', [PostController::class, 'store'])->name('post.store');
+    Route::get('/post/{id}/edit', [PostController::class, 'edit'])->name('post.edit');
+    Route::put('/post/{id}', [PostController::class, 'update'])->name('post.update');
+    Route::delete('/post/{id}', [PostController::class, 'destroy'])->name('post.destroy');
 });
 
 require __DIR__.'/auth.php';
 
+// Route::resource('guru', GuruController::class)->only([
+//     'index', 'create', 'store', 'edit', 'update', 'destroy'
+// ]);
 
 //Route Belajar HTML
 Route::get('/belajar/html',function(){

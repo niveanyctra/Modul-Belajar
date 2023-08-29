@@ -7,7 +7,75 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-        //Fungsi Kelas Mentor HTML
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        $post = Post::get();
+
+        return view('admin.post.index', compact('post'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        return view('admin.post.create');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        Post::insert([
+            'title' => $request->title,
+        ]);
+
+        return redirect('post')->with('store', 'Data berhasil dibuat');
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(Post $post)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(Post $post)
+    {
+        return view('admin.post.edit', compact('post'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, Post $post)
+    {
+        Post::where('id', $post->id)->update([
+            'title' => $request->title,
+        ]);
+
+        return redirect('post')->with('update', 'Data berhasil diubah');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Post $post)
+    {
+        Post::where('id', $post->id)->delete();
+
+        return redirect('post')->with('delete', 'Data berhasil dihapus');
+    }
+
+    //Fungsi Kelas Mentor HTML
     public function indexHTML(){
         if (request('level')) {
             # code...
