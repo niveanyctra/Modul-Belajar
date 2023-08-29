@@ -14,6 +14,7 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <style>
+        @import url(http://weloveiconfonts.com/api/?family=fontawesome);
         .wrapper-sidebar {
             max-width: 100vh;
         }
@@ -68,8 +69,7 @@
         }
 
 
-        
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
     [class*="fontawesome-"]:before {
       font-family: "fontawesome", sans-serif;
     }
