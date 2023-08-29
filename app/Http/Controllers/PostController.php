@@ -32,6 +32,9 @@ class PostController extends Controller
     {
         Post::insert([
             'title' => $request->title,
+            'category' => $request->category,
+            'category' => $request->category,
+            'category' => $request->category,
         ]);
 
         return redirect('post')->with('store', 'Data berhasil dibuat');
@@ -94,7 +97,7 @@ class PostController extends Controller
     }
     public function detailHTML(Post $post){
         if ($tools = Post::Where('tool','like','%html%')) {
-            
+
             # code...
         }
         return view('kelas-mentor.html.detail',[
