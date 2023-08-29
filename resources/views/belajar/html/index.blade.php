@@ -6,7 +6,7 @@
         <nav class="sub-nav">
             <a href="{{ url('/belajar/html') }}">
                 <span>Belajar HTML</span>
-            </a>
+            </a>    
             <a href="{{ url('/belajar/css') }}">
                 <span>Belajar CSS</span>
             </a>

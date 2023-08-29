@@ -56,7 +56,7 @@
                         Alur Belajar
                         </a>
                         <ul class="dropdown-menu __2022" aria-labelledby="listAlurBelajarDropdown">
-                            <div class="dd-item-list alurbelajar">
+                            <div class="dd-item-list">
                                 <li class="dropdown-item">
                                     <a href="{{ url('/alur-belajar/front-end') }}">
                                         <img src="https://buildwithangga.com/themes/front/images/ic_appcode.svg" class="icon" alt="bwa-icon">
