@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use App\Models\Post;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
@@ -12,7 +15,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        $post = Post::get();
+        $user = Auth::user();
+        $post = Post::with('users')->where('id_user', $user->id)->get();
 
         return view('admin.post.index', compact('post'));
     }
@@ -22,7 +26,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('admin.post.create');
+        $user = Auth::user();
+        return view('admin.post.create',compact('user'));
     }
 
     /**
@@ -31,10 +36,17 @@ class PostController extends Controller
     public function store(Request $request)
     {
         Post::insert([
+
             'title' => $request->title,
+            'id_user' => $request->id_user,
             'category' => $request->category,
-            'category' => $request->category,
-            'category' => $request->category,
+            'level' => $request->level,
+            'tool' => $request->tool,
+            'content' => $request->content,
+            'id_yt' => $request->id_yt,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+
         ]);
 
         return redirect('post')->with('store', 'Data berhasil dibuat');
@@ -45,7 +57,8 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+
+        return view('admin.post.show', compact('post'));
     }
 
     /**
@@ -53,7 +66,8 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        return view('admin.post.edit', compact('post'));
+        $userr = User::get();
+        return view('admin.post.edit', compact('post','userr'));
     }
 
     /**
@@ -63,6 +77,13 @@ class PostController extends Controller
     {
         Post::where('id', $post->id)->update([
             'title' => $request->title,
+            'id_user' => $request->id_user,
+            'category' => $request->category,
+            'level' => $request->level,
+            'tool' => $request->tool,
+            'content' => $request->content,
+            'id_yt' => $request->id_yt,
+            'updated_at' => Carbon::now(),
         ]);
 
         return redirect('post')->with('update', 'Data berhasil diubah');
@@ -96,10 +117,6 @@ class PostController extends Controller
         ]);
     }
     public function detailHTML(Post $post){
-        if ($tools = Post::Where('tool','like','%html%')) {
-
-            # code...
-        }
         return view('kelas-mentor.html.detail',[
             'posts' => $post,
         ]);

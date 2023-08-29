@@ -28,6 +28,7 @@
                                     <div class="flex gap-1">
 
                                         <a href="{{ route('post.edit', $item->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                                        <a href="{{ route('post.show', $item->id) }}" class="btn btn-warning btn-sm">Show</a>
 
                                         <form action="{{ route('post.destroy', $item->id) }}" method="POST">
                                             @csrf
