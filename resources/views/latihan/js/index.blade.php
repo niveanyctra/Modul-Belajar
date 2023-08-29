@@ -4,7 +4,21 @@
     <div class="container-fluid">
         <a href="#" class="toggle-menu fontawesome-reorder"></a>
         <nav class="sub-nav">
-            <a href="a">aaa</a>
+            <a href="{{ url('/latihan/html') }}">
+                <span>Latihan HTML</span>
+            </a>
+            <a href="{{ url('/latihan/css') }}">
+                <span>Latihan CSS</span>
+            </a>
+            <a href="{{ url('/latihan/php') }}">
+                <span>Latihan PHP</span>
+            </a>
+            <a href="{{ url('/latihan/js') }}">
+                <span>Latihan JS</span>
+            </a>
+            <a href="{{ url('/latihan/sql') }}">
+                <span>Latihan SQL</span>
+            </a>
         </nav>
     </div>
 </header>
