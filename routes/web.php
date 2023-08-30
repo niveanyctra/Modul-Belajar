@@ -32,7 +32,7 @@ Route::middleware('auth')->group(function () {
     //Post
     Route::resource('post', PostController::class)->only([
     'index', 'create','show', 'store', 'edit', 'update', 'destroy'
-]);
+    ]);
     // Route::get('/post', [PostController::class, 'index'])->name('post');
     // Route::get('/post/create', [PostController::class, 'create'])->name('post.create');
     // Route::post('/post/store', [PostController::class, 'store'])->name('post.store');
@@ -43,9 +43,10 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-// Route::resource('guru', GuruController::class)->only([
-//     'index', 'create', 'store', 'edit', 'update', 'destroy'
-// ]);
+//Route Community
+Route::get('/community', function(){
+    return view('community');
+});
 
 //Route Belajar HTML
 Route::get('/belajar/html',function(){
@@ -56,6 +57,12 @@ Route::get('/belajar/html/dasar',function(){
 });
 Route::get('/belajar/html/element',function(){
     return view('belajar.html.html-element');
+});
+Route::get('/belajar/html/atribut',function(){
+    return view('belajar.html.html-atribut');
+});
+Route::get('/belajar/html/heading',function(){
+    return view('belajar.html.html-heading');
 });
 Route::get('/belajar/html/styling',function(){
     return view('belajar.html.html-styling');

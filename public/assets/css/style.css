@@ -1,3 +1,11 @@
+[class*="fontawesome-"]:before {
+    font-family: "fontawesome", sans-serif;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
 .sub {
   height: 30px;
 }
@@ -46,13 +54,6 @@
   width: 60px;
 }
 
-[class*="fontawesome-"]:before {
-    font-family: "fontawesome", sans-serif;
-  }
-
-  html, body {
-    height: 100%;
-  }
 
 
 header {
@@ -67,6 +68,7 @@ background-color: #000;
   .sidebar, .main {
     transition: all 0.3s ease-out;
     overflow: scroll;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     position: absolute;
     top: 64px;
@@ -74,7 +76,7 @@ background-color: #000;
   }
 
   .sidebar {
-      margin-top: 30px;
+    margin-top: 30px;
     width: 260px;
     background-color: #333;
     left: 0;

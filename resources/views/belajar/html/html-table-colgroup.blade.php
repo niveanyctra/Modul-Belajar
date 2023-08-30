@@ -26,7 +26,7 @@
     <nav class="nav-side">
         <h3 class="sidebar-header">HTML Tutorial</h3>
             <a href="{{url('/belajar/html')}}">HTML Pengenalan</a>
-            <a href="{{url('/belajar/html/dasar')}}" class="active">HTML Dasar</a>
+            <a href="{{url('/belajar/html/dasar')}}">HTML Dasar</a>
             <a href="{{url('/belajar/html/element')}}">HTML Element</a>
             <a href="{{url('/belajar/html/atribut')}}">HTML Atribut</a>
             <a href="{{url('/belajar/html/heading')}}">HTML Heading</a>
@@ -52,7 +52,7 @@
             <a href="{{url('/belajar/html/table-padding-spacing')}}">Padding & Spacing</a>
             <a href="{{url('/belajar/html/table-colspan-rowspan')}}">Colspan & Rowspan</a>
             <a href="{{url('/belajar/html/table-styling')}}">Table Styling</a>
-            <a href="{{url('/belajar/html/table-colgroup')}}">Table Colgroup</a>
+            <a href="{{url('/belajar/html/table-colgroup')}}" class="active">Table Colgroup</a>
         <h3 class="sidebar-header">HTML List</h3>
             <a href="{{url('/belajar/html/list')}}">List</a>
             <a href="{{url('/belajar/html/unordered-list')}}">Unordered List</a>
@@ -69,8 +69,8 @@
 </aside>
 
 <section class="main">
-    <h1>HTML Dasar</h1>
-    <a href="{{ url('/belajar/html') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/element') }}" class="btn btn-success">Selanjutnya</a>
+    <h1>HTML Table Colgroup</h1>
+    <a href="{{ url('/belajar/html/table-styling') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/html/list') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection
