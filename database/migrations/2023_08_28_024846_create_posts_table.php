@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreignId('id_user')->references('id')->on('users')->onDelete('cascade');
             $table->string('title', 255);
             $table->enum('category',['html','css','php','js','mysql'])->default('html');
             $table->enum('level',['mudah','menengah'])->default('mudah');
