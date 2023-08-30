@@ -27,7 +27,7 @@
                                 <option value="css">CSS</option>
                                 <option value="php">PHP</option>
                                 <option value="js">JS</option>
-                                <option value="mysql">MySQL</option>
+                                <option value="sql">SQL</option>
                             </select>
                         </div>
                     </div>
@@ -42,8 +42,14 @@
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">tool</label>
-                            <input type="text" name="tool" class="form-control" id="nama">
+                            <input type="checkbox" id="tool" name="tool[]" value="vscode">
+                            <label for="tool"> VSCode</label><br>
+                            <input type="checkbox" id="tool" name="tool[]" value="html">
+                            <label for="tool"> HTML</label><br>
+                            <input type="checkbox" id="tool" name="tool[]" value="nodejs">
+                            <label for="tool"> NodeJs</label><br>
+                            <input type="checkbox" id="tool" name="tool[]" value="react">
+                            <label for="tool"> React</label><br>
                         </div>
                     </div>
                     <div class="col-6">

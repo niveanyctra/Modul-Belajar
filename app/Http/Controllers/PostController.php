@@ -35,17 +35,18 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        $tool = implode(',', $request->tool);
         Post::insert([
 
             'title' => $request->title,
             'id_user' => $request->id_user,
             'category' => $request->category,
             'level' => $request->level,
-            'tool' => $request->tool,
+            'tool' => $tool,
             'content' => $request->content,
             'id_yt' => $request->id_yt,
-            'created_at' => Carbon::now()->format('d-m-y'),
-            'updated_at' => Carbon::now()->format('d-m-y'),
+            'created_at' => Carbon::now()->format('Y-m-d'),
+            'updated_at' => Carbon::now()->format('Y-m-d'),
 
         ]);
 
@@ -86,7 +87,7 @@ class PostController extends Controller
             'tool' => $request->tool,
             'content' => $request->content,
             'id_yt' => $request->id_yt,
-            'updated_at' => Carbon::now()->format('d-m-y'),
+            'updated_at' => Carbon::now()->format('Y-m-d'),
         ]);
 
         return redirect('post')->with('update', 'Data berhasil diubah');

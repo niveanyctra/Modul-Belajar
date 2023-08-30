@@ -38,8 +38,8 @@
                         <h6>{{$data->users->name}}</h6>
 
                     </div>
-                    @endforeach
-                </div>
+                @endforeach
+            </div>
         </div>
     </div>
 </div>
