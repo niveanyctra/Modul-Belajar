@@ -231,24 +231,120 @@ Route::get('/belajar/css/border-rounded',function(){
 Route::get('/belajar/php',function(){
     return view('belajar.php.index');
 });
-Route::get('/belajar/php/dasar',function(){
-    return view('belajar.php.php-dasar');
+Route::get('/belajar/php/syntax',function(){
+    return view('belajar.php.php-syntax');
+});
+Route::get('/belajar/php/comment',function(){
+    return view('belajar.php.php-comment');
+});
+Route::get('/belajar/php/variable',function(){
+    return view('belajar.php.php-variable');
+});
+Route::get('/belajar/php/echo-print',function(){
+    return view('belajar.php.php-echo-print');
+});
+Route::get('/belajar/php/data-type',function(){
+    return view('belajar.php.php-data-type');
+});
+Route::get('/belajar/php/string',function(){
+    return view('belajar.php.php-string');
+});
+Route::get('/belajar/php/number',function(){
+    return view('belajar.php.php-number');
+});
+Route::get('/belajar/php/math',function(){
+    return view('belajar.php.php-math');
+});
+Route::get('/belajar/php/constant',function(){
+    return view('belajar.php.php-constant');
+});
+Route::get('/belajar/php/operator',function(){
+    return view('belajar.php.php-operator');
+});
+Route::get('/belajar/php/if-else',function(){
+    return view('belajar.php.php-if-else');
+});
+Route::get('/belajar/php/switch',function(){
+    return view('belajar.php.php-switch');
+});
+Route::get('/belajar/php/function',function(){
+    return view('belajar.php.php-function');
+});
+Route::get('/belajar/php/loop',function(){
+    return view('belajar.php.php-loop');
+});
+Route::get('/belajar/php/while-loop',function(){
+    return view('belajar.php.php-while-loop');
+});
+Route::get('/belajar/php/do-while-loop',function(){
+    return view('belajar.php.php-do-while-loop');
+});
+Route::get('/belajar/php/for-loop',function(){
+    return view('belajar.php.php-for-loop');
+});
+Route::get('/belajar/php/foreach-loop',function(){
+    return view('belajar.php.php-foreach-loop');
+});
+Route::get('/belajar/php/break-continue',function(){
+    return view('belajar.php.php-break-continue');
 });
 
 //Route Belajar JS
 Route::get('/belajar/js',function(){
     return view('belajar.js.index');
 });
-Route::get('belajar/js/dasar',function(){
-    return view('belajar.js.js-dasar');
+Route::get('belajar/js/where-to',function(){
+    return view('belajar.js.js-where-to');
+});
+Route::get('belajar/js/output',function(){
+    return view('belajar.js.js-output');
+});
+Route::get('belajar/js/statement',function(){
+    return view('belajar.js.js-statement');
+});
+Route::get('belajar/js/syntax',function(){
+    return view('belajar.js.js-syntax');
+});
+Route::get('belajar/js/comment',function(){
+    return view('belajar.js.js-comment');
+});
+Route::get('belajar/js/variable',function(){
+    return view('belajar.js.js-variable');
+});
+Route::get('belajar/js/let',function(){
+    return view('belajar.js.js-let');
+});
+Route::get('belajar/js/const',function(){
+    return view('belajar.js.js-const');
+});
+Route::get('belajar/js/operator',function(){
+    return view('belajar.js.js-operator');
+});
+Route::get('belajar/js/arithmetic',function(){
+    return view('belajar.js.js-arithmetic');
+});
+Route::get('belajar/js/assignment',function(){
+    return view('belajar.js.js-assignment');
+});
+Route::get('belajar/js/data-type',function(){
+    return view('belajar.js.js-data-type');
+});
+Route::get('belajar/js/function',function(){
+    return view('belajar.js.js-function');
+});
+Route::get('belajar/js/objec',function(){
+    return view('belajar.js.js-objec');
+});
+Route::get('belajar/js/event',function(){
+    return view('belajar.js.js-event');
 });
 
 //Route Belajar SQL
 Route::get('/belajar/sql',function(){
     return view('belajar.sql.index');
 });
-Route::get('belajar/sql/dasar',function(){
-    return view('belajar.sql.sql-dasar');
+Route::get('belajar/sql/syntax',function(){
+    return view('belajar.sql.sql-syntax');
 });
 
 //Route Alur Belajar
