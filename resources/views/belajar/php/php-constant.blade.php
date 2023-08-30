@@ -25,8 +25,8 @@
 <aside class="sidebar">
     <nav class="nav-side">
         <h3 class="sidebar-header">PHP Tutorial</h3>
-            <a href="{{url('/belajar/php')}}" class="{{ request()->is('belajar/php') ? 'active' : '' }}">PHP Pengenalan</a>
-            <a href="{{url('/belajar/php/syntax')}}" class="{{ request()->is('belajar/php*') ? 'active' : '' }}">PHP Syntax</a>
+            <a href="{{url('/belajar/php')}}">PHP Pengenalan</a>
+            <a href="{{url('/belajar/php/syntax')}}">PHP Syntax</a>
             <a href="{{ url('/belajar/php/comment') }}">PHP Komentar</a>
             <a href="{{ url('/belajar/php/variable') }}">PHP Variable</a>
             <a href="{{ url('/belajar/php/echo-print') }}">PHP Echo / Print</a>
@@ -34,7 +34,7 @@
             <a href="{{ url('/belajar/php/string') }}">PHP String</a>
             <a href="{{ url('/belajar/php/number') }}">PHP Angka</a>
             <a href="{{ url('/belajar/php/math') }}">PHP Math</a>
-            <a href="{{ url('/belajar/php/constant') }}">PHP Constants</a>
+            <a href="{{ url('/belajar/php/constant') }}" class="active">PHP Constants</a>
             <a href="{{ url('/belajar/php/operator') }}">PHP Operator</a>
             <a href="{{ url('/belajar/php/if-else') }}">PHP If...Else...Elseif</a>
             <a href="{{ url('/belajar/php/switch') }}">PHP Switch</a>
@@ -50,8 +50,8 @@
 </aside>
 
 <section class="main">
-    <h1>PHP Pengenalan</h1>
-    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
-    <a href="{{ url('/belajar/php/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    <h1>PHP Constants</h1>
+    <a href="{{ url('/belajar/php/math') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/php/operator') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection

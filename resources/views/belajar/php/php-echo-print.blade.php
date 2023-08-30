@@ -25,11 +25,11 @@
 <aside class="sidebar">
     <nav class="nav-side">
         <h3 class="sidebar-header">PHP Tutorial</h3>
-            <a href="{{url('/belajar/php')}}" class="{{ request()->is('belajar/php') ? 'active' : '' }}">PHP Pengenalan</a>
-            <a href="{{url('/belajar/php/syntax')}}" class="{{ request()->is('belajar/php*') ? 'active' : '' }}">PHP Syntax</a>
+            <a href="{{url('/belajar/php')}}">PHP Pengenalan</a>
+            <a href="{{url('/belajar/php/syntax')}}">PHP Syntax</a>
             <a href="{{ url('/belajar/php/comment') }}">PHP Komentar</a>
             <a href="{{ url('/belajar/php/variable') }}">PHP Variable</a>
-            <a href="{{ url('/belajar/php/echo-print') }}">PHP Echo / Print</a>
+            <a href="{{ url('/belajar/php/echo-print') }}" class="active">PHP Echo / Print</a>
             <a href="{{ url('/belajar/php/data-type') }}">PHP Tipe Data</a>
             <a href="{{ url('/belajar/php/string') }}">PHP String</a>
             <a href="{{ url('/belajar/php/number') }}">PHP Angka</a>
@@ -50,8 +50,8 @@
 </aside>
 
 <section class="main">
-    <h1>PHP Pengenalan</h1>
-    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
-    <a href="{{ url('/belajar/php/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    <h1>PHP Statement echo dan print</h1>
+    <a href="{{ url('/belajar/php/variable') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/php/data-type') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection

@@ -162,6 +162,7 @@ Route::get('/belajar/html/input-atribut',function(){
 Route::get('/belajar/html/input-form-atribut',function(){
     return view('belajar.html.html-input-form-atribut');
 });
+//End Route Belajar HTML
 
 //Route Belajar CSS
 Route::get('/belajar/css',function(){
@@ -224,6 +225,7 @@ Route::get('/belajar/css/border-shorthand',function(){
 Route::get('/belajar/css/border-rounded',function(){
     return view('belajar.css.css-border-rounded');
 });
+//End Route Belajar CSS
 
 //Route Belajar PHP
 Route::get('/belajar/php',function(){
