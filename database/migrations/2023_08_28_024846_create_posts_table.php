@@ -20,7 +20,8 @@ return new class extends Migration
             $table->string('tool',255);
             $table->string('content', 255);
             $table->text('id_yt');
-            $table->timestamps();
+            $table->date('created_at');
+            $table->date('updated_at');
         });
     }
 
