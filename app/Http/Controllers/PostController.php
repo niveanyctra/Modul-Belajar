@@ -44,8 +44,8 @@ class PostController extends Controller
             'tool' => $request->tool,
             'content' => $request->content,
             'id_yt' => $request->id_yt,
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'created_at' => Carbon::now()->format('d-m-y'),
+            'updated_at' => Carbon::now()->format('d-m-y'),
 
         ]);
 
@@ -57,7 +57,10 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-
+        $user = Auth::user();
+        if ($post->user_id !== $user->id) {
+            # code...
+        }
         return view('admin.post.show', compact('post'));
     }
 
@@ -83,7 +86,7 @@ class PostController extends Controller
             'tool' => $request->tool,
             'content' => $request->content,
             'id_yt' => $request->id_yt,
-            'updated_at' => Carbon::now(),
+            'updated_at' => Carbon::now()->format('d-m-y'),
         ]);
 
         return redirect('post')->with('update', 'Data berhasil diubah');
