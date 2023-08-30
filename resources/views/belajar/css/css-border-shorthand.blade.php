@@ -25,7 +25,7 @@
 <aside class="sidebar">
     <nav class="nav-side">
         <h3 class="sidebar-header">CSS Tutorial</h3>
-            <a href="{{url('/belajar/css')}}" class="active">CSS Pengenalan</a>
+            <a href="{{url('/belajar/css')}}">CSS Pengenalan</a>
             <a href="{{url('/belajar/css/syntax')}}">CSS Syntax</a>
             <a href="{{url('/belajar/css/selector')}}">CSS Selector</a>
             <a href="{{url('/belajar/css/how-to')}}">CSS Cara Menggunakan</a>
@@ -45,15 +45,15 @@
             <a href="{{ url('/belajar/css/border-width') }}">Border Width</a>
             <a href="{{ url('/belajar/css/border-color') }}">Border Color</a>
             <a href="{{ url('/belajar/css/border-side') }}">Border Side</a>
-            <a href="{{ url('/belajar/css/border-shorthand') }}">Border Shorthand</a>
+            <a href="{{ url('/belajar/css/border-shorthand') }}" class="active">Border Shorthand</a>
             <a href="{{ url('/belajar/css/border-rounded') }}">Rounded Border</a>
     </nav>
 </aside>
 
 <section class="main">
-    <h1>CSS Pengenalan</h1>
-    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
-    <a href="{{ url('/belajar/css/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    <h1>CSS Border Shorthand</h1>
+    <a href="{{ url('/belajar/css/border-side') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/css/border-rounded') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection
 

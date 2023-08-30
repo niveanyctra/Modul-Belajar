@@ -167,6 +167,63 @@ Route::get('/belajar/html/input-form-atribut',function(){
 Route::get('/belajar/css',function(){
     return view('belajar.css.index');
 });
+Route::get('/belajar/css/syntax',function(){
+    return view('belajar.css.css-syntax');
+});
+Route::get('/belajar/css/selector',function(){
+    return view('belajar.css.css-selector');
+});
+Route::get('/belajar/css/how-to',function(){
+    return view('belajar.css.css-how-to');
+});
+Route::get('/belajar/css/comment',function(){
+    return view('belajar.css.css-comment');
+});
+Route::get('/belajar/css/color',function(){
+    return view('belajar.css.css-color');
+});
+Route::get('/belajar/css/margin',function(){
+    return view('belajar.css.css-margin');
+});
+Route::get('/belajar/css/padding',function(){
+    return view('belajar.css.css-padding');
+});
+Route::get('/belajar/css/dimensi',function(){
+    return view('belajar.css.css-dimensi');
+});
+Route::get('/belajar/css/background-color',function(){
+    return view('belajar.css.css-background-color');
+});
+Route::get('/belajar/css/background-image',function(){
+    return view('belajar.css.css-background-image');
+});
+Route::get('/belajar/css/background-repeat',function(){
+    return view('belajar.css.css-background-repeat');
+});
+Route::get('/belajar/css/background-attachment',function(){
+    return view('belajar.css.css-background-attachment');
+});
+Route::get('/belajar/css/background-shorthand',function(){
+    return view('belajar.css.css-background-shorthand');
+});
+Route::get('/belajar/css/border',function(){
+    return view('belajar.css.css-border');
+});
+Route::get('/belajar/css/border-width',function(){
+    return view('belajar.css.css-border-width');
+});
+Route::get('/belajar/css/border-color',function(){
+    return view('belajar.css.css-border-color');
+});
+Route::get('/belajar/css/border-side',function(){
+    return view('belajar.css.css-border-side');
+});
+Route::get('/belajar/css/border-shorthand',function(){
+    return view('belajar.css.css-border-shorthand');
+});
+Route::get('/belajar/css/border-rounded',function(){
+    return view('belajar.css.css-border-rounded');
+});
 
 //Route Belajar PHP
 Route::get('/belajar/php',function(){
