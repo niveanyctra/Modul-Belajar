@@ -164,7 +164,7 @@
                 </ul>
                 <ul class="navbar-nav right-menu ms-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Join Community</a>
+                        <a href="{{ url('/community') }}" class="nav-link">Join Community</a>
                     </li>
                 </ul>
             </div>

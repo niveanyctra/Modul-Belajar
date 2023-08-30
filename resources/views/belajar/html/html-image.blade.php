@@ -26,7 +26,7 @@
     <nav class="nav-side">
         <h3 class="sidebar-header">HTML Tutorial</h3>
             <a href="{{url('/belajar/html')}}">HTML Pengenalan</a>
-            <a href="{{url('/belajar/html/dasar')}}" class="active">HTML Dasar</a>
+            <a href="{{url('/belajar/html/dasar')}}">HTML Dasar</a>
             <a href="{{url('/belajar/html/element')}}">HTML Element</a>
             <a href="{{url('/belajar/html/atribut')}}">HTML Atribut</a>
             <a href="{{url('/belajar/html/heading')}}">HTML Heading</a>
@@ -38,7 +38,7 @@
             <a href="{{url('/belajar/html/color')}}">HTML Warna</a>
             <a href="{{url('/belajar/html/css')}}">HTML CSS</a>
             <a href="{{url('/belajar/html/link')}}">HTML Link</a>
-            <a href="{{url('/belajar/html/image')}}">HTML Foto</a>
+            <a href="{{url('/belajar/html/image')}}" class="active">HTML Foto</a>
             <a href="{{url('/belajar/html/favicon')}}">HTML Favicon</a>
             <a href="{{url('/belajar/html/page-title')}}">HTML Title Halaman</a>
             <a href="{{url('/belajar/html/block-inline')}}">HTML Block & Inline</a>
@@ -69,8 +69,8 @@
 </aside>
 
 <section class="main">
-    <h1>HTML Dasar</h1>
-    <a href="{{ url('/belajar/html') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/element') }}" class="btn btn-success">Selanjutnya</a>
+    <h1>HTML Foto atau Image</h1>
+    <a href="{{ url('/belajar/html/link') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/html/favicon') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection

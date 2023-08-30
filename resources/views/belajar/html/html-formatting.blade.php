@@ -26,13 +26,13 @@
     <nav class="nav-side">
         <h3 class="sidebar-header">HTML Tutorial</h3>
             <a href="{{url('/belajar/html')}}">HTML Pengenalan</a>
-            <a href="{{url('/belajar/html/dasar')}}" class="active">HTML Dasar</a>
+            <a href="{{url('/belajar/html/dasar')}}">HTML Dasar</a>
             <a href="{{url('/belajar/html/element')}}">HTML Element</a>
             <a href="{{url('/belajar/html/atribut')}}">HTML Atribut</a>
             <a href="{{url('/belajar/html/heading')}}">HTML Heading</a>
             <a href="{{url('/belajar/html/paragraf')}}">HTML Paragraf</a>
             <a href="{{url('/belajar/html/styling')}}">HTML Style</a>
-            <a href="{{url('/belajar/html/formatting')}}">HTML Formatting</a>
+            <a href="{{url('/belajar/html/formatting')}}" class="active">HTML Formatting</a>
             <a href="{{url('/belajar/html/quotation')}}">HTML Quotation</a>
             <a href="{{url('/belajar/html/comment')}}">HTML Komentar</a>
             <a href="{{url('/belajar/html/color')}}">HTML Warna</a>
@@ -69,8 +69,8 @@
 </aside>
 
 <section class="main">
-    <h1>HTML Dasar</h1>
-    <a href="{{ url('/belajar/html') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/element') }}" class="btn btn-success">Selanjutnya</a>
+    <h1>HTML Formatting</h1>
+    <a href="{{ url('/belajar/html/styling') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/html/quotation') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection
