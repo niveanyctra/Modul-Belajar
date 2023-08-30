@@ -404,7 +404,8 @@ Route::get('/kelas-mentor/sql',[PostController::class,"indexUmum"])->name('index
 Route::get('/kelas-mentor/sql/{post:id}',[PostController::class,"detailUmum"])->name('detailUmum');
 
 //Route Profile Mentor
-Route::get('/mentor/{post:id_user}',[PostController::class,"profileMentor"])->name('profileMentor');
+// Route::get('/mentor/{post:id_user}',[PostController::class,"profileMentor"])->name('profileMentor');
+Route::get('/mentor/{name}',[PostController::class,"profileMentor"])->name('profileMentor');
 // Route::get('/mentor/{user:name}',function(User $user,Post $post){
 
 // });
