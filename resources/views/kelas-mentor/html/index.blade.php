@@ -8,21 +8,23 @@
             <h6 class="pt-2">Urutkan</h6>
             <div class="fw-semibold">
                 @csrf
-                <form action="{{route('indexHTML')}}">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="level" id="mudah" value="mudah">
-                    <label class="form-check-label" for="mudah">
-                        Mudah
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="level" id="menengah" value="menengah">
-                    <label class="form-check-label" for="menengah">
-                        Menengah
-                    </label>
-                </div>
-                <input class="form-control btn btn-sm btn-info" type="submit" value="Urutkan">
+                <form action="{{route('profileMentor',$post->id_user)}}" method="get">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="level" id="mudah" value="mudah">
+                        <label class="form-check-label" for="mudah">
+                            Mudah
+                        </label>
+                    </div>
+                    <form action="{{url('/kelas-mentor/html?level=mudah')}}" method="get">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="level" id="menengah" value="menengah">
+                        <label class="form-check-label" for="menengah">
+                            Menengah
+                        </label>
+                    </div>
+                    <input type="submit" value="Urutkan" class="btn btn-sm btn-info">
                 </form>
+
             </div>
         </div>
         {{-- main content --}}

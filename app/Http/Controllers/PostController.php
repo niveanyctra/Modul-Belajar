@@ -99,84 +99,94 @@ class PostController extends Controller
         return redirect('post')->with('delete', 'Data berhasil dihapus');
     }
 
-    //Fungsi Kelas Mentor HTML
-    public function indexHTML(){
+public function indexUmum(Request $request)
+{
+    $handleCategory = function ($category) {
+        // Logic for handling the given category
+        // You can access $request here if needed
+
+        // Example logic:
         if (request('level')) {
-            # code...
-            $posts = Post::Where('category','html')
-                           ->where('level',request('level'))
-                           ->get();
-        }
-        else {
-
-            $posts = Post::Where('category','html')->get();
+            $posts = Post::where('category', $category)
+                         ->where('level', request('level'))
+                         ->get();
+        } else {
+            $posts = Post::where('category', $category)->get();
         }
 
-        return view('kelas-mentor.html.index',[
-            'posts' => $posts,
-        ]);
+        return $posts;
+    };
+
+    $currentPath = $request->path();
+
+    if (strpos($currentPath, 'html') !== false) {
+        $posts = $handleCategory('html');
+        return view('kelas-mentor.html.index', ['posts' => $posts]);
+    } elseif (strpos($currentPath, 'css') !== false) {
+        $posts = $handleCategory('css');
+        return view('kelas-mentor.css.index', ['posts' => $posts]);
+    } elseif (strpos($currentPath, 'php') !== false) {
+        $posts = $handleCategory('php');
+        return view('kelas-mentor.php.index', ['posts' => $posts]);
+    } elseif (strpos($currentPath, 'js') !== false) {
+        $posts = $handleCategory('js');
+        return view('kelas-mentor.js.index', ['posts' => $posts]);
+    } elseif (strpos($currentPath, 'sql') !== false) {
+        $posts = $handleCategory('sql');
+        return view('kelas-mentor.sql.index', ['posts' => $posts]);
+    } else {
+        // Default case
+        return view('index');
     }
-    public function detailHTML(Post $post){
+}
+
+public function detailUmum(Request $request,Post $post){
+{
+    $currentPath = $request->path();
+
+    if (strpos($currentPath, 'html') !== false) {
+        // 'html' is present in the URL path
+        // Your logic here
         return view('kelas-mentor.html.detail',[
-            'posts' => $post,
-        ]);
-    }
-
-    //Fungsi Kelas Mentor CSS
-    public function indexCSS(){
-        $posts = Post::Where('category','css')->get();
-        return view('kelas-mentor.css.index',[
-            'posts' => $posts,
-        ]);
-    }
-    public function detailCSS(Post $post){
+             'posts' => $post,
+         ]);
+    } elseif (strpos($currentPath, 'css') !== false) {
+        // 'css' is present in the URL path
+        // Your logic here
         return view('kelas-mentor.css.detail',[
-            'posts' => $post,
-        ]);
-    }
-
-
-    //Fungsi Kelas Mentor PHP
-    public function indexPHP(){
-        $posts = Post::Where('category','php')->get();
-        return view('kelas-mentor.php.index',[
-            'posts' => $posts,
-        ]);
-    }
-    public function detailPHP(Post $post){
+             'posts' => $post,
+         ]);
+    } elseif (strpos($currentPath, 'php') !== false) {
+        // 'php' is present in the URL path
+        // Your logic here
         return view('kelas-mentor.php.detail',[
-            'posts' => $post,
-        ]);
+             'posts' => $post,
+         ]);
+    } elseif (strpos($currentPath, 'js') !== false) {
+        // 'js' is present in the URL path
+        // Your logic here
+         return view('kelas-mentor.js.detail',[
+             'posts' => $post,
+         ]);
+    } elseif (strpos($currentPath, 'sql') !== false) {
+        // 'sql' is present in the URL path
+        // Your logic here
+         return view('kelas-mentor.sql.detail',[
+             'posts' => $post,
+         ]);
+    } else {
+        // Default case
+        return view('index');
     }
+}
+}
 
-    //Fungsi Kelas Mentor JS
-    public function indexJS(){
-        $posts = Post::Where('category','js')->get();
-        return view('kelas-mentor.js.index',[
-            'posts' => $posts,
-        ]);
-    }
-    public function detailJS(Post $post){
-        return view('kelas-mentor.js.detail',[
+    public function profileMentor(Post $post){
+        // $user = User::get();
+        $poost = Post::with('users')->where('id_user',$post->id_user)->get();
+        return view('kelas-mentor.profile-mentor.index', [
             'posts' => $post,
+            'pos' => $poost
         ]);
     }
-
-    //Fungsi Kelas Mentor SQL
-    public function indexSQL(){
-        $posts = Post::Where('category','mysql')->get();
-        return view('kelas-mentor.sql.index',[
-            'posts' => $posts,
-        ]);
-    }
-    public function detailSQL(Post $post){
-        return view('kelas-mentor.sql.detail',[
-            'posts' => $post,
-        ]);
-    }
-
-    //fungsi sort
-    // public function sort(Request $request, $mudah, $menengah, $lanjutan){
-    //     $posts = Post::Where('category','html','&','');
-    // }
 }
