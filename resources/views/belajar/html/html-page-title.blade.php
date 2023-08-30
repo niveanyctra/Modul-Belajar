@@ -60,11 +60,11 @@
             <a href="{{url('/belajar/html/other-list')}}">Other List</a>
         <h3 class="sidebar-header">HTML Form</h3>
             <a href="{{ url('/belajar/html/form') }}">Form</a>
-            <a href="{{ url('/belajar/html/form') }}">Form Atribut</a>
-            <a href="{{ url('/belajar/html/form') }}">Form Element</a>
-            <a href="{{ url('/belajar/html/form') }}">Input Tipe</a>
-            <a href="{{ url('/belajar/html/form') }}">Input Atribut</a>
-            <a href="{{ url('/belajar/html/form') }}">Input Form Atribut</a>
+            <a href="{{ url('/belajar/html/form-atribut') }}">Form Atribut</a>
+            <a href="{{ url('/belajar/html/form-element') }}">Form Element</a>
+            <a href="{{ url('/belajar/html/input-type') }}">Input Tipe</a>
+            <a href="{{ url('/belajar/html/input-atribut') }}">Input Atribut</a>
+            <a href="{{ url('/belajar/html/input-form-atribut') }}">Input Form Atribut</a>
     </nav>
 </aside>
 

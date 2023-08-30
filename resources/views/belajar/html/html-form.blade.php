@@ -60,17 +60,17 @@
             <a href="{{url('/belajar/html/other-list')}}">Other List</a>
         <h3 class="sidebar-header">HTML Form</h3>
             <a href="{{ url('/belajar/html/form') }}" class="active">Form</a>
-            <a href="{{ url('/belajar/html/form') }}">Form Atribut</a>
-            <a href="{{ url('/belajar/html/form') }}">Form Element</a>
-            <a href="{{ url('/belajar/html/form') }}">Input Tipe</a>
-            <a href="{{ url('/belajar/html/form') }}">Input Atribut</a>
-            <a href="{{ url('/belajar/html/form') }}">Input Form Atribut</a>
+            <a href="{{ url('/belajar/html/form-atribut') }}">Form Atribut</a>
+            <a href="{{ url('/belajar/html/form-element') }}">Form Element</a>
+            <a href="{{ url('/belajar/html/input-type') }}">Input Tipe</a>
+            <a href="{{ url('/belajar/html/input-atribut') }}">Input Atribut</a>
+            <a href="{{ url('/belajar/html/input-form-atribut') }}">Input Form Atribut</a>
     </nav>
 </aside>
 
 <section class="main">
     <h1>HTML Form</h1>
     <a href="{{ url('/belajar/html/other-list') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/form') }}" class="btn btn-success">Selanjutnya</a>
+    <a href="{{ url('/belajar/html/form-atribut') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection

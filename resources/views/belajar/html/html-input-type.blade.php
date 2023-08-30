@@ -35,7 +35,7 @@
             <a href="{{url('/belajar/html/formatting')}}">HTML Formatting</a>
             <a href="{{url('/belajar/html/quotation')}}">HTML Quotation</a>
             <a href="{{url('/belajar/html/comment')}}">HTML Komentar</a>
-            <a href="{{url('/belajar/html/color')}}" class="active">HTML Warna</a>
+            <a href="{{url('/belajar/html/color')}}">HTML Warna</a>
             <a href="{{url('/belajar/html/css')}}">HTML CSS</a>
             <a href="{{url('/belajar/html/link')}}">HTML Link</a>
             <a href="{{url('/belajar/html/image')}}">HTML Foto</a>
@@ -62,15 +62,15 @@
             <a href="{{ url('/belajar/html/form') }}">Form</a>
             <a href="{{ url('/belajar/html/form-atribut') }}">Form Atribut</a>
             <a href="{{ url('/belajar/html/form-element') }}">Form Element</a>
-            <a href="{{ url('/belajar/html/input-type') }}">Input Tipe</a>
+            <a href="{{ url('/belajar/html/input-type') }}" class="active">Input Tipe</a>
             <a href="{{ url('/belajar/html/input-atribut') }}">Input Atribut</a>
             <a href="{{ url('/belajar/html/input-form-atribut') }}">Input Form Atribut</a>
     </nav>
 </aside>
 
 <section class="main">
-    <h1>HTML Warna</h1>
-    <a href="{{ url('/belajar/html/comment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/css') }}" class="btn btn-success">Selanjutnya</a>
+    <h1>HTML Form Input Tipe</h1>
+    <a href="{{ url('/belajar/html/form-element') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/html/input-atribut') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection

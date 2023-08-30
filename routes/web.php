@@ -66,8 +66,101 @@ Route::get('/belajar/html/atribut',function(){
 Route::get('/belajar/html/heading',function(){
     return view('belajar.html.html-heading');
 });
+Route::get('/belajar/html/paragraf',function(){
+    return view('belajar.html.html-paragraf');
+});
 Route::get('/belajar/html/styling',function(){
     return view('belajar.html.html-styling');
+});
+Route::get('/belajar/html/formatting',function(){
+    return view('belajar.html.html-formatting');
+});
+Route::get('/belajar/html/quotation',function(){
+    return view('belajar.html.html-quotation');
+});
+Route::get('/belajar/html/comment',function(){
+    return view('belajar.html.html-comment');
+});
+Route::get('/belajar/html/color',function(){
+    return view('belajar.html.html-color');
+});
+Route::get('/belajar/html/css',function(){
+    return view('belajar.html.html-css');
+});
+Route::get('/belajar/html/link',function(){
+    return view('belajar.html.html-link');
+});
+Route::get('/belajar/html/image',function(){
+    return view('belajar.html.html-image');
+});
+Route::get('/belajar/html/favicon',function(){
+    return view('belajar.html.html-favicon');
+});
+Route::get('/belajar/html/page-title',function(){
+    return view('belajar.html.html-page-title');
+});
+Route::get('/belajar/html/block-inline',function(){
+    return view('belajar.html.html-block-inline');
+});
+Route::get('/belajar/html/class',function(){
+    return view('belajar.html.html-class');
+});
+Route::get('/belajar/html/id',function(){
+    return view('belajar.html.html-id');
+});
+Route::get('/belajar/html/table',function(){
+    return view('belajar.html.html-table');
+});
+Route::get('/belajar/html/table-border',function(){
+    return view('belajar.html.html-table-border');
+});
+Route::get('/belajar/html/table-size',function(){
+    return view('belajar.html.html-table-size');
+});
+Route::get('/belajar/html/table-header',function(){
+    return view('belajar.html.html-table-header');
+});
+Route::get('/belajar/html/table-padding-spacing',function(){
+    return view('belajar.html.html-table-padding-spacing');
+});
+Route::get('/belajar/html/table-colspan-rowspan',function(){
+    return view('belajar.html.html-table-colspan-rowspan');
+});
+Route::get('/belajar/html/table-styling',function(){
+    return view('belajar.html.html-table-styling');
+});
+Route::get('/belajar/html/table-colgroup',function(){
+    return view('belajar.html.html-table-colgroup');
+});
+Route::get('/belajar/html/list',function(){
+    return view('belajar.html.html-list');
+});
+Route::get('/belajar/html/unordered-list',function(){
+    return view('belajar.html.html-unordered-list');
+});
+Route::get('/belajar/html/ordered-list',function(){
+    return view('belajar.html.html-ordered-list');
+});
+Route::get('/belajar/html/other-list',function(){
+    return view('belajar.html.html-other-list');
+});
+Route::get('/belajar/html/form',function(){
+    return view('belajar.html.html-form');
+});
+Route::get('/belajar/html/form-atribut',function(){
+    return view('belajar.html.html-form-atribut');
+});
+Route::get('/belajar/html/form-element',function(){
+    return view('belajar.html.html-form-element');
+});
+Route::get('/belajar/html/input-type',function(){
+    return view('belajar.html.html-input-type');
+});
+Route::get('/belajar/html/input-atribut',function(){
+    return view('belajar.html.html-input-atribut');
+});
+Route::get('/belajar/html/input-form-atribut',function(){
+    return view('belajar.html.html-input-form-atribut');
 });
 
 //Route Belajar CSS
