@@ -34,7 +34,7 @@
                 @foreach ($posts as $data)
 
                     <div class="col-sm-3  text-center">
-                         <a href="{{ url('/kelas-mentor/sql/'.$data->id)}}">{{$data->title}} </a><br>
+                         <a href="{{ url('/kelas-mentor/sql/'.$data->slug)}}">{{$data->title}} </a><br>
                         <h6>{{$data->users->name}}</h6>
 
                     </div>

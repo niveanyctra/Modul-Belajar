@@ -168,7 +168,6 @@ public function detailUmum(Request $request,Post $post){
     if (strpos($currentPath, 'html') !== false) {
         // 'html' is present in the URL path
         // Your logic here
-        $posts = Post::where('slug',$post->slug);
         return view('kelas-mentor.html.detail',[
              'posts' => $post,
          ]);
