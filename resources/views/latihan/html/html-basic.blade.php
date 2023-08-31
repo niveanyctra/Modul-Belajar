@@ -25,12 +25,4 @@
         @endif
     </div>
 </section>
-<script>
-    const cek = document.getElementById('inputan').value;
-    if (cek != 'align') {
-        document.getElementById('test').innerHTML('salah')
-    }else{
-        document.getElementById('test').innerHTML('benar')
-    }
-</script>
 @endsection

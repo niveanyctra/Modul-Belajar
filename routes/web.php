@@ -4,6 +4,7 @@ use App\Models\Post;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\LatihanController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -407,5 +408,5 @@ Route::get('/kelas-mentor/sql/{post:slug}',[PostController::class,"detailUmum"])
 // Route::get('/mentor/{post:id_user}',[PostController::class,"profileMentor"])->name('profileMentor');
 Route::get('/mentor/{username}',[PostController::class,"profileMentor"])->name('profileMentor');
 // Route::get('/mentor/{user:name}',function(User $user,Post $post){
-
+Route::get('/latihan/html', [LatihanController::class,"cekJawaban"])->name('cekJawaban');
 // });
