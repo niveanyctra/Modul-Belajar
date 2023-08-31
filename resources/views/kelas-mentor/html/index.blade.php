@@ -8,7 +8,7 @@
             <h6 class="pt-2">Urutkan</h6>
             <div class="fw-semibold">
                 @csrf
-                <form action="{{route('indexUmum',)}}" method="get">
+                <form action="{{route('indexUmum')}}" method="get">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="level" id="mudah" value="mudah">
                         <label class="form-check-label" for="mudah">
@@ -38,8 +38,8 @@
                         <h6>{{$data->users->name}}</h6>
 
                     </div>
-                    @endforeach
-                </div>
+                @endforeach
+            </div>
         </div>
     </div>
 </div>

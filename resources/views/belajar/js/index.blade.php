@@ -1,36 +1,11 @@
 @extends('layouts.main')
 @section('content')
-<header>
-    <div class="container-fluid">
-        <a href="#" class="toggle-menu fontawesome-reorder"></a>
-        <nav class="sub-nav">
-            <a href="{{ url('/belajar/html') }}">
-                <span>Belajar HTML</span>
-            </a>
-            <a href="{{ url('/belajar/css') }}">
-                <span>Belajar CSS</span>
-            </a>
-            <a href="{{ url('/belajar/php') }}">
-                <span>Belajar PHP</span>
-            </a>
-            <a href="{{ url('/belajar/js') }}">
-                <span>Belajar JS</span>
-            </a>
-            <a href="{{ url('/belajar/sql') }}">
-                <span>Belajar SQL</span>
-            </a>
-        </nav>
-    </div>
-</header>
-<aside class="sidebar">
-    <nav class="nav-side">
-        <h3 class="sidebar-header">JavaScript Dasar</h3>
-            <a href="{{url('/belajar/js')}}" class="active">Perkenalan JavaScript</a>
-            <a href="{{url('/belajar/js/dasar')}}">Dasar JavaScript</a>
-    </nav>
-</aside>
 
+@include('layouts.belajar.subnav')
+@include('layouts.belajar.sidebar.js')
 <section class="main">
-    index
+    <h1>JavaScript Pengenalan</h1>
+    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
+    <a href="{{ url('/belajar/js/where-to') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection

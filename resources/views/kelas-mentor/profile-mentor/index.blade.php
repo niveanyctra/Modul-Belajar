@@ -1,8 +1,11 @@
 {{$posts->users->name}}
-@foreach ($pos as $post )
-<div>
-    {{$post->title}}<br>
-    {{$post->category}}
+<div class="row">
+    @foreach ($pos as $data)
 
-</div><br>
-@endforeach
+        <div class="col-sm-3  text-center">
+            <a href="{{ url("/kelas-mentor/$data->category/$data->id")}}">{{$data->title}} </a><br>
+            <h5>{{$data->users->name}}</h5>
+
+        </div>
+    @endforeach
+</div>

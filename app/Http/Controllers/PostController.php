@@ -35,17 +35,18 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        $tool = implode(',', $request->tool);
         Post::insert([
 
             'title' => $request->title,
             'id_user' => $request->id_user,
             'category' => $request->category,
             'level' => $request->level,
-            'tool' => $request->tool,
+            'tool' => $tool,
             'content' => $request->content,
             'id_yt' => $request->id_yt,
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'created_at' => Carbon::now()->format('Y-m-d'),
+            'updated_at' => Carbon::now()->format('Y-m-d'),
 
         ]);
 
@@ -65,6 +66,10 @@ class PostController extends Controller
             # code...
             return view('admin.post.show', compact('post','user'));
         }
+        if ($post->user_id !== $user->id) {
+            # code...
+        }
+        return view('admin.post.show', compact('post'));
     }
 
     /**
@@ -101,7 +106,7 @@ class PostController extends Controller
             'tool' => $request->tool,
             'content' => $request->content,
             'id_yt' => $request->id_yt,
-            'updated_at' => Carbon::now(),
+            'updated_at' => Carbon::now()->format('Y-m-d'),
         ]);
         }
 

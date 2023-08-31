@@ -15,12 +15,13 @@ return new class extends Migration
             $table->id();
             $table->foreignId('id_user')->references('id')->on('users')->onDelete('cascade');
             $table->string('title', 255);
-            $table->enum('category',['html','css','php','js','mysql'])->default('html');
+            $table->enum('category',['html','css','php','js','sql'])->default('html');
             $table->enum('level',['mudah','menengah'])->default('mudah');
             $table->string('tool',255);
             $table->string('content', 255);
             $table->text('id_yt');
-            $table->timestamps();
+            $table->date('created_at');
+            $table->date('updated_at');
         });
     }
 

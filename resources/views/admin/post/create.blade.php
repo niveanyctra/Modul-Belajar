@@ -27,7 +27,7 @@
                                 <option value="css">CSS</option>
                                 <option value="php">PHP</option>
                                 <option value="js">JS</option>
-                                <option value="mysql">MySQL</option>
+                                <option value="sql">SQL</option>
                             </select>
                         </div>
                     </div>
@@ -41,31 +41,15 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" value="html">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Default checkbox
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Default checkbox
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Default checkbox
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Default checkbox
-                            </label>
-                        </div>
-
+                        <div class="mb-3">
+                            <input type="checkbox" id="tool" name="tool[]" value="vscode">
+                            <label for="tool"> VSCode</label><br>
+                            <input type="checkbox" id="tool" name="tool[]" value="html">
+                            <label for="tool"> HTML</label><br>
+                            <input type="checkbox" id="tool" name="tool[]" value="nodejs">
+                            <label for="tool"> NodeJs</label><br>
+                            <input type="checkbox" id="tool" name="tool[]" value="react">
+                            <label for="tool"> React</label><br>
                         </div>
                     </div>
                     <div class="col-6">

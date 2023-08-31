@@ -1,54 +1,11 @@
 @extends('layouts.main')
 @section('content')
-<header>
-    <div class="container-fluid">
-        <a href="#" class="toggle-menu fontawesome-reorder"></a>
-        <nav class="sub-nav">
-            <a href="{{ url('/belajar/html') }}">
-                <span>Belajar HTML</span>
-            </a>
-            <a href="{{ url('/belajar/css') }}">
-                <span>Belajar CSS</span>
-            </a>
-            <a href="{{ url('/belajar/php') }}">
-                <span>Belajar PHP</span>
-            </a>
-            <a href="{{ url('/belajar/js') }}">
-                <span>Belajar JS</span>
-            </a>
-            <a href="{{ url('/belajar/sql') }}">
-                <span>Belajar SQL</span>
-            </a>
-        </nav>
-    </div>
-</header>
-<aside class="sidebar">
-    <nav class="nav-side">
-        <h3 class="sidebar-header">PHP Dasar</h3>
-            <a href="{{url('/belajar/php')}}" class="active">Perkenalan PHP</a>
-            <a href="{{url('/belajar/php/dasar')}}">Dasar PHP</a>
-            <a href="{{url('/belajar/php/variabel')}}">Variabel PHP</a>
-            <a href="{{url('/belajar/php/tipedata')}}">Tipe data PHP</a>
-            <a href="{{url('/belajar/php/operator')}}">Operator PHP</a>
-            <a href="{{url('/belajar/php/ifswitch')}}">If dan Switch Clause PHP</a>
-            <a href="{{url('/belajar/php/looping')}}">Looping PHP</a>
-            <a href="{{url('/belajar/php/Array')}}">Array PHP</a>
-        <h3 class="sidebar-header">PHP Menengah</h3>
-            <a href="{{url('/belajar/php/global')}}">Global Variable PHP</a>
-            <a href="{{url('/belajar/php/form')}}">Form Handling PHP</a>
-            <a href="{{url('/belajar/php/include')}}">Include PHP</a>
-            <a href="{{url('/belajar/php/cookies')}}">Cookies PHP</a>
-            <a href="{{url('/belajar/php/session')}}">Session PHP</a>
-        <h3 class="sidebar-header">PHP Lanjutan</h3>
-            <a href="{{url('/belajar/php/oop')}}">OOP PHP</a>
-            <a href="{{url('/belajar/php/classobject')}}">Class dan Object PHP</a>
-            <a href="{{url('/belajar/php/function')}}">Function PHP</a>
-            <a href="{{url('/belajar/php/inheritance')}}">Inheritance PHP</a>
-            <a href="{{url('/belajar/php/encapsulation')}}">Encapsulation PHP</a>
-    </nav>
-</aside>
 
+@include('layouts.belajar.subnav')
+@include('layouts.belajar.sidebar.php')
 <section class="main">
-Index
+    <h1>PHP Pengenalan</h1>
+    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
+    <a href="{{ url('/belajar/php/syntax') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection
