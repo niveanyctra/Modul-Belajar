@@ -92,6 +92,12 @@
             <a href="browser.com">download</a>
         </div>
     @endif
+    @if (str_contains($posts->tool, 'sql'))
+        <div class="col-4">
+            <h6>sql</h6>
+            <a href="sql.com">download</a>
+        </div>
+    @endif
 
 </div>
 <a href="{{route('indexUmum')}}">Lihat Lainnya</a>

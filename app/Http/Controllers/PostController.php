@@ -57,8 +57,14 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-
-        return view('admin.post.show', compact('post'));
+        $user = Auth::user();
+        if ($post->id_user !== $user->id) {
+           # code...
+            return redirect('/post');
+        }else {
+            # code...
+            return view('admin.post.show', compact('post','user'));
+        }
     }
 
     /**
@@ -66,8 +72,14 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        $userr = User::get();
-        return view('admin.post.edit', compact('post','userr'));
+        $user = Auth::user();
+        if ($post->id_user !== $user->id) {
+           # code...
+            return redirect('/post');
+        }else {
+            # code...
+            return view('admin.post.edit', compact('post','user'));
+        }
     }
 
     /**
@@ -75,7 +87,13 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        Post::where('id', $post->id)->update([
+        $user = Auth::user();
+        if ($post->id_user !== $user->id) {
+           # code...
+            return redirect('/post');
+        }else {
+            # code...
+            Post::where('id', $post->id)->update([
             'title' => $request->title,
             'id_user' => $request->id_user,
             'category' => $request->category,
@@ -85,6 +103,8 @@ class PostController extends Controller
             'id_yt' => $request->id_yt,
             'updated_at' => Carbon::now(),
         ]);
+        }
+
 
         return redirect('post')->with('update', 'Data berhasil diubah');
     }
@@ -94,7 +114,14 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        Post::where('id', $post->id)->delete();
+        $user = Auth::user();
+        if ($post->id_user !== $user->id) {
+           # code...
+            return redirect('/post');
+        }else {
+            # code...
+            Post::where('id', $post->id)->delete();
+        }
 
         return redirect('post')->with('delete', 'Data berhasil dihapus');
     }

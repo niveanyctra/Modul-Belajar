@@ -16,13 +16,13 @@
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Title</label>
-                            <input type="text" name="title" class="form-control" id="nama">
+                            <input type="text" required="required" name="title" class="form-control" id="nama">
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">category</label>
-                            <select type="text" name="category" class="form-control" id="nama">
+                            <select type="text" required="required" name="category" class="form-control" id="nama">
                                 <option value="html">HTML</option>
                                 <option value="css">CSS</option>
                                 <option value="php">PHP</option>
@@ -34,16 +34,38 @@
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">level</label>
-                            <select type="text" name="level" class="form-control" id="nama">
+                            <select type="text"  required="required" name="level" class="form-control" id="nama">
                                 <option value="mudah">Mudah</option>
                                 <option value="menengah">Menengah</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="mb-3">
-                            <label for="nama" class="form-label">tool</label>
-                            <input type="text" name="tool" class="form-control" id="nama">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" value="html">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                            </label>
+                        </div>
+
                         </div>
                     </div>
                     <div class="col-6">
