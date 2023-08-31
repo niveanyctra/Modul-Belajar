@@ -203,18 +203,20 @@ public function detailUmum(Request $request,Post $post){
 }
 }
 
-    public function profileMentor(Post $post, $name){
+    public function profileMentor(Post $post, $username){
         // $user = User::get();
-        $posts = Post::with('users')->whereHas('users', function($query) use ($name){
-            $query->where('name', $name);
-        })->get();
+        // $posts = Post::with('users')->whereHas('users', function($query) use ($username){
+        //     $query->where('username', $username);
+        // })->get();
+        $user = User::where('username', $username)->firstOrFail();
+        $posts = Post::where('id_user', $user->id)->get();
         // $poost = Post::with('users')->where('id_user',$posts->id_user)->get();
-        return view('kelas-mentor.profile-mentor.index', [
+        return view('kelas-mentor.profile-mentor.index', compact('user','posts'));
             // 'postss' => $post,
             // 'pos' => $poost,
-            'name' => $name,
-            'posts' => $posts
-        ]);
+        //     'username' => $username,
+        //     'posts' => $posts
+        // ]);
         // return view('kelas-mentor.profile-mentor.index', [
         // ]);
     }

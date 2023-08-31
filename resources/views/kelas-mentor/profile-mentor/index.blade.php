@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('content')
-{{ $name }}
+{{ $user->name }}
 <div class="row">
     @foreach ($posts as $data)
 
