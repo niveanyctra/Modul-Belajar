@@ -17,7 +17,7 @@ class AdminSeeder extends Seeder
         $username = strtok('admin123@example.com', '@');
         User::insert([
             'name' => 'Admin',
-            'email' => 'admin@example.com',
+            'email' => 'admin123@example.com',
             'username' => $username,
             'password' => Hash::make('hehehehe')
         ]);
