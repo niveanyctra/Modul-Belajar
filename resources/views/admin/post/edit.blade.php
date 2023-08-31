@@ -47,14 +47,20 @@
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">tool</label>
-                            <input type="text" name="tool" class="form-control" id="nama" value="{{old('tool')??$post->tool}}">
+                            <input type="checkbox" id="tool" name="tool[]" value="vscode" @if(str_contains($post->tool,'vscode')) checked="checked" @endif>
+                            <label for="tool"> VSCode</label><br>
+                            <input type="checkbox" id="tool" name="tool[]" value="html"@if(str_contains($post->tool,'html')) checked="checked" @endif>
+                            <label for="tool"> HTML</label><br>
+                            <input type="checkbox" id="tool" name="tool[]" value="nodejs"@if(str_contains($post->tool,'nodejs')) checked="checked" @endif>
+                            <label for="tool"> NodeJs</label><br>
+                            <input type="checkbox" id="tool" name="tool[]" value="react"@if(str_contains($post->tool,'react')) checked="checked" @endif>
+                            <label for="tool"> React</label><br>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">content</label>
-                            <input type="text" name="content" class="form-control" id="nama" value="{{old('content')??$post->content}}">
+                            <textarea type="text" name="content" class="form-control" id="nama" value="{{old('content')??$post->content}}">{{$post->content}}</textarea>
                         </div>
                     </div>
                     <div class="col-6">

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('id_user')->references('id')->on('users')->onDelete('cascade');
             $table->string('title', 255);
+            $table->string('slug', 255);
             $table->enum('category',['html','css','php','js','sql'])->default('html');
             $table->enum('level',['mudah','menengah'])->default('mudah');
             $table->string('tool',255);

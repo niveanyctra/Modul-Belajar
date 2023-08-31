@@ -35,10 +35,20 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $tool = implode(',', $request->tool);
-        Post::insert([
 
+        $rules = [
+            'tool' => 'required',
+        ];
+        $messages = [
+            'tool.required' => 'Please select at least one tool',
+            'tool.array' => 'please select tool from the list'
+        ];
+        $request->validate($rules,$messages);
+        $tool = implode(',', $request->tool);
+        $rep = strtolower($request->title);
+        Post::insert([
             'title' => $request->title,
+            'slug' => str_replace(' ','-',$rep),
             'id_user' => $request->id_user,
             'category' => $request->category,
             'level' => $request->level,
@@ -50,7 +60,10 @@ class PostController extends Controller
 
         ]);
 
-        return redirect('post')->with('store', 'Data berhasil dibuat');
+            # code...
+            return redirect('post')->with('store', 'Data berhasil dibuat');
+
+
     }
 
     /**
@@ -58,6 +71,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
+
         $user = Auth::user();
         if ($post->user_id !== $user->id) {
             # code...
@@ -79,12 +93,15 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
+        $tool = implode(',', $request->tool);
+        $rep = strtolower($request->title);
         Post::where('id', $post->id)->update([
             'title' => $request->title,
+            'slug' => str_replace(' ','-',$rep),
             'id_user' => $request->id_user,
             'category' => $request->category,
             'level' => $request->level,
-            'tool' => $request->tool,
+            'tool' => $tool,
             'content' => $request->content,
             'id_yt' => $request->id_yt,
             'updated_at' => Carbon::now()->format('Y-m-d'),
@@ -151,6 +168,7 @@ public function detailUmum(Request $request,Post $post){
     if (strpos($currentPath, 'html') !== false) {
         // 'html' is present in the URL path
         // Your logic here
+        $posts = Post::where('slug',$post->slug);
         return view('kelas-mentor.html.detail',[
              'posts' => $post,
          ]);

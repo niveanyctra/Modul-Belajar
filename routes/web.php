@@ -385,23 +385,23 @@ Route::get('/latihan/php',function(){
 
 //Route Kelas Mentor HTML
 Route::get('/kelas-mentor/html',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/html/{post:id}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/html/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
 
 //Route Kelas Mentor CSS
 Route::get('/kelas-mentor/css',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/css/{post:id}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/css/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
 
 //Route Kelas Mentor PHP
 Route::get('/kelas-mentor/php',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/php/{post:id}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/php/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
 
 //Route Kelas Mentor JS
 Route::get('/kelas-mentor/js',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/js/{post:id}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/js/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
 
 //Route Kelas Mentor SQL
 Route::get('/kelas-mentor/sql',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/sql/{post:id}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/sql/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
 
 //Route Profile Mentor
 // Route::get('/mentor/{post:id_user}',[PostController::class,"profileMentor"])->name('profileMentor');

@@ -13,7 +13,7 @@ class PostSeeder extends Seeder
      * Run the database seeds.
      */
     public function run(): void
-    { 
+    {
         $data = [
             [
                 'title' => 'Post HTML',
@@ -89,9 +89,11 @@ class PostSeeder extends Seeder
             ],
         ];
         foreach ($data as $value){
+            $rep = strtolower($value['title']);
             Post::insert([
                 'id_user' => 1,
                 'title' => $value['title'],
+                'slug' => str_replace(' ','-',$rep),
                 'category' => $value['category'],
                 'level' => $value['level'],
                 'tool' => $value['tool'],

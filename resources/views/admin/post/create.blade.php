@@ -16,7 +16,7 @@
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Title</label>
-                            <input type="text" name="title" class="form-control" id="nama">
+                            <input type="text" name="title" class="form-control" id="nama" required="required">
                         </div>
                     </div>
                     <div class="col-6">
@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
-                            <input type="checkbox" id="tool" name="tool[]" value="vscode">
+                            <input type="checkbox" id="tool" name="tool[]" value="vscode" checked>
                             <label for="tool"> VSCode</label><br>
                             <input type="checkbox" id="tool" name="tool[]" value="html">
                             <label for="tool"> HTML</label><br>
@@ -54,14 +54,14 @@
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">content</label>
-                            <input type="text" name="content" class="form-control" id="nama">
+                            <label for="nama" class="form-label">About</label>
+                            <textarea type="text" name="content" class="form-control" required="required" id="nama"></textarea>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">id Yt</label>
-                            <input type="text" name="id_yt" class="form-control" id="nama">
+                            <input type="text" name="id_yt" class="form-control" required="required" id="nama">
                         </div>
                     </div>
                     <div class="col-6"></div>
