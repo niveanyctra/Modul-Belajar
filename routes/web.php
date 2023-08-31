@@ -288,6 +288,7 @@ Route::get('/belajar/php/foreach-loop',function(){
 Route::get('/belajar/php/break-continue',function(){
     return view('belajar.php.php-break-continue');
 });
+//End Route Belajar PHP
 
 //Route Belajar JS
 Route::get('/belajar/js',function(){
@@ -338,6 +339,7 @@ Route::get('belajar/js/objec',function(){
 Route::get('belajar/js/event',function(){
     return view('belajar.js.js-event');
 });
+//End Route Belajar JS
 
 //Route Belajar SQL
 Route::get('/belajar/sql',function(){
@@ -346,6 +348,7 @@ Route::get('/belajar/sql',function(){
 Route::get('belajar/sql/syntax',function(){
     return view('belajar.sql.sql-syntax');
 });
+//End Route Belajar SQL
 
 //Route Alur Belajar
 Route::get('/alur-belajar/front-end', function(){
@@ -362,9 +365,15 @@ Route::get('/alur-belajar/mobile-app-dev', function(){
 Route::get('/latihan/html',function(){
     return view('latihan.html.index');
 });
+Route::get('/latihan/html/atribut-1',function(){
+    return view('latihan.html.index');
+});
 
 //Route Latihan CSS
 Route::get('/latihan/css',function(){
+    return view('latihan.css.index');
+});
+Route::get('/latihan/css/selector-1',function(){
     return view('latihan.css.index');
 });
 
@@ -372,14 +381,23 @@ Route::get('/latihan/css',function(){
 Route::get('/latihan/sql',function(){
     return view('latihan.sql.index');
 });
+Route::get('/latihan/sql/select-1',function(){
+    return view('latihan.sql.index');
+});
 
 //Route Latihan JS
 Route::get('/latihan/js',function(){
     return view('latihan.js.index');
 });
+Route::get('/latihan/js/variable-1',function(){
+    return view('latihan.js.index');
+});
 
 //Route Latihan PHP
 Route::get('/latihan/php',function(){
+    return view('latihan.php.index');
+});
+Route::get('/latihan/php/syntax-1',function(){
     return view('latihan.php.index');
 });
 
