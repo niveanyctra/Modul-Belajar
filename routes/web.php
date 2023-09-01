@@ -358,8 +358,8 @@ Route::get('/alur-belajar/front-end', function(){
 Route::get('/alur-belajar/back-end', function(){
     return view('alur-belajar.back-end.index');
 });
-Route::get('/alur-belajar/mobile-app-dev', function(){
-    return view('alur-belajar.mobile-app-dev.index');
+Route::get('/alur-belajar/ux-designer', function(){
+    return view('alur-belajar.ux-designer.index');
 });
 
 //Route Latihan HTML

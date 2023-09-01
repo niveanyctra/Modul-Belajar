@@ -80,11 +80,11 @@
                                     </a>
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="{{ url('/alur-belajar/mobile-app-dev') }}">
+                                    <a href="{{ url('/alur-belajar/ux-designer') }}">
                                         <img src="https://buildwithangga.com/themes/front/images/ic_flutter.svg" class="icon" alt="bwa-icon">
                                     </a>
-                                    <a href="{{ url('/alur-belajar/mobile-app-dev') }}">
-                                        <h5 class="title">Mobile App Developer</h5>
+                                    <a href="{{ url('/alur-belajar/ux-designer') }}">
+                                        <h5 class="title">UX Designer</h5>
                                         <span class="subtitle">
                                         Rekomendasi oleh para mentor
                                         </span>
