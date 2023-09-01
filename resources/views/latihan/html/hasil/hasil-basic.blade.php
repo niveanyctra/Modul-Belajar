@@ -8,7 +8,11 @@
         <h6 class="fw-semibold">Bagaimana cara untuk membuat posisi text ke tengah?</h6>
         @csrf
         <form action="{{route('cekBasic')}}" method="post">
-        <div class="bg-warning px-3 py-2">
+        <div @if ($jawab1 != 'center')
+            class="bg-danger px-3 py-2"
+        @else
+            class="bg-success px-3 py-2"
+        @endif>
             <pre>
 
                 &lt;p align="<input type="text" value="{{$jawab1}}" name="jawaban1" id="inputan">"&gt;Text&lt;p&gt;
@@ -16,7 +20,11 @@
             {{$cek1}}
         </div>
         <h6 class="fw-semibold">Bagaimana cara untuk membuat posisi text ke kanan?</h6>
-        <div class="bg-warning px-3 py-2">
+        <div @if ($jawab2 != 'right')
+            class="bg-danger px-3 py-2"
+        @else
+            class="bg-success px-3 py-2"
+        @endif>
             <pre>
 
                 &lt;p align="<input type="text" value="{{$jawab2}}" name="jawaban2" id="inputan">"&gt;Text&lt;p&gt;
@@ -24,7 +32,11 @@
             {{$cek2}}
         </div>
         <h6 class="fw-semibold">Apa atribut yang tepat untuk menampilkan gambar?</h6>
-        <div class="bg-warning px-3 py-2">
+        <div @if ($jawab3 != 'src')
+            class="bg-danger px-3 py-2"
+        @else
+            class="bg-success px-3 py-2"
+        @endif>
             <pre>
 
                 &lt;img <input type="text" value="{{$jawab3}}" name="jawaban3" id="inputan">="image.jpg"&gt;
@@ -32,7 +44,11 @@
             {{$cek3}}
         </div>
         <h6 class="fw-semibold">Bagaimana cara untuk mengatur tinggi gambar dibawah?</h6>
-        <div class="bg-warning px-3 py-2">
+        <div @if ($jawab4 != 'height')
+            class="bg-danger px-3 py-2"
+        @else
+            class="bg-success px-3 py-2"
+        @endif>
             <pre>
 
                 &lt;img src="image.jpg" <input type="text" value="{{$jawab4}}" name="jawaban4" id="inputan">="100"&gt;
@@ -40,7 +56,11 @@
             {{$cek4}}
         </div>
         <h6 class="fw-semibold">Bagaimana cara untuk mengatur lebar gambar dibawah?</h6>
-        <div class="bg-warning px-3 py-2">
+        <div @if ($jawab5 != 'width')
+            class="bg-danger px-3 py-2"
+        @else
+            class="bg-success px-3 py-2"
+        @endif>
             <pre>
 
                 &lt;img src="image.jpg" <input type="text" value="{{$jawab5}}" name="jawaban5" id="inputan">="100"&gt;
@@ -48,7 +68,11 @@
             {{$cek5}}
         </div>
         <h6 class="fw-semibold">Bagaimana cara untuk membuat warna text menjadi merah?</h6>
-        <div class="bg-warning px-3 py-2">
+        <div @if ($jawab6 != 'color')
+            class="bg-danger px-3 py-2"
+        @else
+            class="bg-success px-3 py-2"
+        @endif>
             <pre>
 
                 &lt;p style="<input type="text" value="{{$jawab6}}" name="jawaban6" id="inputan">:red;"&gt;Text&lt;p&gt;
@@ -56,7 +80,11 @@
             {{$cek6}}
         </div>
         <h6 class="fw-semibold">Bagaimana cara untuk mengatur ukuran text menjadi 12pt?</h6>
-        <div class="bg-warning px-3 py-2">
+        <div @if ($jawab7 != '12pt')
+            class="bg-danger px-3 py-2"
+        @else
+            class="bg-success px-3 py-2"
+        @endif>
             <pre>
 
                 &lt;p style="font-size:<input type="text" value="{{$jawab7}}" name="jawaban7" id="inputan">;"&gt;Text&lt;p&gt;
@@ -64,7 +92,11 @@
             {{$cek7}}
         </div>
         <h6 class="fw-semibold">Bagaimana cara untuk mengarahkan sebuah hyperlink?</h6>
-        <div class="bg-warning px-3 py-2">
+        <div @if ($jawab8 != 'href')
+            class="bg-danger px-3 py-2"
+        @else
+            class="bg-success px-3 py-2"
+        @endif>
             <pre>
 
                 &lt;a <input type="text" value="{{$jawab8}}" name="jawaban8" id="inputan">="smkn1cirebon.go.id"&gt;Text&lt;a&gt;
@@ -72,7 +104,11 @@
             {{$cek8}}
         </div>
         <h6 class="fw-semibold">Bagaimana cara untuk membuat heading paling kecil?</h6>
-        <div class="bg-warning px-3 py-2">
+        <div @if ($jawab9 != 'h6')
+            class="bg-danger px-3 py-2"
+        @else
+            class="bg-success px-3 py-2"
+        @endif>
             <pre>
 
                 &lt;<input type="text" value="{{$jawab9}}" name="jawaban9" id="inputan">&gt;Text&lt;/<input type="text" value="{{$jawab9}}" name="jawaban9" id="inputan">&gt;
@@ -80,7 +116,11 @@
             {{$cek9}}
         </div>
         <h6 class="fw-semibold">Bagaimana cara untuk membuat text berwarna biru?</h6>
-        <div class="bg-warning px-3 py-2">
+        <div @if ($jawab10 != 'blue')
+            class="bg-danger px-3 py-2"
+        @else
+            class="bg-success px-3 py-2"
+        @endif>
             <pre>
 
                 &lt;p style="color:<input type="text" value="{{$jawab10}}" name="jawaban10" id="inputan">:"&gt;Text&lt;p&gt;
