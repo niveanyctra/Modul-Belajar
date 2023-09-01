@@ -128,6 +128,7 @@
             {{$cek10}}
         </div>
 
+            <a href="{{url('/latihan/html/basic')}}" class="btn btn-primary">Coba Lagi</a>
             <a href="{{url('/latihan/html/menengah')}}" class="btn btn-primary">Lanjut</a>
 
     </form>
