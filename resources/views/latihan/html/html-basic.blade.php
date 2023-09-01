@@ -85,7 +85,7 @@
 
                 &lt;p style="color:<input type="text" name="jawaban10" id="inputan">:"&gt;Text&lt;p&gt;
             </pre>
-
+            
         </div>
 
             <input type="submit" value="Kirim Jawaban">

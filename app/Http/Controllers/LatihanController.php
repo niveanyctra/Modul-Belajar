@@ -21,7 +21,7 @@ class LatihanController extends Controller
 
             $currentPath = $request->path();
 
-    if (strpos($currentPath, 'html') !== false) {
+    if (str_contains($currentPath, 'html')) {
         // 'html' is present in the URL path
         // Your logic here
         if ($cek1 == "center") {
@@ -104,16 +104,19 @@ class LatihanController extends Controller
         $jawab8 = $request->jawaban8;
         $jawab9 = $request->jawaban9;
         $jawab10 = $request->jawaban10;
-    } elseif (strpos($currentPath, 'css') !== false) {
+        return view('latihan.html.hasil.hasil-basic',compact('cek1','cek2','cek3','cek4','cek5','cek6','cek7','cek8','cek9','cek10',
+        'jawab1','jawab2','jawab3','jawab4','jawab5','jawab6','jawab7','jawab8','jawab9','jawab10'));
+        
+    } elseif (str_contains($currentPath, 'css')) {
         // 'css' is present in the URL path
         // Your logic here
-    } elseif (strpos($currentPath, 'php') !== false) {
+    } elseif (str_contains($currentPath, 'php')) {
         // 'php' is present in the URL path
         // Your logic here
-    } elseif (strpos($currentPath, 'js') !== false) {
+    } elseif (str_contains($currentPath, 'js')) {
         // 'js' is present in the URL path
         // Your logic here
-    } elseif (strpos($currentPath, 'sql') !== false) {
+    } elseif (str_contains($currentPath, 'sql')) {
         // 'sql' is present in the URL path
         // Your logic here
     } else {
@@ -124,8 +127,6 @@ class LatihanController extends Controller
         // $rep = str_replace('-', ' ', $cek);
         // $cekjawab = str_word_count($rep);
 
-        return view('latihan.html.hasil.hasil-basic',compact('cek1','cek2','cek3','cek4','cek5','cek6','cek7','cek8','cek9','cek10',
-        'jawab1','jawab2','jawab3','jawab4','jawab5','jawab6','jawab7','jawab8','jawab9','jawab10'));
     }
     public function cekMenengah(Request $request){
         $cek1 = $request->jawaban1;
