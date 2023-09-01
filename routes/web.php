@@ -366,9 +366,15 @@ Route::get('/alur-belajar/mobile-app-dev', function(){
 Route::get('/latihan/html/basic',function(){
     return view('latihan.html.html-basic');
 });
-Route::get('/latihan/html/atribut-1',function(){
-    return view('latihan.html.index');
+Route::get('/latihan/html/menengah',function(){
+    return view('latihan.html.html-menengah');
 });
+Route::get('/latihan/html/lanjutan',function(){
+    return view('latihan.html.html-lanjutan');
+});
+Route::post('/hasil/html/basic',[LatihanController::class,"cekBasic"])->name('cekBasic');
+Route::post('/hasil/html/menengah',[LatihanController::class,"cekMenengah"])->name('cekMenengah');
+Route::post('/hasil/html/lanjutan',[LatihanController::class,"cekLanjutan"])->name('cekLanjutan');
 
 //Route Latihan CSS
 Route::get('/latihan/css',function(){
@@ -426,5 +432,5 @@ Route::get('/kelas-mentor/sql/{post:slug}',[PostController::class,"detailUmum"])
 // Route::get('/mentor/{post:id_user}',[PostController::class,"profileMentor"])->name('profileMentor');
 Route::get('/mentor/{username}',[PostController::class,"profileMentor"])->name('profileMentor');
 // Route::get('/mentor/{user:name}',function(User $user,Post $post){
-Route::get('/latihan/html', [LatihanController::class,"cekJawaban"])->name('cekJawaban');
+// Route::get('/latihan/html', [LatihanController::class,"cekJawaban"])->name('cekJawaban');
 // });

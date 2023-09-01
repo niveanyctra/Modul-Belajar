@@ -11,7 +11,7 @@
         <div class="bg-warning px-3 py-2">
             <pre>
 
-                &lt;p align="<input type="text" name="jawaban1" id="inputan">"&gt;Text&lt;p&gt;
+                &lt;p align="<input type="text" value{{$jawab1}} name="jawaban1" id="inputan">"&gt;Text&lt;p&gt;
             </pre>
 
         </div>
@@ -19,7 +19,7 @@
         <div class="bg-warning px-3 py-2">
             <pre>
 
-                &lt;p align="<input type="text" name="jawaban2" id="inputan">"&gt;Text&lt;p&gt;
+                &lt;p align="<input type="text" value{{$jawab2}} name="jawaban2" id="inputan">"&gt;Text&lt;p&gt;
             </pre>
 
         </div>
@@ -27,7 +27,7 @@
         <div class="bg-warning px-3 py-2">
             <pre>
 
-                &lt;img <input type="text" name="jawaban3" id="inputan">="image.jpg"&gt;
+                &lt;img <input type="text" value{{$jawab3}} name="jawaban3" id="inputan">="image.jpg"&gt;
             </pre>
 
         </div>
@@ -35,7 +35,7 @@
         <div class="bg-warning px-3 py-2">
             <pre>
 
-                &lt;img src="image.jpg" <input type="text" name="jawaban4" id="inputan">="100"&gt;
+                &lt;img src="image.jpg" <input type="text" value{{$jawab4}} name="jawaban4" id="inputan">="100"&gt;
             </pre>
 
         </div>
@@ -43,7 +43,7 @@
         <div class="bg-warning px-3 py-2">
             <pre>
 
-                &lt;img src="image.jpg" <input type="text" name="jawaban5" id="inputan">="100"&gt;
+                &lt;img src="image.jpg" <input type="text" value{{$jawab5}} name="jawaban5" id="inputan">="100"&gt;
             </pre>
 
         </div>
@@ -51,7 +51,7 @@
         <div class="bg-warning px-3 py-2">
             <pre>
 
-                &lt;p style="<input type="text" name="jawaban6" id="inputan">:red;"&gt;Text&lt;p&gt;
+                &lt;p style="<input type="text" value{{$jawab6}} name="jawaban6" id="inputan">:red;"&gt;Text&lt;p&gt;
             </pre>
 
         </div>
@@ -59,7 +59,7 @@
         <div class="bg-warning px-3 py-2">
             <pre>
 
-                &lt;p style="font-size:<input type="text" name="jawaban7" id="inputan">;"&gt;Text&lt;p&gt;
+                &lt;p style="font-size:<input type="text" value{{$jawab7}} name="jawaban7" id="inputan">;"&gt;Text&lt;p&gt;
             </pre>
 
         </div>
@@ -67,7 +67,7 @@
         <div class="bg-warning px-3 py-2">
             <pre>
 
-                &lt;a <input type="text" name="jawaban8" id="inputan">="smkn1cirebon.go.id"&gt;Text&lt;a&gt;
+                &lt;a <input type="text" value{{$jawab8}} name="jawaban8" id="inputan">="smkn1cirebon.go.id"&gt;Text&lt;a&gt;
             </pre>
 
         </div>
@@ -75,7 +75,7 @@
         <div class="bg-warning px-3 py-2">
             <pre>
 
-                &lt;<input type="text" name="jawaban9" id="inputan">&gt;Text&lt;/<input type="text" name="jawaban9" id="inputan">&gt;
+                &lt;<input type="text" value{{$jawab9}} name="jawaban9" id="inputan">&gt;Text&lt;/<input type="text" value{{$jawab9}} name="jawaban9" id="inputan">&gt;
             </pre>
 
         </div>
@@ -83,12 +83,12 @@
         <div class="bg-warning px-3 py-2">
             <pre>
 
-                &lt;p style="color:<input type="text" name="jawaban10" id="inputan">:"&gt;Text&lt;p&gt;
+                &lt;p style="color:<input type="text" value{{$jawab10}} name="jawaban10" id="inputan">:"&gt;Text&lt;p&gt;
             </pre>
 
         </div>
 
-            <input type="submit" value="Kirim Jawaban">
+            <a href="/latihan/html/menengah" class="btn btn-primary">Lanjut</a>
 
     </form>
     </div>
