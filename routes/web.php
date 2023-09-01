@@ -363,8 +363,8 @@ Route::get('/alur-belajar/ux-designer', function(){
 });
 
 //Route Latihan HTML
-Route::get('/latihan/html',function(){
-    return view('latihan.html.index');
+Route::get('/latihan/html/basic',function(){
+    return view('latihan.html.html-basic');
 });
 Route::get('/latihan/html/atribut-1',function(){
     return view('latihan.html.index');
