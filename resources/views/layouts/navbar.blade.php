@@ -100,7 +100,7 @@
                         <ul class="dropdown-menu" aria-labelledby="listLatihanDropdown">
                             <div class="dd-item-list">
                                 <li class="dropdown-item">
-                                    <a href="{{ url('/latihan/html') }}">
+                                    <a href="{{ url('/latihan/html/basic') }}">
                                         <span>Latihan HTML</span>
                                     </a>
                                 </li>
