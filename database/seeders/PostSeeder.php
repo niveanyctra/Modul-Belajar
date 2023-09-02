@@ -13,14 +13,15 @@ class PostSeeder extends Seeder
      * Run the database seeds.
      */
     public function run(): void
-    { 
+    {
         $data = [
             [
                 'title' => 'Post HTML',
                 'category' => 'html',
                 'level' => 'mudah',
                 'tool' => 'vscode, html, nodejs',
-                'content' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -28,7 +29,8 @@ class PostSeeder extends Seeder
                 'category' => 'html',
                 'level' => 'mudah',
                 'tool' => 'vscode, html, nodejs, css, react',
-                'content' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -36,7 +38,8 @@ class PostSeeder extends Seeder
                 'category' => 'html',
                 'level' => 'menengah',
                 'tool' => 'vscode, html, nodejs',
-                'content' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -44,7 +47,8 @@ class PostSeeder extends Seeder
                 'category' => 'css',
                 'level' => 'mudah',
                 'tool' => 'vscode, html, nodejs',
-                'content' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -52,7 +56,8 @@ class PostSeeder extends Seeder
                 'category' => 'css',
                 'level' => 'menengah',
                 'tool' => 'vscode, html, nodejs',
-                'content' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -60,7 +65,8 @@ class PostSeeder extends Seeder
                 'category' => 'php',
                 'level' => 'mudah',
                 'tool' => 'vscode, php, nodejs',
-                'content' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -68,7 +74,8 @@ class PostSeeder extends Seeder
                 'category' => 'js',
                 'level' => 'mudah',
                 'tool' => 'vscode, html, nodejs',
-                'content' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -76,7 +83,8 @@ class PostSeeder extends Seeder
                 'category' => 'sql',
                 'level' => 'mudah',
                 'tool' => 'vscode, html, nodejs, css',
-                'content' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -84,18 +92,22 @@ class PostSeeder extends Seeder
                 'category' => 'sql',
                 'level' => 'menengah',
                 'tool' => 'vscode, html, react',
-                'content' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
+                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
         ];
         foreach ($data as $value){
+            $rep = strtolower($value['title']);
             Post::insert([
                 'id_user' => 1,
                 'title' => $value['title'],
+                'slug' => str_replace(' ','-',$rep),
                 'category' => $value['category'],
                 'level' => $value['level'],
                 'tool' => $value['tool'],
-                'content' => $value['content'],
+                'about' => $value['about'],
+                'about2' => $value['about2'],
                 'id_yt' => $value['id_yt'],
                 'created_at' => Carbon::now()->format('Y-m-d'),
                 'updated_at' => Carbon::now()->format('Y-m-d'),

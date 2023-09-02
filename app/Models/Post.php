@@ -17,7 +17,8 @@ class Post extends Model
         'category',
         'level',
         'tool',
-        'content',
+        'about',
+        'about2',
         'id_yt',
         'id_user',
     ];

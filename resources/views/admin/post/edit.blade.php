@@ -12,55 +12,136 @@
                     <form action="{{ route('post.update',$post->id) }}" method="post">
                 @csrf
                 @method('put')
-                <input type="text" name="id_user" value="{{$post->users->id}}">
+                <input type="hidden" name="id_user" value="{{$post->id_user}}">
                 <div class="row">
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Title</label>
-                            <input type="text" name="title" class="form-control" id="nama" value="{{old('title')??$post->title}}">
+                            <input type="text" name="title" class="form-control" id="nama" required="required" value="{{old('title')??$post->title}}">
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">category</label>
+                            <label for="nama" class="form-label">Category</label>
                             <select type="text" name="category" class="form-control" id="nama">
                                 <option value="{{old('category')??$post->category}}">{{old('category')??$post->category}}</option>
                                 <option value="" disabled>-------</option>
                                 <option value="html">HTML</option>
-                                <option value="css">css</option>
-                                <option value="php">php</option>
-                                <option value="js">js</option>
-                                <option value="mysql">mysql</option>
+                                <option value="css">CSS</option>
+                                <option value="php">PHP</option>
+                                <option value="js">JS</option>
+                                <option value="sql">SQL</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">level</label>
-                            <select type="text" name="level" class="form-control" id="nama" value="">
-                                <option value="{{old('level')??$post->level}}">{{old('level')??$post->level}}</option>
-                                <option value="" disabled>-------</option>
-                                <option value="mudah">Mudah</option>
-                                <option value="menengah">Menengah</option>
-                            </select>
+                            <label for="nama" class="form-label">Level</label>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="level" value="mudah" @if (str_contains($post->level,"mudah")) checked @endif>
+                                        <label for="level" class="form-check-label">Mudah</label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="level" value="menengah" @if (str_contains($post->level,"menengah")) checked @endif>
+                                        <label for="level" class="form-check-label">Menengah</label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">tool</label>
-                            <input type="text" name="tool" class="form-control" id="nama" value="{{old('tool')??$post->tool}}">
+                            <label for="tool">Tool</label>
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"vscode")) checked @endif value="vscode" checked>
+                                    VSCode</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"html")) checked @endif value="html">
+                                    HTML</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"nodejs")) checked @endif value="nodejs">
+                                    NodeJs</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"react")) checked @endif value="react">
+                                    React</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"github")) checked @endif value="github">
+                                    GitHub</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"css")) checked @endif value="css">
+                                    CSS</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"bootstrap")) checked @endif value="bootstrap">
+                                    Bootstrap</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"laravel")) checked @endif value="laravel">
+                                    Laravel</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"tailwind")) checked @endif value="tailwiind">
+                                    TailWind</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"xampp")) checked @endif value="xampp">
+                                    XAMPP</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"figma")) checked @endif value="figma">
+                                    Figma</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"js")) checked @endif value="js">
+                                    JavaScript</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"php")) checked @endif value="php">
+                                    PHP</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"browser")) checked @endif value="browser">
+                                    Browsers</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">content</label>
-                            <input type="text" name="content" class="form-control" id="nama" value="{{old('content')??$post->content}}">
+                            <label for="nama" class="form-label">About</label>
+                            <textarea type="text" name="about" class="form-control" required="required" id="nama">{{$post->about}}</textarea><br>
+                            <button type="button" onclick="document.getElementById('demo').style.display='block'">Paragraf 2 (Pencet Bila Perlu)</button>
+                            <textarea type="text" name="about2" class="form-control" id="demo" @if (isset($post->about2)) style="display:block;" @else style="display:none;" @endif>@if (isset($post->about2)) {{$post->about2}} @endif</textarea>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">id Yt</label>
-                            <input type="text" name="id_yt" class="form-control" id="nama" value="{{old('id_yt')??$post->id_yt}}">
+                            <input type="text" name="id_yt" class="form-control" required="required" id="nama" value="{{old('id_yt')??$post->id_yt}}">
                         </div>
                     </div>
                     <div class="col-6"></div>

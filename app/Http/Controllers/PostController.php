@@ -35,22 +35,36 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $tool = implode(',', $request->tool);
-        Post::insert([
 
+        $rules = [
+            'tool' => 'required',
+        ];
+        $messages = [
+            'tool.required' => 'Please select at least one tool',
+            'tool.array' => 'please select tool from the list'
+        ];
+        $request->validate($rules,$messages);
+        $tool = implode(',', $request->tool);
+        $rep = strtolower($request->title);
+        Post::insert([
             'title' => $request->title,
+            'slug' => str_replace(' ','-',$rep),
             'id_user' => $request->id_user,
             'category' => $request->category,
             'level' => $request->level,
             'tool' => $tool,
-            'content' => $request->content,
+            'about' => $request->about,
+            'about2' => $request->about2,
             'id_yt' => $request->id_yt,
             'created_at' => Carbon::now()->format('Y-m-d'),
             'updated_at' => Carbon::now()->format('Y-m-d'),
 
         ]);
 
-        return redirect('post')->with('store', 'Data berhasil dibuat');
+            # code...
+            return redirect('post')->with('store', 'Data berhasil dibuat');
+
+
     }
 
     /**
@@ -58,6 +72,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
+
         $user = Auth::user();
         if ($post->id_user !== $user->id) {
            # code...
@@ -100,11 +115,13 @@ class PostController extends Controller
             # code...
             Post::where('id', $post->id)->update([
             'title' => $request->title,
+            'slug' => str_replace(' ','-',$rep),
             'id_user' => $request->id_user,
             'category' => $request->category,
             'level' => $request->level,
-            'tool' => $request->tool,
-            'content' => $request->content,
+            'tool' => $tool,
+            'about' => $request->about,
+            'about2' => $request->about2,
             'id_yt' => $request->id_yt,
             'updated_at' => Carbon::now()->format('Y-m-d'),
         ]);
@@ -133,44 +150,73 @@ class PostController extends Controller
 
 public function indexUmum(Request $request)
 {
-    $handleCategory = function ($category) {
+
+    $currentPath = $request->path();
+    if (str_contains($currentPath,'html')) {
+        # code...
+
+        if (request('level')) {
+            $posts = Post::where('category', 'html')
+                         ->where('level', request('level'))
+                         ->get();
+        } else {
+            $posts = Post::where('category', 'html')->get();
+        }
+        return view('kelas-mentor.html.index', ['posts' => $posts]);
+
+      }elseif (str_contains($currentPath,'css')) {
+        # code...
+        if (request('level')) {
+            $posts = Post::where('category', 'css')
+                         ->where('level', request('level'))
+                         ->get();
+        } else {
+            $posts = Post::where('category', 'css')->get();
+        }
+        return view('kelas-mentor.css.index', ['posts' => $posts]);
+
+      }elseif (str_contains($currentPath,'php')) {
+        # code...
+        if (request('level')) {
+            $posts = Post::where('category', 'php')
+                         ->where('level', request('level'))
+                         ->get();
+        } else {
+            $posts = Post::where('category', 'php')->get();
+        }
+        return view('kelas-mentor.php.index', ['posts' => $posts]);
+
+      }elseif (str_contains($currentPath,'js')) {
+        # code...
+        if (request('level')) {
+            $posts = Post::where('category', 'js')
+                         ->where('level', request('level'))
+                         ->get();
+        } else {
+            $posts = Post::where('category', 'js')->get();
+        }
+        return view('kelas-mentor.js.index', ['posts' => $posts]);
+
+      }elseif (str_contains($currentPath,'sql')) {
+        # code...
+        if (request('level')) {
+            $posts = Post::where('category', 'sql')
+                         ->where('level', request('level'))
+                         ->get();
+        } else {
+            $posts = Post::where('category', 'sql')->get();
+        }
+        return view('kelas-mentor.sql.index', ['posts' => $posts]);
+      }else{
+        return view('index');
+      }
         // Logic for handling the given category
         // You can access $request here if needed
 
         // Example logic:
-        if (request('level')) {
-            $posts = Post::where('category', $category)
-                         ->where('level', request('level'))
-                         ->get();
-        } else {
-            $posts = Post::where('category', $category)->get();
-        }
 
-        return $posts;
-    };
 
-    $currentPath = $request->path();
-
-    if (strpos($currentPath, 'html') !== false) {
-        $posts = $handleCategory('html');
-        return view('kelas-mentor.html.index', ['posts' => $posts]);
-    } elseif (strpos($currentPath, 'css') !== false) {
-        $posts = $handleCategory('css');
-        return view('kelas-mentor.css.index', ['posts' => $posts]);
-    } elseif (strpos($currentPath, 'php') !== false) {
-        $posts = $handleCategory('php');
-        return view('kelas-mentor.php.index', ['posts' => $posts]);
-    } elseif (strpos($currentPath, 'js') !== false) {
-        $posts = $handleCategory('js');
-        return view('kelas-mentor.js.index', ['posts' => $posts]);
-    } elseif (strpos($currentPath, 'sql') !== false) {
-        $posts = $handleCategory('sql');
-        return view('kelas-mentor.sql.index', ['posts' => $posts]);
-    } else {
-        // Default case
-        return view('index');
     }
-}
 
 public function detailUmum(Request $request,Post $post){
 {
@@ -213,12 +259,21 @@ public function detailUmum(Request $request,Post $post){
 }
 }
 
-    public function profileMentor(Post $post){
+    public function profileMentor(Post $post, $username){
         // $user = User::get();
-        $poost = Post::with('users')->where('id_user',$post->id_user)->get();
-        return view('kelas-mentor.profile-mentor.index', [
-            'posts' => $post,
-            'pos' => $poost
-        ]);
+        // $posts = Post::with('users')->whereHas('users', function($query) use ($username){
+        //     $query->where('username', $username);
+        // })->get();
+        $user = User::where('username', $username)->firstOrFail();
+        $posts = Post::where('id_user', $user->id)->get();
+        // $poost = Post::with('users')->where('id_user',$posts->id_user)->get();
+        return view('kelas-mentor.profile-mentor.index', compact('user','posts'));
+            // 'postss' => $post,
+            // 'pos' => $poost,
+        //     'username' => $username,
+        //     'posts' => $posts
+        // ]);
+        // return view('kelas-mentor.profile-mentor.index', [
+        // ]);
     }
 }

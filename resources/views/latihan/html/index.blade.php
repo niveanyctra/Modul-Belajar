@@ -1,35 +1,36 @@
 @extends('layouts.main')
 @section('content')
-<header>
-    <div class="container-fluid">
-        <a href="#" class="toggle-menu fontawesome-reorder"></a>
-        <nav class="sub-nav">
-            <a href="{{ url('/latihan/html') }}">
-                <span>Latihan HTML</span>
-            </a>
-            <a href="{{ url('/latihan/css') }}">
-                <span>Latihan CSS</span>
-            </a>
-            <a href="{{ url('/latihan/php') }}">
-                <span>Latihan PHP</span>
-            </a>
-            <a href="{{ url('/latihan/js') }}">
-                <span>Latihan JS</span>
-            </a>
-            <a href="{{ url('/latihan/sql') }}">
-                <span>Latihan SQL</span>
-            </a>
-        </nav>
-    </div>
-</header>
-<aside class="sidebar">
-    <nav class="nav-side">
-        <h3 class="sidebar-header">Contents</h3>
-        <a href="" class="active">Link</a>
-    </nav>
-</aside>
-
+@include('layouts.latihan.subnav')
+@include('layouts.latihan.sidebar.html')
 <section class="main">
+    <div>
+        <h6>Lengkapi potongan kode dibawah!</h6>
+        <h6 class="fw-semibold">Bagaimana cara untuk membuat posisi text ke tengah?</h6>
+        <div class="bg-warning px-3 py-2">
+            <form action="{{route('cekJawaban')}}" method="get">
+            <pre>
 
+                &lt;p align="<input type="text" name="inputan" value="{{request('inputan')}}" id="inputan">"&gt;Text&lt;p&gt;
+            </pre>
+            <input type="submit" value="Kirim Jawaban">
+            </form>
+        </div>
+        @if (isset($cek))
+
+        @if ($cek == "align")
+            <p>benar</p>
+        @else
+            <p>salah</p>
+        @endif
+        @endif
+    </div>
 </section>
+<script>
+    const cek = document.getElementById('inputan').value;
+    if (cek != 'align') {
+        document.getElementById('test').innerHTML('salah')
+    }else{
+        document.getElementById('test').innerHTML('benar')
+    }
+</script>
 @endsection

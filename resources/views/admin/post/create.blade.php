@@ -42,26 +42,93 @@
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
-                            <input type="checkbox" id="tool" name="tool[]" value="vscode">
-                            <label for="tool"> VSCode</label><br>
-                            <input type="checkbox" id="tool" name="tool[]" value="html">
-                            <label for="tool"> HTML</label><br>
-                            <input type="checkbox" id="tool" name="tool[]" value="nodejs">
-                            <label for="tool"> NodeJs</label><br>
-                            <input type="checkbox" id="tool" name="tool[]" value="react">
-                            <label for="tool"> React</label><br>
+                            <label for="tool">Tool</label>
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="vscode" checked>
+                                    VSCode</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="html">
+                                    HTML</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="nodejs">
+                                    NodeJs</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="react">
+                                    React</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="github">
+                                    Git Hub</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="css">
+                                    CSS</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="bootstrap">
+                                    Bootstrap</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="laravel">
+                                    Laravel</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="tailwiind">
+                                    TailWind</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="xampp">
+                                    XAMPP</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="figma">
+                                    Figma</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="js">
+                                    JavaScript</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="php">
+                                    PHP</label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="tool">
+                                    <input type="checkbox" id="tool" name="tool[]" value="browser">
+                                    Browers</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">content</label>
-                            <input type="text" name="content" class="form-control" id="nama">
+                            <label for="nama" class="form-label">About</label>
+                            <textarea type="text" name="about" class="form-control" required="required" id="nama"></textarea><br>
+                            <button type="button" onclick="document.getElementById('demo').style.display='block'">Paragraf 2 (Pencet Bila Perlu)</button>
+                            <textarea type="text" name="about2" class="form-control" required="required" id="demo" style="display:none"></textarea>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">id Yt</label>
-                            <input type="text" name="id_yt" class="form-control" id="nama">
+                            <input type="text" name="id_yt" class="form-control" required="required" id="nama">
                         </div>
                     </div>
                     <div class="col-6"></div>

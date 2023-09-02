@@ -36,9 +36,11 @@ class RegisteredUserController extends Controller
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
+        $username = strtok($request->email, '@');
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
+            'username' => $username.rand(1,100),
             'password' => Hash::make($request->password),
         ]);
 

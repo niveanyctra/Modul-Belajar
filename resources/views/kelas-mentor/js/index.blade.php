@@ -7,23 +7,9 @@
         <div class="col-4 bg-primary ps-4" style="min-height: 100vh; height: 100%">
             <h6 class="pt-2">Urutkan</h6>
             <div class="fw-semibold">
-                @csrf
-                <form action="{{url('/kelas-mentor/js?level=mudah')}}" method="get">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="level" id="mudah" value="mudah">
-                        <label class="form-check-label" for="mudah">
-                            Mudah
-                        </label>
-                    </div>
-                    <form action="{{url('/kelas-mentor/js?level=mudah')}}" method="get">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="level" id="menengah" value="menengah">
-                        <label class="form-check-label" for="menengah">
-                            Menengah
-                        </label>
-                    </div>
-                    <input type="submit" value="Urutkan" class="btn btn-sm btn-info">
-                </form>
+                <a href="{{url('/kelas-mentor/js?level=mudah')}}" class="btn btn-danger">Mudah</a>
+                <a href="{{url('/kelas-mentor/js?level=menengah')}}" class="btn btn-danger">Menengah</a>
+                <a href="{{url('/kelas-mentor/js')}}" class="btn btn-danger">Semua</a>
 
             </div>
         </div>
@@ -34,12 +20,12 @@
                 @foreach ($posts as $data)
 
                     <div class="col-sm-3  text-center">
-                         <a href="{{ url('/kelas-mentor/js/'.$data->id)}}">{{$data->title}} </a><br>
+                         <a href="{{ url('/kelas-mentor/js/'.$data->slug)}}">{{$data->title}} </a><br>
                         <h6>{{$data->users->name}}</h6>
 
                     </div>
-                    @endforeach
-                </div>
+                @endforeach
+            </div>
         </div>
     </div>
 </div>

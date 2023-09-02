@@ -4,6 +4,7 @@ use App\Models\Post;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\LatihanController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -288,6 +289,7 @@ Route::get('/belajar/php/foreach-loop',function(){
 Route::get('/belajar/php/break-continue',function(){
     return view('belajar.php.php-break-continue');
 });
+//End Route Belajar PHP
 
 //Route Belajar JS
 Route::get('/belajar/js',function(){
@@ -338,6 +340,7 @@ Route::get('belajar/js/objec',function(){
 Route::get('belajar/js/event',function(){
     return view('belajar.js.js-event');
 });
+//End Route Belajar JS
 
 //Route Belajar SQL
 Route::get('/belajar/sql',function(){
@@ -346,6 +349,7 @@ Route::get('/belajar/sql',function(){
 Route::get('belajar/sql/syntax',function(){
     return view('belajar.sql.sql-syntax');
 });
+//End Route Belajar SQL
 
 //Route Alur Belajar
 Route::get('/alur-belajar/front-end', function(){
@@ -354,17 +358,29 @@ Route::get('/alur-belajar/front-end', function(){
 Route::get('/alur-belajar/back-end', function(){
     return view('alur-belajar.back-end.index');
 });
-Route::get('/alur-belajar/mobile-app-dev', function(){
-    return view('alur-belajar.mobile-app-dev.index');
+Route::get('/alur-belajar/ux-designer', function(){
+    return view('alur-belajar.ux-designer.index');
 });
 
 //Route Latihan HTML
-Route::get('/latihan/html',function(){
-    return view('latihan.html.index');
+Route::get('/latihan/html/basic',function(){
+    return view('latihan.html.html-basic');
 });
+Route::get('/latihan/html/menengah',function(){
+    return view('latihan.html.html-menengah');
+});
+Route::get('/latihan/html/lanjutan',function(){
+    return view('latihan.html.html-lanjutan');
+});
+Route::post('/hasil/html/basic',[LatihanController::class,"cekBasic"])->name('cekBasic');
+Route::post('/hasil/html/menengah',[LatihanController::class,"cekMenengah"])->name('cekMenengah');
+Route::post('/hasil/html/lanjutan',[LatihanController::class,"cekLanjutan"])->name('cekLanjutan');
 
 //Route Latihan CSS
 Route::get('/latihan/css',function(){
+    return view('latihan.css.index');
+});
+Route::get('/latihan/css/selector-1',function(){
     return view('latihan.css.index');
 });
 
@@ -372,9 +388,15 @@ Route::get('/latihan/css',function(){
 Route::get('/latihan/sql',function(){
     return view('latihan.sql.index');
 });
+Route::get('/latihan/sql/select-1',function(){
+    return view('latihan.sql.index');
+});
 
 //Route Latihan JS
 Route::get('/latihan/js',function(){
+    return view('latihan.js.index');
+});
+Route::get('/latihan/js/variable-1',function(){
     return view('latihan.js.index');
 });
 
@@ -382,29 +404,33 @@ Route::get('/latihan/js',function(){
 Route::get('/latihan/php',function(){
     return view('latihan.php.index');
 });
+Route::get('/latihan/php/syntax-1',function(){
+    return view('latihan.php.index');
+});
 
 //Route Kelas Mentor HTML
 Route::get('/kelas-mentor/html',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/html/{post:id}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/html/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
 
 //Route Kelas Mentor CSS
 Route::get('/kelas-mentor/css',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/css/{post:id}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/css/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
 
 //Route Kelas Mentor PHP
 Route::get('/kelas-mentor/php',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/php/{post:id}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/php/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
 
 //Route Kelas Mentor JS
 Route::get('/kelas-mentor/js',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/js/{post:id}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/js/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
 
 //Route Kelas Mentor SQL
 Route::get('/kelas-mentor/sql',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/sql/{post:id}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/sql/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
 
 //Route Profile Mentor
-Route::get('/mentor/{post:id_user}',[PostController::class,"profileMentor"])->name('profileMentor');
+// Route::get('/mentor/{post:id_user}',[PostController::class,"profileMentor"])->name('profileMentor');
+Route::get('/mentor/{username}',[PostController::class,"profileMentor"])->name('profileMentor');
 // Route::get('/mentor/{user:name}',function(User $user,Post $post){
-
+// Route::get('/latihan/html', [LatihanController::class,"cekJawaban"])->name('cekJawaban');
 // });
