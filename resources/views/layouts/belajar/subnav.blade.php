@@ -1,6 +1,5 @@
-<header>
-    <div class="container-fluid">
-        <a href="#" class="toggle-menu fontawesome-reorder"></a>
+<div class="sub-navbar bg-dark">
+    <div class="container-fluid h-100">
         <nav class="sub-nav">
             <a href="{{ url('/belajar/html') }}" class="{{ request()->is('belajar/html*') ? 'active' : '' }}">
                 <span>BELAJAR HTML</span>
@@ -19,4 +18,4 @@
             </a>
         </nav>
     </div>
-</header>
+</div>
