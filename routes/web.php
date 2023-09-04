@@ -64,41 +64,17 @@ Route::get('/belajar/html/element',function(){
 Route::get('/belajar/html/atribut',function(){
     return view('belajar.html.html-atribut');
 });
-Route::get('/belajar/html/heading',function(){
-    return view('belajar.html.html-heading');
-});
-Route::get('/belajar/html/paragraf',function(){
-    return view('belajar.html.html-paragraf');
-});
 Route::get('/belajar/html/styling',function(){
     return view('belajar.html.html-styling');
 });
 Route::get('/belajar/html/formatting',function(){
     return view('belajar.html.html-formatting');
 });
-Route::get('/belajar/html/quotation',function(){
-    return view('belajar.html.html-quotation');
-});
 Route::get('/belajar/html/comment',function(){
     return view('belajar.html.html-comment');
 });
-Route::get('/belajar/html/color',function(){
-    return view('belajar.html.html-color');
-});
-Route::get('/belajar/html/css',function(){
-    return view('belajar.html.html-css');
-});
-Route::get('/belajar/html/link',function(){
-    return view('belajar.html.html-link');
-});
-Route::get('/belajar/html/image',function(){
-    return view('belajar.html.html-image');
-});
 Route::get('/belajar/html/favicon',function(){
     return view('belajar.html.html-favicon');
-});
-Route::get('/belajar/html/page-title',function(){
-    return view('belajar.html.html-page-title');
 });
 Route::get('/belajar/html/block-inline',function(){
     return view('belajar.html.html-block-inline');

@@ -6,6 +6,6 @@
 <section class="main">
     <h1>HTML Atribut</h1>
     <a href="{{ url('/belajar/html/element') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/heading') }}" class="btn btn-success">Selanjutnya</a>
+    <a href="{{ url('/belajar/html/styling') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection

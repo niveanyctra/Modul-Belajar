@@ -5,18 +5,10 @@
             <a href="{{url('/belajar/html/dasar')}}" class="{{ request()->is('belajar/html/dasar') ? 'active' : '' }}">HTML Dasar</a>
             <a href="{{url('/belajar/html/element')}}" class="{{ request()->is('belajar/html/element') ? 'active' : '' }}">HTML Element</a>
             <a href="{{url('/belajar/html/atribut')}}" class="{{ request()->is('belajar/html/atribut') ? 'active' : '' }}">HTML Atribut</a>
-            <a href="{{url('/belajar/html/heading')}}" class="{{ request()->is('belajar/html/heading') ? 'active' : '' }}">HTML Heading</a>
-            <a href="{{url('/belajar/html/paragraf')}}" class="{{ request()->is('belajar/html/paragraf') ? 'active' : '' }}">HTML Paragraf</a>
             <a href="{{url('/belajar/html/styling')}}" class="{{ request()->is('belajar/html/styling') ? 'active' : '' }}">HTML Style</a>
             <a href="{{url('/belajar/html/formatting')}}" class="{{ request()->is('belajar/html/formatting') ? 'active' : '' }}">HTML Formatting</a>
-            <a href="{{url('/belajar/html/quotation')}}" class="{{ request()->is('belajar/html/quotation') ? 'active' : '' }}">HTML Quotation</a>
             <a href="{{url('/belajar/html/comment')}}" class="{{ request()->is('belajar/html/comment') ? 'active' : '' }}">HTML Komentar</a>
-            <a href="{{url('/belajar/html/color')}}" class="{{ request()->is('belajar/html/color') ? 'active' : '' }}">HTML Warna</a>
-            <a href="{{url('/belajar/html/css')}}" class="{{ request()->is('belajar/html/css') ? 'active' : '' }}">HTML CSS</a>
-            <a href="{{url('/belajar/html/link')}}" class="{{ request()->is('belajar/html/link') ? 'active' : '' }}">HTML Link</a>
-            <a href="{{url('/belajar/html/image')}}" class="{{ request()->is('belajar/html/image') ? 'active' : '' }}">HTML Foto</a>
             <a href="{{url('/belajar/html/favicon')}}" class="{{ request()->is('belajar/html/favicon') ? 'active' : '' }}">HTML Favicon</a>
-            <a href="{{url('/belajar/html/page-title')}}" class="{{ request()->is('belajar/html/page-title') ? 'active' : '' }}">HTML Title Halaman</a>
             <a href="{{url('/belajar/html/block-inline')}}" class="{{ request()->is('belajar/html/block-inline') ? 'active' : '' }}">HTML Block & Inline</a>
             <a href="{{url('/belajar/html/class')}}" class="{{ request()->is('belajar/html/class') ? 'active' : '' }}">HTML Class</a>
             <a href="{{url('/belajar/html/id')}}" class="{{ request()->is('belajar/html/id') ? 'active' : '' }}">HTML Id</a>
