@@ -16,13 +16,13 @@
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Title</label>
-                            <input type="text" name="title" class="form-control" id="nama" required="required">
+                            <input type="text" required="required" name="title" class="form-control" id="nama">
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">Category</label>
-                            <select type="text" name="category" class="form-control" id="nama">
+                            <label for="nama" class="form-label">category</label>
+                            <select type="text" required="required" name="category" class="form-control" id="nama">
                                 <option value="html">HTML</option>
                                 <option value="css">CSS</option>
                                 <option value="php">PHP</option>
@@ -33,21 +33,11 @@
                     </div>
                     <div class="col-6">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">Level</label>
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="form-check">
-                                        <input type="radio" class="form-check-input" name="level" value="mudah" checked>
-                                        <label for="level" class="form-check-label">Mudah</label>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="form-check">
-                                        <input type="radio" class="form-check-input" name="level" value="menengah">
-                                        <label for="level" class="form-check-label">Menengah</label>
-                                    </div>
-                                </div>
-                            </div>
+                            <label for="nama" class="form-label">level</label>
+                            <select type="text"  required="required" name="level" class="form-control" id="nama">
+                                <option value="mudah">Mudah</option>
+                                <option value="menengah">Menengah</option>
+                            </select>
                         </div>
                     </div>
                     <div class="col-6">
