@@ -1,5 +1,6 @@
 <div class="sub-navbar bg-dark">
-    <div class="container-fluid h-100">
+    <div class="h-100">
+        <a href="#" class="toggle-menu fontawesome-reorder"></a>
         <nav class="sub-nav">
             <a href="{{ url('/belajar/html') }}" class="{{ request()->is('belajar/html*') ? 'active' : '' }}">
                 <span>BELAJAR HTML</span>
