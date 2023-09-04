@@ -1,8 +1,8 @@
-<header>
-    <div class="container-fluid">
+<div class="sub-navbar bg-dark">
+    <div class="h-100">
         <a href="#" class="toggle-menu fontawesome-reorder"></a>
         <nav class="sub-nav">
-            <a href="{{ url('/latihan/html') }}" class="{{ request()->is('latihan/html*') ? 'active' : '' }}">
+            <a href="{{ url('/latihan/html/basic') }}" class="{{ request()->is('latihan/html*') ? 'active' : '' }}">
                 <span>LATIHAN HTML</span>
             </a>
             <a href="{{ url('/latihan/css') }}" class="{{ request()->is('latihan/css*') ? 'active' : '' }}">
@@ -19,4 +19,4 @@
             </a>
         </nav>
     </div>
-</header>
+</div>
