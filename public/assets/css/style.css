@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
 [class*="fontawesome-"]:before {
     font-family: "fontawesome", sans-serif;
   }
@@ -5,6 +7,10 @@
   html, body {
     height: 100%;
   }
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
 
 .sub {
   height: 30px;
@@ -75,7 +81,7 @@
     transition: all .2s ease-in-out;
   }
 
-  .sub-nav a.active{
+  .sub-nav a.active, .sub-nav a.active:hover{
     color: #fafafa;
     background-color: #e35205;
   }
@@ -98,7 +104,7 @@
     overflow: scroll;
     overflow-x: hidden;
     width: 260px;
-    background-color: #333;
+    background-color: #F9FAFC;
     left: 0;
   }
 
@@ -111,18 +117,18 @@
   }
 
   .sidebar-header {
-    background-color: #555;
-    color: #ccc;
+    background-color: #e2e2e2;
+    color: #141414;
     margin: 0;
     padding: 0 20px;
-    font-weight: normal;
+    font-weight: 600;
     line-height: 2;
     text-transform: uppercase;
     font-size: 90%;
   }
 
   .toggle-menu {
-    color: #ccc;
+    color: #222;
     text-decoration: none;
     font-size: 50px;
     float: left;
@@ -151,8 +157,8 @@
   }
 
   .nav-side a {
-    color: #ccc;
-    background-color: #333;
+    color: #222;
+    background-color: #F9FAFC;
     margin-bottom: 1px;
     border-left: 10px solid transparent;
     transition: all .3s ease-in-out;
@@ -162,8 +168,8 @@
   }
 
   .nav-side a:hover {
-    color: #fafafa;
-    background-color: #272727;
+    color: #333;
+    background-color: #e5e5e5;
   }
 
   .nav-side a.active {

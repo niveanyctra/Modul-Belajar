@@ -17,7 +17,7 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown fw-medium">
                         <a class="nav-link dropdown-toggle" href="#" id="listBelajarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Tutorial
                         </a>
