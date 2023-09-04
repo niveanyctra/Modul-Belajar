@@ -5,7 +5,7 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Komentar</h1>
-    <a href="{{ url('/belajar/html/quotation') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/color') }}" class="btn btn-success">Selanjutnya</a>
+    <a href="{{ url('/belajar/html/formatting') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/html/favicon') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection
