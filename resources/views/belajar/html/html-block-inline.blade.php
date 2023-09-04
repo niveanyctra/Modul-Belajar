@@ -54,6 +54,12 @@
     <div class="bg-warning p-4">
         <p><strong>Note :</strong> Sebuah elemen inline tidak bisa memuat elemen block-level</p>
     </div>
+    <hr>
+    <h3 class="my-3">Elemen &lt;div&gt;</h3>
+    <p>
+        Elemen <span class="bg-body-secondary text-danger">&lt;div&gt;</span> biasanya digunakan sebagai wadah bagi elemen HTML lain. <br><br>
+        Elemen <span class="bg-body-secondary text-danger">&lt;div&gt;</span> tidak memiliki atribut bawaan, namun biasanya menggunakan atribut <span class="bg-body-secondary text-danger">style</span>, <span class="bg-body-secondary text-danger">class</span>, dan <span class="bg-body-secondary text-danger">id</span>
+    </p>
     <a href="{{ url('/belajar/html/favicon') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/html/class') }}" class="btn btn-success">Selanjutnya</a>
 </section>
