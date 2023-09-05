@@ -94,20 +94,11 @@ Route::get('/belajar/html/table-border',function(){
 Route::get('/belajar/html/table-size',function(){
     return view('belajar.html.html-table-size');
 });
-Route::get('/belajar/html/table-header',function(){
-    return view('belajar.html.html-table-header');
-});
 Route::get('/belajar/html/table-padding-spacing',function(){
     return view('belajar.html.html-table-padding-spacing');
 });
 Route::get('/belajar/html/table-colspan-rowspan',function(){
     return view('belajar.html.html-table-colspan-rowspan');
-});
-Route::get('/belajar/html/table-styling',function(){
-    return view('belajar.html.html-table-styling');
-});
-Route::get('/belajar/html/table-colgroup',function(){
-    return view('belajar.html.html-table-colgroup');
 });
 Route::get('/belajar/html/list',function(){
     return view('belajar.html.html-list');
@@ -117,9 +108,6 @@ Route::get('/belajar/html/unordered-list',function(){
 });
 Route::get('/belajar/html/ordered-list',function(){
     return view('belajar.html.html-ordered-list');
-});
-Route::get('/belajar/html/other-list',function(){
-    return view('belajar.html.html-other-list');
 });
 Route::get('/belajar/html/form',function(){
     return view('belajar.html.html-form');

@@ -1,6 +1,6 @@
 <div class="sub-navbar bg-dark">
     <div class="h-100">
-        <a href="#" class="toggle-menu fontawesome-reorder"></a>
+        <a href="#" class="toggle-menu fontawesome-reorder"><i class="fa-solid fa-bars fa-fw" style="color: #ffffff; width:20px;"></i></a>
         <nav class="sub-nav">
             <a href="{{ url('/latihan/html/basic') }}" class="{{ request()->is('latihan/html*') ? 'active' : '' }}">
                 <span>LATIHAN HTML</span>
