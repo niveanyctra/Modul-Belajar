@@ -60,6 +60,29 @@
         Elemen <span class="bg-body-secondary text-danger">&lt;div&gt;</span> biasanya digunakan sebagai wadah bagi elemen HTML lain. <br><br>
         Elemen <span class="bg-body-secondary text-danger">&lt;div&gt;</span> tidak memiliki atribut bawaan, namun biasanya menggunakan atribut <span class="bg-body-secondary text-danger">style</span>, <span class="bg-body-secondary text-danger">class</span>, dan <span class="bg-body-secondary text-danger">id</span>
     </p>
+    <p>
+<span class="bg-body-secondary text-danger">&lt;div&gt;</span> bisa digunakan untuk mendesain block-level content dengan menggunakan CSS
+    </p>
+    <div class="bg-dark text-light p-3">
+        &lt;div <span class="text-danger">style</span>=<span class="text-success">"background-color:black;color:white;padding:20px;"</span>&gt;<br>
+        &lt;h2&gt;Cirebon&lt;/h2&gt;<br>
+        &lt;p&gt;Cirebon adalah kota udang&lt;/p&gt;<br>
+        &lt;/div&gt;
+    </div>
+    <hr>
+    <h3 class="my-3">Elemen &lt;span&gt;</h3>
+    <p>
+        Elemen <span class="bg-body-secondary text-danger">&lt;span&gt;</span> adalah pembungkus satu baris yang digunakan untuk menandai bagian teks atau bagian dari dokumen <br><br>
+        Elemen <span class="bg-body-secondary text-danger">&lt;span&gt;</span> tidak memiliki atribut bawaan, namun biasanya menggunakan atribut <span class="bg-body-secondary text-danger">style</span>, <span class="bg-body-secondary text-danger">class</span>, dan <span class="bg-body-secondary text-danger">id</span>
+    </p>
+        <p>
+<span class="bg-body-secondary text-danger">&lt;span&gt;</span> bisa digunakan untuk mendesain bagian dari teks dengan menggunakan CSS
+    </p>
+        <div class="bg-dark text-light p-3">
+        &lt;p&gt;
+            Bunga Mawar Berwarna &lt;span <span class="text-danger">style</span>=<span class="text-success">"color:red;font-weight:bold;"</span>&gt;Merah&lt;span&gt;
+        &lt;/p&gt;
+    </div><br>
     <a href="{{ url('/belajar/html/favicon') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/html/class') }}" class="btn btn-success">Selanjutnya</a>
 </section>
