@@ -16,16 +16,12 @@
             <a href="{{url('/belajar/html/table')}}" class="{{ request()->is('belajar/html/table') ? 'active' : '' }}">Table</a>
             <a href="{{url('/belajar/html/table-border')}}" class="{{ request()->is('belajar/html/table-border') ? 'active' : '' }}">Table Border</a>
             <a href="{{url('/belajar/html/table-size')}}" class="{{ request()->is('belajar/html/table-size') ? 'active' : '' }}">Table Size</a>
-            <a href="{{url('/belajar/html/table-header')}}" class="{{ request()->is('belajar/html/table-header') ? 'active' : '' }}">Table Header</a>
             <a href="{{url('/belajar/html/table-padding-spacing')}}" class="{{ request()->is('belajar/html/table-padding-spacing') ? 'active' : '' }}">Padding & Spacing</a>
             <a href="{{url('/belajar/html/table-colspan-rowspan')}}" class="{{ request()->is('belajar/html/table-colspan-rowspan') ? 'active' : '' }}">Colspan & Rowspan</a>
-            <a href="{{url('/belajar/html/table-styling')}}" class="{{ request()->is('belajar/html/table-styling') ? 'active' : '' }}">Table Styling</a>
-            <a href="{{url('/belajar/html/table-colgroup')}}" class="{{ request()->is('belajar/html/table-colgroup') ? 'active' : '' }}">Table Colgroup</a>
         <h3 class="sidebar-header">HTML List</h3>
             <a href="{{url('/belajar/html/list')}}" class="{{ request()->is('belajar/html/list') ? 'active' : '' }}">List</a>
             <a href="{{url('/belajar/html/unordered-list')}}" class="{{ request()->is('belajar/html/unordered-list') ? 'active' : '' }}">Unordered List</a>
             <a href="{{url('/belajar/html/ordered-list')}}" class="{{ request()->is('belajar/html/ordered-list') ? 'active' : '' }}">Ordered List</a>
-            <a href="{{url('/belajar/html/other-list')}}" class="{{ request()->is('belajar/html/other-list') ? 'active' : '' }}">Other List</a>
         <h3 class="sidebar-header">HTML Form</h3>
             <a href="{{ url('/belajar/html/form') }}" class="{{ request()->is('belajar/html/form') ? 'active' : '' }}">Form</a>
             <a href="{{ url('/belajar/html/form-atribut') }}" class="{{ request()->is('belajar/html/form-atribut') ? 'active' : '' }}">Form Atribut</a>
