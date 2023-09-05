@@ -41,13 +41,13 @@
         window.onbeforeunload = function() {
             sessionStorage.setItem("sidebarScroll", document.querySelector(".sidebar").scrollTop);
 
-            sessionStorage.setItem("contentScroll", document.querySelector(".main").scrollTop);
+            {{--  sessionStorage.setItem("contentScroll", document.querySelector(".main").scrollTop);  --}}
         };
 
         window.onload = function() {
             document.querySelector(".sidebar").scrollTop = sessionStorage.getItem("sidebarScroll");
 
-            document.querySelector(".main").scrollTop = sessionStorage.getItem("contentScroll");
+            {{--  document.querySelector(".main").scrollTop = sessionStorage.getItem("contentScroll");  --}}
         };
     </script>
 </body>

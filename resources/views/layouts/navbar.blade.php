@@ -51,7 +51,7 @@
                             </div>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown fw-medium">
                         <a class="nav-link dropdown-toggle" href="#" id="listAlurBelajarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Alur Belajar
                         </a>
@@ -64,7 +64,7 @@
                                     <a href="{{ url('/alur-belajar/front-end') }}">
                                         <h5 class="title">Front End</h5>
                                         <span class="subtitle">
-                                        Rekomendasi oleh para mentor
+                                        Rekomendasi oleh roadmap.sh
                                         </span>
                                     </a>
                                 </li>
@@ -75,7 +75,7 @@
                                     <a href="{{ url('/alur-belajar/back-end') }}">
                                         <h5 class="title">Back End</h5>
                                         <span class="subtitle">
-                                        Rekomendasi oleh para mentor
+                                        Rekomendasi oleh roadmap.sh
                                         </span>
                                     </a>
                                 </li>
@@ -86,14 +86,14 @@
                                     <a href="{{ url('/alur-belajar/ux-designer') }}">
                                         <h5 class="title">UX Designer</h5>
                                         <span class="subtitle">
-                                        Rekomendasi oleh para mentor
+                                        Rekomendasi oleh roadmap.sh
                                         </span>
                                     </a>
                                 </li>
                             </div>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown fw-medium">
                         <a class="nav-link dropdown-toggle" href="#" id="listLatihanDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Latihan
                         </a>
@@ -127,7 +127,7 @@
                             </div>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown fw-medium">
                         <a class="nav-link dropdown-toggle" href="#" id="listKelasMentorDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Kelas Mentor
                         </a>
