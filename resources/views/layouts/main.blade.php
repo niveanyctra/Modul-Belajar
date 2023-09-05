@@ -17,10 +17,7 @@
     {{-- Overlay Scrollbars --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.3.0/styles/overlayscrollbars.min.css" integrity="sha512-MMVRaRR0pB97w1tzt6+29McVwX+YsQcSlIehGCGqFsC+KisK3d2F/xRxFaGMN7126EeC3A6iYRhdkr5nY8fz3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.3.0/browser/overlayscrollbars.browser.es6.min.js" integrity="sha512-tu2VesH7qQi/IX4MN47Zw0SCia4hgBgu4xY/fP/gV2XcqdZsIh1B5wbSy4Mk5AhkkfTj/XMDQt86wzsZIsxPSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <style>
-        @import url(http://weloveiconfonts.com/api/?family=fontawesome);
-    </style>
+    <script src="https://kit.fontawesome.com/4f5ac69095.js" crossorigin="anonymous"></script>
 </head>
 
 <body data-overlayscrollbars-initialize>
@@ -29,7 +26,7 @@
         @yield('content')
     </div>
     <!-- yield sidebar ini nggak kepake kah guys? -->
-    @yield('sidebar') 
+    @yield('sidebar')
     @yield('js')
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script id="rendered-js">
@@ -40,6 +37,18 @@
             });
         });
     </script>
-</body>
+    <script>
+        window.onbeforeunload = function() {
+            sessionStorage.setItem("sidebarScroll", document.querySelector(".sidebar").scrollTop);
 
+            sessionStorage.setItem("contentScroll", document.querySelector(".main").scrollTop);
+        };
+
+        window.onload = function() {
+            document.querySelector(".sidebar").scrollTop = sessionStorage.getItem("sidebarScroll");
+
+            document.querySelector(".main").scrollTop = sessionStorage.getItem("contentScroll");
+        };
+    </script>
+</body>
 </html>
