@@ -12,12 +12,12 @@
     <p>Semua elemen HTML dapat memiliki atribut. Atribut dapat memberikan informasi tambahan pada element. Atribut harus ada di tag awal. Atribut biasanya ditulis dengan cara : namaatribut="value"</p>
     <hr>
     <h3 class="mt-3">Contoh</h3>
-    <pre class="text-light bg-dark">
+    <div class="text-light bg-dark p-2">
 
-    &lt;a <span class="text-danger">href</span>=<span class="text-success">"https://smkn1-cirebon.sch.id"</span>&gt;Ini sebuah tautan&lt;/a&gt;
+    &lt;a <span class="text-danger">href</span>=<span class="text-success">"https://smkn1-cirebon.sch.id"</span>&gt;Ini sebuah tautan&lt;/a&gt;<br>
     &lt;img <span class="text-danger">src</span>=<span class="text-success">"img.png"</span> <span class="text-danger">height</span>=<span class="text-success">"100px"</span> <span class="text-danger">width</span>=<span class="text-success">"100px"</span>&gt;
 
-</pre>
+</div>
     <h5 class="mt-1">Penjelasan</h5>
     <p>Pada contoh diatas kode berwarna merah merupakan nama atribut dan kode yang berwarna hijau merupakan value dari atribut</p>
     <hr>

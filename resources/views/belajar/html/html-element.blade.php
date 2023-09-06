@@ -51,19 +51,28 @@
 <p>Elemen HTML dapat bersarang atau biasa disebut <i>Nested Element</i> yang artinya elemen HTML dapat berada di dalam elemen lain</p>
 <h3 class="mt-3">Contoh</h3>
     <div class="bg-dark">
-<pre class="text-light">
+<div class="text-light p-2">
 
-    &lt;!DOCTYPE html&gt;
+    &lt;!DOCTYPE html&gt;<br>
     &lt;html&gt;
+    <div class="ps-4">
+
         &lt;head&gt;
+        <div class="ps-2">
+
             &lt;title&gt;Judul Halaman&lt;title&gt;
-        &lt;/head&gt;
+        </div>
+        &lt;/head&gt;<br>
         &lt;body&gt;
+        <div class="ps-2">
+
             &lt;h1&gt;Hello World&lt;/h1&gt;
+        </div>
         &lt;/body&gt;
+    </div>
     &lt;/html&gt;
 
-</pre>
+</div>
     </div>
     <hr>
     <h3 class="mt-3">

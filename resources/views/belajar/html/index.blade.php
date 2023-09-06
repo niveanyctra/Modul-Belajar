@@ -19,19 +19,28 @@
     <h3 class="mt-3">Contoh Dokumen HTML Sederhana</h3>
     <hr>
     <div class="bg-dark">
-<pre class="text-light">
+<div class="text-light p-2">
 
     &lt;!DOCTYPE html&gt;
     &lt;html&gt;
-    &lt;head&gt;
-    &lt;title&gt;Judul Halaman&lt;title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    &lt;h1&gt;Hello World&lt;/h1&gt;
-    &lt;/body&gt;
+    <div class="ps-4">
+
+        &lt;head&gt;
+        <div class="ps-4">
+
+            &lt;title&gt;Judul Halaman&lt;title&gt;
+        </div>
+        &lt;/head&gt;<br>
+        &lt;body&gt;
+        <div class="ps-4">
+
+            &lt;h1&gt;Hello World&lt;/h1&gt;
+        </div>
+        &lt;/body&gt;
+    </div>
     &lt;/html&gt;
 
-</pre>
+</div>
     </div>
     <h3>Penjelasan Contoh HTML</h3>
     <ul>

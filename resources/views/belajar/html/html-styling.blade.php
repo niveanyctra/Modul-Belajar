@@ -20,11 +20,11 @@
     <hr>
     <h3 class="mt-3">Struktur Umum Styling</h3>
     <p>Styling memiliki struktur umum sebagai berikut :</p>
-    <pre class="text-light bg-dark">
+    <div class="text-light bg-dark p-2">
 
     &lt;namatag <span class="text-danger">style</span>=<span class="text-success">"property:<span class="text-primary">value</span>"</span>&gt; &lt;/namatag&gt;
 
-</pre>
+</div>
 <ul>
     <li>Kode berwarna merah menunjukan atribut yang digunakan</li>
     <li>Kode berwarna hijau menunjukan property style yang digunakan. Contoh : font-size,color,background-color, dll</li>
@@ -32,11 +32,11 @@
 </ul>
 <hr>
 <h3 class="mt-3">Contoh</h3>
-    <pre class="text-light bg-dark">
+    <div class="text-light bg-dark p-2">
 
     &lt;p <span class="text-danger">style</span>=<span class="text-success">"color:<span class="text-primary">blue</span>"</span>&gt;Ini teks berwarna biru&lt;/p&gt;
 
-</pre>
+</div>
 <h6 class="mt-2">Hasilnya :</h6>
 <div class="bg-body-secondary px-2 py-2 rounded-1">
 

@@ -22,19 +22,31 @@
         <br><br>
         Selanjutnya, tambah elemen <span class="bg-body-secondary text-danger">&lt;link&gt;</span> pada file "index.html" anda, selanjutnya elemen <span class="bg-body-secondary text-danger">&lt;title&gt;</span>, seperti berikut :
     </p>
-    <pre class="bg-dark text-light">
+    <div class="bg-dark text-light p-2">
 
     &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-        &lt;head&gt;
-            &lt;title&gt;Judul Halaman&lt;title&gt;
-            &lt;link <span class="text-danger">rel</span><span class="text-success">="icon"</span> <span class="text-danger">type</span><span class="text-success">="image/x-icon"</span> <span class="text-danger">href</span><span class="text-success">="/images/favicon.ico"</span>&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;h1&gt;Hello World&lt;/h1&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
-    </pre>
+    <div class="p-2">
+
+        &lt;html&gt;
+        <div class="ps-4">
+
+            &lt;head&gt;
+            <div class="ps-4">
+
+                &lt;title&gt;Judul Halaman&lt;title&gt;<br>
+                &lt;link <span class="text-danger">rel</span><span class="text-success">="icon"</span> <span class="text-danger">type</span><span class="text-success">="image/x-icon"</span> <span class="text-danger">href</span><span class="text-success">="/images/favicon.ico"</span>&gt;
+            </div>
+            &lt;/head&gt;<br>
+            &lt;body&gt;
+            <div class="ps-4">
+
+                &lt;h1&gt;Hello World&lt;/h1&gt;
+            </div>
+            &lt;/body&gt;
+        </div>
+        &lt;/html&gt;
+    </div>
+    </div>
     <p>Sekarang, simpan file "index.html" dan reload/refresh halaman website. Seharusnya browser tab anda sudah menampilkan gambar favicon anda pada sebelah kiri judul halaman</p>
     <a href="{{ url('/belajar/html/comment') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/html/block-inline') }}" class="btn btn-success">Selanjutnya</a>
