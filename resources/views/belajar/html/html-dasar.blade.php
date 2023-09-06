@@ -18,20 +18,31 @@
         Dokumen HTML sendiri harus diawali dengan <span class="bg-body-secondary text-danger">&lt;html&gt;</span> dan diakhiri dengan <span class="bg-body-secondary text-danger">&lt;/html&gt;</span><br><br>
         Bagian yang dapat dilihat dari dokumen HTML adalah antara <span class="bg-body-secondary text-danger">&lt;body&gt;</span> dan <span class="bg-body-secondary text-danger">&lt;/body&gt;</span>
     </p>
-        <div class="bg-dark">
-<pre class="text-light">
+        <div class="bg-dark p-2">
+<div class="text-light p-2">
 
     &lt;!DOCTYPE html&gt;
     &lt;html&gt;
-    &lt;head&gt;
-    &lt;title&gt;Judul Halaman&lt;title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    &lt;h1&gt;Hello World&lt;/h1&gt;
-    &lt;/body&gt;
+    <div class="ps-4">
+
+        &lt;head&gt;
+        <div class="ps-2">
+
+            &lt;title&gt;Judul Halaman&lt;title&gt;
+        </div>
+        &lt;/head&gt;<br>
+
+
+        &lt;body&gt;
+        <div class="ps-4">
+
+            &lt;h1&gt;Hello World&lt;/h1&gt;
+        </div>
+        &lt;/body&gt;
+    </div>
     &lt;/html&gt;
 
-</pre>
+</div>
     </div>
     <hr>
     <h3 class="mt-3">Deklarasi &lt;!DOCTYPE&gt;</h3>
@@ -41,11 +52,11 @@
     Deklarasi <span class="bg-body-secondary text-danger">&lt;!DOCTYPE&gt;</span> untuk HTML5 adalah:
     </p>
 
-<pre class="text-light bg-dark">
+<div class="text-light bg-dark p-2">
 
     &lt;!DOCTYPE html&gt;
 
-</pre>
+</div>
 
     <h3 class="mt-3">HTML Headings</h3>
     <p>Heading di HTML terdiri dari <span class="bg-body-secondary text-danger">&lt;h1&gt;</span> sampai <span class="bg-body-secondary text-danger">&lt;h6&gt;</span><br><br>
@@ -53,7 +64,7 @@
     <span class="bg-body-secondary text-danger">&lt;h6&gt;</span> mendefinisikan judul yang paling kecil
     </p>
     <h3 class="mt-3">Contoh</h3>
-    <div class="bg-dark text-light">
+    <div class="bg-dark p-2 text-light">
 
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
@@ -65,20 +76,20 @@
     <hr>
     <h3 class="mt-3">Paragraf HTML</h3>
     <p>Paragraf HTML didefinisikan dengan tag <span class="bg-body-secondary text-danger">&lt;p&gt;</span> :</p>
-    <pre class="text-light bg-dark">
+    <div class="text-light bg-dark p-2">
 
-    &lt;p&gt;Ini sebuah paragraf&lt;/p&gt;
+    &lt;p&gt;Ini sebuah paragraf&lt;/p&gt; <br>
     &lt;p&gt;Ini paragraf lain&lt;/p&gt;
 
-</pre>
+</div>
     <hr>
     <h3 class="mt-3">Tautan HTML</h3>
     <p>Tautan HTML didefinisikan dengan tag <span class="bg-body-secondary text-danger">&lt;a&gt;</span> :</p>
-    <pre class="text-light bg-dark">
+    <div class="text-light bg-dark p-2">
 
     &lt;a <span class="text-danger">href</span><span class="text-success">="https://smkn1-cirebon.sch.id"</span>&gt;Ini sebuah Tautan&lt;/a&gt;
 
-</pre>
+</div>
 <p>Tujuan tautan ditentukan dalam atribut <span class="bg-body-secondary text-danger">href</span> <br><br>
 Atribut digunakan untuk memberikan informasi tambahan tentang elemen HTML</p>
     <hr>
@@ -86,11 +97,11 @@ Atribut digunakan untuk memberikan informasi tambahan tentang elemen HTML</p>
     <p>Gambar dalam HTML didefinisikan dengan tag <span class="bg-body-secondary text-danger">&lt;img&gt;</span>. <br><br>
     Sumber file img (<span class="bg-body-secondary text-danger">src</span>), teks alternatif(<span class="bg-body-secondary text-danger">alt</span>),
     <span class="bg-body-secondary text-danger">width</span>, dan <span class="bg-body-secondary text-danger">height</span> tersedia sebagai atribut:</p>
-    <pre class="text-light bg-dark">
+    <div class="text-light bg-dark p-2">
 
     &lt;img <span class="text-danger">src</span><span class="text-success">="image.png"</span> <span class="text-danger">alt</span><span class="text-success">="gambar" </span><span class="text-danger">width</span><span class="text-success">="100"</span> <span class="text-danger">height</span><span class="text-success">="100"</span>&gt;
 
-</pre>
+</div>
 <hr>
 <h3 class="mt-3">Cara Melihat Sumber Kode HTML</h3>
 <p>Berikut ini adalah cara melihat sumber kode dan memeriksa elemen HTML : </p>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-overlayscrollbars-initialize>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
@@ -28,7 +28,7 @@
     <script src="https://kit.fontawesome.com/4f5ac69095.js" crossorigin="anonymous"></script>
 </head>
 
-<body data-overlayscrollbars-initialize>
+<body>
     @include('layouts.navbar')
     <div>
         @yield('content')
