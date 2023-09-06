@@ -6,6 +6,6 @@
 <section class="main">
     <h1>SQL Syntax</h1>
     <a href="{{ url('/belajar/sql') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql') }}" class="btn btn-success">Selanjutnya</a>
+    <a href="{{ url('/belajar/sql/select') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection
