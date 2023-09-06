@@ -55,7 +55,29 @@
             <td>Untuk memberikan akses pada user dengan mengisi form otomatis berdasarkan input sebelumnya</td>
         </tr>
     </table>
-    <br>
+    <hr>
+    <h3 class="my-3">
+        Contoh
+    </h3>
+    <div class="bg-dark text-light p-2">
+        &lt;form action="aksi_form.php" method="post"&gt;
+        <div class="ps-4">
+
+            &lt;label for="nama"&gt;Nama&lt;/label&gt;<br>
+            &lt;input type="text" name="nama" id="nama" required placeholder="Masukkan nama"&gt;<br>
+            &lt;label for="kelas"&gt;Kelas&lt;/label&gt;<br>
+            &lt;input type="text" name="kelas" id="kelas" required placeholder="Masukkan kelas"&gt;<br>
+        </div>
+    &lt;/form&gt;
+    </div><br>
+    <p>Potongan kode diatas akan menghasilkan form dibawah ini :</p>
+    <form action="aksi_form.php" method="post">
+        <label for="nama">Nama</label><br>
+        <input type="text" name="nama" id="nama" required placeholder="Masukkan nama"><br>
+        <label for="kelas">Kelas</label><br>
+        <input type="text" name="kelas" id="kelas" required placeholder="Masukkan kelas"><br>
+    </form><br>
+    <p>Dalam form tersebut terdapat atribut <span class="bg-body-secondary text-danger">required</span> yang mengharuskan user untuk mengisi field input dan juga atribut <span class="bg-body-secondary text-danger">placeholder</span> yang memberikan text bantuan dalam field input</p>
         <a href="{{ url('/belajar/html/input-type') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/html') }}" class="btn btn-success">Selanjutnya</a>
 </section>

@@ -1,7 +1,14 @@
 @extends('layouts.main')
 @section('content')
-    <div>
-        <a href="{{ url('html/try') }}" target="_blank" rel="noopener noreferrer">coba</a>
+    <div class="container d-flex align-items-center vh-100">
+        <div>
+            <h6>#NeverGonnaGiveYourUp</h6>
+            <h1 class="fw-bolder display-3">Halo, Selamat datang sobat pplg</h1>
+            <span>Modul ini menyediakan pembelajaran untuk kelas X - XII</span>
+        </div>
+        <div>
+            <img src="{{ url('img/uwong.png') }}" alt="" width="378px">
+        </div>
     </div>
     @include('layouts.footer')
 @endsection
