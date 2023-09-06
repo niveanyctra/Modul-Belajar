@@ -17,5 +17,9 @@
             <a href="{{url('/belajar/js/function')}}" class="{{ request()->is('belajar/js/function') ? 'active' : '' }}">JS Function</a>
             <a href="{{url('/belajar/js/object')}}" class="{{ request()->is('belajar/js/object') ? 'active' : '' }}">JS Object</a>
             <a href="{{url('/belajar/js/event')}}" class="{{ request()->is('belajar/js/event') ? 'active' : '' }}">JS Event</a>
+            <a href="{{url('/belajar/js/string-method')}}" class="{{ request()->is('belajar/js/string-method') ? 'active' : '' }}">JS String Method</a>
+            <a href="{{url('/belajar/js/if-else')}}" class="{{ request()->is('belajar/js/if-else') ? 'active' : '' }}">JS If Else</a>
+            <a href="{{url('/belajar/js/switch')}}" class="{{ request()->is('belajar/js/switch') ? 'active' : '' }}">JS Switch</a>
+            <a href="{{url('/belajar/js/loop')}}" class="{{ request()->is('belajar/js/loop') ? 'active' : '' }}">JS Loop</a>
     </nav>
 </aside>

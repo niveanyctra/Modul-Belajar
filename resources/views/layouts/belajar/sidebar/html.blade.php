@@ -25,9 +25,7 @@
         <h3 class="sidebar-header">HTML Form</h3>
             <a href="{{ url('/belajar/html/form') }}" class="{{ request()->is('belajar/html/form') ? 'active' : '' }}">Form</a>
             <a href="{{ url('/belajar/html/form-atribut') }}" class="{{ request()->is('belajar/html/form-atribut') ? 'active' : '' }}">Form Atribut</a>
-            <a href="{{ url('/belajar/html/form-element') }}" class="{{ request()->is('belajar/html/form-element') ? 'active' : '' }}">Form Element</a>
             <a href="{{ url('/belajar/html/input-type') }}" class="{{ request()->is('belajar/html/input-type') ? 'active' : '' }}">Input Tipe</a>
             <a href="{{ url('/belajar/html/input-atribut') }}" class="{{ request()->is('belajar/html/input-atribut') ? 'active' : '' }}">Input Atribut</a>
-            <a href="{{ url('/belajar/html/input-form-atribut') }}" class="{{ request()->is('belajar/html/input-form-atribut') ? 'active' : '' }}">Input Form Atribut</a>
     </nav>
 </aside>

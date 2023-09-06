@@ -10,6 +10,10 @@
             <a href="{{url('/belajar/css/margin')}}" class="{{ request()->is('belajar/css/margin') ? 'active' : '' }}">CSS Margin</a>
             <a href="{{url('/belajar/css/padding')}}" class="{{ request()->is('belajar/css/padding') ? 'active' : '' }}">CSS Padding</a>
             <a href="{{url('/belajar/css/dimensi')}}" class="{{ request()->is('belajar/css/dimensi') ? 'active' : '' }}">CSS Height/Width</a>
+            <a href="{{url('/belajar/css/flexbox')}}" class="{{ request()->is('belajar/css/flexbox') ? 'active' : '' }}">CSS Fleksibel Boks</a>
+            <a href="{{url('/belajar/css/grid')}}" class="{{ request()->is('belajar/css/grid') ? 'active' : '' }}">CSS Grid</a>
+            <a href="{{url('/belajar/css/display')}}" class="{{ request()->is('belajar/css/display') ? 'active' : '' }}">CSS Display</a>
+            <a href="{{url('/belajar/css/media-query')}}" class="{{ request()->is('belajar/css/media-query') ? 'active' : '' }}">CSS Media Query</a>
         <h3 class="sidebar-header">CSS Backgorund</h3>
             <a href="{{ url('/belajar/css/background-color') }}" class="{{ request()->is('belajar/css/background-color') ? 'active' : '' }}">Background Color</a>
             <a href="{{ url('/belajar/css/background-image') }}" class="{{ request()->is('belajar/css/background-image') ? 'active' : '' }}">Background Image</a>
