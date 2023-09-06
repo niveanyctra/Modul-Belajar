@@ -2,7 +2,7 @@
     <nav class="nav-side">
         <h3 class="sidebar-header">CSS Tutorial</h3>
             <a href="{{url('/belajar/css')}}" class="{{ request()->is('belajar/css') ? 'active' : '' }}">CSS Pengenalan</a>
-            <a href="{{url('/belajar/css/syntax')}}" class="{{ request()->is('belajar/css/dasar') ? 'active' : '' }}">CSS Syntax</a>
+            <a href="{{url('/belajar/css/syntax')}}" class="{{ request()->is('belajar/css/syntax') ? 'active' : '' }}">CSS Syntax</a>
             <a href="{{url('/belajar/css/selector')}}" class="{{ request()->is('belajar/css/selector') ? 'active' : '' }}">CSS Selector</a>
             <a href="{{url('/belajar/css/how-to')}}" class="{{ request()->is('belajar/css/how-to') ? 'active' : '' }}">CSS Cara Menggunakan</a>
             <a href="{{url('/belajar/css/comment')}}" class="{{ request()->is('belajar/css/comment') ? 'active' : '' }}">CSS Komentar</a>
