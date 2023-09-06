@@ -6,7 +6,7 @@
 <section class="main">
     <h1>HTML Form Input Atribut</h1>
     <a href="{{ url('/belajar/html/input-type') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/input-form-atribut') }}" class="btn btn-success">Selanjutnya</a>
+    <a href="{{ url('/belajar/html') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
     <h3 class="my-3">Daftar Atribut pada tag <span class="bg-body-secondary text-danger">&lt;input&gt;</span></h3>
     <table class="table table-striped">
@@ -79,6 +79,6 @@
     </form><br>
     <p>Dalam form tersebut terdapat atribut <span class="bg-body-secondary text-danger">required</span> yang mengharuskan user untuk mengisi field input dan juga atribut <span class="bg-body-secondary text-danger">placeholder</span> yang memberikan text bantuan dalam field input</p>
         <a href="{{ url('/belajar/html/input-type') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/input-form-atribut') }}" class="btn btn-success">Selanjutnya</a>
+    <a href="{{ url('/belajar/html') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection

@@ -115,17 +115,11 @@ Route::get('/belajar/html/form',function(){
 Route::get('/belajar/html/form-atribut',function(){
     return view('belajar.html.html-form-atribut');
 });
-Route::get('/belajar/html/form-element',function(){
-    return view('belajar.html.html-form-element');
-});
 Route::get('/belajar/html/input-type',function(){
     return view('belajar.html.html-input-type');
 });
 Route::get('/belajar/html/input-atribut',function(){
     return view('belajar.html.html-input-atribut');
-});
-Route::get('/belajar/html/input-form-atribut',function(){
-    return view('belajar.html.html-input-form-atribut');
 });
 //End Route Belajar HTML
 
@@ -156,6 +150,18 @@ Route::get('/belajar/css/padding',function(){
 });
 Route::get('/belajar/css/dimensi',function(){
     return view('belajar.css.css-dimensi');
+});
+Route::get('/belajar/css/flexbox',function(){
+    return view('belajar.css.css-flexbox');
+});
+Route::get('/belajar/css/grid',function(){
+    return view('belajar.css.css-grid');
+});
+Route::get('/belajar/css/display',function(){
+    return view('belajar.css.css-display');
+});
+Route::get('/belajar/css/media-query',function(){
+    return view('belajar.css.css-media-query');
 });
 Route::get('/belajar/css/background-color',function(){
     return view('belajar.css.css-background-color');
@@ -220,9 +226,6 @@ Route::get('/belajar/php/number',function(){
 Route::get('/belajar/php/math',function(){
     return view('belajar.php.php-math');
 });
-Route::get('/belajar/php/constant',function(){
-    return view('belajar.php.php-constant');
-});
 Route::get('/belajar/php/operator',function(){
     return view('belajar.php.php-operator');
 });
@@ -234,6 +237,9 @@ Route::get('/belajar/php/switch',function(){
 });
 Route::get('/belajar/php/function',function(){
     return view('belajar.php.php-function');
+});
+Route::get('/belajar/php/session',function(){
+    return view('belajar.php.php-session');
 });
 Route::get('/belajar/php/loop',function(){
     return view('belajar.php.php-loop');
@@ -252,6 +258,30 @@ Route::get('/belajar/php/foreach-loop',function(){
 });
 Route::get('/belajar/php/break-continue',function(){
     return view('belajar.php.php-break-continue');
+});
+Route::get('/belajar/php/form-handling',function(){
+    return view('belajar.php.php-form-handling');
+});
+Route::get('/belajar/php/form-require',function(){
+    return view('belajar.php.php-form-require');
+});
+Route::get('/belajar/php/database',function(){
+    return view('belajar.php.php-database');
+});
+Route::get('/belajar/php/database-connect',function(){
+    return view('belajar.php.php-database-connect');
+});
+Route::get('/belajar/php/database-view',function(){
+    return view('belajar.php.php-database-view');
+});
+Route::get('/belajar/php/database-create',function(){
+    return view('belajar.php.php-database-create');
+});
+Route::get('/belajar/php/database-update',function(){
+    return view('belajar.php.php-database-update');
+});
+Route::get('/belajar/php/database-delete',function(){
+    return view('belajar.php.php-database-delete');
 });
 //End Route Belajar PHP
 
@@ -298,11 +328,23 @@ Route::get('belajar/js/data-type',function(){
 Route::get('belajar/js/function',function(){
     return view('belajar.js.js-function');
 });
-Route::get('belajar/js/objec',function(){
-    return view('belajar.js.js-objec');
+Route::get('belajar/js/object',function(){
+    return view('belajar.js.js-object');
 });
 Route::get('belajar/js/event',function(){
     return view('belajar.js.js-event');
+});
+Route::get('belajar/js/string-method',function(){
+    return view('belajar.js.js-string-method');
+});
+Route::get('belajar/js/if-else',function(){
+    return view('belajar.js.js-if-else');
+});
+Route::get('belajar/js/switch',function(){
+    return view('belajar.js.js-switch');
+});
+Route::get('belajar/js/loop',function(){
+    return view('belajar.js.js-loop');
 });
 //End Route Belajar JS
 

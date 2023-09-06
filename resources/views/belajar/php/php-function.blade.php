@@ -6,6 +6,6 @@
 <section class="main">
     <h1>PHP Function</h1>
     <a href="{{ url('/belajar/php/switch') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/loop') }}" class="btn btn-success">Selanjutnya</a>
+    <a href="{{ url('/belajar/php/session') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection

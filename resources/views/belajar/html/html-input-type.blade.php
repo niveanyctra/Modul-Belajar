@@ -5,7 +5,7 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Form Input Tipe</h1>
-    <a href="{{ url('/belajar/html/form-element') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/html/form-atribut') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/html/input-atribut') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
     <p>Berikut ini merupakan tipe dari tag <span class="bg-body-secondary text-danger">&lt;input&gt;</span> :</p>
@@ -103,7 +103,7 @@
         <strong>Note :</strong> default tipe input adalah text
     </div>
     <br>
-        <a href="{{ url('/belajar/html/form-element') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/form-atribut') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/html/input-atribut') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection
