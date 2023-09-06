@@ -6,7 +6,7 @@
 <section class="main">
     <h1>HTML Form Atribut</h1>
     <a href="{{ url('/belajar/html/form') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/form-element') }}" class="btn btn-success">Selanjutnya</a>
+    <a href="{{ url('/belajar/html/input-type') }}" class="btn btn-success">Selanjutnya</a>
 <hr>
     <h3 class="my-3">
         Atribut Action
@@ -78,6 +78,6 @@ Default HTTP Method ketika mengirim form adalah GET</p>
     <strong>Note :</strong> Selalu gunakan POST untuk mengirimkan data pribadi
 </div> <br>
     <a href="{{ url('/belajar/html/form') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/form-element') }}" class="btn btn-success">Selanjutnya</a>
+    <a href="{{ url('/belajar/html/input-type') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection
