@@ -46,17 +46,58 @@
         });
     </script>
     <script>
-        window.onbeforeunload = function() {
-            sessionStorage.setItem("sidebarScroll", document.querySelector(".sidebar").scrollTop);
+        let sidebar = document.querySelector(".sidebar");
+        let topSidebar = sessionStorage.getItem("sidebar-scroll");
+        if (topSidebar !== null) {
+            sidebar.scrollTop = parseInt(topSidebar, 10);
+        }
+        // let main = document.querySelector(".main");
+        // let topMain = sessionStorage.getItem("main-scroll");
+        // if (topMain !== null) {
+        // main.scrollTop = parseInt(topMain, 10);
+        // }
 
-            {{--  sessionStorage.setItem("contentScroll", document.querySelector(".main").scrollTop);  --}}
-        };
+        window.addEventListener("beforeunload", () => {
+            sessionStorage.setItem("sidebar-scroll", sidebar.scrollTop);
+            sessionStorage.removeItem("sidebarSrcroll");
+        });
+        const activeLink = document.querySelector('.sidebar a.active');
+        if (activeLink) {
+            activeLink.scrollIntoView({ block: 'center' });
+        }
 
-        window.onload = function() {
-            document.querySelector(".sidebar").scrollTop = sessionStorage.getItem("sidebarScroll");
-
-            {{--  document.querySelector(".main").scrollTop = sessionStorage.getItem("contentScroll");  --}}
-        };
+        function levelCheck() {
+            if (document.getElementById('mudahCheck').checked) {
+                var mudah = document.getElementsByClassName('mudah');
+                for (var i=0;i<mudah.length;i+=1){
+                mudah[i].style.display = 'block';
+                }
+                var menengah = document.getElementsByClassName('menengah');
+                for (var i=0;i<menengah.length;i+=1){
+                menengah[i].style.display = 'none';
+                }
+            }
+            else if (document.getElementById('menengahCheck').checked) {
+                var mudah = document.getElementsByClassName('mudah');
+                for (var i=0;i<mudah.length;i+=1){
+                mudah[i].style.display = 'none';
+                }
+                var menengah = document.getElementsByClassName('menengah');
+                for (var i=0;i<menengah.length;i+=1){
+                menengah[i].style.display = 'block';
+                }
+            }
+            else{
+                var mudah = document.getElementsByClassName('mudah');
+                for (var i=0;i<mudah.length;i+=1){
+                mudah[i].style.display = 'block';
+                }
+                var menengah = document.getElementsByClassName('menengah');
+                for (var i=0;i<menengah.length;i+=1){
+                menengah[i].style.display = 'block';
+                }
+            }
+        }
     </script>
 </body>
 </html>

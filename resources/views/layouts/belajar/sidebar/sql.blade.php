@@ -21,17 +21,17 @@
             <a href="{{url('/belajar/sql/comment')}}" class="{{ request()->is('belajar/sql/comment') ? 'active' : '' }}">SQL Komentar</a>
             <a href="{{url('/belajar/sql/function')}}" class="{{ request()->is('belajar/sql/function') ? 'active' : '' }}">SQL Function</a>
         <h3 class="sidebar-header">SQL Database</h3>
-            <a href="{{url('/belajar/sql/db/create-db')}}" class="{{ request()->is('belajar/sql/db/create-db') ? 'active' : '' }}">SQL Create DB</a>
-            <a href="{{url('/belajar/sql/db/drop-db')}}" class="{{ request()->is('belajar/sql/db/drop-db') ? 'active' : '' }}">SQL Drop DB</a>
-            <a href="{{url('/belajar/sql/db/backup-db')}}" class="{{ request()->is('belajar/sql/db/backup-db') ? 'active' : '' }}">SQL Backup DB</a>
-            <a href="{{url('/belajar/sql/db/create-table')}}" class="{{ request()->is('belajar/sql/db/create-table') ? 'active' : '' }}">SQL Create Table</a>
-            <a href="{{url('/belajar/sql/db/drop-table')}}" class="{{ request()->is('belajar/sql/db/drop-table') ? 'active' : '' }}">SQL Drop Table</a>
-            <a href="{{url('/belajar/sql/db/alter-table')}}" class="{{ request()->is('belajar/sql/db/alter-table') ? 'active' : '' }}">SQL Alter Table</a>
-            <a href="{{url('/belajar/sql/db/constraint')}}" class="{{ request()->is('belajar/sql/db/constraint') ? 'active' : '' }}">SQL Constraint</a>
-            <a href="{{url('/belajar/sql/db/pk')}}" class="{{ request()->is('belajar/sql/db/pk') ? 'active' : '' }}">SQL Primary Key</a>
-            <a href="{{url('/belajar/sql/db/fk')}}" class="{{ request()->is('belajar/sql/db/fk') ? 'active' : '' }}">SQL Foreign Key</a>
-            <a href="{{url('/belajar/sql/db/default')}}" class="{{ request()->is('belajar/sql/db/default') ? 'active' : '' }}">SQL Default</a>
-            <a href="{{url('/belajar/sql/db/ai')}}" class="{{ request()->is('belajar/sql/db/ai') ? 'active' : '' }}">SQL Auto Increment</a>
-            <a href="{{url('/belajar/sql/db/view')}}" class="{{ request()->is('belajar/sql/db/view') ? 'active' : '' }}">SQL View</a>
+            <a href="{{url('/belajar/sql/db-create-db')}}" class="{{ request()->is('belajar/sql/db-create-db') ? 'active' : '' }}">SQL Create DB</a>
+            <a href="{{url('/belajar/sql/db-drop-db')}}" class="{{ request()->is('belajar/sql/db-drop-db') ? 'active' : '' }}">SQL Drop DB</a>
+            <a href="{{url('/belajar/sql/db-backup-db')}}" class="{{ request()->is('belajar/sql/db-backup-db') ? 'active' : '' }}">SQL Backup DB</a>
+            <a href="{{url('/belajar/sql/db-create-table')}}" class="{{ request()->is('belajar/sql/db-create-table') ? 'active' : '' }}">SQL Create Table</a>
+            <a href="{{url('/belajar/sql/db-drop-table')}}" class="{{ request()->is('belajar/sql/db-drop-table') ? 'active' : '' }}">SQL Drop Table</a>
+            <a href="{{url('/belajar/sql/db-alter-table')}}" class="{{ request()->is('belajar/sql/db-alter-table') ? 'active' : '' }}">SQL Alter Table</a>
+            <a href="{{url('/belajar/sql/db-constraint')}}" class="{{ request()->is('belajar/sql/db-constraint') ? 'active' : '' }}">SQL Constraint</a>
+            <a href="{{url('/belajar/sql/db-pk')}}" class="{{ request()->is('belajar/sql/db-pk') ? 'active' : '' }}">SQL Primary Key</a>
+            <a href="{{url('/belajar/sql/db-fk')}}" class="{{ request()->is('belajar/sql/db-fk') ? 'active' : '' }}">SQL Foreign Key</a>
+            <a href="{{url('/belajar/sql/db-default')}}" class="{{ request()->is('belajar/sql/db-default') ? 'active' : '' }}">SQL Default</a>
+            <a href="{{url('/belajar/sql/db-ai')}}" class="{{ request()->is('belajar/sql/db-ai') ? 'active' : '' }}">SQL Auto Increment</a>
+            <a href="{{url('/belajar/sql/db-view')}}" class="{{ request()->is('belajar/sql/db-view') ? 'active' : '' }}">SQL View</a>
     </nav>
 </aside>

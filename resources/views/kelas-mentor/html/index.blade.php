@@ -4,22 +4,14 @@
 
     <div class="row">
         {{-- sidebar --}}
-        <div class="col-4 bg-primary ps-4" style="min-height: 100vh; height: 100%">
-            <h6 class="pt-2">Urutkan</h6>
-            <div class="fw-semibold">
-                <a href="{{url('/kelas-mentor/html?level=mudah')}}" class="btn btn-danger">Mudah</a>
-                <a href="{{url('/kelas-mentor/html?level=menengah')}}" class="btn btn-danger">Menengah</a>
-                <a href="{{url('/kelas-mentor/html')}}" class="btn btn-danger">Semua</a>
-
-            </div>
-        </div>
+        @include('layouts.kelas-mentor.sidebar')
         {{-- main content --}}
-        <div class="col-8">
+        <div class="col-10">
 
             <div class="row">
                 @foreach ($posts as $data)
 
-                    <div class="col-sm-3  text-center">
+                    <div class="col-sm-3  text-center {{ $data->level }}">
                          <a href="{{ url('/kelas-mentor/html/'.$data->slug)}}">{{$data->title}} </a><br>
                         <h6>{{$data->users->name}}</h6>
 

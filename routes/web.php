@@ -36,12 +36,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('post', PostController::class)->only([
     'index', 'create','show', 'store', 'edit', 'update', 'destroy'
     ]);
-    // Route::get('/post', [PostController::class, 'index'])->name('post');
-    // Route::get('/post/create', [PostController::class, 'create'])->name('post.create');
-    // Route::post('/post/store', [PostController::class, 'store'])->name('post.store');
-    // Route::get('/post/edit/{id}', [PostController::class, 'edit'])->name('post.edit');
-    // Route::put('/post/update/{id}', [PostController::class, 'update'])->name('post.update');
-    // Route::delete('/post/{id}', [PostController::class, 'destroy'])->name('post.destroy');
 });
 
 require __DIR__.'/auth.php';
@@ -354,6 +348,93 @@ Route::get('/belajar/sql',function(){
 });
 Route::get('belajar/sql/syntax',function(){
     return view('belajar.sql.sql-syntax');
+});
+Route::get('belajar/sql/select',function(){
+    return view('belajar.sql.sql-select');
+});
+Route::get('belajar/sql/where',function(){
+    return view('belajar.sql.sql-where');
+});
+Route::get('belajar/sql/order-by',function(){
+    return view('belajar.sql.sql-order-by');
+});
+Route::get('belajar/sql/operator',function(){
+    return view('belajar.sql.sql-operator');
+});
+Route::get('belajar/sql/insert',function(){
+    return view('belajar.sql.sql-insert');
+});
+Route::get('belajar/sql/update',function(){
+    return view('belajar.sql.sql-update');
+});
+Route::get('belajar/sql/delete',function(){
+    return view('belajar.sql.sql-delete');
+});
+Route::get('belajar/sql/select-top',function(){
+    return view('belajar.sql.sql-select-top');
+});
+Route::get('belajar/sql/min-max',function(){
+    return view('belajar.sql.sql-min-max');
+});
+Route::get('belajar/sql/count-sum-avg',function(){
+    return view('belajar.sql.sql-count-sum-avg');
+});
+Route::get('belajar/sql/alias',function(){
+    return view('belajar.sql.sql-alias');
+});
+Route::get('belajar/sql/join',function(){
+    return view('belajar.sql.sql-join');
+});
+Route::get('belajar/sql/group-by',function(){
+    return view('belajar.sql.sql-group-by');
+});
+Route::get('belajar/sql/having',function(){
+    return view('belajar.sql.sql-having');
+});
+Route::get('belajar/sql/exists',function(){
+    return view('belajar.sql.sql-exists');
+});
+Route::get('belajar/sql/comment',function(){
+    return view('belajar.sql.sql-comment');
+});
+Route::get('belajar/sql/function',function(){
+    return view('belajar.sql.sql-function');
+});
+Route::get('belajar/sql/db-create-db',function(){
+    return view('belajar.sql.sql-db-create-db');
+});
+Route::get('belajar/sql/db-drop-db',function(){
+    return view('belajar.sql.sql-db-drop-db');
+});
+Route::get('belajar/sql/db-backup-db',function(){
+    return view('belajar.sql.sql-db-backup-db');
+});
+Route::get('belajar/sql/db-create-table',function(){
+    return view('belajar.sql.sql-db-create-table');
+});
+Route::get('belajar/sql/db-drop-table',function(){
+    return view('belajar.sql.sql-db-drop-table');
+});
+Route::get('belajar/sql/db-alter-table',function(){
+    return view('belajar.sql.sql-db-alter-table');
+});
+Route::get('belajar/sql/db-constraint',function(){
+    return view('belajar.sql.sql-db-constraint');
+});
+Route::get('belajar/sql/db-pk',function(){
+    return view('belajar.sql.sql-db-pk');
+});
+Route::get('belajar/sql/db-fk',function(){
+    return view('belajar.sql.sql-db-fk');
+});
+Route::get('belajar/sql/db-default',function(){
+    return view('belajar.sql.sql-db-default');
+});
+Route::get('belajar/sql/db-ai',function(){
+    return view('belajar.sql.sql-db-ai');
+});
+Route::get('belajar/sql/db-view',function(){
+    return view('belajar.sql.sql-db-view');
 });
 //End Route Belajar SQL
 

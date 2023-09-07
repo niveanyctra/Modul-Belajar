@@ -27,10 +27,10 @@
             <a href="{{ url('/belajar/php/form-require') }}" class="{{ request()->is('belajar/php/form-require') ? 'active' : '' }}">Form Required</a>
         <h3 class="sidebar-header">MySQL Database</h3>
             <a href="{{ url('/belajar/php/database') }}" class="{{ request()->is('belajar/php/database') ? 'active' : '' }}">Database</a>
-            <a href="{{ url('/belajar/php/database-connect') }}" class="{{ request()->is('belajar/php/database-connect') ? 'active' : '' }}">Database Koneksi</a>
-            <a href="{{ url('/belajar/php/database-view') }}" class="{{ request()->is('belajar/php/database-view') ? 'active' : '' }}">Database Menampilkan Data</a>
-            <a href="{{ url('/belajar/php/database-create') }}" class="{{ request()->is('belajar/php/database-create') ? 'active' : '' }}">Database Tambah Data</a>
-            <a href="{{ url('/belajar/php/database-update') }}" class="{{ request()->is('belajar/php/database-update') ? 'active' : '' }}">Database Update Data</a>
-            <a href="{{ url('/belajar/php/database-delete') }}" class="{{ request()->is('belajar/php/database-delete') ? 'active' : '' }}">Database Hapus Data</a>
+            <a href="{{ url('/belajar/php/database-connect') }}" class="{{ request()->is('belajar/php/database-connect') ? 'active' : '' }}">Koneksi</a>
+            <a href="{{ url('/belajar/php/database-view') }}" class="{{ request()->is('belajar/php/database-view') ? 'active' : '' }}">Menampilkan Data</a>
+            <a href="{{ url('/belajar/php/database-create') }}" class="{{ request()->is('belajar/php/database-create') ? 'active' : '' }}">Tambah Data</a>
+            <a href="{{ url('/belajar/php/database-update') }}" class="{{ request()->is('belajar/php/database-update') ? 'active' : '' }}">Update Data</a>
+            <a href="{{ url('/belajar/php/database-delete') }}" class="{{ request()->is('belajar/php/database-delete') ? 'active' : '' }}">Hapus Data</a>
     </nav>
 </aside>
