@@ -30,7 +30,7 @@
 
 <body>
     @include('layouts.navbar')
-    <div>
+    <div style="background-color: #f8f9fa">
         @yield('content')
     </div>
     <!-- yield sidebar ini nggak kepake kah guys? -->
