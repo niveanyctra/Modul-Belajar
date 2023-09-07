@@ -119,7 +119,83 @@
     </h3>
     <p>
         Tidak semua statement JavaScript "dieksekusi". <br><br>
-        Kode setelah garis miring ganda <mark>//</mark> atau di antara <span class="mark">/*</span> dan <span class="mark">*/</span> diperlakukan sebagai <strong>komentar</strong>.
+        Kode setelah garis miring ganda <span class="mark">//</span> atau di antara <span class="mark">/*</span> dan <span class="mark">*/</span> diperlakukan sebagai <strong>komentar</strong>. <br><br>
+        Komentar akan diabaikan, dan tidak akan dieksekusi.
     </p>
+    <hr>
+    <h3 class="my-3">
+        JavaScript Pengenal / Nama
+    </h3>
+    <p>
+        Pengenal adalah nama JavaScript. <br><br>
+        Pengenal digunakan untuk menamai variabel dan keyword, serta function. <br><br>
+        Aturan untuk nama yang benar atau legal adalah sama di sebagian besar bahasa pemrograman. <br><br>
+        Nama JavaScript haruslah dimulai dengan :
+        <ul>
+            <li>Huruf (A-Z atau a-z)</li>
+            <li>Tanda dolar ($)</li>
+            <li>Atau garis bawah (_)</li>
+        </ul>
+        Karakter berikutnya dapat berupa huruf, angka, garis bawah, atau tanda dolar.
+    </p>
+    <div class="note">
+        <p>
+            <strong>Note:</strong> Angka tidak diperbolehkan sebagai karakter pertama dalam nama. <br><br>
+            Dengan cara ini JavaScript dapat dengan mudah membedakan pengenal dari angka.
+        </p>
+    </div>
+    <hr>
+    <h3 class="my-3">
+        JavaScript Peka terhadap Huruf Besar/Kecil
+    </h3>
+    <p>
+        Semua pengenal JavaScript <strong>peka terhadap huruf besar/kecil</strong>. <br><br>
+        Variabel <span class="mark">lastName</span> dan <span class="mark">lastname</span>, adalah dua variabel yang berbeda:
+    </p>
+    <div class="code">
+        <span class="t-blue">let</span> lastname, lastName;  <br>
+        lastName = "Doe"; <br>
+        lastname = "Peterson";
+    </div>
+    <p>
+        JavaScript tidak mengartikan <strong>LET</strong> atau <strong>Let</strong> sebagai kata kunci <strong>let</strong>.
+    </p>
+    <hr>
+    <h3 class="my-3">
+        JavaScript and Camel Case
+    </h3>
+    <p>
+        Secara historis, para programmer telah menggunakan berbagai cara untuk menggabungkan beberapa kata ke dalam satu nama variabel:
+    </p>
+    <h5 class="my-3">
+        Tanda Hubung:
+    </h5>
+    <p>nama-depan, nama-belakang, layang-layang.</p>
+    <div class="note">Tanda hubung tidak diperbolehkan dalam JavaScript. Tanda hubung hanya diperuntukkan untuk pengurangan.</div>
+    <h5 class="my-3">
+        Garis Bawah:
+    </h5>
+    <p>nama_depan, nama_belakang, layang_layang.</p>
+    <h5 class="my-3">
+        Upper Camel Case (Pascal Case):
+    </h5>
+    <p>NamaDepan, NamaBelakang, LayangLayang.</p>
+    <h5 class="my-3">
+        Lower Camel Case:
+    </h5>
+    <p>
+        Pemrogram JavaScript cenderung menggunakan huruf besar kecil yang dimulai dengan huruf kecil: <br><br>
+        namaDepan, namaBelakang, layangLayang
+    </p>
+    <hr>
+    <h3 class="my-3">
+        Kumpulan Karakter JavaScript
+    </h3>
+    <p>
+        JavaScript menggunakan rangkaian karakter <strong>Unicode</strong>. <br><br>
+        Unicode mencakup (hampir) semua karakter, tanda baca, dan simbol di dunia.
+    </p>
+    <a href="{{ url('/belajar/js/statement') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/js/comment') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection

@@ -11,6 +11,16 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
+.note{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff4a3;
+}
+.info{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #d9eee1;
+}
 .mark{
     color: #de1472;
 }
