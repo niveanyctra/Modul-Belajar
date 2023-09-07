@@ -185,7 +185,12 @@
     background-color: #e35205;
     color: #fff;
   }
-
+    .contohmq1{
+        background-color: dodgerblue;
+    }
+    .contohmq2{
+        background-color: tomato;
+    }
   @media all and (max-width: 1024px) {
   .sidebar.toggled {
       left: 0;
@@ -214,4 +219,12 @@
     .sub-nav {
       margin-left: 60px;
     }
-  }
+}
+@media screen and (max-width:720px){
+    .contohmq1{
+        background-color: tomato;
+    }
+    .contohmq2{
+        background-color: dodgerblue;
+    }
+}
