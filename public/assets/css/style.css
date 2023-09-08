@@ -11,7 +11,34 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
-
+.note{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff4a3;
+}
+.info{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #d9eee1;
+}
+.mark{
+    color: #de1472;
+}
+.code{
+    padding: 20px;
+    background-color: #212529;
+    color: #fff;
+    margin: 20px 0;
+}
+.t-red{
+    color: red;
+}
+.t-blue{
+    color: blue;
+}
+.t-green{
+    color: green;
+}
 .sub {
   height: 30px;
 }
