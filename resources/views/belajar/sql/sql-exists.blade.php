@@ -9,14 +9,14 @@
     <a href="{{ url('/belajar/sql/comment') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
     <p>
-        Operator <mark>EXIST</mark> digunakan untuk menguji keberadaan record apa pun di subquery. <br><br>
+        Operator <span class="mark">EXIST</span> digunakan untuk menguji keberadaan record apa pun di subquery. <br><br>
 
-        Operator <mark>EXISTS</mark> mengembalikan TRUE jika subquery mengembalikan satu atau lebih record.
+        Operator <span class="mark">EXISTS</span> mengembalikan TRUE jika subquery mengembalikan satu atau lebih record.
     </p>
     <h4 class="my-3">
         Sintaks
     </h4>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT nama_kolom
         FROM nama_tabel
         WHERE EXISTS
@@ -58,7 +58,7 @@
         </tr>
     </table>
     <p>Kita akan mengambil alamat dan mencari alamat dengan siswa yang tinggal di alamat tersebut kurang dari tiga</p>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT alamat <br>
         FROM siswa <br>
         WHERE EXIST <br>

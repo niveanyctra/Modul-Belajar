@@ -58,19 +58,8 @@
                         <ul class="dropdown-menu __2022" aria-labelledby="listAlurBelajarDropdown">
                             <div class="dd-item-list">
                                 <li class="dropdown-item">
-                                    <a href="{{ url('/alur-belajar/front-end') }}">
-                                        <img src="https://buildwithangga.com/themes/front/images/ic_appcode.svg" class="icon" alt="bwa-icon">
-                                    </a>
-                                    <a href="{{ url('/alur-belajar/front-end') }}">
-                                        <h5 class="title">Front End</h5>
-                                        <span class="subtitle">
-                                        Rekomendasi oleh roadmap.sh
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="dropdown-item">
                                     <a href="{{ url('/alur-belajar/back-end') }}">
-                                        <img src="https://buildwithangga.com/themes/front/images/ic_design.svg" class="icon" alt="bwa-icon">
+                                        <img src="{{ asset('img/nav_backend.png') }}" class="icon" alt="backend">
                                     </a>
                                     <a href="{{ url('/alur-belajar/back-end') }}">
                                         <h5 class="title">Back End</h5>
@@ -80,11 +69,22 @@
                                     </a>
                                 </li>
                                 <li class="dropdown-item">
+                                    <a href="{{ url('/alur-belajar/front-end') }}">
+                                        <img src="{{ asset('img/nav_frontend.png') }}" class="icon" alt="frontend">
+                                    </a>
+                                    <a href="{{ url('/alur-belajar/front-end') }}">
+                                        <h5 class="title">Front End</h5>
+                                        <span class="subtitle">
+                                        Rekomendasi oleh roadmap.sh
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-item">
                                     <a href="{{ url('/alur-belajar/ux-designer') }}">
-                                        <img src="https://buildwithangga.com/themes/front/images/ic_flutter.svg" class="icon" alt="bwa-icon">
+                                        <img src="{{ asset('img/nav_ux.png') }}" class="icon" alt="ux">
                                     </a>
                                     <a href="{{ url('/alur-belajar/ux-designer') }}">
-                                        <h5 class="title">UX Designer</h5>
+                                        <h5 class="title">UX Design</h5>
                                         <span class="subtitle">
                                         Rekomendasi oleh roadmap.sh
                                         </span>
@@ -164,7 +164,7 @@
                 </ul>
                 <ul class="navbar-nav right-menu ms-auto">
                     <li class="nav-item">
-                        <a href="{{ url('/community') }}" class="nav-link">Join Community</a>
+                        <a target="_blank" href="https://discord.gg/SVRrPbyfm9" class="nav-link">Join Community</a>
                     </li>
                 </ul>
             </div>

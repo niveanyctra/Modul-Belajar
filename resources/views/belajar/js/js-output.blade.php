@@ -14,10 +14,10 @@
     <p>
         JavaScript dapat "menampilkan" data dalam berbagai cara: <br>
         <ul>
-            <li>Menulis ke dalam elemen HTML, menggunakan <span class="bg-body-secondary text-danger">innerHTML</span>.</li>
-            <li>Menulis ke dalam output HTML menggunakan <span class="bg-body-secondary text-danger">document.write()</span>.</li>
-            <li>Menulis ke dalam kotak peringatan, menggunakan <span class="bg-body-secondary text-danger">window.alert()</span>.</li>
-            <li>Menulis ke dalam konsol browser, menggunakan <span class="bg-body-secondary text-danger">console.log()</span>.</li>
+            <li>Menulis ke dalam elemen HTML, menggunakan <span class="mark">innerHTML</span>.</li>
+            <li>Menulis ke dalam output HTML menggunakan <span class="mark">document.write()</span>.</li>
+            <li>Menulis ke dalam kotak peringatan, menggunakan <span class="mark">window.alert()</span>.</li>
+            <li>Menulis ke dalam konsol browser, menggunakan <span class="mark">console.log()</span>.</li>
         </ul>
     </p>
     <hr>
@@ -25,10 +25,10 @@
         Menggunakan innerHTML
     </h3>
     <p>
-        Untuk mengakses sebuah elemen HTML, JavaScript dapat menggunakan metode <span class="bg-body-secondary text-danger">document.getElementById(id)</span>. <br><br>
-        Atribut<span class="bg-body-secondary text-danger">id</span> mendefinisikan elemen HTML. Properti <span class="bg-body-secondary text-danger">innerHTML</span> mendefinisikan konten HTML:  
+        Untuk mengakses sebuah elemen HTML, JavaScript dapat menggunakan metode <span class="mark">document.getElementById(id)</span>. <br><br>
+        Atribut<span class="mark">id</span> mendefinisikan elemen HTML. Properti <span class="mark">innerHTML</span> mendefinisikan konten HTML:  
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;!DOCTYPE html&gt; <br>
         &lt;html&gt;
         <div class="ps-4">
@@ -37,7 +37,7 @@
             <div class="ps-4">
 
                 &lt;h1&gt;Demo JavaScript&lt;/h1&gt; <br>
-                &lt;p <span class="text-danger">id</span><span class="text-success">="demo"</span>&gt;&lt;/p&gt; <br>
+                &lt;p <span class="t-red">id</span><span class="t-green">="demo"</span>&gt;&lt;/p&gt; <br>
             </div>
             <div class="ps-4">
 
@@ -56,9 +56,9 @@
         Menggunakan document.write()
     </h3>
     <p>
-        Untuk tujuan pengujian, akan lebih mudah menggunakan <span class="bg-body-secondary text-danger">document.write()</span>. 
+        Untuk tujuan pengujian, akan lebih mudah menggunakan <span class="mark">document.write()</span>. 
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;!DOCTYPE html&gt; <br>
         &lt;html&gt;
         <div class="ps-4">
@@ -81,12 +81,12 @@
         </div>
         &lt;/html&gt;
     </div><br>
-    <div class="bg-warning p-4">
+    <div class="note">
         <p>
             Menggunakan document.write() setelah dokumen HTML dimuat, akan <strong>menghapus semua HTML yang ada</strong>:
         </p>
     </div><br>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;!DOCTYPE html&gt; <br>
         &lt;html&gt;
         <div class="ps-4">
@@ -99,13 +99,13 @@
             </div>
             <div class="ps-4">
 
-                &lt;button <span class="text-danger">type</span><span class="text-success">="button"</span> <span class="text-danger">onclick</span><span class="text-success">="document.write(5 + 6)"</span>&gt;Cobalah&lt;/button&gt;
+                &lt;button <span class="t-red">type</span><span class="t-green">="button"</span> <span class="t-red">onclick</span><span class="t-green">="document.write(5 + 6)"</span>&gt;Cobalah&lt;/button&gt;
             </div>
             &lt;/body&gt;
         </div>
         &lt;/html&gt;
     </div><br>
-    <div class="bg-warning p-4">
+    <div class="note">
         <p>Metode document.write() seharusnya hanya digunakan untuk pengujian.</p>
     </div>
     <hr>
@@ -115,7 +115,7 @@
     <p>
         Kamu dapat menggunakan kotak peringatan untuk menampilkan data:
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;!DOCTYPE html&gt; <br>
         &lt;html&gt;
         <div class="ps-4">
@@ -139,10 +139,10 @@
         &lt;/html&gt;
     </div><br>
     <p>
-        Kamu dapat melewati keyword <span class="bg-body-secondary text-danger">window</span>. <br><br>
-        Dalam JavaScript, objek window adalah objek cakupan global. Ini berarti bahwa variabel, properti, dan metode secara default adalah milik objek window. Ini juga berarti bahwa menentukan kata kunci <span class="bg-body-secondary text-danger">window</span> adalah opsional:
+        Kamu dapat melewati keyword <span class="mark">window</span>. <br><br>
+        Dalam JavaScript, objek window adalah objek cakupan global. Ini berarti bahwa variabel, properti, dan metode secara default adalah milik objek window. Ini juga berarti bahwa menentukan kata kunci <span class="mark">window</span> adalah opsional:
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;!DOCTYPE html&gt; <br>
         &lt;html&gt;
         <div class="ps-4">
@@ -170,9 +170,9 @@
         Menggunakan console.log()
     </h3>
     <p>
-        Untuk tujuan debugging, Anda dapat memanggil metode <span class="bg-body-secondary text-danger">console.log()</span> di browser untuk menampilkan data.
+        Untuk tujuan debugging, Anda dapat memanggil metode <span class="mark">console.log()</span> di browser untuk menampilkan data.
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;!DOCTYPE html&gt; <br>
         &lt;html&gt;
         <div class="ps-4">
@@ -197,16 +197,16 @@
     <p>
         JavaScript tidak memiliki objek print atau metode print. <br><br>
         Anda tidak dapat mengakses output perangkat dari JavaScript. <br><br>
-        Satu-satunya pengecualian adalah Anda dapat memanggil metode <span class="bg-body-secondary text-danger">window.print()</span> di browser untuk mencetak konten jendela saat ini.
+        Satu-satunya pengecualian adalah Anda dapat memanggil metode <span class="mark">window.print()</span> di browser untuk mencetak konten jendela saat ini.
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;!DOCTYPE html&gt; <br>
         &lt;html&gt;
         <div class="ps-4">
 
             &lt;body&gt;
             <div class="ps-4">
-                &lt;button <span class="text-danger">onclick</span><span class="text-success">="window.print()"</span>&gt;Print halaman ini&lt;/button&gt;
+                &lt;button <span class="t-red">onclick</span><span class="t-green">="window.print()"</span>&gt;Print halaman ini&lt;/button&gt;
             </div>
             &lt;/body&gt;
         </div>

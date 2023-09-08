@@ -22,7 +22,7 @@
     <hr>
     <h4 class="my-3">Sintaks Media Query</h4>
     <p>Kita bisa membuat media query dengan sintaks berikut :</p>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         .contoh1{
             <div class="ps-4">
                 background-color: tomato;<br>

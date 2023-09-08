@@ -58,12 +58,12 @@
     <p>Pada tabel diatas terdapat lima record untuk tiap data siswa dan empat kolom untuk nama field(No, Nama, Kelas,JK)</p>
     <hr>
     <h3 class="my-3">Contoh Sintaks SQL</h3>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT * FROM siswa;
     </div><br>
-    <p>Kita bisa mengambil data menggunakan <mark>SELECT</mark>.</p>
-    <div class="bg-warning p-4">
-        <strong>Note :</strong> Semua sintaks SQL <strong>TIDAK</strong> sensitif huruf besar-kecil, jadi <mark>select</mark> dan <mark>SELECT</mark> memiliki makna yang sama. <br><br>
+    <p>Kita bisa mengambil data menggunakan <span class="mark">SELECT</span>.</p>
+    <div class="note">
+        <strong>Note :</strong> Semua sintaks SQL <strong>TIDAK</strong> sensitif huruf besar-kecil, jadi <span class="mark">select</span> dan <span class="mark">SELECT</span> memiliki makna yang sama. <br><br>
         <strong>Note :</strong> Tanda titik koma (';') dalam SQL digunakan untuk memisahkan sintaks SQL yang digunakan, namun ada beberapa sistem database yang tidak perlu menggunakan titik koma (';').
     </div>
     <br>

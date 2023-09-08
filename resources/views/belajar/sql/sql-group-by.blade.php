@@ -8,11 +8,11 @@
     <a href="{{ url('/belajar/sql/join') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/sql/having') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
-    <p>Sintaks <mark>GROUP BY</mark> digunakan untuk mengelompokan kolom yang memiliki nilai yang sama.</p>
+    <p>Sintaks <span class="mark">GROUP BY</span> digunakan untuk mengelompokan kolom yang memiliki nilai yang sama.</p>
     <hr>
     <h4 class="my-3">Sintaks</h4>
-    <p>Kita bisa menggunakan <mark>GROUP BY</mark> menggunakan contoh sintaks berikut</p>
-    <div class="bg-dark text-light p-2">
+    <p>Kita bisa menggunakan <span class="mark">GROUP BY</span> menggunakan contoh sintaks berikut</p>
+    <div class="code">
         SELECT nama_kolom <br>
         FROM nama_tabel <br>
         WHERE kondisi <br>
@@ -53,7 +53,7 @@
         </tr>
     </table>
     <p>Kita akan mengelompokan berdasarkan alamat dengan menghitung jumlah siswa yang tinggal di alamat tersebut</p>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT COUNT(nama),alamat <br>
         FROM siswa <br>
         GROUP BY alamat;

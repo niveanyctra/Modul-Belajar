@@ -25,7 +25,7 @@
         Values, Operators, Expressions, Keywords, and Comments. <br><br>
         Pernyataan ini memberi tahu browser untuk menulis "Hello Semesta." di dalam elemen HTML dengan id="demo":
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         document.getElementById("demo").innerHTML = "Hello Semesta";
     </div> <br>
     <p>
@@ -40,7 +40,7 @@
         Titik Koma memisahkan statement atau pernyataan JavaScript. <br><br>
         Tambahkan titik koma di akhir setiap pernyataan yang dapat dieksekusi:
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         let a, b, c;  <br>
         a = 5;        <br>
         b = 6;        <br>
@@ -49,10 +49,10 @@
     <p>
         Jika dipisahkan dengan titik koma, beberapa pernyataan pada satu baris diperbolehkan:
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         a = 5; b = 6; c = a + b;
     </div><br>
-    <div class="bg-warning p-4">
+    <div class="note">
         <p>Mengakhiri pernyataan dengan titik koma tidak diwajibkan, tetapi sangat disarankan.</p>
     </div>
     <hr>
@@ -63,7 +63,7 @@
         JavaScript mengabaikan beberapa spasi. Anda dapat menambahkan spasi pada script kamu agar lebih mudah dibaca. <br><br>
         Kedua contoh berikut ini sama saja :
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         let orang = "Wahyu"; <br>
         let orang="Wahyu";
     </div>
@@ -75,7 +75,7 @@
         Untuk keterbacaan terbaik, programmer sering kali menghindari baris kode yang lebih panjang dari 80 karakter. <br><br>
         Jika pernyataan JavaScript tidak muat dalam satu baris, tempat terbaik untuk memecahnya adalah setelah operator:
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         document.getElementById("demo").innerHTML = <br>
         "Hello Wahyu!";
     </div>
@@ -88,7 +88,7 @@
         Tujuan dari code block adalah untuk mendefinisikan pernyataan yang akan dieksekusi bersama. <br><br>
         Satu tempat di mana Anda akan menemukan pernyataan yang dikelompokkan bersama dalam blok, adalah dalam fungsi JavaScript:
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         function myFunction() { <br>
             document.getElementById("demo1").innerHTML = "Hello Wahyu!"; <br>
             document.getElementById("demo2").innerHTML = "Bagaimana Harimu?"; <br>

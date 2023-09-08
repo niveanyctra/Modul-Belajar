@@ -16,11 +16,11 @@
     {{-- Operator AND --}}
     <h3 class="my-3">Operator AND</h3>
     <p>
-        Operator <mark>AND</mark> biasa digunakan dalam klausa <mark>WHERE</mark>. <br><br>
-        Klausa <mark>WHERE</mark> dapat memiliki lebih dari satu operator <mark>AND</mark>
+        Operator <span class="mark">AND</span> biasa digunakan dalam klausa <span class="mark">WHERE</span>. <br><br>
+        Klausa <span class="mark">WHERE</span> dapat memiliki lebih dari satu operator <span class="mark">AND</span>
 
     </p><br>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT * FROM siswa WHERE nama = 'Arip' AND kelas = 'XII RPL 1';
     </div>
     <p>Pada sintaks diatas kita akan mengambil semua kolom dari tabel siswa yang memiliki record nama 'Arip' dan kelas 'XII RPL 1'.</p>
@@ -28,16 +28,16 @@
     {{-- Operator OR --}}
     <h3 class="my-3">Operator OR</h3>
         <p>
-        Operator <mark>OR</mark> biasa digunakan dalam klausa <mark>WHERE</mark>. <br><br>
-        Klausa <mark>WHERE</mark> dapat memiliki lebih dari satu operator <mark>OR</mark>
+        Operator <span class="mark">OR</span> biasa digunakan dalam klausa <span class="mark">WHERE</span>. <br><br>
+        Klausa <span class="mark">WHERE</span> dapat memiliki lebih dari satu operator <span class="mark">OR</span>
 
     </p><br>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT * FROM siswa WHERE nama = 'Arip' OR kelas = 'XII RPL 1';
     </div>
     <p>Pada sintaks diatas kita akan mengambil semua kolom dari tabel siswa yang memiliki record nama 'Arip' atau kelas 'XII RPL 1'.</p>
     <br>
-    <div class="bg-warning p-4">
+    <div class="note">
         <strong>Perbedaan AND dan OR :</strong><br>
         <p>
             Operator AND akan berjalan jika <strong>SEMUA</strong> kondisi benar. <br>
@@ -49,11 +49,11 @@
     {{-- Operator NOT --}}
     <h3 class="my-3">Operator NOT</h3>
     <p>
-        Operator <mark>NOT</mark> biasa digunakan dalam klausa <mark>WHERE</mark>. <br><br>
-        Klausa <mark>WHERE</mark> dapat memiliki lebih dari satu operator <mark>NOT</mark>
+        Operator <span class="mark">NOT</span> biasa digunakan dalam klausa <span class="mark">WHERE</span>. <br><br>
+        Klausa <span class="mark">WHERE</span> dapat memiliki lebih dari satu operator <span class="mark">NOT</span>
 
     </p><br>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT * FROM siswa WHERE NOT kelas = 'XII RPL 1';
     </div>
     <p>Pada sintaks diatas kita akan mengambil semua kolom dari tabel siswa yang memiliki record kelas selain 'XII RPL 1'.</p>
@@ -61,15 +61,15 @@
     {{-- Operator LIKE --}}
     <h3 class="my-3">Operator LIKE</h3>
     <p>
-        Operator <mark>LIKE</mark> biasa digunakan dalam klausa <mark>WHERE</mark>. <br><br>
-        Klausa <mark>WHERE</mark> dapat memiliki lebih dari satu operator <mark>LIKE</mark>
+        Operator <span class="mark">LIKE</span> biasa digunakan dalam klausa <span class="mark">WHERE</span>. <br><br>
+        Klausa <span class="mark">WHERE</span> dapat memiliki lebih dari satu operator <span class="mark">LIKE</span>
 
     </p><br>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT * FROM siswa WHERE nama LIKE '%Arip%';
     </div>
     <p>Pada sintaks diatas kita akan mengambil semua kolom dari tabel siswa yang memiliki record nama yang mengandung kata 'Arip' dalam recordnya.</p><br>
-    <div class="bg-warning p-4">
+    <div class="note">
         <strong>Penjelasan '%' dalam operator LIKE :</strong>
         <p>
             persen(%) dalam operator LIKE menjelaskan dari mana kata yang akan dipakai. <br>
@@ -83,11 +83,11 @@
     {{-- Operator BETWEEN --}}
     <h3 class="my-3">Operator BETWEEN</h3>
     <p>
-        Operator <mark>BETWEEN</mark> biasa digunakan dalam klausa <mark>WHERE</mark>. <br><br>
-        Klausa <mark>WHERE</mark> dapat memiliki lebih dari satu operator <mark>BETWEEN</mark>
+        Operator <span class="mark">BETWEEN</span> biasa digunakan dalam klausa <span class="mark">WHERE</span>. <br><br>
+        Klausa <span class="mark">WHERE</span> dapat memiliki lebih dari satu operator <span class="mark">BETWEEN</span>
 
     </p><br>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT * FROM nilaiSiswa WHERE nilai BETWEEN 70 AND 90;
     </div>
     <p>Pada sintaks diatas kita akan mengambil semua kolom dari tabel nilaiSiswa yang memiliki record nilai antara 70 sampai 90.</p>

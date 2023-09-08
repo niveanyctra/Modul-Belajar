@@ -30,18 +30,18 @@
     </h3>
     <p>Flex-container merupakan pembungkus dari flex-box. Flex-container umumnya memiliki properti :</p>
     <ul>
-        <li><mark>flex-direction</mark></li>
-        <li><mark>flex-wrap</mark></li>
-        <li><mark>flex-flow</mark></li>
-        <li><mark>justify-content</mark></li>
-        <li><mark>align-item</mark></li>
-        <li><mark>align-content</mark></li>
+        <li><span class="mark">flex-direction</span></li>
+        <li><span class="mark">flex-wrap</span></li>
+        <li><span class="mark">flex-flow</span></li>
+        <li><span class="mark">justify-content</span></li>
+        <li><span class="mark">align-item</span></li>
+        <li><span class="mark">align-content</span></li>
     </ul>
-    <p>Pastikan sebelum menggunakan properti diatas anda harus menambahkan <mark>display : flex</mark></p>
+    <p>Pastikan sebelum menggunakan properti diatas anda harus menambahkan <span class="mark">display : flex</span></p>
     <hr>
     <h3 class="my-3">flex-direction</h3>
     <p>
-        <mark>flex-direction</mark> mendefinisikan kemana arah flex untuk penumpukan. Anda bisa mengisi value dengan <mark>row</mark> jika ingin secara horizontal dan <mark>column</mark> jika ingin secara vertikal
+        <span class="mark">flex-direction</span> mendefinisikan kemana arah flex untuk penumpukan. Anda bisa mengisi value dengan <span class="mark">row</span> jika ingin secara horizontal dan <span class="mark">column</span> jika ingin secara vertikal
     </p>
     <a href="{{ url('/belajar/css/dimensi') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/css/grid') }}" class="btn btn-success">Selanjutnya</a>

@@ -44,7 +44,7 @@
     <h3 class="my-3">Cara Membuat Tabel HTML</h3>
     <p>Sebuah tabel dalam HTML terdiri dari sel-sel tabel dalam baris dan kolom</p>
     <h4 class="my-3">Contoh tabel sederhana</h4>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;table&gt;
         <div class="ps-4">
             &lt;tr&gt;
@@ -69,22 +69,22 @@
     <hr>
     <h3 class="my-3">Sel Tabel</h3>
     <p>
-        Setiap sel tabel ditentukan oleh tag <span class="bg-body-secondary text-danger">&lt;td&gt;</span> dan <span class="bg-body-secondary text-danger">&lt;/td&gt;</span> yang merupakan singkatan dari table data atau data tabel <br><br>
-        Apapun yang berada diantara tag <span class="bg-body-secondary text-danger">&lt;td&gt;</span> dan <span class="bg-body-secondary text-danger">&lt;/td&gt;</span> merupakan konten dari sel tabel
+        Setiap sel tabel ditentukan oleh tag <span class="mark">&lt;td&gt;</span> dan <span class="mark">&lt;/td&gt;</span> yang merupakan singkatan dari table data atau data tabel <br><br>
+        Apapun yang berada diantara tag <span class="mark">&lt;td&gt;</span> dan <span class="mark">&lt;/td&gt;</span> merupakan konten dari sel tabel
     </p>
-    <div class="bg-warning p-4">
+    <div class="note">
         <p><strong>Note :</strong> Sebuah sel tabel dapat diisi semua jenis elemen HTML berupa teks,gambar,list,link, tabel lain, dll.</p>
     </div>
     <hr>
     <h3 class="my-3">Baris Tabel</h3>
-    <p>Setiap baris dalam tabel diawali dengan <span class="bg-body-secondary text-danger">&lt;tr&gt;</span> dan diakhiri dengan <span class="bg-body-secondary text-danger">&lt;/tr&gt;</span> yang merupakan singkatan dari table row atau baris tabel <br><br>
+    <p>Setiap baris dalam tabel diawali dengan <span class="mark">&lt;tr&gt;</span> dan diakhiri dengan <span class="mark">&lt;/tr&gt;</span> yang merupakan singkatan dari table row atau baris tabel <br><br>
         Kamu dapat memiliki baris sebanyak yang kamu mau didalam tabel;Namun pastikan bahwa jumlah sel sama dalam setiap baris
     </p>
     <hr>
     <h3 class="my-3">Judul Tabel</h3>
     <p>
-        Terkadang kamu mau sel kamu menjadi sel judul tabel.Untuk itu kamu bisa menggunakan tag <span class="bg-body-secondary text-danger">&lt;th&gt;</span> daripada tag <span class="bg-body-secondary text-danger">&lt;td&gt;</span> yang merupakan singkatan dari table header atau judul tabel <br><br>
-        Secara default, teks dalam elemen <span class="bg-body-secondary text-danger">&lt;th&gt;</span> dicetak tebal dan berada di tengah,namun anda dapat mengubahnya dalam CSS.
+        Terkadang kamu mau sel kamu menjadi sel judul tabel.Untuk itu kamu bisa menggunakan tag <span class="mark">&lt;th&gt;</span> daripada tag <span class="mark">&lt;td&gt;</span> yang merupakan singkatan dari table header atau judul tabel <br><br>
+        Secara default, teks dalam elemen <span class="mark">&lt;th&gt;</span> dicetak tebal dan berada di tengah,namun anda dapat mengubahnya dalam CSS.
     </p>
     <hr>
     <h3 class="my-3">Tag Tabel HTML</h3>
@@ -134,5 +134,7 @@
             <td>Untuk mengelompokan isi footer dalam sebuah tabel</td>
         </tr>
     </table>
+    <a href="{{ url('/belajar/html/id') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/html/table-border') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection

@@ -8,12 +8,12 @@
     <a href="{{ url('/belajar/sql/alias') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/sql/group-by') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
-    <p>Klausa <mark>JOIN</mark> berfungsi untuk menghubungkan beberapa tabel berdasarkan kolom yang saling terkait antara tabel tersebut</p>
+    <p>Klausa <span class="mark">JOIN</span> berfungsi untuk menghubungkan beberapa tabel berdasarkan kolom yang saling terkait antara tabel tersebut</p>
     <hr>
     <h3 class="my-3">Inner Join</h3>
-    <p><mark>INNER JOIN</mark> akan menghubungkan tabel berdasarkan nilai yang cocok pada kedua tabel</p>
+    <p><span class="mark">INNER JOIN</span> akan menghubungkan tabel berdasarkan nilai yang cocok pada kedua tabel</p>
     <h4 class="my-3">Sintaks</h4>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT nama_kolom <br>
         FROM tabel1 <br>
         INNER JOIN tabel2 <br>
@@ -72,8 +72,8 @@
             <td>XII RPL 1</td>
         </tr>
     </table>
-    <p>Kita akan menghubungkan kedua tabel tersebut dengan klausa <mark>INNER JOIN</mark></p>
-        <div class="bg-dark text-light p-2">
+    <p>Kita akan menghubungkan kedua tabel tersebut dengan klausa <span class="mark">INNER JOIN</span></p>
+        <div class="code">
         SELECT siswa.nama, nilai.nilai <br>
         FROM nilai <br>
         INNER JOIN siswa <br>
@@ -105,9 +105,9 @@
     <hr>
     {{-- Left Join --}}
         <h3 class="my-3">Left Join</h3>
-    <p><mark>LEFT JOIN</mark> akan menghubungkan tabel berdasarkan nilai yang cocok pada tabel pertama</p>
+    <p><span class="mark">LEFT JOIN</span> akan menghubungkan tabel berdasarkan nilai yang cocok pada tabel pertama</p>
     <h4 class="my-3">Sintaks</h4>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT nama_kolom <br>
         FROM tabel1 <br>
         LEFT JOIN tabel2 <br>
@@ -171,8 +171,8 @@
             <td>XII RPL 1</td>
         </tr>
     </table>
-    <p>Kita akan menghubungkan kedua tabel tersebut dengan klausa <mark>LEFT JOIN</mark></p>
-        <div class="bg-dark text-light p-2">
+    <p>Kita akan menghubungkan kedua tabel tersebut dengan klausa <span class="mark">LEFT JOIN</span></p>
+        <div class="code">
         SELECT siswa.nama, nilai.nilai <br>
         FROM nilai <br>
         LEFT JOIN siswa <br>
@@ -204,9 +204,9 @@
     <hr>
     {{-- right join --}}
         <h3 class="my-3">Right Join</h3>
-    <p><mark>RIGHT JOIN</mark> akan menghubungkan tabel berdasarkan nilai yang cocok pada tabel kedua</p>
+    <p><span class="mark">RIGHT JOIN</span> akan menghubungkan tabel berdasarkan nilai yang cocok pada tabel kedua</p>
     <h4 class="my-3">Sintaks</h4>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT nama_kolom <br>
         FROM tabel1 <br>
         RIGHT JOIN tabel2 <br>
@@ -270,8 +270,8 @@
             <td>XII RPL 1</td>
         </tr>
     </table>
-    <p>Kita akan menghubungkan kedua tabel tersebut dengan klausa <mark>RIGHT JOIN</mark></p>
-        <div class="bg-dark text-light p-2">
+    <p>Kita akan menghubungkan kedua tabel tersebut dengan klausa <span class="mark">RIGHT JOIN</span></p>
+        <div class="code">
         SELECT siswa.nama, nilai.nilai <br>
         FROM nilai <br>
         RIGHT JOIN siswa <br>

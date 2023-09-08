@@ -9,8 +9,8 @@
     <a href="{{ url('/belajar/html/ordered-list') }}" class="btn btn-success">Selanjutnya</a>
         <hr>
     <h3 class="my-3">Unordered List</h3>
-    <p>Unordered list adalah list yang disediakan HTML dengan menggunakan icon sebagai tanda yang defaultnya adalah titik hitam. Kita dapat membuat list ini menggunakan elemen <span class="bg-body-secondary text-danger">&lt;ul&gt;</span> dan diakhiri dengan <span class="bg-body-secondary text-danger">&lt;/ul&gt;</span></p>
-    <div class="bg-dark text-light p-2">
+    <p>Unordered list adalah list yang disediakan HTML dengan menggunakan icon sebagai tanda yang defaultnya adalah titik hitam. Kita dapat membuat list ini menggunakan elemen <span class="mark">&lt;ul&gt;</span> dan diakhiri dengan <span class="mark">&lt;/ul&gt;</span></p>
+    <div class="code">
         &lt;ul&gt;
         <div class="p-2">
             &lt;li&gt;Item 1&lt;/li&gt;<br>
@@ -19,7 +19,7 @@
         </div>
         &lt;/ul&gt;
     </div>
-    <p>Kita dapat memodifikasi tanda dalam list ini menggunakan property <span class="bg-body-secondary text-danger">list-style-type</span> dengan value :</p>
+    <p>Kita dapat memodifikasi tanda dalam list ini menggunakan property <span class="mark">list-style-type</span> dengan value :</p>
     <table class="table table-stripped">
         <tr>
             <th>Value</th>

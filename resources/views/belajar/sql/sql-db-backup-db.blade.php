@@ -14,7 +14,7 @@
         BACKUP DATABASE siswa
         TO DISK = "C:\backups\siswa.bak";
     </div>
-    <div class="bg-warning p-4">
+    <div class="note">
         <strong>Note :</strong> Pastikan kita menentukan lokasi penyimpanan backup di value TO DISK!
     </div>
         <a href="{{ url('/belajar/sql/db-drop-db') }}" class="btn btn-success">Sebelumnya</a>

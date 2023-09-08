@@ -8,9 +8,9 @@
     <a href="{{ url('/belajar/sql/group-by') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/sql/exists') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
-    <p>Sintaks <mark>HAVING</mark> ditambahkan ke SQL karena klausa <mark>WHERE</mark> tidak bisa digunakan dengan fungsi pembanding</p>
+    <p>Sintaks <span class="mark">HAVING</span> ditambahkan ke SQL karena klausa <span class="mark">WHERE</span> tidak bisa digunakan dengan fungsi pembanding</p>
     <h4 class="my-3">Sintaks</h4>
-        <div class="bg-dark text-light p-2">
+        <div class="code">
         SELECT nama_kolom <br>
         FROM nama_tabel <br>
         WHERE kondisi <br>
@@ -53,7 +53,7 @@
         </tr>
     </table>
     <p>Kita akan mengelompokan berdasarkan alamat dengan menghitung jumlah siswa yang tinggal di alamat tersebut dan memilih alamat dengan jumlah siswa lebih dari dua</p>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT COUNT(nama),alamat <br>
         FROM siswa <br>
         GROUP BY alamat <br>

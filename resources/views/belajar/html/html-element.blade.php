@@ -9,9 +9,8 @@
     <a href="{{ url('/belajar/html/atribut') }}" class="btn btn-success">Selanjutnya</a>
     <h3 class="mt-3">Elemen HTML?</h3>
 <p>Elemen HTML terdiri dari tag awal,konten dan penutup tag:</p>
-<div class="fs-5">
-
-    <span class="text-danger">&lt;namatag&gt;</span>Konten<span class="text-danger">&lt;/namatag&gt;</span>
+<div class="code">
+    <span class="t-red">&lt;namatag&gt;</span>Konten<span class="t-red">&lt;/namatag&gt;</span>
 </div>
 <p><strong>Elemen</strong> HTML apapun yang memiliki tag awal hingga tag akhir:</p>
 <table class="table table-striped table-border text-center" style="max-width: 700px">
@@ -41,7 +40,7 @@
     </tbody>
 </table>
 
-<div class="bg-warning py-4 px-4">
+<div class="note">
 
     <p><strong>Note : </strong>Beberapa elemen HTML tidak memiliki konten ( seperti elemen &lt;br&gt; ).
     Elemen ini disebut <i>empty element</i>
@@ -50,8 +49,7 @@
 <h3 class="mt-3">Elemen HTML Bersarang</h3>
 <p>Elemen HTML dapat bersarang atau biasa disebut <i>Nested Element</i> yang artinya elemen HTML dapat berada di dalam elemen lain</p>
 <h3 class="mt-3">Contoh</h3>
-    <div class="bg-dark">
-<div class="text-light p-2">
+    <div class="code">
 
     &lt;!DOCTYPE html&gt;<br>
     &lt;html&gt;
@@ -72,7 +70,6 @@
     </div>
     &lt;/html&gt;
 
-</div>
     </div>
     <hr>
     <h3 class="mt-3">
@@ -83,7 +80,7 @@
     <h3 class="mt-3">
         Empty Element HTML
     </h3>
-    <p>Adapun HTML Memiliki Empty Element atau elemen tanpa akhir tag seperti <span class="bg-body-secondary text-danger">&lt;br&gt;</span> dan <span class="bg-body-secondary text-danger">&lt;img&gt;</span></p>
+    <p>Adapun HTML Memiliki Empty Element atau elemen tanpa akhir tag seperti <span class="mark">&lt;br&gt;</span> dan <span class="mark">&lt;img&gt;</span></p>
     <hr>
     <h3 class="mt-3">Daftar Elemen HTML Yang Sering Digunakan</h3>
     <p>Berikut ini adalah daftar elemen HTML yang sering digunakan</p>

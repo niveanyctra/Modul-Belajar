@@ -10,12 +10,12 @@
     <hr>
 <h3 class="my-3">Sintaks ORDER BY SQL</h3>
 <p>
-    Sintaks <mark>ORDER BY</mark> digunakan untuk mengurutkan result-set dengan urutan menaik atau menurun. <br><br>
-    Sintaks <mark>ORDER BY</mark> akan mengurutkan secara menaik, namun kita bisa mengaturnya dengan kata kunci <mark>DESC</mark> untuk menaik dan <mark>ASC</mark> untuk menurun.
+    Sintaks <span class="mark">ORDER BY</span> digunakan untuk mengurutkan result-set dengan urutan menaik atau menurun. <br><br>
+    Sintaks <span class="mark">ORDER BY</span> akan mengurutkan secara menaik, namun kita bisa mengaturnya dengan kata kunci <span class="mark">DESC</span> untuk menaik dan <span class="mark">ASC</span> untuk menurun.
 
 </p>
 <h4 class="my-3">Contoh</h4>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT * FROM nilaiSiswa ORDER BY nilai DESC;
     </div><br>
     <p>Sintaks tersebut akan mengambil semua kolom dari tabel nilaiSiswa dan akan diurutkan berdasarkan nilai terbesar</p>
@@ -56,8 +56,8 @@
         </tbody>
     </table>
     <br>
-    <p>Kita juga bisa memasukan dua kolom sebagai kondisi pada sintaks <mark>ORDER BY</mark>.</p>
-        <div class="bg-dark text-light p-2">
+    <p>Kita juga bisa memasukan dua kolom sebagai kondisi pada sintaks <span class="mark">ORDER BY</span>.</p>
+        <div class="code">
         SELECT * FROM nilaiSiswa ORDER BY nilai,nama;
     </div><br>
     <p>Pada sintaks diatas kita akan mengurutkan berdasarkan nilai dan jika ada kolom nama dengan nilai yang sama, maka akan diurutkan berdasarkan nama dari A-Z</p>

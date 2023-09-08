@@ -6,7 +6,7 @@
 <section class="main">
     <h1>HTML List</h1>
     <a href="{{ url('/belajar/html/table-colspan-rowspan') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/form') }}" class="btn btn-success">Selanjutnya</a>
+    <a href="{{ url('/belajar/html/unordered-list') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
     <p>List memungkinkan seorang web developer untuk menampilkan data secara urut menggunakan list</p>
     <hr>
@@ -32,8 +32,8 @@
     </div>
     <hr>
     <h3 class="my-3">Unordered List</h3>
-    <p>Unordered list adalah list yang disediakan HTML dengan menggunakan icon sebagai tanda yang defaultnya adalah titik hitam. Kita dapat membuat list ini menggunakan elemen <span class="bg-body-secondary text-danger">&lt;ul&gt;</span> dan diakhiri dengan <span class="bg-body-secondary text-danger">&lt;/ul&gt;</span></p>
-    <div class="bg-dark text-light p-2">
+    <p>Unordered list adalah list yang disediakan HTML dengan menggunakan icon sebagai tanda yang defaultnya adalah titik hitam. Kita dapat membuat list ini menggunakan elemen <span class="mark">&lt;ul&gt;</span> dan diakhiri dengan <span class="mark">&lt;/ul&gt;</span></p>
+    <div class="code">
         &lt;ul&gt;
         <div class="p-2">
             &lt;li&gt;Item 1&lt;/li&gt;<br>
@@ -42,7 +42,7 @@
         </div>
         &lt;/ul&gt;
     </div>
-    <p>Kita dapat memodifikasi tanda dalam list ini menggunakan property <span class="bg-body-secondary text-danger">list-style-type</span> dengan value :</p>
+    <p>Kita dapat memodifikasi tanda dalam list ini menggunakan property <span class="mark">list-style-type</span> dengan value :</p>
     <table class="table table-stripped">
         <tr>
             <th>Value</th>
@@ -67,8 +67,8 @@
     </table>
     <hr>
     <h3 class="my-3">Ordered List</h3>
-    <p>Ordered list adalah list yang disediakan HTML dengan menggunakan icon sebagai tanda yang defaultnya adalah angka berurut. Kita dapat membuat list ini menggunakan elemen <span class="bg-body-secondary text-danger">&lt;ol&gt;</span> dan diakhiri dengan <span class="bg-body-secondary text-danger">&lt;/ol&gt;</span></p>
-    <div class="bg-dark text-light p-2">
+    <p>Ordered list adalah list yang disediakan HTML dengan menggunakan icon sebagai tanda yang defaultnya adalah angka berurut. Kita dapat membuat list ini menggunakan elemen <span class="mark">&lt;ol&gt;</span> dan diakhiri dengan <span class="mark">&lt;/ol&gt;</span></p>
+    <div class="code">
         &lt;ol&gt;
         <div class="p-2">
             &lt;li&gt;Item 1&lt;/li&gt;<br>
@@ -77,7 +77,7 @@
         </div>
         &lt;/ol&gt;
     </div>
-        <p>Kita dapat memodifikasi tanda dalam list ini menggunakan atribut <span class="bg-body-secondary text-danger">type</span> dengan value :</p>
+        <p>Kita dapat memodifikasi tanda dalam list ini menggunakan atribut <span class="mark">type</span> dengan value :</p>
     <table class="table table-stripped">
         <tr>
             <th>Value</th>
@@ -104,11 +104,11 @@
             <td>Icon list menjadi angka romawi huruf kecil</td>
         </tr>
     </table>
-    <div class="bg-warning p-4">
-        <strong>Note :</strong> tag <span class="bg-body-secondary text-danger">&lt;li&gt;</span> dapat diisi dengan elemen HTML lain seperti gambar,link,dll.
+    <div class="note">
+        <strong>Note :</strong> tag <span class="mark">&lt;li&gt;</span> dapat diisi dengan elemen HTML lain seperti gambar,link,dll.
     </div>
     <br>
         <a href="{{ url('/belajar/html/table-colspan-rowspan') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/form') }}" class="btn btn-success">Selanjutnya</a>
+    <a href="{{ url('/belajar/html/unordered-list') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection

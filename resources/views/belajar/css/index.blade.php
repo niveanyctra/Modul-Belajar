@@ -24,12 +24,12 @@
     <h4 class="my-3">
         Contoh CSS
     </h4>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         h1 {
             <div class="ps-4">
 
-                <span class="text-danger">color</span>: <span class="text-success">red</span>;<br>
-                <span class="text-danger">text-align</span>: <span class="text-success">center</span>;
+                <span class="t-red">color</span>: <span class="t-green">red</span>;<br>
+                <span class="t-red">text-align</span>: <span class="t-green">center</span>;
             </div>
         }
     </div>

@@ -11,9 +11,9 @@
     <p>Komentar dalam CSS tidak akan terbaca di browser, namun akan membantu dokumen CSS agar lebih mudah dibaca</p>
     <hr>
     <h3 class="mt-3">Contoh</h3>
-    <div class="text-success bg-dark p-2">
+    <div class="code">
 
-    /* Ini sebuah komentar */
+    <div class="t-green">/* Ini sebuah komentar */</div>
 
     </div>
 <p>Potongan kode diatas merupakan contoh komentar dalam CSS. Komentar umumnya akan berwarna hijau di text editor. Pastikan menggunakan tanda "/*" pada awal komentar dan "*/" diakhir komentar</p>

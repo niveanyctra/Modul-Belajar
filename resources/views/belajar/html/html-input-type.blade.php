@@ -8,7 +8,7 @@
     <a href="{{ url('/belajar/html/form-atribut') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/html/input-atribut') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
-    <p>Berikut ini merupakan tipe dari tag <span class="bg-body-secondary text-danger">&lt;input&gt;</span> :</p>
+    <p>Berikut ini merupakan tipe dari tag <span class="mark">&lt;input&gt;</span> :</p>
     <table class="table table-striped">
         <tr>
             <th>Tipe</th>
@@ -99,7 +99,7 @@
             <td>Untuk membuat input berupa minggu</td>
         </tr>
     </table>
-    <div class="bg-warning p-4">
+    <div class="note">
         <strong>Note :</strong> default tipe input adalah text
     </div>
     <br>

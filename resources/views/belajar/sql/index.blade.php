@@ -15,7 +15,7 @@
     </p>
     <hr>
     <h4 class="my-4">Contoh</h4>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT * FROM siswa;
     </div>
     <p>Pada contoh diatas kita akan mengambil semua data dari tabel siswa</p>
