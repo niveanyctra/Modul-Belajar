@@ -397,8 +397,8 @@ Route::get('belajar/sql/exists',function(){
 Route::get('belajar/sql/comment',function(){
     return view('belajar.sql.sql-comment');
 });
-Route::get('belajar/sql/function',function(){
-    return view('belajar.sql.sql-function');
+Route::get('belajar/sql/stored-procedure',function(){
+    return view('belajar.sql.sql-stored-procedure');
 });
 Route::get('belajar/sql/db-create-db',function(){
     return view('belajar.sql.sql-db-create-db');

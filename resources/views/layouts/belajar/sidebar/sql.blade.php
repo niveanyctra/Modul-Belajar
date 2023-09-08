@@ -19,7 +19,7 @@
             <a href="{{url('/belajar/sql/having')}}" class="{{ request()->is('belajar/sql/having') ? 'active' : '' }}">SQL Having</a>
             <a href="{{url('/belajar/sql/exists')}}" class="{{ request()->is('belajar/sql/exists') ? 'active' : '' }}">SQL Exists</a>
             <a href="{{url('/belajar/sql/comment')}}" class="{{ request()->is('belajar/sql/comment') ? 'active' : '' }}">SQL Komentar</a>
-            <a href="{{url('/belajar/sql/function')}}" class="{{ request()->is('belajar/sql/function') ? 'active' : '' }}">SQL Function</a>
+            <a href="{{url('/belajar/sql/stored-procedure')}}" class="{{ request()->is('belajar/sql/stored-procedure') ? 'active' : '' }}">SQL Stored Procedure</a>
         <h3 class="sidebar-header">SQL Database</h3>
             <a href="{{url('/belajar/sql/db-create-db')}}" class="{{ request()->is('belajar/sql/db-create-db') ? 'active' : '' }}">SQL Create DB</a>
             <a href="{{url('/belajar/sql/db-drop-db')}}" class="{{ request()->is('belajar/sql/db-drop-db') ? 'active' : '' }}">SQL Drop DB</a>

@@ -7,5 +7,16 @@
     <h1>SQL Menghapus Tabel</h1>
     <a href="{{ url('/belajar/sql/db-create-table') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/sql/db-alter-table') }}" class="btn btn-success">Selanjutnya</a>
+            <hr>
+    <p>Kita bisa menghapus database dengan sintaks <span class="mark">DROP TABLE</span></p>
+    <h4 class="my-3">Contoh</h4>
+    <div class="code">
+        DROP TABLE siswa;
+    </div>
+    <div class="bg-warning p-4">
+        <strong>Note :</strong> Hati-hati dalam menghapus tabel karena kita akan kehilangan semua informasi yang ada didalam tabel!
+    </div><br>
+    <a href="{{ url('/belajar/sql/db-create-table') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/sql/db-alter-table') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection
