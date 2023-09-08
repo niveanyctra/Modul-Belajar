@@ -21,6 +21,16 @@
     padding: 20px;
     background-color: #d9eee1;
 }
+.benar{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #44e983;
+}
+.salah{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e34343;
+}
 .mark{
     color: #de1472;
 }
