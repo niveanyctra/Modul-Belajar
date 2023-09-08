@@ -1,8 +1,12 @@
 @extends('layouts.main')
 @section('content')
 <div class="wrapper-sidebar">
-
-    <div class="row">
+    <div class="container-fluid px-5 py-4">
+        <h6>#BelajarBersama</h6>
+        <h1 class="fw-bolder display-5">Kelas PHP</h1>
+        <span class="text-wrap d-block" style="width: 487px;">Belajar hal yang paling mendasar untuk menambah wawasan dari para mentor.</span>
+    </div>
+    <div class="row px-5">
         {{-- sidebar --}}
         @include('layouts.kelas-mentor.sidebar')
         {{-- main content --}}
