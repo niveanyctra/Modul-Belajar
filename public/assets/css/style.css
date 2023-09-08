@@ -218,6 +218,23 @@
     .contohmq2{
         background-color: tomato;
     }
+  
+  .img-mentor .card img{
+    height: 14rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .img-mentor .card a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .img-mentor .card a.btn{
+    text-decoration: none;
+    color: white;
+  }
+  
   @media all and (max-width: 1024px) {
   .sidebar.toggled {
       left: 0;

@@ -12,13 +12,20 @@
         {{-- main content --}}
         <div class="col-10">
 
-            <div class="row">
+            <div class="d-flex justify-content-center flex-wrap img-mentor">
                 @foreach ($posts as $data)
-
-                <div class="col-sm-3  text-center {{ $data->level }}">
+                <!-- <div class="col-sm-3  text-center {{ $data->level }}">
                     <a href="{{ url('/kelas-mentor/html/'.$data->slug)}}">{{$data->title}} </a><br>
                     <h6>{{$data->users->name}}</h6>
-
+                </div> -->
+                <!-- card mode -->
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="https://dummyimage.com/600x400/000/fff" class="card-img-top" alt="Dummy image">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="{{ url('/kelas-mentor/html/'.$data->slug)}}">{{$data->title}}</a></h5>
+                        <p class="card-text"></p>
+                        <a href="{{ url('/kelas-mentor/html/'.$data->slug)}}" class="btn btn-primary">Yuk Belajar!</a>
+                    </div>
                 </div>
                 @endforeach
             </div>
