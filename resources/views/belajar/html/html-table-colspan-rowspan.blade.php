@@ -78,13 +78,13 @@
             <br>
             <h3 class="my-3">Colspan</h3>
             <p>Colspan memungkinkan kita untuk sebuah sel mencakup beberapa kolom</p>
-            <div class="bg-dark text-light">
+            <div class="code">
         &lt;table&gt;
         <div class="ps-4">
             &lt;tr&gt;
             <div class="ps-4">
                 &lt;th&gt;Nama&lt;/th&gt;<br>
-                &lt;th <span class="text-danger">colspan</span>=<span class="text-success">"2"</span>&gt;Kelas dan JK&lt;/th&gt;<br>
+                &lt;th <span class="t-red">colspan</span>=<span class="t-green">"2"</span>&gt;Kelas dan JK&lt;/th&gt;<br>
             </div>
             &lt;/tr&gt;
         </div>
@@ -112,18 +112,18 @@
             </tr>
         </table>
 
-        <div class="bg-warning p-4 my-2">
-            <strong>Note :</strong> atribut <span class="bg-body-secondary text-danger">colspan</span> mewakili jumlah kolom yang tergabung
+        <div class="note">
+            <strong>Note :</strong> atribut <span class="mark">colspan</span> mewakili jumlah kolom yang tergabung
         </div>
 <hr>
 <h3 class="my-3">Rowspan</h3>
 <p>Rowspan memungkinkan kita untuk sebuah sel mencakup beberapa baris</p>
-            <div class="bg-dark text-light">
+            <div class="code">
         &lt;table&gt;
         <div class="ps-4">
             &lt;tr&gt;
             <div class="ps-4">
-                &lt;th <span class="text-danger">rowspan</span>=<span class="text-success">"2"</span>&gt;Nama dan Kelas&lt;/th&gt;<br>
+                &lt;th <span class="t-red">rowspan</span>=<span class="t-green">"2"</span>&gt;Nama dan Kelas&lt;/th&gt;<br>
             </div>
             &lt;/tr&gt;
         </div>
@@ -147,8 +147,8 @@
                 <td>XII RPL 1</td>
             </tr>
         </table>
-        <div class="bg-warning p-4 my-2">
-            <strong>Note :</strong> atribut <span class="bg-body-secondary text-danger">rowspan</span> mewakili jumlah baris yang tergabung
+        <div class="note">
+            <strong>Note :</strong> atribut <span class="mark">rowspan</span> mewakili jumlah baris yang tergabung
         </div>
     </div>
     <a href="{{ url('/belajar/html/table-padding-spacing') }}" class="btn btn-success">Sebelumnya</a>

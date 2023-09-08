@@ -9,8 +9,8 @@
     <a href="{{ url('/belajar/html/table-colspan-rowspan') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
     <h3 class="my-3">Padding Sel</h3>
-    <p>Kamu bisa mengatur jarak teks dengan border menggunakan properti <span class="bg-body-secondary text-danger">padding</span> didalam sel tabel</p>
-        <div class="bg-dark text-light p-2">
+    <p>Kamu bisa mengatur jarak teks dengan border menggunakan properti <span class="mark">padding</span> didalam sel tabel</p>
+        <div class="code">
         td, th {<br>
             padding: 15px;<br>
         }
@@ -35,8 +35,8 @@
     </table>
     <hr>
     <h3 class="my-3">Spacing Sel</h3>
-    <p>Kamu juga bisa mengatur jarak antar border dengan properti <span class="bg-body-secondary text-danger">border-spacing</span></p>
-        <div class="bg-dark text-light p-2">
+    <p>Kamu juga bisa mengatur jarak antar border dengan properti <span class="mark">border-spacing</span></p>
+        <div class="code">
 table {<br>
   border-spacing: 30px;<br>
 }

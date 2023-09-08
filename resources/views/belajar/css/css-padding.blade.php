@@ -13,7 +13,7 @@
     <h4 class="my-3">
         Contoh
     </h4>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;div style="border: 1px solid black; padding:20px"&gt;&lt;/div&gt;<br>
     </div><br>
     <div style="border: 1px solid black; padding:20px">Hello World</div>
@@ -22,10 +22,10 @@
     <h3 class="my-3">Padding Individual Sides</h3>
     <p>CSS memiliki properti untuk setiap sisi bagian padding</p>
     <ul>
-        <li><mark>padding-top</mark></li>
-        <li><mark>padding-bottom</mark></li>
-        <li><mark>padding-left</mark></li>
-        <li><mark>padding-right</mark></li>
+        <li><span class="mark">padding-top</span></li>
+        <li><span class="mark">padding-bottom</span></li>
+        <li><span class="mark">padding-left</span></li>
+        <li><span class="mark">padding-right</span></li>
     </ul>
     <a href="{{ url('/belajar/css/margin') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/css/dimensi') }}" class="btn btn-success">Selanjutnya</a>

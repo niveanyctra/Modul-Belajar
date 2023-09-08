@@ -8,7 +8,7 @@
     <a href="{{ url('/belajar/html/input-type') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/html') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
-    <h3 class="my-3">Daftar Atribut pada tag <span class="bg-body-secondary text-danger">&lt;input&gt;</span></h3>
+    <h3 class="my-3">Daftar Atribut pada tag <span class="mark">&lt;input&gt;</span></h3>
     <table class="table table-striped">
         <tr>
             <th>Atribut</th>
@@ -59,7 +59,7 @@
     <h3 class="my-3">
         Contoh
     </h3>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         &lt;form action="aksi_form.php" method="post"&gt;
         <div class="ps-4">
 
@@ -77,7 +77,7 @@
         <label for="kelas">Kelas</label><br>
         <input type="text" name="kelas" id="kelas" required placeholder="Masukkan kelas"><br>
     </form><br>
-    <p>Dalam form tersebut terdapat atribut <span class="bg-body-secondary text-danger">required</span> yang mengharuskan user untuk mengisi field input dan juga atribut <span class="bg-body-secondary text-danger">placeholder</span> yang memberikan text bantuan dalam field input</p>
+    <p>Dalam form tersebut terdapat atribut <span class="mark">required</span> yang mengharuskan user untuk mengisi field input dan juga atribut <span class="mark">placeholder</span> yang memberikan text bantuan dalam field input</p>
         <a href="{{ url('/belajar/html/input-type') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/html') }}" class="btn btn-success">Selanjutnya</a>
 </section>

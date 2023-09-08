@@ -13,7 +13,7 @@
     <h4 class="my-3">
         Contoh
     </h4>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;div style="border: 1px solid black; margin-top:20px"&gt;&lt;/div&gt;<br>
         &lt;div style="border: 1px solid black; margin-top:20px"&gt;&lt;/div&gt;<br>
         &lt;div style="border: 1px solid black; margin-top:20px"&gt;&lt;/div&gt;<br>

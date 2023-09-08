@@ -13,7 +13,7 @@
     <div class="code">
         CREATE DATABASE siswa;
     </div>
-    <div class="bg-warning p-4">
+    <div class="note">
         <strong>Note :</strong> Pastikan kita memiliki admin privilage sebelum membuat database!
     </div>
     <a href="{{ url('/belajar/sql/function') }}" class="btn btn-success">Sebelumnya</a>

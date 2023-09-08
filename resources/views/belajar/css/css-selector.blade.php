@@ -18,28 +18,28 @@
     <h3 class="my-3">
         Contoh CSS Selector
     </h3>
-    <div class="bg-dark text-light p-2">
-        <span class="text-warning">p</span> {
+    <div class="code">
+        <span class="t-red">p</span> {
             <div class="ps-4">
 
-                <span class="text-danger">color</span>: <span class="text-success">red</span>;<br>
-                <span class="text-danger">text-align</span>: <span class="text-success">center</span>;
+                <span class="t-red">color</span>: <span class="t-green">red</span>;<br>
+                <span class="t-red">text-align</span>: <span class="t-green">center</span>;
             </div>
         }
     </div>
     <p>Pada contoh diatas kita akan membuat tag &lt;p&gt; berwarna merah dan berada di tengah seperti ini :</p>
     <div class="bg-body-secondary p-2">
-        <p class="text-danger text-center">
+        <p class="t-red text-center">
             Contoh CSS Selector
         </p>
     </div><br>
     <p>Kita juga bisa memodifikasinya sebagai berikut</p>
-    <div class="bg-dark text-light p-2">
-        <span class="text-warning">p.center</span> {
+    <div class="code">
+        <span class="t-red">p.center</span> {
             <div class="ps-4">
 
-                <span class="text-danger">color</span>: <span class="text-success">red</span>;<br>
-                <span class="text-danger">text-align</span>: <span class="text-success">center</span>;
+                <span class="t-red">color</span>: <span class="t-green">red</span>;<br>
+                <span class="t-red">text-align</span>: <span class="t-green">center</span>;
             }
             </div>
 
@@ -47,12 +47,12 @@
     <p>Pada potongan kode diatas selector hanya akan mempengaruhi class 'center' pada tag &lt;p&gt;<br>
         Kita juga bisa mengelompokan beberapa tag HTML dalam satu selector
     </p>
-        <div class="bg-dark text-light p-2">
-        <span class="text-warning">h1</span>,<span class="text-warning">h2</span>,<span class="text-warning">h3</span> {
+        <div class="code">
+        <span class="t-red">h1</span>,<span class="t-red">h2</span>,<span class="t-red">h3</span> {
             <div class="ps-4">
 
-                <span class="text-danger">color</span>: <span class="text-success">red</span>;<br>
-                <span class="text-danger">text-align</span>: <span class="text-success">center</span>;
+                <span class="t-red">color</span>: <span class="t-green">red</span>;<br>
+                <span class="t-red">text-align</span>: <span class="t-green">center</span>;
             </div>
         }
     </div>

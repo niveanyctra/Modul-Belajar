@@ -20,9 +20,9 @@
     <hr>
     <h3 class="mt-3">Struktur Umum Styling</h3>
     <p>Styling memiliki struktur umum sebagai berikut :</p>
-    <div class="text-light bg-dark p-2">
+    <div class="code">
 
-    &lt;namatag <span class="text-danger">style</span>=<span class="text-success">"property:<span class="text-primary">value</span>"</span>&gt; &lt;/namatag&gt;
+    &lt;namatag <span class="t-red">style</span>=<span class="t-green">"property:<span class="t-blue">value</span>"</span>&gt; &lt;/namatag&gt;
 
 </div>
 <ul>
@@ -32,17 +32,16 @@
 </ul>
 <hr>
 <h3 class="mt-3">Contoh</h3>
-    <div class="text-light bg-dark p-2">
+    <div class="code">
 
-    &lt;p <span class="text-danger">style</span>=<span class="text-success">"color:<span class="text-primary">blue</span>"</span>&gt;Ini teks berwarna biru&lt;/p&gt;
+    &lt;p <span class="t-red">style</span>=<span class="t-green">"color:<span class="t-blue">blue</span>"</span>&gt;Ini teks berwarna biru&lt;/p&gt;
 
 </div>
 <h6 class="mt-2">Hasilnya :</h6>
-<div class="bg-body-secondary px-2 py-2 rounded-1">
-
+<div class="bg-body-secondary px-2 py-2 rounded-1 my-2">
     <p style="color: blue">Ini teks berwarna biru</p>
 </div>
-<p>Potongan kode diatas merupakan salah satu contoh inline styling dengan <span class="bg-body-secondary text-danger">color</span> sebagai property dan <span class="bg-body-secondary text-danger">blue</span> sebagai value</p>
+<p>Potongan kode diatas merupakan salah satu contoh inline styling dengan <span class="mark">color</span> sebagai property dan <span class="mark">blue</span> sebagai value</p>
 <hr>
 <h3 class="mt-3">Property Yang Umum Digunakan Pada Styling</h3>
 <table class="table table-striped">

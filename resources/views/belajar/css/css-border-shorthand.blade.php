@@ -9,7 +9,7 @@
     <a href="{{ url('/belajar/css/border-rounded') }}" class="btn btn-success">Selanjutnya</a>
         <hr>
     <p>Kita bisa menghemat penulisan border dengan cara sebagai berikut :</p>
-        <div class="bg-dark text-light p-3">
+        <div class="code">
             p{
             <div class="ps-4">
                 border: 1px solid black;

@@ -9,16 +9,16 @@
     <a href="{{ url('/belajar/sql/select-top') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
         <p>
-        Kita bisa menghapus data yang sebelumnya sudah dimasukan kedalam tabel dengan sintaks <mark>DELETE</mark>.
+        Kita bisa menghapus data yang sebelumnya sudah dimasukan kedalam tabel dengan sintaks <span class="mark">DELETE</span>.
 
     </p>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         DELETE siswa
         WHERE nama = 'Arip';
     </div><br>
     <p>Sintaks diatas akan menghapus record tabel siswa yang memiliki record nama 'Arip'</p>
-    <div class="bg-warning p-4">
-        <strong>Note :</strong> Klausa <mark>WHERE</mark> penting dalam sintaks <mark>DELETE</mark>, tanpa klausa <mark>WHERE</mark> maka semua record akan terhapus!
+    <div class="note">
+        <strong>Note :</strong> Klausa <span class="mark">WHERE</span> penting dalam sintaks <span class="mark">DELETE</span>, tanpa klausa <span class="mark">WHERE</span> maka semua record akan terhapus!
     </div><br>
         <a href="{{ url('/belajar/sql/update') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/sql/select-top') }}" class="btn btn-success">Selanjutnya</a>

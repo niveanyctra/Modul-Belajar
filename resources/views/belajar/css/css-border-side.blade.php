@@ -8,9 +8,9 @@
     <a href="{{ url('/belajar/css/border-color') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/css/border-shorthand') }}" class="btn btn-success">Selanjutnya</a>
         <hr>
-    <p>Kita bisa menentukan sisi yang akan diberi border dengan properti <mark>border-top</mark>, <mark>border-right</mark>, <mark>border-bottom</mark>, <mark>border-left</mark> <br>
+    <p>Kita bisa menentukan sisi yang akan diberi border dengan properti <span class="mark">border-top</span>, <span class="mark">border-right</span>, <span class="mark">border-bottom</span>, <span class="mark">border-left</span> <br>
     </p>
-        <div class="bg-dark text-light p-3">
+        <div class="code">
             p{
             <div class="ps-4">
                 border-style: solid;<br>

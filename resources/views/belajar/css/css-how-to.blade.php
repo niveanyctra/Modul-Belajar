@@ -24,7 +24,7 @@
         External CSS
     </h3>
     <p>Untuk menggunakan external CSS kamu harus menghubungkan file CSS ke dokumen HTML dengan menambahkan tag berikut di dalam tag &lt;head&gt; :</p>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         &lt;link rel="stylesheet" href="namafile.css"&gt;
     </div>
     <p>Dengan tag tersebut kamu akan menghubungkan file CSS dengan dokumen HTML. Kamu bebas menamai file, namun pastikan file harus memiliki ekstensi .css setelah itu kamu bebas menentukan desain pada file CSS yang kamu buat</p>
@@ -37,13 +37,13 @@
 
     </p>
     <h6 class="my-2">Contoh</h6>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         &lt;style&gt;<br>
-        <span class="text-warning">h1</span> {
+        <span class="t-red">h1</span> {
             <div class="ps-4">
 
-                <span class="text-danger">color</span>: <span class="text-success">red</span>;<br>
-                <span class="text-danger">text-align</span>: <span class="text-success">center</span>;
+                <span class="t-red">color</span>: <span class="t-green">red</span>;<br>
+                <span class="t-red">text-align</span>: <span class="t-green">center</span>;
             </div>
         } <br>
         &lt;/style&gt;
@@ -53,8 +53,8 @@
         Inline CSS
     </h3>
     <p>Inline CSS digunakan untuk mendesain satu tag yang dipilih menggunakan atribut <mark>style</mark> :</p>
-    <div class="bg-dark text-light p-2">
-        &lt;p <span class="text-danger">style</span>=<span class="text-success">"color:<span class="text-primary">blue</span>"</span>&gt;Ini teks berwarna biru&lt;/p&gt;
+    <div class="code">
+        &lt;p <span class="t-red">style</span>=<span class="t-green">"color:<span class="t-blue">blue</span>"</span>&gt;Ini teks berwarna biru&lt;/p&gt;
     </div>
     <hr>
     <h3 class="my-3">
