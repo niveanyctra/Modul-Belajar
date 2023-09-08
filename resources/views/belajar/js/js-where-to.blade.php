@@ -94,7 +94,7 @@
             &lt;body&gt;
             <div class="ps-4">
 
-                &lt;h1&gt;Demo JavaScript pada bagian Head&lt;/h1&gt; <br>
+                &lt;h1&gt;Demo JavaScript pada bagian Body&lt;/h1&gt; <br>
                 &lt;p <span class="text-danger">id</span><span class="text-success">="demo"</span>&gt;Paragraf&lt;/p&gt; <br>
                 &lt;button <span class="text-danger">type</span><span class="text-success">="button"</span> <span class="text-danger">onclick</span><span class="text-success">="myFunction()"</span>&gt;Cobalah&lt;/button&gt;
             </div>
@@ -127,6 +127,56 @@
     </p>
     <div class="bg-dark text-light p-3">
         &lt;script <span class="text-danger">src</span><span class="text-success">="script.js"</span>&gt;&lt;/script&gt; <br>
+    </div> <br>
+    <p>
+        Kamu dapat menempatkan referensi script eksternal di <span class="bg-body-secondary text-danger">&lt;head&gt;</span> atau <span class="bg-body-secondary text-danger">&lt;body&gt;</span> sesuka kamu.
+    </p><br>
+    <div class="bg-warning p-4">
+        <p>Script eksternal tidak dapat memiliki tag <span class="bg-body-secondary text-danger">&lt;script&gt;</span></p>
     </div>
+    <hr>
+    <h3 class="my-3">
+        Keuntungan Menggunakan Eksternal JavaScript
+    </h3>
+    <p>
+        Menempatkan script dalam file eksternal memiliki beberapa keuntungan: <br><br>
+        <ul>
+            <li>Memisahkan HTML dan kode script</li>
+            <li>Membuat HTML dan JavaScript lebih mudah dibaca dan dipelihara</li>
+            <li>File JavaScript yang di-cache dapat mempercepat halaman ketika dimuat</li>
+        </ul>
+    </p>
+    <hr>
+    <h3 class="my-3">
+        Referensi Eksternal
+    </h3>
+    <p>
+        Sebuah script eksternal dapat direfernsi dengan 3 cara: <br>
+        <ul>
+            <li>Dengan URL lengakp (alamat website lengkap)</li>
+            <li>Dengan file path atau lokasi file (seperti /js/)</li>
+            <li>Tanpa file path</li>
+        </ul>
+    </p>
+    <p>
+        Berikut contoh menggunakan <strong>URL lengkap</strong> untuk menuju file myScript.js:
+    </p>
+    <div class="bg-dark text-light p-3">
+        &lt;script <span class="text-danger">src</span><span class="text-success">="https://smkn1-cirebon.sch.id/js/myScript.js"</span>&gt;&lt;/script&gt;
+    </div><br>
+    <p>
+        Berikut contoh menggunakan <strong>file path</strong> untuk menuju file myScript.js:
+    </p>
+    <div class="bg-dark text-light p-3">
+        &lt;script <span class="text-danger">src</span><span class="text-success">="/js/myScript.js"</span>&gt;&lt;/script&gt;
+    </div><br>
+    <p>
+        Berikut contoh tanpa file path untuk menuju file myScript.js:
+    </p>
+    <div class="bg-dark text-light p-3">
+        &lt;script <span class="text-danger">src</span><span class="text-success">="myScript.js"</span>&gt;&lt;/script&gt;
+    </div><br>
+    <a href="{{ url('/belajar/js') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/js/output') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection
