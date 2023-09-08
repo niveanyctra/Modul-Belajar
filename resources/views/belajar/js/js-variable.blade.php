@@ -34,7 +34,7 @@
     <div class="code">
         <span class="t-blue">var</span> x = 5; <br>
         <span class="t-blue">var</span> y = 6; <br>
-        <span class="t-blue">var</span> z = 11; 
+        <span class="t-blue">var</span> z = 11;
     </div>
     <div class="note">
         <h4>Note</h4>
@@ -48,19 +48,19 @@
     <div class="code">
         <span class="t-blue">let</span> x = 5; <br>
         <span class="t-blue">let</span> y = 6; <br>
-        <span class="t-blue">let</span> z = x + y; 
+        <span class="t-blue">let</span> z = x + y;
     </div>
     <h5>Contoh menggunakan const :</h5>
     <div class="code">
         <span class="t-blue">const</span> x = 5; <br>
         <span class="t-blue">const</span> y = 6; <br>
-        <span class="t-blue">const</span> z = x + y; 
+        <span class="t-blue">const</span> z = x + y;
     </div>
     <h5>Contoh ketika dicampur :</h5>
     <div class="code">
         <span class="t-blue">const</span> price1 = 5; <br>
         <span class="t-blue">const</span> price2 = 6; <br>
-        <span class="t-blue">let</span> total = price1 + price2; 
+        <span class="t-blue">let</span> total = price1 + price2;
     </div>
     <p>
         Dua variabel <span class="mark">price1</span> dan <span class="mark">price2</span> dideklarasikan dengan kata kunci <span class="mark">const</span>. <br><br>
@@ -108,5 +108,35 @@
     <div class="code">
         <span class="t-blue">let</span> carName;
     </div>
+    <p>
+        Setelah mendeklarasikan variabel, variabel tersebut secara teknis tidak memiliki value. <br><br>
+        Untuk memberi value anda bisa menggunakan tanda ('=') :
+    </p>
+    <div class="code">
+        carName = <span class="t-green">"Toyota"</span>
+    </div>
+    <p>
+        Anda juga bisa memberi value ketika mendeklarasikan variabel
+    </p>
+    <div class="code">
+        <span class="t-blue">let</span> carName = <span class="t-green">"Toyota"</span>
+    </div>
+    <p>Anda juga bisa membuat beberapa variabel dalam satu deklarasi dengan memisahakn menggunakan koma</p>
+    <div class="code">
+        <span class="t-blue">let</span> nama = <span class="t-green">"Arip"</span>, <br>
+        kelas = <span class="t-green">"XII RPL 1"</span>;
+    </div>
+    <hr>
+    <h4 class="my-3">Deklarasi Ulang variabel</h4>
+    <p>Jika sebuah variabel di deklarasi ulang, maka variabel akan kehilangan value lamanya</p>
+    <div class="code">
+        <span class="t-blue">var</span> nama = <span class="t-green">"Arip"</span>; <br>
+        <span class="t-blue">var</span> nama;
+    </div>
+    <p>
+        Anda tidak bisa melakukan deklarasi ulang dengan <span class="mark">let</span> atau <span class="mark">const</span>.
+    </p>
+        <a href="{{ url('/belajar/js/comment') }}" class="btn btn-success">Sebelumnya</a>
+    <a href="{{ url('/belajar/js/let') }}" class="btn btn-success">Selanjutnya</a>
 </section>
 @endsection
