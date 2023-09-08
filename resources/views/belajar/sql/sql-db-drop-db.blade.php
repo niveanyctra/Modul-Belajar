@@ -13,7 +13,7 @@
     <div class="code">
         DROP DATABASE siswa;
     </div>
-    <div class="bg-warning p-4">
+    <div class="note">
         <strong>Note :</strong> Hati-hati dalam menghapus database karena kita akan kehilangan semua informasi yang ada didalam database!
     </div>
     <a href="{{ url('/belajar/sql/db-create-db') }}" class="btn btn-success">Sebelumnya</a>

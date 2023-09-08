@@ -16,11 +16,11 @@
     <h4 class="my-3">
         Contoh
     </h4>
-    <div class="bg-dark text-light p-2">
-            <span class="text-warning">span</span> {
+    <div class="code">
+            <span class="t-red">span</span> {
             <div class="ps-4">
 
-                <span class="text-danger">display</span>: <span class="text-success">block</span>;<br>
+                <span class="t-red">display</span>: <span class="t-green">block</span>;<br>
 
             </div>
         }
@@ -39,7 +39,7 @@
         </div>
         <button style="display: none;" onclick="document.getElementById('contoh1').style.display='block',getElementById('contoh2').style.display='none'" id="contoh2">Reset</button>
     </div><br>
-    <p>Pada contoh diatas kita menggunakan <mark>display: none</mark> untuk menghilangkan sebuah elemen</p>
+    <p>Pada contoh diatas kita menggunakan <span class="mark">display: none</span> untuk menghilangkan sebuah elemen</p>
     <a href="{{ url('/belajar/css/grid') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/css/media-query') }}" class="btn btn-success">Selanjutnya</a>
 </section>

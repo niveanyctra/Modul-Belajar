@@ -61,9 +61,13 @@
             sessionStorage.setItem("sidebar-scroll", sidebar.scrollTop);
             sessionStorage.removeItem("sidebarSrcroll");
         });
-        const activeLink = document.querySelector('.sidebar a.active');
-        if (activeLink) {
-            activeLink.scrollIntoView({ block: 'center' });
+        const sideActiveLink = document.querySelector('.sidebar a.active');
+        if (sideActiveLink) {
+            sideActiveLink.scrollIntoView({ block: 'center' });
+        }
+        const subActiveLink = document.querySelector('.sub-nav a.active');
+        if (subActiveLink) {
+            subActiveLink.scrollIntoView({ block: 'center' });
         }
 
         function levelCheck() {

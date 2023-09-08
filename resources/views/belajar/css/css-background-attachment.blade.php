@@ -9,7 +9,7 @@
     <a href="{{ url('/belajar/css/background-shorthand') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
     <p>Kita bisa mengatur background untuk bisa discroll atau fixed dengan properti <mark>background-attachment</mark></p><br>
-            <div class="bg-dark text-light p-3">
+            <div class="code">
             p{
             <div class="ps-4">
                 background-image: url("gambar.png");<br>

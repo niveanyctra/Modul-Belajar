@@ -18,17 +18,16 @@
     <hr>
     <h3 class="mt-3">Contoh Dokumen HTML Sederhana</h3>
     <hr>
-    <div class="bg-dark">
-<div class="text-light p-2">
+    <div class="code">
 
-    &lt;!DOCTYPE html&gt;
+    &lt;!DOCTYPE html&gt; <br>
     &lt;html&gt;
     <div class="ps-4">
 
         &lt;head&gt;
         <div class="ps-4">
 
-            &lt;title&gt;Judul Halaman&lt;title&gt;
+            &lt;title&gt;Judul Halaman&lt;/title&gt;
         </div>
         &lt;/head&gt;<br>
         &lt;body&gt;
@@ -40,23 +39,21 @@
     </div>
     &lt;/html&gt;
 
-</div>
     </div>
     <h3>Penjelasan Contoh HTML</h3>
     <ul>
-        <li><span class="bg-body-secondary text-danger">&lt;!DOCTYPE html&gt;</span> Mendeklarasikan bahwa dokumen ini merupakan dokumen HTML5</li>
-        <li><span class="bg-body-secondary text-danger">&lt;html&gt;</span> Merupakan elemen yang wajib di setiap dokumen HTML</li>
-        <li><span class="bg-body-secondary text-danger">&lt;head&gt;</span> Merupakan elemen yang berisi informasi meta tentang halaman HTML</li>
-        <li><span class="bg-body-secondary text-danger">&lt;title&gt;</span> Merupakan elemen yang mendefinisikan judul halaman HTML</li>
-        <li><span class="bg-body-secondary text-danger">&lt;body&gt;</span> Merupakan elemen untuk memuat konten pada halaman HTML yang bisa dilihat,seperti heading,paragraf,gambar,tautan,tabel,urutan,dll.</li>
-        <li><span class="bg-body-secondary text-danger">&lt;h1&gt;</span> Merupakan elemen yang mendefinisikan heading pada halaman HTML</li>
+        <li><span class="mark">&lt;!DOCTYPE html&gt;</span> Mendeklarasikan bahwa dokumen ini merupakan dokumen HTML5</li>
+        <li><span class="mark">&lt;html&gt;</span> Merupakan elemen yang wajib di setiap dokumen HTML</li>
+        <li><span class="mark">&lt;head&gt;</span> Merupakan elemen yang berisi informasi meta tentang halaman HTML</li>
+        <li><span class="mark">&lt;title&gt;</span> Merupakan elemen yang mendefinisikan judul halaman HTML</li>
+        <li><span class="mark">&lt;body&gt;</span> Merupakan elemen untuk memuat konten pada halaman HTML yang bisa dilihat,seperti heading,paragraf,gambar,tautan,tabel,urutan,dll.</li>
+        <li><span class="mark">&lt;h1&gt;</span> Merupakan elemen yang mendefinisikan heading pada halaman HTML</li>
     </ul>
 <hr>
 <h3 class="mt-3">Apa Itu Elemen HTML?</h3>
 <p>Elemen HTML terdiri dari tag awal,konten dan penutup tag:</p>
-<div class="fs-5">
-
-    <span class="text-danger">&lt;namatag&gt;</span>Konten<span class="text-danger">&lt;/namatag&gt;</span>
+<div class="code">
+    <span class="t-red">&lt;namatag&gt;</span>Konten<span class="t-red">&lt;/namatag&gt;</span>
 </div>
 <p><strong>Elemen</strong> HTML apapun yang memiliki tag awal hingga tag akhir:</p>
 <table class="table table-striped table-border text-center" style="max-width: 700px">
@@ -86,7 +83,7 @@
     </tbody>
 </table>
 
-<div class="bg-warning py-4 px-4">
+<div class="note">
 
     <p><strong>Note : </strong>Beberapa elemen HTML tidak memiliki konten ( seperti elemen &lt;br&gt; ).
     Elemen ini disebut <i>empty element</i>
@@ -129,7 +126,7 @@
 &lt;/html&gt;
 
 </div>
-<div class="bg-warning py-4 px-4 my-3">
+<div class="note">
     <p><strong>Note : </strong>Konten di dalam bagian &lt;body&gt; akan ditampilkan di browser.Konten di dalam elemen  &lt;title&gt; akan ditampilkan di bilah judul browser atau di tab halaman browser</p>
 </div>
 

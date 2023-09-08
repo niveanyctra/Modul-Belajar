@@ -13,16 +13,16 @@
     <h3 class="my-3">Bagaimana Cara Menambahkan Favicon di HTML</h3><br>
     <p>Kamu dapat menggunakan gambar apapun yang kamu suka sebagai favicon. Kamu juga dapat membuat favicon kamu sendiri pada situs seperti <a href="http://www.favicon.cc" target="_blank" rel="noopener noreferrer">http://www.favicon.cc</a></p>
 
-    <div class="bg-warning m-2 p-4">
+    <div class="note">
         <p><strong>Tip: </strong>Favicon adalah gambar dengan ukuran kecil, jadi sebaiknya haruslah gambar yang sederhana dan mempunyai kontras yang tinggi</p>
     </div>
     <p>Gambar favicon ditampilkan disebelah kiri judul halaman di tab browser, seperti ini: </p>
     <img src="{{asset('img/fav-icon-html.PNG')}}" alt="">
     <p>Untuk menampilkan favicon pada website anda, sebaiknya simpan gambar favicon kedalam folder images. Nama yang umum untuk gambar favicon adalah "favicon.ico".
         <br><br>
-        Selanjutnya, tambah elemen <span class="bg-body-secondary text-danger">&lt;link&gt;</span> pada file "index.html" anda, selanjutnya elemen <span class="bg-body-secondary text-danger">&lt;title&gt;</span>, seperti berikut :
+        Selanjutnya, tambah elemen <span class="mark">&lt;link&gt;</span> pada file "index.html" anda, selanjutnya elemen <span class="mark">&lt;title&gt;</span>, seperti berikut :
     </p>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
 
     &lt;!DOCTYPE html&gt;
     <div class="p-2">
@@ -34,7 +34,7 @@
             <div class="ps-4">
 
                 &lt;title&gt;Judul Halaman&lt;title&gt;<br>
-                &lt;link <span class="text-danger">rel</span><span class="text-success">="icon"</span> <span class="text-danger">type</span><span class="text-success">="image/x-icon"</span> <span class="text-danger">href</span><span class="text-success">="/images/favicon.ico"</span>&gt;
+                &lt;link <span class="t-red">rel</span><span class="t-green">="icon"</span> <span class="t-red">type</span><span class="t-green">="image/x-icon"</span> <span class="t-red">href</span><span class="t-green">="/images/favicon.ico"</span>&gt;
             </div>
             &lt;/head&gt;<br>
             &lt;body&gt;

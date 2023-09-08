@@ -14,14 +14,13 @@
     <hr>
     <h3 class="mt-3">Dokumen HTML</h3>
     <p>
-        Semua dokumen HTML harus diawali dengan deklarasi <span class="bg-body-secondary text-danger">&lt;!DOCTYPE html&gt;</span><br><br>
-        Dokumen HTML sendiri harus diawali dengan <span class="bg-body-secondary text-danger">&lt;html&gt;</span> dan diakhiri dengan <span class="bg-body-secondary text-danger">&lt;/html&gt;</span><br><br>
-        Bagian yang dapat dilihat dari dokumen HTML adalah antara <span class="bg-body-secondary text-danger">&lt;body&gt;</span> dan <span class="bg-body-secondary text-danger">&lt;/body&gt;</span>
+        Semua dokumen HTML harus diawali dengan deklarasi <span class="mark">&lt;!DOCTYPE html&gt;</span><br><br>
+        Dokumen HTML sendiri harus diawali dengan <span class="mark">&lt;html&gt;</span> dan diakhiri dengan <span class="mark">&lt;/html&gt;</span><br><br>
+        Bagian yang dapat dilihat dari dokumen HTML adalah antara <span class="mark">&lt;body&gt;</span> dan <span class="mark">&lt;/body&gt;</span>
     </p>
-        <div class="bg-dark p-2">
-<div class="text-light p-2">
+    <div class="code">
 
-    &lt;!DOCTYPE html&gt;
+    &lt;!DOCTYPE html&gt; <br>
     &lt;html&gt;
     <div class="ps-4">
 
@@ -42,29 +41,28 @@
     </div>
     &lt;/html&gt;
 
-</div>
     </div>
     <hr>
     <h3 class="mt-3">Deklarasi &lt;!DOCTYPE&gt;</h3>
-    <p>Deklarasi <span class="bg-body-secondary text-danger">&lt;!DOCTYPE&gt;</span> tersebut mewaliki tipe dokumen,dan membantu browser menampilkan halaman web dengan benar. <br><br>
+    <p>Deklarasi <span class="mark">&lt;!DOCTYPE&gt;</span> tersebut mewaliki tipe dokumen,dan membantu browser menampilkan halaman web dengan benar. <br><br>
     Tag tersebut hanya boleh muncul sekali, di bagian atas kode sebelum tag apapun. <br><br>
-    Deklarasi <span class="bg-body-secondary text-danger">&lt;!DOCTYPE&gt;</span> ini tidak membedakan huruf besar-kecil. <br><br>
-    Deklarasi <span class="bg-body-secondary text-danger">&lt;!DOCTYPE&gt;</span> untuk HTML5 adalah:
+    Deklarasi <span class="mark">&lt;!DOCTYPE&gt;</span> ini tidak membedakan huruf besar-kecil. <br><br>
+    Deklarasi <span class="mark">&lt;!DOCTYPE&gt;</span> untuk HTML5 adalah:
     </p>
 
-<div class="text-light bg-dark p-2">
+<div class="code">
 
     &lt;!DOCTYPE html&gt;
 
 </div>
 
     <h3 class="mt-3">HTML Headings</h3>
-    <p>Heading di HTML terdiri dari <span class="bg-body-secondary text-danger">&lt;h1&gt;</span> sampai <span class="bg-body-secondary text-danger">&lt;h6&gt;</span><br><br>
-    <span class="bg-body-secondary text-danger">&lt;h1&gt;</span> mendefinisikan judul yang paling besar <br>
-    <span class="bg-body-secondary text-danger">&lt;h6&gt;</span> mendefinisikan judul yang paling kecil
+    <p>Heading di HTML terdiri dari <span class="mark">&lt;h1&gt;</span> sampai <span class="mark">&lt;h6&gt;</span><br><br>
+    <span class="mark">&lt;h1&gt;</span> mendefinisikan judul yang paling besar <br>
+    <span class="mark">&lt;h6&gt;</span> mendefinisikan judul yang paling kecil
     </p>
     <h3 class="mt-3">Contoh</h3>
-    <div class="bg-dark p-2 text-light">
+    <div class="code">
 
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
@@ -75,8 +73,8 @@
     </div>
     <hr>
     <h3 class="mt-3">Paragraf HTML</h3>
-    <p>Paragraf HTML didefinisikan dengan tag <span class="bg-body-secondary text-danger">&lt;p&gt;</span> :</p>
-    <div class="text-light bg-dark p-2">
+    <p>Paragraf HTML didefinisikan dengan tag <span class="mark">&lt;p&gt;</span> :</p>
+    <div class="code">
 
     &lt;p&gt;Ini sebuah paragraf&lt;/p&gt; <br>
     &lt;p&gt;Ini paragraf lain&lt;/p&gt;
@@ -84,22 +82,22 @@
 </div>
     <hr>
     <h3 class="mt-3">Tautan HTML</h3>
-    <p>Tautan HTML didefinisikan dengan tag <span class="bg-body-secondary text-danger">&lt;a&gt;</span> :</p>
-    <div class="text-light bg-dark p-2">
+    <p>Tautan HTML didefinisikan dengan tag <span class="mark">&lt;a&gt;</span> :</p>
+    <div class="code">
 
-    &lt;a <span class="text-danger">href</span><span class="text-success">="https://smkn1-cirebon.sch.id"</span>&gt;Ini sebuah Tautan&lt;/a&gt;
+    &lt;a <span class="t-red">href</span><span class="t-green">="https://smkn1-cirebon.sch.id"</span>&gt;Ini sebuah Tautan&lt;/a&gt;
 
 </div>
-<p>Tujuan tautan ditentukan dalam atribut <span class="bg-body-secondary text-danger">href</span> <br><br>
+<p>Tujuan tautan ditentukan dalam atribut <span class="mark">href</span> <br><br>
 Atribut digunakan untuk memberikan informasi tambahan tentang elemen HTML</p>
     <hr>
     <h3 class="mt-3">Gambar HTML</h3>
-    <p>Gambar dalam HTML didefinisikan dengan tag <span class="bg-body-secondary text-danger">&lt;img&gt;</span>. <br><br>
-    Sumber file img (<span class="bg-body-secondary text-danger">src</span>), teks alternatif(<span class="bg-body-secondary text-danger">alt</span>),
-    <span class="bg-body-secondary text-danger">width</span>, dan <span class="bg-body-secondary text-danger">height</span> tersedia sebagai atribut:</p>
-    <div class="text-light bg-dark p-2">
+    <p>Gambar dalam HTML didefinisikan dengan tag <span class="mark">&lt;img&gt;</span>. <br><br>
+    Sumber file img (<span class="mark">src</span>), teks alternatif(<span class="mark">alt</span>),
+    <span class="mark">width</span>, dan <span class="mark">height</span> tersedia sebagai atribut:</p>
+    <div class="code">
 
-    &lt;img <span class="text-danger">src</span><span class="text-success">="image.png"</span> <span class="text-danger">alt</span><span class="text-success">="gambar" </span><span class="text-danger">width</span><span class="text-success">="100"</span> <span class="text-danger">height</span><span class="text-success">="100"</span>&gt;
+    &lt;img <span class="t-red">src</span><span class="t-green">="image.png"</span> <span class="t-red">alt</span><span class="t-green">="gambar" </span><span class="t-red">width</span><span class="t-green">="100"</span> <span class="t-red">height</span><span class="t-green">="100"</span>&gt;
 
 </div>
 <hr>

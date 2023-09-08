@@ -13,7 +13,7 @@
     <div class="code">
         DROP TABLE siswa;
     </div>
-    <div class="bg-warning p-4">
+    <div class="note">
         <strong>Note :</strong> Hati-hati dalam menghapus tabel karena kita akan kehilangan semua informasi yang ada didalam tabel!
     </div><br>
     <a href="{{ url('/belajar/sql/db-create-table') }}" class="btn btn-success">Sebelumnya</a>

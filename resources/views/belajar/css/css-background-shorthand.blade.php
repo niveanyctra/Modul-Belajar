@@ -9,7 +9,7 @@
     <a href="{{ url('/belajar/css/border') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
     <p>Kita bisa menghemat penulisan background dengan cara sebagai berikut :</p>
-        <div class="bg-dark text-light p-3">
+        <div class="code">
             p{
             <div class="ps-4">
                 background: url("gambar.png") fixed no-repeat top;

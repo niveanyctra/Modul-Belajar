@@ -8,10 +8,10 @@
     <a href="{{ url('/belajar/css/border-shorthand') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/css') }}" class="btn btn-success">Home</a>
         <hr>
-    <p>Kita juga bisa membuat ujung border melengkubg dengan properti <mark>border-radius</mark> <br><br>
+    <p>Kita juga bisa membuat ujung border melengkubg dengan properti <span class="mark">border-radius</span> <br><br>
         Value dari border-color adalah satuan unit seperti px, cm, persen(%) dll.
     </p>
-        <div class="bg-dark text-light p-3">
+        <div class="code">
             p{
             <div class="ps-4">
                 border-style: solid;<br>

@@ -8,8 +8,8 @@
     <a href="{{ url('/belajar/sql/delete') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/sql/min-max') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
-    <p>Kita bisa memilih tabel teratas dalam database menggunakan sintaks <mark>LIMIT</mark>. Sintaks ini akan memilih record teratas dengan batas yang ditentukan dalam tabel</p>
-    <div class="bg-dark text-light p-2">
+    <p>Kita bisa memilih tabel teratas dalam database menggunakan sintaks <span class="mark">LIMIT</span>. Sintaks ini akan memilih record teratas dengan batas yang ditentukan dalam tabel</p>
+    <div class="code">
         SELECT nama FROM siswa <br>
         LIMIT 5;
     </div><br>

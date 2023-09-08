@@ -8,10 +8,10 @@
     <a href="{{ url('/belajar/sql/count-sum-avg') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/sql/join') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
-    <p>Pada SQL kita bisa mengubah nama kolom yang akan ditampilkan di result-set dengan sintaks <mark>ALIAS</mark>/<mark>AS</mark></p>
+    <p>Pada SQL kita bisa mengubah nama kolom yang akan ditampilkan di result-set dengan sintaks <span class="mark">ALIAS</span>/<span class="mark">AS</span></p>
     <hr>
     <h4 class="my-3">Contoh</h4>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT AVG(nilai) FROM nilaiSiswa;
     </div>
     <p>Sintaks diatas akan menghasilkan result-set :</p>
@@ -23,8 +23,8 @@
             <td>80</td>
         </tr>
     </table>
-    <p>Kita bisa mengubah nama kolom menggunakan <mark>ALIAS</mark>/<mark>AS</mark></p>
-        <div class="bg-dark text-light p-2">
+    <p>Kita bisa mengubah nama kolom menggunakan <span class="mark">ALIAS</span>/<span class="mark">AS</span></p>
+        <div class="code">
         SELECT AVG(nilai) AS Rata-rata FROM nilaiSiswa;
     </div><br>
         <table class="table-bordered">
@@ -36,8 +36,8 @@
         </tr>
     </table>
     <br>
-    <div class="bg-warning p-4">
-        <strong>Note :</strong> Sintaks <mark>ALIAS</mark>/<mark>AS</mark> <strong>HANYA</strong> mengubah nama kolom pada result-set dan tidak akan mempengaruhi tabel dalam database.
+    <div class="note">
+        <strong>Note :</strong> Sintaks <span class="mark">ALIAS</span>/<span class="mark">AS</span> <strong>HANYA</strong> mengubah nama kolom pada result-set dan tidak akan mempengaruhi tabel dalam database.
     </div>
     <br>
         <a href="{{ url('/belajar/sql/count-sum-avg') }}" class="btn btn-success">Sebelumnya</a>

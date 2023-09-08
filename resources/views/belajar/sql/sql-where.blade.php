@@ -10,15 +10,15 @@
     <hr>
     <h3 class="my-3">Klausa WHERE SQL</h3>
     <p>
-        Klausa <mark>WHERE</mark> digunakan untuk memfilter record. <br><br>
+        Klausa <span class="mark">WHERE</span> digunakan untuk memfilter record. <br><br>
         Dengan klausa ini data yang ditampilkan hanya data yang memenuhi kondisi yang spesifik.
     </p>
-    <div class="bg-warning p-4">
-        <strong>Note :</strong> Klausa <mark>WHERE</mark> tidak hanya digunakan pada sintaks <mark>SELECT</mark>, tetapi juga digunakan dalam sintaks lain seperti <mark>UPDATE</mark> dan <mark>DELETE</mark>
+    <div class="note">
+        <strong>Note :</strong> Klausa <span class="mark">WHERE</span> tidak hanya digunakan pada sintaks <span class="mark">SELECT</span>, tetapi juga digunakan dalam sintaks lain seperti <span class="mark">UPDATE</span> dan <span class="mark">DELETE</span>
     </div>
     <hr>
     <h4 class="my-3">Contoh</h4>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT * FROM siswa WHERE nama = 'Arip';
     </div><br>
     <p>Pada sintaks diatas kita akan mengambil semua kolom dari tabel siswa yang memiliki kolom nama dengan record 'Arip'</p>

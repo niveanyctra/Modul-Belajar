@@ -12,17 +12,17 @@
         Tag &lt;script&gt;
     </h3>
     <p>
-        Dalam HTML, kode JavaScript dimasukan diantara <span class="bg-body-secondary text-danger">&lt;script&gt;</span> dan <span class="bg-body-secondary text-danger">&lt;/script&gt;</span>.
+        Dalam HTML, kode JavaScript dimasukan diantara <span class="mark">&lt;script&gt;</span> dan <span class="mark">&lt;/script&gt;</span>.
     </p>
     <h4>Contoh</h4>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         <p>
             &lt;script&gt; <br>
             document.getElementById("demo").innerHTML = "My First JavaScript"; <br>
             &lt;/script&gt;
         </p>
     </div><br>
-    <div class="bg-warning p-4">
+    <div class="note">
         JavaScript lama mungkin menggunakan tipe atribut seperti : &lt;script type="text/javascript"&gt;. <br>
         Tipe atribut seperti itu sekarang tidak wajib. JavaScript merupakan bahasa default script dalam HTML.
     </div>
@@ -31,7 +31,7 @@
         JavaScript Function dan Event
     </h3>
     <p>
-        <span class="bg-body-secondary text-danger">function</span> JavaScript adalah sebuah blok di kode JavaScript, yang hanya bisa di eksekusi ketika "dipanggil". <br><br>
+        <span class="mark">function</span> JavaScript adalah sebuah blok di kode JavaScript, yang hanya bisa di eksekusi ketika "dipanggil". <br><br>
         Misalnya, sebuah function dapat dipanggil ketika sebuah <strong>event</strong> atau <strong>peristiwa</strong> terjadi, seperti ketika mengklik sebuah tombol.
     </p>
     <hr>
@@ -40,17 +40,17 @@
     </h3>
     <p>
         Kamu dapat menempatkan sebuah script dalam dokumen HTML. <br><br>
-        Script dapat ditempatkan di bagian <span class="bg-body-secondary text-danger">&lt;body&gt;</span>, atau di bagian <span class="bg-body-secondary text-danger">&lt;head&gt;</span> pada halaman HTML, atau pada kedua bagian tersebut.
+        Script dapat ditempatkan di bagian <span class="mark">&lt;body&gt;</span>, atau di bagian <span class="mark">&lt;head&gt;</span> pada halaman HTML, atau pada kedua bagian tersebut.
     </p>
     <hr>
     <h3 class="my-3">
         JavaScript pada &lt;head&gt;
     </h3>
     <p>
-        Pada contoh kali ini, sebuah <span class="bg-body-secondary text-danger">function</span> JavaScript ditempatkan pada bagian <span class="bg-body-secondary text-danger">&lt;head&gt;</span> pada halaman HTML. <br><br>
+        Pada contoh kali ini, sebuah <span class="mark">function</span> JavaScript ditempatkan pada bagian <span class="mark">&lt;head&gt;</span> pada halaman HTML. <br><br>
         Function ini dipanggil ketika sebuah tombol diklik :
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;!DOCTYPE html&gt; <br>
         &lt;html&gt;
         <div class="ps-4">
@@ -83,10 +83,10 @@
         JavaScript pada &lt;body&gt;
     </h3>
     <p>
-        Pada contoh kali ini, sebuah <span class="bg-body-secondary text-danger">function</span> JavaScript ditempatkan pada bagian <span class="bg-body-secondary text-danger">&lt;body&gt;</span> pada halaman HTML. <br><br>
+        Pada contoh kali ini, sebuah <span class="mark">function</span> JavaScript ditempatkan pada bagian <span class="mark">&lt;body&gt;</span> pada halaman HTML. <br><br>
         Function ini dipanggil ketika sebuah tombol diklik :
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;!DOCTYPE html&gt; <br>
         &lt;html&gt;
         <div class="ps-4">
@@ -123,16 +123,16 @@
         Script juga dapat ditempatkan di file eksternal. <br><br>
         Script eksternal praktis bila kode yang sama digunakan di banyak halaman web berbeda. <br><br>
         File JavaScript memiliki ekstensi file <strong>.js</strong>. <br><br>
-        Untuk menggunakan script eksternal, masukkan nama file script di atribut <span class="bg-body-secondary text-danger">src</span> (source / sumber) pada tag <span class="bg-body-secondary text-danger">&lt;script&gt;</span> :
+        Untuk menggunakan script eksternal, masukkan nama file script di atribut <span class="mark">src</span> (source / sumber) pada tag <span class="mark">&lt;script&gt;</span> :
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;script <span class="text-danger">src</span><span class="text-success">="script.js"</span>&gt;&lt;/script&gt; <br>
     </div> <br>
     <p>
-        Kamu dapat menempatkan referensi script eksternal di <span class="bg-body-secondary text-danger">&lt;head&gt;</span> atau <span class="bg-body-secondary text-danger">&lt;body&gt;</span> sesuka kamu.
+        Kamu dapat menempatkan referensi script eksternal di <span class="mark">&lt;head&gt;</span> atau <span class="mark">&lt;body&gt;</span> sesuka kamu.
     </p><br>
-    <div class="bg-warning p-4">
-        <p>Script eksternal tidak dapat memiliki tag <span class="bg-body-secondary text-danger">&lt;script&gt;</span></p>
+    <div class="note">
+        <p>Script eksternal tidak dapat memiliki tag <span class="mark">&lt;script&gt;</span></p>
     </div>
     <hr>
     <h3 class="my-3">
@@ -161,19 +161,19 @@
     <p>
         Berikut contoh menggunakan <strong>URL lengkap</strong> untuk menuju file myScript.js:
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;script <span class="text-danger">src</span><span class="text-success">="https://smkn1-cirebon.sch.id/js/myScript.js"</span>&gt;&lt;/script&gt;
     </div><br>
     <p>
         Berikut contoh menggunakan <strong>file path</strong> untuk menuju file myScript.js:
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;script <span class="text-danger">src</span><span class="text-success">="/js/myScript.js"</span>&gt;&lt;/script&gt;
     </div><br>
     <p>
         Berikut contoh tanpa file path untuk menuju file myScript.js:
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;script <span class="text-danger">src</span><span class="text-success">="myScript.js"</span>&gt;&lt;/script&gt;
     </div><br>
     <a href="{{ url('/belajar/js') }}" class="btn btn-success">Sebelumnya</a>

@@ -12,12 +12,12 @@
         Sintaks SELECT SQL
     </h3>
     <p>
-        Sintaks <mark>SELECT</mark> digunakan untuk mengambil data dari database yang kemudian akan
+        Sintaks <span class="mark">SELECT</span> digunakan untuk mengambil data dari database yang kemudian akan
         ditampilkan dalam tabel yang disebut result-set. <br><br>
         Kita bisa mengambil semua kolom yang ada atau hanya mengambil beberapa kolom.
 
     </p>
-    <div class="bg-dark text-light p-2">
+    <div class="code">
         SELECT * FROM siswa;
     </div><br>
     <p>Pada sintaks diatas kita akan mengambil semua kolom yang ada dalam tabel siswa</p>
@@ -66,7 +66,7 @@
     </table>
     <hr>
     <p>Kita juga bisa mengambil hanya kolom nama dalam tabel tersebut</p>
-        <div class="bg-dark text-light p-2">
+        <div class="code">
         SELECT nama FROM siswa;
     </div><br>
     <p>Pada sintaks diatas kita akan mengambil kolom nama yang ada dalam tabel siswa</p>

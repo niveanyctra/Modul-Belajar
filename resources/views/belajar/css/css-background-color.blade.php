@@ -21,7 +21,7 @@
 <h3 class="my-3">
     Opacity/Transparansi
 </h3>
-<p>Kita bisa mengatur transparansi warna latar belakang dengan menggunakan properti <mark>opacity</mark>. Semakin kecil nilai opacity maka warna akan semakin transparan</p>
+<p>Kita bisa mengatur transparansi warna latar belakang dengan menggunakan properti <span class="mark">opacity</span>. Semakin kecil nilai opacity maka warna akan semakin transparan</p>
 <div class="d-flex">
     <div class="p-4" style="background-color: green;opacity:1">Opacity 1</div>
     <div class="p-4" style="background-color: green;opacity:0.8">Opacity 0.8</div>

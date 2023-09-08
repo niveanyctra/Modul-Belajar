@@ -8,21 +8,21 @@
     <a href="{{ url('/belajar/html/table-border') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/html/table-padding-spacing') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
-    <p>Kamu bisa mengatur ukuran sel tabel dengan menambah property <span class="bg-body-secondary text danger">width</span> dan <span class="bg-body-secondary text danger">height</span> pada elemen tabel yang kamu mau</p>
+    <p>Kamu bisa mengatur ukuran sel tabel dengan menambah property <span class="mark">width</span> dan <span class="mark">height</span> pada elemen tabel yang kamu mau</p>
     <br>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         &lt;table&gt;
         <div class="ps-4">
             &lt;tr&gt;
             <div class="ps-4">
-                &lt;th <span class="text-danger">width</span>=<span class="text-success">"50px"</span>&gt;Nama&lt;/th&gt;<br>
+                &lt;th <span class="t-red">width</span>=<span class="t-grren">"50px"</span>&gt;Nama&lt;/th&gt;<br>
                 &lt;th&gt;Kelas&lt;/th&gt;<br>
                 &lt;th&gt;JK&lt;/th&gt;<br>
             </div>
             &lt;/tr&gt;
         </div>
         <div class="ps-4">
-            &lt;tr <span class="text-danger">height</span>=<span class="text-success">"100px"</span>&gt;
+            &lt;tr <span class="t-red">height</span>=<span class="t-grren">"100px"</span>&gt;
             <div class="ps-4">
                 &lt;td&gt;Arip&lt;/td&gt;<br>
                 &lt;td&gt;XII RPL 1&lt;/td&gt;<br>

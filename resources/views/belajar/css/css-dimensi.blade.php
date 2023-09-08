@@ -8,16 +8,16 @@
     <a href="{{ url('/belajar/css/padding') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/css/flexbox') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
-    <p>Dimensi digunakan untuk menentukan panjang lebar dari sebuah elemen dengan properti <mark>height</mark>, <mark>width</mark> dan <mark>max-width</mark></p>
+    <p>Dimensi digunakan untuk menentukan panjang lebar dari sebuah elemen dengan properti <span class="mark">height</span>, <span class="mark">width</span> dan <span class="mark">max-width</span></p>
     <hr>
     <h3 class="my-3">Contoh</h3>
-    <div class="bg-dark text-light p-2 ">
-        <span class="text-warning">p</span> {
+    <div class="code">
+        <span class="t-red">p</span> {
             <div class="ps-4">
 
-                <span class="text-danger">width</span>: <span class="text-success">50%</span>;<br>
-                <span class="text-danger">height</span>: <span class="text-success">70px</span>;<br>
-                <span class="text-danger">background-color</span>: <span class="text-success">tomato</span>;<br>
+                <span class="t-red">width</span>: <span class="t-green">50%</span>;<br>
+                <span class="t-red">height</span>: <span class="t-green">70px</span>;<br>
+                <span class="t-red">background-color</span>: <span class="t-green">tomato</span>;<br>
             </div>
         }
     </div>
@@ -26,9 +26,9 @@
     <hr>
     <h3 class="my-3">max-width</h3>
     <p>
-        Untuk membatasi maksimal besar elemen kita bisa menggunakan properti <mark>max-width</mark><br><br>
-        Properti <mark>max-width</mark> bisa diisi dengan value satuan unit seperti px, cm, persen(%), atau none(tak terbatas) <br><br>
-        Jika kita menggunakan <mark>width</mark> dan <mark>max-width</mark> secara bersamaan dan value <mark>width</mark> lebih besar dari <mark>max-width</mark>,maka properti yang digunakan adalah <mark>max-width</mark> dan properti <mark>width</mark> akan diabaikan
+        Untuk membatasi maksimal besar elemen kita bisa menggunakan properti <span class="mark">max-width</span><br><br>
+        Properti <span class="mark">max-width</span> bisa diisi dengan value satuan unit seperti px, cm, persen(%), atau none(tak terbatas) <br><br>
+        Jika kita menggunakan <span class="mark">width</span> dan <span class="mark">max-width</span> secara bersamaan dan value <span class="mark">width</span> lebih besar dari <span class="mark">max-width</span>,maka properti yang digunakan adalah <span class="mark">max-width</span> dan properti <span class="mark">width</span> akan diabaikan
 
     </p>
     <a href="{{ url('/belajar/css/padding') }}" class="btn btn-success">Sebelumnya</a>

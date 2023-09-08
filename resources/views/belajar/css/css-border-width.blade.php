@@ -8,10 +8,10 @@
     <a href="{{ url('/belajar/css/border') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/css/border-color') }}" class="btn btn-success">Selanjutnya</a>
     <hr>
-    <p>Kita bisa menentukan ketebalan border dengan properti <mark>border-width</mark> <br><br>
+    <p>Kita bisa menentukan ketebalan border dengan properti <span class="mark">border-width</span> <br><br>
         Value dari border-width adalah satuan unit seperti px, cm, persen(%), dll.
     </p>
-        <div class="bg-dark text-light p-3">
+        <div class="code">
             p{
             <div class="ps-4">
                 border-width: 2px;<br>

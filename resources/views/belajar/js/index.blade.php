@@ -12,26 +12,26 @@
         JavaScript Dapat Mengubah Konten HTML
     </h3>
     <p>
-        Salah satu dari banyak metode JavaScript HTML adalah <span class="bg-body-secondary text-danger">getElementById()</span> . <br><br>
+        Salah satu dari banyak metode JavaScript HTML adalah <span class="mark">getElementById()</span> . <br><br>
         Contoh di baawah ini "mencari" elemen HTML (dengan id="demo"), dan mengubah konten elemen HTML (innerHTML) menjadi "Halo JavaScript".
     </p>
     <h4>Contoh</h4>
-    <div class="bg-dark text-light p-3">
-        document.getElementById(<span class="text-success">"demo"</span>).innerHTML = <span class="text-success">"Halo JavaScript"</span>;
+    <div class="code">
+        document.getElementById(<span class="t-green">"demo"</span>).innerHTML = <span class="t-green">"Halo JavaScript"</span>;
     </div><br>
-    <div class="bg-warning p-4">
+    <div class="note">
         <p>JavaScript menerima tanda kutip ganda dan tunggal</p>
     </div> <br>
     <h4>Contoh</h4>
-    <div class="bg-dark text-light p-3">
-        document.getElementById(<span class="text-success">'demo'</span>).innerHTML = <span class="text-success">'Halo JavaScript'</span>;
+    <div class="code">
+        document.getElementById(<span class="t-green">'demo'</span>).innerHTML = <span class="t-green">'Halo JavaScript'</span>;
     </div>
     <hr>
     <h3 class="my-3">
         JavaScript Dapat Mengubah Value Atribut HTML
     </h3>
     <p>
-        Dalam contoh dibawah ini JavaScript mengubah value dari atribut <span class="bg-body-secondary text-danger">src</span> (source / sumber) dari tag <span class="bg-body-secondary text-danger">&lt;img&gt;</span> :
+        Dalam contoh dibawah ini JavaScript mengubah value dari atribut <span class="mark">src</span> (source / sumber) dari tag <span class="mark">&lt;img&gt;</span> :
     </p>
     <div class="bg-secondary text-light p-3">
         <button onclick="document.getElementById('myImage').src='{{ asset('img/belajar/js/bola-lampu-nyala.gif') }}'">Turn on the light</button>
@@ -47,7 +47,7 @@
     <p>
         Mengubah style dari elemen HTML, adalah variasi dari mengubah atribut HTML :
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         <p>document.getElementById("demo").style.fontSize = "35px";</p>
     </div>
     <hr>
@@ -55,9 +55,9 @@
         JavaScript Dapat Menyembunyikan Elemen HTML
     </h3>
     <p>
-        Menyembunyikan elemen HTML hanya bisa dirubah dengan mengganti style <span class="bg-body-secondary text-danger">display</span> :
+        Menyembunyikan elemen HTML hanya bisa dirubah dengan mengganti style <span class="mark">display</span> :
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         <p>document.getElementById("demo").style.display = "none";</p>
     </div>
     <hr>
@@ -65,9 +65,9 @@
         JavaScript Dapat Manampilkan Elemen HTML
     </h3>
     <p>
-        Menampilkan elemen HTML juga hanya bisa dirubah dengan mengganti style <span class="bg-body-secondary text-danger">display</span> :
+        Menampilkan elemen HTML juga hanya bisa dirubah dengan mengganti style <span class="mark">display</span> :
     </p>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         <p>document.getElementById("demo").style.display = "block";</p>
     </div>
     <hr>
@@ -75,14 +75,14 @@
         JavaScript Dapat Mencari Elemen HTML dengan Class
     </h3>
     <p>
-        JavaScript tidak hanya dapat menemukan elemen HTML melalui atribut <span class="bg-body-secondary text-danger">id</span> namun juga dapat melalui atribut <span class="bg-body-secondary text-danger">class</span> :
+        JavaScript tidak hanya dapat menemukan elemen HTML melalui atribut <span class="mark">id</span> namun juga dapat melalui atribut <span class="mark">class</span> :
     </p>
     <h3>Contoh</h3>
-    <div class="bg-dark text-light p-3">
+    <div class="code">
         <p>document.getElementsByClassName("demo");</p>
     </div><br>
-    <div class="bg-warning p-4">
-        <p><strong>Note :</strong> Namun perlu diketahui jika ingin mengubah style elemen HTML melalui <span class="bg-body-secondary text-danger">class</span> berbeda dengan <span class="bg-body-secondary text-danger">id</span></p>
+    <div class="note">
+        <p><strong>Note :</strong> Namun perlu diketahui jika ingin mengubah style elemen HTML melalui <span class="mark">class</span> berbeda dengan <span class="mark">id</span></p>
     </div>
     <a href="{{ url('/') }}" class="btn btn-success">Home</a>
     <a href="{{ url('/belajar/js/where-to') }}" class="btn btn-success">Selanjutnya</a>
