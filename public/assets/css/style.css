@@ -228,7 +228,9 @@
     .contohmq2{
         background-color: tomato;
     }
-  
+  .sidebar-mentor{
+    position: fixed;
+  }
   .img-mentor .card img{
     height: 14rem;
     object-fit: cover;
@@ -244,7 +246,7 @@
     text-decoration: none;
     color: white;
   }
-  
+
   @media all and (max-width: 1024px) {
   .sidebar.toggled {
       left: 0;

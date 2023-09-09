@@ -19,12 +19,12 @@
                     <h6>{{$data->users->name}}</h6>
                 </div> -->
                 <!-- card mode -->
-                <div class="card m-3" style="width: 18rem;">
+                <div class="card m-3 {{ $data->level }}" style="width: 18rem;">
                     <img src="https://dummyimage.com/600x400/000/fff" class="card-img-top" alt="Dummy image">
                     <div class="card-body">
                         <h5 class="card-title"><a href="{{ url('/kelas-mentor/html/'.$data->slug)}}">{{$data->title}}</a></h5>
-                        <p class="card-text"></p>
-                        <a href="{{ url('/kelas-mentor/html/'.$data->slug)}}" class="btn btn-primary">Yuk Belajar!</a>
+                        <p class="card-text">{{ $data->users->name }}</p>
+                        @include('layouts.kelas-mentor.display-tool')
                     </div>
                 </div>
                 @endforeach
