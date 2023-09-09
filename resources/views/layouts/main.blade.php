@@ -46,6 +46,7 @@
         });
     </script>
     <script>
+        // Sidebar save scroll
         let sidebar = document.querySelector(".sidebar");
         let topSidebar = sessionStorage.getItem("sidebar-scroll");
         if (topSidebar !== null) {
@@ -61,6 +62,8 @@
             sessionStorage.setItem("sidebar-scroll", sidebar.scrollTop);
             sessionStorage.removeItem("sidebarSrcroll");
         });
+
+        // Side dan sub navbar active block ke tengah
         const sideActiveLink = document.querySelector('.sidebar a.active');
         if (sideActiveLink) {
             sideActiveLink.scrollIntoView({ block: 'center' });
@@ -69,40 +72,32 @@
         if (subActiveLink) {
             subActiveLink.scrollIntoView({ block: 'center' });
         }
-
-        function levelCheck() {
-            if (document.getElementById('mudahCheck').checked) {
-                var mudah = document.getElementsByClassName('mudah');
-                for (var i=0;i<mudah.length;i+=1){
-                mudah[i].style.display = 'block';
-                }
-                var menengah = document.getElementsByClassName('menengah');
-                for (var i=0;i<menengah.length;i+=1){
-                menengah[i].style.display = 'none';
-                }
+    </script>
+    // Side Navbar Latihan
+    <script>
+        const basicNav = document.querySelector('.nav-side .basicNav.active');
+        const menengahNav = document.querySelector('.nav-side .menengahNav.active');
+        const lanjutanNav = document.querySelector('.nav-side .lanjutanNav.active');
+        if (basicNav) {
+            var basic = document.getElementsByClassName('basic');
+            for (var i=0;i<basic.length;i+=1){
+            basic[i].style.display = 'block';
             }
-            else if (document.getElementById('menengahCheck').checked) {
-                var mudah = document.getElementsByClassName('mudah');
-                for (var i=0;i<mudah.length;i+=1){
-                mudah[i].style.display = 'none';
-                }
-                var menengah = document.getElementsByClassName('menengah');
-                for (var i=0;i<menengah.length;i+=1){
-                menengah[i].style.display = 'block';
-                }
+        }
+        if (menengahNav) {
+            var menengah = document.getElementsByClassName('menengah');
+            for (var i=0;i<menengah.length;i+=1){
+            menengah[i].style.display = 'block';
             }
-            else{
-                var mudah = document.getElementsByClassName('mudah');
-                for (var i=0;i<mudah.length;i+=1){
-                mudah[i].style.display = 'block';
-                }
-                var menengah = document.getElementsByClassName('menengah');
-                for (var i=0;i<menengah.length;i+=1){
-                menengah[i].style.display = 'block';
-                }
+        }
+        if (lanjutanNav) {
+            var lanjutan = document.getElementsByClassName('lanjutan');
+            for (var i=0;i<lanjutan.length;i+=1){
+            lanjutan[i].style.display = 'block';
             }
         }
     </script>
+    // Soal Latihan
     <script>
         function soal1() {
             document.getElementById("soal1").style.display = "block";
@@ -223,6 +218,41 @@
             document.getElementById("soal8").style.display = "none";
             document.getElementById("soal9").style.display = "none";
             document.getElementById("soal10").style.display = "block";
+        }
+    </script>
+    // Filter Level Kelas Mentor
+    <script>
+        function levelCheck() {
+            if (document.getElementById('mudahCheck').checked) {
+                var mudah = document.getElementsByClassName('mudah');
+                for (var i=0;i<mudah.length;i+=1){
+                mudah[i].style.display = 'block';
+                }
+                var menengah = document.getElementsByClassName('menengah');
+                for (var i=0;i<menengah.length;i+=1){
+                menengah[i].style.display = 'none';
+                }
+            }
+            else if (document.getElementById('menengahCheck').checked) {
+                var mudah = document.getElementsByClassName('mudah');
+                for (var i=0;i<mudah.length;i+=1){
+                mudah[i].style.display = 'none';
+                }
+                var menengah = document.getElementsByClassName('menengah');
+                for (var i=0;i<menengah.length;i+=1){
+                menengah[i].style.display = 'block';
+                }
+            }
+            else{
+                var mudah = document.getElementsByClassName('mudah');
+                for (var i=0;i<mudah.length;i+=1){
+                mudah[i].style.display = 'block';
+                }
+                var menengah = document.getElementsByClassName('menengah');
+                for (var i=0;i<menengah.length;i+=1){
+                menengah[i].style.display = 'block';
+                }
+            }
         }
     </script>
 </body>

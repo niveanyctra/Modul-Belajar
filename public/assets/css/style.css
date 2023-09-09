@@ -11,6 +11,9 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
+.link{
+    cursor: pointer;
+}
 .note{
     margin: 20px 0;
     padding: 20px;
@@ -24,12 +27,14 @@
 .benar{
     margin: 20px 0;
     padding: 20px;
-    background-color: #44e983;
+    color: white;
+    background-color: #17743b;
 }
 .salah{
     margin: 20px 0;
     padding: 20px;
-    background-color: #e34343;
+    color: white;
+    background-color: #b12424;
 }
 .mark{
     color: #de1472;
@@ -213,7 +218,7 @@
     width: 100%;
   }
 
-  .nav-side a:hover {
+  .nav-side a:hover, .nav-side .link:hover {
     color: #333;
     background-color: #e9e9e9;
   }
