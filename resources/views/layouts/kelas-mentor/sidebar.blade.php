@@ -1,4 +1,4 @@
-<div class="col-2 ps-4" style="min-height: fit-content;">
+<div class="col-lg-2 col-12 d-none d-lg-block ps-5" style="min-height: fit-content;">
     <form method="post" action="" >
         <div class="sidebar-mentor">
             <h6 class="pt-2">Urutkan</h6>

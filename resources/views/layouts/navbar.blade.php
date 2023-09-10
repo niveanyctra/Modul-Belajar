@@ -105,22 +105,22 @@
                                     </a>
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="{{ url('/latihan/css') }}">
+                                    <a href="{{ url('/latihan/css/basic') }}">
                                         <span>Latihan CSS</span>
                                     </a>
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="{{ url('/latihan/php') }}">
+                                    <a href="{{ url('/latihan/php/basic') }}">
                                         <span>Latihan PHP</span>
                                     </a>
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="{{ url('/latihan/js') }}">
+                                    <a href="{{ url('/latihan/js/basic') }}">
                                         <span>Latihan JS</span>
                                     </a>
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="{{ url('/latihan/sql') }}">
+                                    <a href="{{ url('/latihan/sql/basic') }}">
                                         <span>Latihan SQL</span>
                                     </a>
                                 </li>

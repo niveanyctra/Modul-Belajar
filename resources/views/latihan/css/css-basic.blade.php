@@ -1,13 +1,13 @@
 @extends('layouts.main')
 @section('content')
 @include('layouts.latihan.subnav')
-@include('layouts.latihan.sidebar.html')
+@include('layouts.latihan.sidebar.css')
 <section class="main">
     <div>
         <h1 class="my-5">Latihan :</h1>
         <h6>Lengkapi potongan kode dibawah!</h6>
         @csrf
-        <form action="{{route('cekHTMLBasic')}}" method="post">
+        <form action="{{route('cekCSSBasic')}}" method="post">
             <div id="soal1">
                 <h2 class="my-3">Soal 1</h2>
                 <h6 class="fw-semibold">Bagaimana cara untuk membuat posisi text ke tengah?</h6>

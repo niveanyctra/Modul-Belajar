@@ -33,9 +33,6 @@
     <div style="background-color: #f8f9fa">
         @yield('content')
     </div>
-    <!-- yield sidebar ini nggak kepake kah guys? -->
-    @yield('sidebar')
-    @yield('js')
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script id="rendered-js">
         $(function() {
@@ -73,7 +70,7 @@
             subActiveLink.scrollIntoView({ block: 'center' });
         }
     </script>
-    // Side Navbar Latihan
+    {{-- Side Navbar Latihan --}}
     <script>
         const basicNav = document.querySelector('.nav-side .basicNav.active');
         const menengahNav = document.querySelector('.nav-side .menengahNav.active');
@@ -97,7 +94,7 @@
             }
         }
     </script>
-    // Soal Latihan
+    {{-- Soal Latihan --}}
     <script>
         function soal1() {
             document.getElementById("soal1").style.display = "block";
@@ -220,7 +217,7 @@
             document.getElementById("soal10").style.display = "block";
         }
     </script>
-    // Filter Level Kelas Mentor
+    {{-- Filter Level Kelas Mentor --}}
     <script>
         function levelCheck() {
             if (document.getElementById('mudahCheck').checked) {

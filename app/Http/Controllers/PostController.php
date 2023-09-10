@@ -108,6 +108,9 @@ class PostController extends Controller
     public function update(Request $request, Post $post)
     {
         $user = Auth::user();
+
+        $tool = implode(',', $request->tool);
+        $rep = strtolower($request->title);
         if ($post->id_user !== $user->id) {
            # code...
             return redirect('/post');

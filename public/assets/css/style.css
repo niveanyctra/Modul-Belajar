@@ -253,8 +253,12 @@
   }
 
   @media all and (max-width: 1024px) {
-  .sidebar.toggled {
+    .sidebar-mentor {
+        display: none;
+    }
+    .sidebar.toggled {
       left: 0;
+      margin-top: 3px;
       z-index: 10;
       box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.8);
     }
