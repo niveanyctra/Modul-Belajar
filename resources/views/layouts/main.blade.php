@@ -7,15 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>SMK NEGERI 1 CIREBON | RPL - Change your future with coding 💻  </title>
-    <link rel="icon" href="{{ url('img/logo.png') }}">
+    <title>SMK NEGERI 1 CIREBON | RPL - Change your future with coding 💻</title>
+    <link rel="icon" href="{{ asset('img/logo.png') }}">
 
-    <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
     <!-- NonCDN bootstrap -->
-    <link href="{{ url('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url('assets/css/docs.css') }}" rel="stylesheet">
-    <script src="{{ url('assets/js/bootstrap.bundle.min.js') }}"></script>
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/docs.css') }}" rel="stylesheet">
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+
+
 
     <!-- CDN bootstrap -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">

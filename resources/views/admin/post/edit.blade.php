@@ -13,14 +13,11 @@
                 @csrf
                 @method('put')
                 <input type="hidden" name="id_user" value="{{$post->id_user}}">
-                <div class="row">
-                    <div class="col-6">
+                <div class="mx-5">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Title</label>
                             <input type="text" name="title" class="form-control" id="nama" required="required" value="{{old('title')??$post->title}}">
                         </div>
-                    </div>
-                    <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Category</label>
                             <select type="text" name="category" class="form-control" id="nama">
@@ -33,8 +30,6 @@
                                 <option value="sql">SQL</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Level</label>
                             <div class="row">
@@ -52,8 +47,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6">
                         <div class="mb-3">
                             <label for="tool">Tool</label>
                             <div class="row">
@@ -129,22 +122,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">About</label>
-                            <textarea type="text" name="about" class="form-control" required="required" id="nama">{{$post->about}}</textarea><br>
-                            <button type="button" onclick="document.getElementById('demo').style.display='block'">Paragraf 2 (Pencet Bila Perlu)</button>
-                            <textarea type="text" name="about2" class="form-control" id="demo" @if (isset($post->about2)) style="display:block;" @else style="display:none;" @endif>@if (isset($post->about2)) {{$post->about2}} @endif</textarea>
+                            <input id="x" type="hidden" name="about" value="{{old('about')??$post->about}}" />
+                            <trix-editor input="x" class="trix-content form-control"></trix-editor>
                         </div>
-                    </div>
-                    <div class="col-6">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">id Yt</label>
+                            <label for="nama" class="form-label">ID YouTube</label>
                             <input type="text" name="id_yt" class="form-control" required="required" id="nama" value="{{old('id_yt')??$post->id_yt}}">
                         </div>
-                    </div>
-                    <div class="col-6"></div>
+                    
 
 
                         <div class="mb-3">

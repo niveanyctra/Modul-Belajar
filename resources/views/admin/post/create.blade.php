@@ -10,16 +10,13 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <form action="{{ route('post.store') }}" method="post">
-                @csrf
-                <input type="hidden" name="id_user" value="{{$user->id}}">
-                <div class="row">
-                    <div class="col-6">
+                    @csrf
+                    <input type="hidden" name="id_user" value="{{$user->id}}">
+                    <div class="mx-5">
                         <div class="mb-3">
                             <label for="nama" class="form-label">Title</label>
                             <input type="text" required="required" name="title" class="form-control" id="nama">
                         </div>
-                    </div>
-                    <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">category</label>
                             <select type="text" required="required" name="category" class="form-control" id="nama">
@@ -30,8 +27,6 @@
                                 <option value="sql">SQL</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">level</label>
                             <select type="text"  required="required" name="level" class="form-control" id="nama">
@@ -39,8 +34,6 @@
                                 <option value="menengah">Menengah</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="col-6">
                         <div class="mb-3">
                             <label for="tool">Tool</label>
                             <div class="row">
@@ -116,31 +109,24 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6">
                         <div class="mb-3">
                             <label for="nama" class="form-label">About</label>
-                            <textarea type="text" name="about" class="form-control" required="required" id="nama"></textarea><br>
-                            <button type="button" onclick="document.getElementById('demo').style.display='block'">Paragraf 2 (Pencet Bila Perlu)</button>
-                            <textarea type="text" name="about2" class="form-control" required="required" id="demo" style="display:none"></textarea>
+                            <input id="x" type="hidden" name="about" value="" />
+                            <trix-editor input="x" class="trix-content form-control"></trix-editor>
                         </div>
-                    </div>
-                    <div class="col-6">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">id Yt</label>
+                            <label for="nama" class="form-label">ID YouTube</label>
                             <input type="text" name="id_yt" class="form-control" required="required" id="nama">
                         </div>
-                    </div>
-                    <div class="col-6"></div>
-
-
+                    
+                        
                         <div class="mb-3">
                             <button type="submit" class="btn btn-outline-success">Simpan Data</button>
                         </div>
+                        
                     </div>
-                </div>
 
-            </form>
+                    </form>
                 </div>
             </div>
         </div>

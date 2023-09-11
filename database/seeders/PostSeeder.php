@@ -21,7 +21,6 @@ class PostSeeder extends Seeder
                 'level' => 'mudah',
                 'tool' => 'vscode, html, nodejs',
                 'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
-                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -30,7 +29,6 @@ class PostSeeder extends Seeder
                 'level' => 'mudah',
                 'tool' => 'vscode, html, nodejs, css, react',
                 'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
-                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -39,7 +37,6 @@ class PostSeeder extends Seeder
                 'level' => 'menengah',
                 'tool' => 'vscode, html, nodejs',
                 'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
-                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -48,7 +45,6 @@ class PostSeeder extends Seeder
                 'level' => 'mudah',
                 'tool' => 'vscode, html, nodejs',
                 'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
-                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -57,7 +53,6 @@ class PostSeeder extends Seeder
                 'level' => 'menengah',
                 'tool' => 'vscode, html, nodejs',
                 'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
-                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -66,7 +61,6 @@ class PostSeeder extends Seeder
                 'level' => 'mudah',
                 'tool' => 'vscode, php, nodejs',
                 'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
-                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -75,7 +69,6 @@ class PostSeeder extends Seeder
                 'level' => 'mudah',
                 'tool' => 'vscode, html, nodejs',
                 'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
-                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -84,7 +77,6 @@ class PostSeeder extends Seeder
                 'level' => 'mudah',
                 'tool' => 'vscode, html, nodejs, css',
                 'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
-                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
             [
@@ -93,7 +85,6 @@ class PostSeeder extends Seeder
                 'level' => 'menengah',
                 'tool' => 'vscode, html, react',
                 'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
-                'about2' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],
         ];
@@ -107,7 +98,6 @@ class PostSeeder extends Seeder
                 'level' => $value['level'],
                 'tool' => $value['tool'],
                 'about' => $value['about'],
-                'about2' => $value['about2'],
                 'id_yt' => $value['id_yt'],
                 'created_at' => Carbon::now()->format('Y-m-d'),
                 'updated_at' => Carbon::now()->format('Y-m-d'),
