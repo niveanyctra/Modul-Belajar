@@ -57,7 +57,6 @@
 .dropdown-menu .dropdown-item {
   align-items: center;
   display: flex;
-  gap: 14px;
   /* min-width: 300px; */
   /* padding: 53px 33px 52px 34px!important; */
   min-width: -webkit-max-content;
@@ -69,6 +68,10 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: 100%;
+}
+
+.dd-item-list {
+  min-width: max-content;
 }
 
 .dd-item-list a {
@@ -101,6 +104,7 @@
 
 .icon {
   width: 60px;
+  margin-right: 20px;
 }
 
 .sub-navbar {

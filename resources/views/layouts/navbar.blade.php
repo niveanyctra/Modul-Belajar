@@ -56,7 +56,7 @@
                         Alur Belajar
                         </a>
                         <ul class="dropdown-menu __2022" aria-labelledby="listAlurBelajarDropdown">
-                            <div class="dd-item-list">
+                            <div class="dd-item" style="min-width: max-content;">
                                 <li class="dropdown-item">
                                     <a href="{{ url('/alur-belajar/back-end') }}">
                                         <img src="{{ asset('img/nav_backend.png') }}" class="icon" alt="backend">
