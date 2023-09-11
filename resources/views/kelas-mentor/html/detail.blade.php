@@ -9,8 +9,12 @@
     <button type="button" onclick="document.getElementById('about').style.display='none',document.getElementById('tool').style.display='block'">Tool</button>
     <div id="about">
         <h4>Tingkatkan Skillmu</h4>
-        {{$posts->about}} <br>
-        {{ $posts->about2 }}
+        <div class="px-5 mx-5 text-justify">
+            <p>
+                {{$posts->about}}<br>
+                {{ $posts->about2 }}
+            </p>
+        </div>
     </div>
     @include('layouts.kelas-mentor.tool')
 

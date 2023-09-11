@@ -106,7 +106,7 @@ class LatihanController extends Controller
         $jawab10 = $request->jawaban10;
         return view('latihan.html.hasil.hasil-basic',compact('cek1','cek2','cek3','cek4','cek5','cek6','cek7','cek8','cek9','cek10',
         'jawab1','jawab2','jawab3','jawab4','jawab5','jawab6','jawab7','jawab8','jawab9','jawab10'));
-        
+
     } elseif (str_contains($currentPath, 'css')) {
         // 'css' is present in the URL path
         // Your logic here

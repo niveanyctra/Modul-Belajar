@@ -7,7 +7,7 @@
         <h1 class="my-5">Latihan :</h1>
         <h6>Lengkapi potongan kode dibawah!</h6>
         @csrf
-        <form action="{{route('cekHTMLMenengah')}}" method="post">
+        <form action="{{route('cekHTMLLanjutan')}}" method="post">
             <div id="soal1">
                 <h2 class="my-3">Soal 1</h2>
                 <h6 class="fw-semibold">Bagaimana cara untuk membuat posisi text ke tengah?</h6>

@@ -1,4 +1,4 @@
-<div id="tool" style="display: none">
+<div id="tool" style="display: none" class="container-fluid">
     <h5>Tools Pendukung</h5>
     <p>Lengkapi Sebelum Belajar</p>
     <div class="row">
