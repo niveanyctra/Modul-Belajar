@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>SMK NEGERI 1 CIREBON | PPLG - Menjadi Seorang Web Developer</title>
+    <title>SMK NEGERI 1 CIREBON | RPL - Change your future with coding 💻  </title>
     <link rel="icon" href="{{ url('img/logo.png') }}">
 
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
@@ -28,7 +28,7 @@
     <script src="https://kit.fontawesome.com/4f5ac69095.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-color: #f8f9fa">
     @include('layouts.navbar')
     <div style="background-color: #f8f9fa">
         @yield('content')

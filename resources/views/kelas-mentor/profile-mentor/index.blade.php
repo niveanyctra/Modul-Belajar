@@ -7,7 +7,7 @@
                 <h6>{{$user->name}}</h6>
                 <p>
                     &commat;{{ $user->username }} <br>
-                    Mentor sejak {{$user->created_at->format('D F Y')}}
+                    Mentor sejak {{$user->created_at->format('d F Y')}}
                 </p>
             </div>
         </div>
