@@ -54,10 +54,9 @@ class PostController extends Controller
             'level' => $request->level,
             'tool' => $tool,
             'about' => $request->about,
-            'about2' => $request->about2,
             'id_yt' => $request->id_yt,
-            'created_at' => Carbon::now()->format('Y-m-d'),
-            'updated_at' => Carbon::now()->format('Y-m-d'),
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
 
         ]);
 
@@ -124,9 +123,8 @@ class PostController extends Controller
             'level' => $request->level,
             'tool' => $tool,
             'about' => $request->about,
-            'about2' => $request->about2,
             'id_yt' => $request->id_yt,
-            'updated_at' => Carbon::now()->format('Y-m-d'),
+            'updated_at' => Carbon::now(),
         ]);
         }
 
