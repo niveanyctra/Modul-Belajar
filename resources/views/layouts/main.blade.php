@@ -28,7 +28,7 @@
     <script src="https://kit.fontawesome.com/4f5ac69095.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-color: #f8f9fa">
     @include('layouts.navbar')
     <div style="background-color: #f8f9fa">
         @yield('content')
