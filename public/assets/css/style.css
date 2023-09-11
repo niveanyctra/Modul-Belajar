@@ -4,10 +4,6 @@
     font-family: "fontawesome", sans-serif;
   }
 
-  html, body {
-    height: 100%;
-  }
-
 * {
   font-family: 'Poppins', sans-serif;
 }
@@ -62,7 +58,7 @@
   align-items: center;
   display: flex;
   gap: 14px;
-  min-width: 300px;
+  /* min-width: 300px; */
   /* padding: 53px 33px 52px 34px!important; */
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
@@ -72,6 +68,11 @@
   white-space: normal !important;
   width: -webkit-max-content;
   width: -moz-max-content;
+  width: 100%;
+}
+
+.dd-item-list a {
+  display: block;
   width: 100%;
 }
 
