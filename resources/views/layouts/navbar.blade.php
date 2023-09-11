@@ -164,7 +164,7 @@
                 </ul>
                 <ul class="navbar-nav right-menu ms-auto">
                     <li class="nav-item">
-                        <a target="_blank" href="https://discord.gg/SVRrPbyfm9" class="nav-link">Join Community</a>
+                        <a target="_blank" href="https://discord.gg/VqPZbNKrzD" class="nav-link">Join Community</a>
                     </li>
                 </ul>
             </div>
