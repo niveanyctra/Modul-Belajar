@@ -241,18 +241,18 @@
   .sidebar-mentor{
     position: fixed;
   }
-  .img-mentor .card img{
+  .card-mentor .card img{
     height: 14rem;
     object-fit: cover;
     object-position: center;
   }
 
-  .img-mentor .card a{
+  .card-mentor .card a{
     text-decoration: none;
     color: black;
   }
 
-  .img-mentor .card a.btn{
+  .card-mentor .card a.btn{
     text-decoration: none;
     color: white;
   }

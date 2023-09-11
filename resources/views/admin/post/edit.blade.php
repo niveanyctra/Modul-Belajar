@@ -125,6 +125,14 @@
                         <div class="mb-3">
                             <label for="nama" class="form-label">About</label>
                             <input id="x" type="hidden" name="about" value="{{old('about')??$post->about}}" />
+                            <style>
+                                ul{
+                                    list-style: inherit;
+                                }
+                                ol{
+                                    list-style: block;
+                                }
+                            </style>
                             <trix-editor input="x" class="trix-content form-control"></trix-editor>
                         </div>
                         <div class="mb-3">

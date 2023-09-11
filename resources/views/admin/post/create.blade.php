@@ -111,6 +111,14 @@
                         </div>
                         <div class="mb-3">
                             <label for="nama" class="form-label">About</label>
+                            <style>
+                                ul{
+                                    list-style: inherit;
+                                }
+                                ol{
+                                    list-style: block;
+                                }
+                            </style>
                             <input id="x" type="hidden" name="about" value="" />
                             <trix-editor input="x" class="trix-content form-control"></trix-editor>
                         </div>
