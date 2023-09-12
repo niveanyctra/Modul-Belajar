@@ -1,9 +1,39 @@
 <aside class="sidebar">
     <nav class="nav-side">
-        <h3 class="sidebar-header">CSS Selector</h3>
-            <a href="{{url('/latihan/css/selector-1')}}" class="{{ request()->is('latihan/css/selector-1') ? 'active' : '' }}{{ request()->is('latihan/css') ? 'active' : '' }}">Latihan 1</a>
-            <a href="{{url('/latihan/css/selector-2')}}" class="{{ request()->is('latihan/css/selector-2') ? 'active' : '' }}">Latihan 2</a>
-            <a href="{{url('/latihan/css/selector-3')}}" class="{{ request()->is('latihan/css/selector-3') ? 'active' : '' }}">Latihan 3</a>
-            <a href="{{ url('/belajar/css/selector') }}">Pergi ke CSS Selector Tutorial</a>
+        <h3 class="sidebar-header">Latihan CSS</h3>
+            <a href="{{url('/latihan/css/basic')}}" class="basicNav {{ request()->is('latihan/css/basic') ? 'active' : '' }} {{ request()->is('hasil/css/basic') ? 'active' : '' }}">CSS Basic</a>
+            <div onclick="soal1()" class="ps-5 link basic" style="display:none;">Soal 1</div>
+            <div onclick="soal2()" class="ps-5 link basic" style="display:none;">Soal 2</div>
+            <div onclick="soal3()" class="ps-5 link basic" style="display:none;">Soal 3</div>
+            <div onclick="soal4()" class="ps-5 link basic" style="display:none;">Soal 4</div>
+            <div onclick="soal5()" class="ps-5 link basic" style="display:none;">Soal 5</div>
+            <div onclick="soal6()" class="ps-5 link basic" style="display:none;">Soal 6</div>
+            <div onclick="soal7()" class="ps-5 link basic" style="display:none;">Soal 7</div>
+            <div onclick="soal8()" class="ps-5 link basic" style="display:none;">Soal 8</div>
+            <div onclick="soal9()" class="ps-5 link basic" style="display:none;">Soal 9</div>
+            <div onclick="soal10()" class="ps-5 link basic" style="display:none;">Soal 10</div>
+            <a href="{{url('/latihan/css/menengah')}}" class="menengahNav {{ request()->is('latihan/css/menengah') ? 'active' : '' }} {{ request()->is('hasil/css/menengah') ? 'active' : '' }}">CSS Menengah</a>
+            <div onclick="soal1()" class="ps-5 link menengah" style="display:none;">Soal 1</div>
+            <div onclick="soal2()" class="ps-5 link menengah" style="display:none;">Soal 2</div>
+            <div onclick="soal3()" class="ps-5 link menengah" style="display:none;">Soal 3</div>
+            <div onclick="soal4()" class="ps-5 link menengah" style="display:none;">Soal 4</div>
+            <div onclick="soal5()" class="ps-5 link menengah" style="display:none;">Soal 5</div>
+            <div onclick="soal6()" class="ps-5 link menengah" style="display:none;">Soal 6</div>
+            <div onclick="soal7()" class="ps-5 link menengah" style="display:none;">Soal 7</div>
+            <div onclick="soal8()" class="ps-5 link menengah" style="display:none;">Soal 8</div>
+            <div onclick="soal9()" class="ps-5 link menengah" style="display:none;">Soal 9</div>
+            <div onclick="soal10()" class="ps-5 link menengah" style="display:none;">Soal 10</div>
+            <a href="{{url('/latihan/css/lanjutan')}}" class="lanjutanNav {{ request()->is('latihan/css/lanjutan') ? 'active' : '' }} {{ request()->is('hasil/css/lanjutan') ? 'active' : '' }}">CSS Lanjutan</a>
+            <div onclick="soal1()" class="ps-5 link lanjutan" style="display:none;">Soal 1</div>
+            <div onclick="soal2()" class="ps-5 link lanjutan" style="display:none;">Soal 2</div>
+            <div onclick="soal3()" class="ps-5 link lanjutan" style="display:none;">Soal 3</div>
+            <div onclick="soal4()" class="ps-5 link lanjutan" style="display:none;">Soal 4</div>
+            <div onclick="soal5()" class="ps-5 link lanjutan" style="display:none;">Soal 5</div>
+            <div onclick="soal6()" class="ps-5 link lanjutan" style="display:none;">Soal 6</div>
+            <div onclick="soal7()" class="ps-5 link lanjutan" style="display:none;">Soal 7</div>
+            <div onclick="soal8()" class="ps-5 link lanjutan" style="display:none;">Soal 8</div>
+            <div onclick="soal9()" class="ps-5 link lanjutan" style="display:none;">Soal 9</div>
+            <div onclick="soal10()" class="ps-5 link lanjutan" style="display:none;">Soal 10</div>
+            <a href="{{ url('/belajar/css') }}"><span>Pergi ke CSS Tutorial</span></a>
     </nav>
 </aside>

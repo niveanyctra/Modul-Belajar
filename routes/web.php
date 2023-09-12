@@ -6,6 +6,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\LatihanController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\LatihanJSController;
+use App\Http\Controllers\LatihanCSSController;
+use App\Http\Controllers\LatihanPHPController;
+use App\Http\Controllers\LatihanSQLController;
+use App\Http\Controllers\LatihanHTMLController;
 
 /*
 |--------------------------------------------------------------------------
@@ -459,41 +464,65 @@ Route::get('/latihan/html/menengah',function(){
 Route::get('/latihan/html/lanjutan',function(){
     return view('latihan.html.html-lanjutan');
 });
-Route::post('/hasil/html/basic',[LatihanController::class,"cekBasic"])->name('cekBasic');
-Route::post('/hasil/html/menengah',[LatihanController::class,"cekMenengah"])->name('cekMenengah');
-Route::post('/hasil/html/lanjutan',[LatihanController::class,"cekLanjutan"])->name('cekLanjutan');
+Route::post('/hasil/html/basic',[LatihanHTMLController::class,"cekHTMLBasic"])->name('cekHTMLBasic');
+Route::post('/hasil/html/menengah',[LatihanHTMLController::class,"cekHTMLMenengah"])->name('cekHTMLMenengah');
+Route::post('/hasil/html/lanjutan',[LatihanHTMLController::class,"cekHTMLLanjutan"])->name('cekHTMLLanjutan');
 
 //Route Latihan CSS
-Route::get('/latihan/css',function(){
-    return view('latihan.css.index');
+Route::get('/latihan/css/basic',function(){
+    return view('latihan.css.css-basic');
 });
-Route::get('/latihan/css/selector-1',function(){
-    return view('latihan.css.index');
+Route::get('/latihan/css/menengah',function(){
+    return view('latihan.css.css-menengah');
 });
+Route::get('/latihan/css/lanjutan',function(){
+    return view('latihan.css.css-lanjutan');
+});
+Route::post('/hasil/css/basic',[LatihanCSSController::class,"cekCSSBasic"])->name('cekCSSBasic');
+Route::post('/hasil/css/menengah',[LatihanCSSController::class,"cekCSSMenengah"])->name('cekCSSMenengah');
+Route::post('/hasil/css/lanjutan',[LatihanCSSController::class,"cekCSSLanjutan"])->name('cekCSSLanjutan');
 
 //Route Latihan SQL
-Route::get('/latihan/sql',function(){
-    return view('latihan.sql.index');
+Route::get('/latihan/sql/basic',function(){
+    return view('latihan.sql.sql-basic');
 });
-Route::get('/latihan/sql/select-1',function(){
-    return view('latihan.sql.index');
+Route::get('/latihan/sql/menengah',function(){
+    return view('latihan.sql.sql-menengah');
 });
+Route::get('/latihan/sql/lanjutan',function(){
+    return view('latihan.sql.sql-lanjutan');
+});
+Route::post('/hasil/sql/basic',[LatihanSQLController::class,"cekSQLBasic"])->name('cekSQLBasic');
+Route::post('/hasil/sql/menengah',[LatihanSQLController::class,"cekSQLMenengah"])->name('cekSQLMenengah');
+Route::post('/hasil/sql/lanjutan',[LatihanSQLController::class,"cekSQLLanjutan"])->name('cekSQLLanjutan');
 
 //Route Latihan JS
-Route::get('/latihan/js',function(){
-    return view('latihan.js.index');
+Route::get('/latihan/js/basic',function(){
+    return view('latihan.js.js-basic');
 });
-Route::get('/latihan/js/variable-1',function(){
-    return view('latihan.js.index');
+Route::get('/latihan/js/menengah',function(){
+    return view('latihan.js.js-menengah');
 });
+Route::get('/latihan/js/lanjutan',function(){
+    return view('latihan.js.js-lanjutan');
+});
+Route::post('/hasil/js/basic',[LatihanJSController::class,"cekJSBasic"])->name('cekJSBasic');
+Route::post('/hasil/js/menengah',[LatihanJSController::class,"cekJSMenengah"])->name('cekJSMenengah');
+Route::post('/hasil/js/lanjutan',[LatihanJSController::class,"cekJSLanjutan"])->name('cekJSLanjutan');
 
 //Route Latihan PHP
-Route::get('/latihan/php',function(){
-    return view('latihan.php.index');
+Route::get('/latihan/php/basic',function(){
+    return view('latihan.php.php-basic');
 });
-Route::get('/latihan/php/syntax-1',function(){
-    return view('latihan.php.index');
+Route::get('/latihan/php/menengah',function(){
+    return view('latihan.php.php-menengah');
 });
+Route::get('/latihan/php/lanjutan',function(){
+    return view('latihan.php.php-lanjutan');
+});
+Route::post('/hasil/php/basic',[LatihanPHPController::class,"cekPHPBasic"])->name('cekPHPBasic');
+Route::post('/hasil/php/menengah',[LatihanPHPController::class,"cekPHPMenengah"])->name('cekPHPMenengah');
+Route::post('/hasil/php/lanjutan',[LatihanPHPController::class,"cekPHPLanjutan"])->name('cekPHPLanjutan');
 
 //Route Kelas Mentor HTML
 Route::get('/kelas-mentor/html',[PostController::class,"indexUmum"])->name('indexUmum');

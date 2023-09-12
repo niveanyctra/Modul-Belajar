@@ -16,7 +16,7 @@ class PostController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $post = Post::with('users')->where('id_user', $user->id)->get();
+        $post = Post::with('users')->where('id_user', $user->id)->orderBy('updated_at', 'DESC')->get();
 
         return view('admin.post.index', compact('post'));
     }
@@ -54,10 +54,9 @@ class PostController extends Controller
             'level' => $request->level,
             'tool' => $tool,
             'about' => $request->about,
-            'about2' => $request->about2,
             'id_yt' => $request->id_yt,
-            'created_at' => Carbon::now()->format('Y-m-d'),
-            'updated_at' => Carbon::now()->format('Y-m-d'),
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
 
         ]);
 
@@ -108,6 +107,9 @@ class PostController extends Controller
     public function update(Request $request, Post $post)
     {
         $user = Auth::user();
+
+        $tool = implode(',', $request->tool);
+        $rep = strtolower($request->title);
         if ($post->id_user !== $user->id) {
            # code...
             return redirect('/post');
@@ -121,9 +123,8 @@ class PostController extends Controller
             'level' => $request->level,
             'tool' => $tool,
             'about' => $request->about,
-            'about2' => $request->about2,
             'id_yt' => $request->id_yt,
-            'updated_at' => Carbon::now()->format('Y-m-d'),
+            'updated_at' => Carbon::now(),
         ]);
         }
 

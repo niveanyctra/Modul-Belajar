@@ -7,15 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>SMK NEGERI 1 CIREBON | PPLG - Menjadi Seorang Web Developer</title>
-    <link rel="icon" href="{{ url('img/logo.png') }}">
+    <title>SMK NEGERI 1 CIREBON | RPL - Change your future with coding 💻</title>
+    <link rel="icon" href="{{ asset('img/logo.png') }}">
 
-    <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
     <!-- NonCDN bootstrap -->
-    <link href="{{ url('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url('assets/css/docs.css') }}" rel="stylesheet">
-    <script src="{{ url('assets/js/bootstrap.bundle.min.js') }}"></script>
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/docs.css') }}" rel="stylesheet">
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+
+
 
     <!-- CDN bootstrap -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,14 +30,11 @@
     <script src="https://kit.fontawesome.com/4f5ac69095.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-color: #f8f9fa">
     @include('layouts.navbar')
     <div style="background-color: #f8f9fa">
         @yield('content')
     </div>
-    <!-- yield sidebar ini nggak kepake kah guys? -->
-    @yield('sidebar')
-    @yield('js')
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script id="rendered-js">
         $(function() {
@@ -46,6 +45,7 @@
         });
     </script>
     <script>
+        // Sidebar save scroll
         let sidebar = document.querySelector(".sidebar");
         let topSidebar = sessionStorage.getItem("sidebar-scroll");
         if (topSidebar !== null) {
@@ -61,6 +61,8 @@
             sessionStorage.setItem("sidebar-scroll", sidebar.scrollTop);
             sessionStorage.removeItem("sidebarSrcroll");
         });
+
+        // Side dan sub navbar active block ke tengah
         const sideActiveLink = document.querySelector('.sidebar a.active');
         if (sideActiveLink) {
             sideActiveLink.scrollIntoView({ block: 'center' });
@@ -69,7 +71,156 @@
         if (subActiveLink) {
             subActiveLink.scrollIntoView({ block: 'center' });
         }
-
+    </script>
+    {{-- Side Navbar Latihan --}}
+    <script>
+        const basicNav = document.querySelector('.nav-side .basicNav.active');
+        const menengahNav = document.querySelector('.nav-side .menengahNav.active');
+        const lanjutanNav = document.querySelector('.nav-side .lanjutanNav.active');
+        if (basicNav) {
+            var basic = document.getElementsByClassName('basic');
+            for (var i=0;i<basic.length;i+=1){
+            basic[i].style.display = 'block';
+            }
+        }
+        if (menengahNav) {
+            var menengah = document.getElementsByClassName('menengah');
+            for (var i=0;i<menengah.length;i+=1){
+            menengah[i].style.display = 'block';
+            }
+        }
+        if (lanjutanNav) {
+            var lanjutan = document.getElementsByClassName('lanjutan');
+            for (var i=0;i<lanjutan.length;i+=1){
+            lanjutan[i].style.display = 'block';
+            }
+        }
+    </script>
+    {{-- Soal Latihan --}}
+    <script>
+        function soal1() {
+            document.getElementById("soal1").style.display = "block";
+            document.getElementById("soal2").style.display = "none";
+            document.getElementById("soal3").style.display = "none";
+            document.getElementById("soal4").style.display = "none";
+            document.getElementById("soal5").style.display = "none";
+            document.getElementById("soal6").style.display = "none";
+            document.getElementById("soal7").style.display = "none";
+            document.getElementById("soal8").style.display = "none";
+            document.getElementById("soal9").style.display = "none";
+            document.getElementById("soal10").style.display = "none";
+        }
+        function soal2() {
+            document.getElementById("soal1").style.display = "none";
+            document.getElementById("soal2").style.display = "block";
+            document.getElementById("soal3").style.display = "none";
+            document.getElementById("soal4").style.display = "none";
+            document.getElementById("soal5").style.display = "none";
+            document.getElementById("soal6").style.display = "none";
+            document.getElementById("soal7").style.display = "none";
+            document.getElementById("soal8").style.display = "none";
+            document.getElementById("soal9").style.display = "none";
+            document.getElementById("soal10").style.display = "none";
+        }
+        function soal3() {
+            document.getElementById("soal1").style.display = "none";
+            document.getElementById("soal2").style.display = "none";
+            document.getElementById("soal3").style.display = "block";
+            document.getElementById("soal4").style.display = "none";
+            document.getElementById("soal5").style.display = "none";
+            document.getElementById("soal6").style.display = "none";
+            document.getElementById("soal7").style.display = "none";
+            document.getElementById("soal8").style.display = "none";
+            document.getElementById("soal9").style.display = "none";
+            document.getElementById("soal10").style.display = "none";
+        }
+        function soal4() {
+            document.getElementById("soal1").style.display = "none";
+            document.getElementById("soal2").style.display = "none";
+            document.getElementById("soal3").style.display = "none";
+            document.getElementById("soal4").style.display = "block";
+            document.getElementById("soal5").style.display = "none";
+            document.getElementById("soal6").style.display = "none";
+            document.getElementById("soal7").style.display = "none";
+            document.getElementById("soal8").style.display = "none";
+            document.getElementById("soal9").style.display = "none";
+            document.getElementById("soal10").style.display = "none";
+        }
+        function soal5() {
+            document.getElementById("soal1").style.display = "none";
+            document.getElementById("soal2").style.display = "none";
+            document.getElementById("soal3").style.display = "none";
+            document.getElementById("soal4").style.display = "none";
+            document.getElementById("soal5").style.display = "block";
+            document.getElementById("soal6").style.display = "none";
+            document.getElementById("soal7").style.display = "none";
+            document.getElementById("soal8").style.display = "none";
+            document.getElementById("soal9").style.display = "none";
+            document.getElementById("soal10").style.display = "none";
+        }
+        function soal6() {
+            document.getElementById("soal1").style.display = "none";
+            document.getElementById("soal2").style.display = "none";
+            document.getElementById("soal3").style.display = "none";
+            document.getElementById("soal4").style.display = "none";
+            document.getElementById("soal5").style.display = "none";
+            document.getElementById("soal6").style.display = "block";
+            document.getElementById("soal7").style.display = "none";
+            document.getElementById("soal8").style.display = "none";
+            document.getElementById("soal9").style.display = "none";
+            document.getElementById("soal10").style.display = "none";
+        }
+        function soal7() {
+            document.getElementById("soal1").style.display = "none";
+            document.getElementById("soal2").style.display = "none";
+            document.getElementById("soal3").style.display = "none";
+            document.getElementById("soal4").style.display = "none";
+            document.getElementById("soal5").style.display = "none";
+            document.getElementById("soal6").style.display = "none";
+            document.getElementById("soal7").style.display = "block";
+            document.getElementById("soal8").style.display = "none";
+            document.getElementById("soal9").style.display = "none";
+            document.getElementById("soal10").style.display = "none";
+        }
+        function soal8() {
+            document.getElementById("soal1").style.display = "none";
+            document.getElementById("soal2").style.display = "none";
+            document.getElementById("soal3").style.display = "none";
+            document.getElementById("soal4").style.display = "none";
+            document.getElementById("soal5").style.display = "none";
+            document.getElementById("soal6").style.display = "none";
+            document.getElementById("soal7").style.display = "none";
+            document.getElementById("soal8").style.display = "block";
+            document.getElementById("soal9").style.display = "none";
+            document.getElementById("soal10").style.display = "none";
+        }
+        function soal9() {
+            document.getElementById("soal1").style.display = "none";
+            document.getElementById("soal2").style.display = "none";
+            document.getElementById("soal3").style.display = "none";
+            document.getElementById("soal4").style.display = "none";
+            document.getElementById("soal5").style.display = "none";
+            document.getElementById("soal6").style.display = "none";
+            document.getElementById("soal7").style.display = "none";
+            document.getElementById("soal8").style.display = "none";
+            document.getElementById("soal9").style.display = "block";
+            document.getElementById("soal10").style.display = "none";
+        }
+        function soal10() {
+            document.getElementById("soal1").style.display = "none";
+            document.getElementById("soal2").style.display = "none";
+            document.getElementById("soal3").style.display = "none";
+            document.getElementById("soal4").style.display = "none";
+            document.getElementById("soal5").style.display = "none";
+            document.getElementById("soal6").style.display = "none";
+            document.getElementById("soal7").style.display = "none";
+            document.getElementById("soal8").style.display = "none";
+            document.getElementById("soal9").style.display = "none";
+            document.getElementById("soal10").style.display = "block";
+        }
+    </script>
+    {{-- Filter Level Kelas Mentor --}}
+    <script>
         function levelCheck() {
             if (document.getElementById('mudahCheck').checked) {
                 var mudah = document.getElementsByClassName('mudah');

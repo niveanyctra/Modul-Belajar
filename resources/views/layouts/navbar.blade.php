@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-light px-5 sticky-top">
+<nav class="navbar navbar-expand-lg bg-light bg-opacity-75 sticky-top px-5">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ url('/') }}">
             <img src="{{ url('img/logo.png') }}" width="40" alt="">
@@ -56,7 +56,7 @@
                         Alur Belajar
                         </a>
                         <ul class="dropdown-menu __2022" aria-labelledby="listAlurBelajarDropdown">
-                            <div class="dd-item-list">
+                            <div class="dd-item" style="min-width: max-content;">
                                 <li class="dropdown-item">
                                     <a href="{{ url('/alur-belajar/back-end') }}">
                                         <img src="{{ asset('img/nav_backend.png') }}" class="icon" alt="backend">
@@ -105,22 +105,22 @@
                                     </a>
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="{{ url('/latihan/css') }}">
+                                    <a href="{{ url('/latihan/css/basic') }}">
                                         <span>Latihan CSS</span>
                                     </a>
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="{{ url('/latihan/php') }}">
+                                    <a href="{{ url('/latihan/php/basic') }}">
                                         <span>Latihan PHP</span>
                                     </a>
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="{{ url('/latihan/js') }}">
+                                    <a href="{{ url('/latihan/js/basic') }}">
                                         <span>Latihan JS</span>
                                     </a>
                                 </li>
                                 <li class="dropdown-item">
-                                    <a href="{{ url('/latihan/sql') }}">
+                                    <a href="{{ url('/latihan/sql/basic') }}">
                                         <span>Latihan SQL</span>
                                     </a>
                                 </li>
@@ -164,7 +164,7 @@
                 </ul>
                 <ul class="navbar-nav right-menu ms-auto">
                     <li class="nav-item">
-                        <a target="_blank" href="https://discord.gg/SVRrPbyfm9" class="nav-link">Join Community</a>
+                        <a target="_blank" href="https://discord.gg/VqPZbNKrzD" class="nav-link">Join Community</a>
                     </li>
                 </ul>
             </div>

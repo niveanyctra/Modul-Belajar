@@ -1,8 +1,39 @@
 <aside class="sidebar">
     <nav class="nav-side">
-        <h3 class="sidebar-header">SQL Select</h3>
-            <a href="{{url('/latihan/sql/select-1')}}" class="{{ request()->is('latihan/sql/select-1') ? 'active' : '' }}{{ request()->is('latihan/sql') ? 'active' : '' }}">Latihan 1</a>
-            <a href="{{url('/latihan/sql/select-2')}}" class="{{ request()->is('latihan/sql/select-2') ? 'active' : '' }}">Latihan 2</a>
-            <a href="{{url('/latihan/sql/select-3')}}" class="{{ request()->is('latihan/sql/select-3') ? 'active' : '' }}">Latihan 3</a>
+        <h3 class="sidebar-header">Latihan SQL</h3>
+            <a href="{{url('/latihan/sql/basic')}}" class="basicNav {{ request()->is('latihan/sql/basic') ? 'active' : '' }} {{ request()->is('hasil/sql/basic') ? 'active' : '' }}">SQL Basic</a>
+            <div onclick="soal1()" class="ps-5 link basic" style="display:none;">Soal 1</div>
+            <div onclick="soal2()" class="ps-5 link basic" style="display:none;">Soal 2</div>
+            <div onclick="soal3()" class="ps-5 link basic" style="display:none;">Soal 3</div>
+            <div onclick="soal4()" class="ps-5 link basic" style="display:none;">Soal 4</div>
+            <div onclick="soal5()" class="ps-5 link basic" style="display:none;">Soal 5</div>
+            <div onclick="soal6()" class="ps-5 link basic" style="display:none;">Soal 6</div>
+            <div onclick="soal7()" class="ps-5 link basic" style="display:none;">Soal 7</div>
+            <div onclick="soal8()" class="ps-5 link basic" style="display:none;">Soal 8</div>
+            <div onclick="soal9()" class="ps-5 link basic" style="display:none;">Soal 9</div>
+            <div onclick="soal10()" class="ps-5 link basic" style="display:none;">Soal 10</div>
+            <a href="{{url('/latihan/sql/menengah')}}" class="menengahNav {{ request()->is('latihan/sql/menengah') ? 'active' : '' }} {{ request()->is('hasil/sql/menengah') ? 'active' : '' }}">SQL Menengah</a>
+            <div onclick="soal1()" class="ps-5 link menengah" style="display:none;">Soal 1</div>
+            <div onclick="soal2()" class="ps-5 link menengah" style="display:none;">Soal 2</div>
+            <div onclick="soal3()" class="ps-5 link menengah" style="display:none;">Soal 3</div>
+            <div onclick="soal4()" class="ps-5 link menengah" style="display:none;">Soal 4</div>
+            <div onclick="soal5()" class="ps-5 link menengah" style="display:none;">Soal 5</div>
+            <div onclick="soal6()" class="ps-5 link menengah" style="display:none;">Soal 6</div>
+            <div onclick="soal7()" class="ps-5 link menengah" style="display:none;">Soal 7</div>
+            <div onclick="soal8()" class="ps-5 link menengah" style="display:none;">Soal 8</div>
+            <div onclick="soal9()" class="ps-5 link menengah" style="display:none;">Soal 9</div>
+            <div onclick="soal10()" class="ps-5 link menengah" style="display:none;">Soal 10</div>
+            <a href="{{url('/latihan/sql/lanjutan')}}" class="lanjutanNav {{ request()->is('latihan/sql/lanjutan') ? 'active' : '' }} {{ request()->is('hasil/sql/lanjutan') ? 'active' : '' }}">SQL Lanjutan</a>
+            <div onclick="soal1()" class="ps-5 link lanjutan" style="display:none;">Soal 1</div>
+            <div onclick="soal2()" class="ps-5 link lanjutan" style="display:none;">Soal 2</div>
+            <div onclick="soal3()" class="ps-5 link lanjutan" style="display:none;">Soal 3</div>
+            <div onclick="soal4()" class="ps-5 link lanjutan" style="display:none;">Soal 4</div>
+            <div onclick="soal5()" class="ps-5 link lanjutan" style="display:none;">Soal 5</div>
+            <div onclick="soal6()" class="ps-5 link lanjutan" style="display:none;">Soal 6</div>
+            <div onclick="soal7()" class="ps-5 link lanjutan" style="display:none;">Soal 7</div>
+            <div onclick="soal8()" class="ps-5 link lanjutan" style="display:none;">Soal 8</div>
+            <div onclick="soal9()" class="ps-5 link lanjutan" style="display:none;">Soal 9</div>
+            <div onclick="soal10()" class="ps-5 link lanjutan" style="display:none;">Soal 10</div>
+            <a href="{{ url('/belajar/sql') }}"><span>Pergi ke SQL Tutorial</span></a>
     </nav>
 </aside>
