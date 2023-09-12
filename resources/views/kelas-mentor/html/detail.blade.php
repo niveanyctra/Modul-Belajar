@@ -8,7 +8,7 @@
 <br>
 <button type="button" onclick="document.getElementById('about').style.display='block',document.getElementById('tool').style.display='none'">About</button>
 <button type="button" onclick="document.getElementById('about').style.display='none',document.getElementById('tool').style.display='block'">Tool</button>
-<div id="about">
+<div id="about">    
     <h4>Tingkatkan Skillmu</h4>
     {{$posts->about}} <br>
     {{ $posts->about2 }}
