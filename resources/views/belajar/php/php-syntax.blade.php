@@ -26,7 +26,9 @@
         echo "Hello World!";
         ?>
     </div>
-    <strong>Note :</strong><span>Semua pernyataan PHP harus diakhiri dengan titik koma (;)!</span>
+    <div class="note">
+        <strong>Note :</strong><span>Semua pernyataan PHP harus diakhiri dengan titik koma (;)!</span>
+    </div>
     <a href="{{ url('/belajar/php') }}" class="btn btn-success">Sebelumnya</a>
     <a href="{{ url('/belajar/php/comment') }}" class="btn btn-success">Selanjutnya</a>
 </section>
