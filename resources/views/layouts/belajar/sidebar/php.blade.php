@@ -21,7 +21,6 @@
             <a href="{{ url('/belajar/php/do-while-loop') }}" class="{{ request()->is('belajar/php/do-while-loop') ? 'active' : '' }}">Do While Loop</a>
             <a href="{{ url('/belajar/php/for-loop') }}" class="{{ request()->is('belajar/php/for-loop') ? 'active' : '' }}">For Loop</a>
             <a href="{{ url('/belajar/php/foreach-loop') }}" class="{{ request()->is('belajar/php/foreach-loop') ? 'active' : '' }}">Foreach Loop</a>
-            <a href="{{ url('/belajar/php/break-continue') }}" class="{{ request()->is('belajar/php/break-continue') ? 'active' : '' }}">Break/Continue</a>
         <h3 class="sidebar-header">PHP Form</h3>
             <a href="{{ url('/belajar/php/form-handling') }}" class="{{ request()->is('belajar/php/form-handling') ? 'active' : '' }}">Form Handling</a>
             <a href="{{ url('/belajar/php/form-require') }}" class="{{ request()->is('belajar/php/form-require') ? 'active' : '' }}">Form Required</a>
