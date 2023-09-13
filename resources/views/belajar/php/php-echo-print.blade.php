@@ -14,7 +14,7 @@
     <h4 class="my-3">Contoh</h4>
     <div class="code">
         &lt;?php <br>
-        &nama = "Arip"; <br>
+        $nama = "Arip"; <br>
         echo "Hello World!&lt;br>"; <br>
         echo "Namaku ".$nama."; <br>
         ?>

@@ -12,94 +12,50 @@ class LatihanJSController extends Controller
         $cek3 = $request->jawaban3;
         $cek4 = $request->jawaban4;
         $cek5 = $request->jawaban5;
-        $cek6 = $request->jawaban6;
-        $cek7 = $request->jawaban7;
-        $cek8 = $request->jawaban8;
-        $cek9 = $request->jawaban9;
-        $cek10 = $request->jawaban10;
 
-        if ($cek1 == "center") {
+        if ($cek1 == "sekolah") {
             # code...
             $cek1 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek1 = "Jawaban Anda Salah, Jawaban Yang Benar : center";
+            $cek1 = "Jawaban Anda Salah, Jawaban Yang Benar : sekolah";
         }
-        if ($cek2 == "right") {
+        if ($cek2 == "SMKN 1 Cirebon") {
             # code...
             $cek2 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek2 = "Jawaban Anda Salah, Jawaban Yang Benar : right";
+            $cek2 = "Jawaban Anda Salah, Jawaban Yang Benar : SMKN 1 Cirebon";
         }
-        if ($cek3 == "src") {
+        if ($cek3 == "+") {
             # code...
             $cek3 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek3 = "Jawaban Anda Salah, Jawaban Yang Benar : src";
+            $cek3 = "Jawaban Anda Salah, Jawaban Yang Benar : +";
         }
-        if ($cek4 == "height") {
+        if ($cek4 == "*") {
             # code...
             $cek4 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek4 = "Jawaban Anda Salah, Jawaban Yang Benar : height";
+            $cek4 = "Jawaban Anda Salah, Jawaban Yang Benar : *";
         }
-        if ($cek5 == "width") {
+        if ($cek5 == "string") {
             # code...
             $cek5 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek5 = "Jawaban Anda Salah, Jawaban Yang Benar : width";
-        }
-        if ($cek6 == "color") {
-            # code...
-            $cek6 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek6 = "Jawaban Anda Salah, Jawaban Yang Benar : color";
-        }
-        if ($cek7 == "12pt") {
-            # code...
-            $cek7 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek7 = "Jawaban Anda Salah, Jawaban Yang Benar : 12pt";
-        }
-        if ($cek8 == "href") {
-            # code...
-            $cek8 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek8 = "Jawaban Anda Salah, Jawaban Yang Benar : href";
-        }
-        if ($cek9 == "h6") {
-            # code...
-            $cek9 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek9 = "Jawaban Anda Salah, Jawaban Yang Benar : h6";
-        }
-        if ($cek10 == "blue") {
-            # code...
-            $cek10 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek10 = "Jawaban Anda Salah, Jawaban Yang Benar : blue";
+            $cek5 = "Jawaban Anda Salah, Jawaban Yang Benar : string";
         }
         $jawab1 = $request->jawaban1;
         $jawab2 = $request->jawaban2;
         $jawab3 = $request->jawaban3;
         $jawab4 = $request->jawaban4;
         $jawab5 = $request->jawaban5;
-        $jawab6 = $request->jawaban6;
-        $jawab7 = $request->jawaban7;
-        $jawab8 = $request->jawaban8;
-        $jawab9 = $request->jawaban9;
-        $jawab10 = $request->jawaban10;
-        return view('latihan.js.hasil.hasil-basic',compact('cek1','cek2','cek3','cek4','cek5','cek6','cek7','cek8','cek9','cek10',
-        'jawab1','jawab2','jawab3','jawab4','jawab5','jawab6','jawab7','jawab8','jawab9','jawab10'));
+
+        return view('latihan.js.hasil.hasil-basic',compact('cek1','cek2','cek3','cek4','cek5',
+        'jawab1','jawab2','jawab3','jawab4','jawab5'));
         // $cek = $cek1."-".$cek2."-".$cek3."-".$cek4."-".$cek5;
         // $rep = str_replace('-', ' ', $cek);
         // $cekjawab = str_word_count($rep);
@@ -111,94 +67,50 @@ class LatihanJSController extends Controller
         $cek3 = $request->jawaban3;
         $cek4 = $request->jawaban4;
         $cek5 = $request->jawaban5;
-        $cek6 = $request->jawaban6;
-        $cek7 = $request->jawaban7;
-        $cek8 = $request->jawaban8;
-        $cek9 = $request->jawaban9;
-        $cek10 = $request->jawaban10;
 
-        if ($cek1 == "center") {
+        if ($cek1 == "sekolah()") {
             # code...
             $cek1 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek1 = "Jawaban Anda Salah, Jawaban Yang Benar : center";
+            $cek1 = "Jawaban Anda Salah, Jawaban Yang Benar : sekolah()";
         }
-        if ($cek2 == "right") {
+        if ($cek2 == "SMKN 1 Cirebon") {
             # code...
             $cek2 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek2 = "Jawaban Anda Salah, Jawaban Yang Benar : right";
+            $cek2 = "Jawaban Anda Salah, Jawaban Yang Benar : SMKN 1 Cirebon";
         }
-        if ($cek3 == "src") {
+        if ($cek3 == "onclick") {
             # code...
             $cek3 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek3 = "Jawaban Anda Salah, Jawaban Yang Benar : src";
+            $cek3 = "Jawaban Anda Salah, Jawaban Yang Benar : onclick";
         }
-        if ($cek4 == "height") {
+        if ($cek4 == "sekolah()") {
             # code...
             $cek4 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek4 = "Jawaban Anda Salah, Jawaban Yang Benar : height";
+            $cek4 = "Jawaban Anda Salah, Jawaban Yang Benar : sekolah()";
         }
-        if ($cek5 == "width") {
+        if ($cek5 == "onclick") {
             # code...
             $cek5 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek5 = "Jawaban Anda Salah, Jawaban Yang Benar : width";
+            $cek5 = "Jawaban Anda Salah, Jawaban Yang Benar : onclick";
         }
-        if ($cek6 == "color") {
-            # code...
-            $cek6 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek6 = "Jawaban Anda Salah, Jawaban Yang Benar : color";
-        }
-        if ($cek7 == "12pt") {
-            # code...
-            $cek7 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek7 = "Jawaban Anda Salah, Jawaban Yang Benar : 12pt";
-        }
-        if ($cek8 == "href") {
-            # code...
-            $cek8 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek8 = "Jawaban Anda Salah, Jawaban Yang Benar : href";
-        }
-        if ($cek9 == "h6") {
-            # code...
-            $cek9 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek9 = "Jawaban Anda Salah, Jawaban Yang Benar : h6";
-        }
-        if ($cek10 == "blue") {
-            # code...
-            $cek10 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek10 = "Jawaban Anda Salah, Jawaban Yang Benar : blue";
-        }
+
         $jawab1 = $request->jawaban1;
         $jawab2 = $request->jawaban2;
         $jawab3 = $request->jawaban3;
         $jawab4 = $request->jawaban4;
         $jawab5 = $request->jawaban5;
-        $jawab6 = $request->jawaban6;
-        $jawab7 = $request->jawaban7;
-        $jawab8 = $request->jawaban8;
-        $jawab9 = $request->jawaban9;
-        $jawab10 = $request->jawaban10;
-        return view('latihan.js.hasil.hasil-menengah',compact('cek1','cek2','cek3','cek4','cek5','cek6','cek7','cek8','cek9','cek10',
-        'jawab1','jawab2','jawab3','jawab4','jawab5','jawab6','jawab7','jawab8','jawab9','jawab10'));
+        return view('latihan.js.hasil.hasil-menengah',compact('cek1','cek2','cek3','cek4','cek5',
+        'jawab1','jawab2','jawab3','jawab4','jawab5'));
     }
     public function cekJSLanjutan(Request $request){
         $cek1 = $request->jawaban1;
@@ -206,93 +118,48 @@ class LatihanJSController extends Controller
         $cek3 = $request->jawaban3;
         $cek4 = $request->jawaban4;
         $cek5 = $request->jawaban5;
-        $cek6 = $request->jawaban6;
-        $cek7 = $request->jawaban7;
-        $cek8 = $request->jawaban8;
-        $cek9 = $request->jawaban9;
-        $cek10 = $request->jawaban10;
 
-        if ($cek1 == "center") {
+        if ($cek1 == "toUpperCase()") {
             # code...
             $cek1 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek1 = "Jawaban Anda Salah, Jawaban Yang Benar : center";
+            $cek1 = "Jawaban Anda Salah, Jawaban Yang Benar : toUpperCase()";
         }
-        if ($cek2 == "right") {
+        if ($cek2 == "toLowerCase()") {
             # code...
             $cek2 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek2 = "Jawaban Anda Salah, Jawaban Yang Benar : right";
+            $cek2 = "Jawaban Anda Salah, Jawaban Yang Benar : toLowerCase()";
         }
-        if ($cek3 == "src") {
+        if ($cek3 == "strReplace") {
             # code...
             $cek3 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek3 = "Jawaban Anda Salah, Jawaban Yang Benar : src";
+            $cek3 = "Jawaban Anda Salah, Jawaban Yang Benar : strReplace";
         }
-        if ($cek4 == "height") {
+        if ($cek4 == "x > y" || "x>y" || "x >y" || "x> y") {
             # code...
             $cek4 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek4 = "Jawaban Anda Salah, Jawaban Yang Benar : height";
+            $cek4 = "Jawaban Anda Salah, Jawaban Yang Benar : x > y";
         }
-        if ($cek5 == "width") {
+        if ($cek5 == "x != y" || "x!=y" || "x !=y" || "x!= y") {
             # code...
             $cek5 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek5 = "Jawaban Anda Salah, Jawaban Yang Benar : width";
-        }
-        if ($cek6 == "color") {
-            # code...
-            $cek6 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek6 = "Jawaban Anda Salah, Jawaban Yang Benar : color";
-        }
-        if ($cek7 == "12pt") {
-            # code...
-            $cek7 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek7 = "Jawaban Anda Salah, Jawaban Yang Benar : 12pt";
-        }
-        if ($cek8 == "href") {
-            # code...
-            $cek8 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek8 = "Jawaban Anda Salah, Jawaban Yang Benar : href";
-        }
-        if ($cek9 == "h6") {
-            # code...
-            $cek9 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek9 = "Jawaban Anda Salah, Jawaban Yang Benar : h6";
-        }
-        if ($cek10 == "blue") {
-            # code...
-            $cek10 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek10 = "Jawaban Anda Salah, Jawaban Yang Benar : blue";
+            $cek5 = "Jawaban Anda Salah, Jawaban Yang Benar : x != y";
         }
         $jawab1 = $request->jawaban1;
         $jawab2 = $request->jawaban2;
         $jawab3 = $request->jawaban3;
         $jawab4 = $request->jawaban4;
         $jawab5 = $request->jawaban5;
-        $jawab6 = $request->jawaban6;
-        $jawab7 = $request->jawaban7;
-        $jawab8 = $request->jawaban8;
-        $jawab9 = $request->jawaban9;
-        $jawab10 = $request->jawaban10;
-        return view('latihan.js.hasil.hasil-lanjutan',compact('cek1','cek2','cek3','cek4','cek5','cek6','cek7','cek8','cek9','cek10',
-        'jawab1','jawab2','jawab3','jawab4','jawab5','jawab6','jawab7','jawab8','jawab9','jawab10'));
+        return view('latihan.js.hasil.hasil-lanjutan',compact('cek1','cek2','cek3','cek4','cek5',
+        'jawab1','jawab2','jawab3','jawab4','jawab5'));
     }
 }
