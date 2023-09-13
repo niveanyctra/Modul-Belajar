@@ -2,9 +2,12 @@
 @section('content')
     <div class="container d-flex align-items-center vh-100">
         <div>
-            <h6>#NeverGonnaGiveYourUp</h6>
-            <h1 class="fw-bolder display-3">Halo, Selamat datang sobat pplg</h1>
-            <span>Modul ini menyediakan pembelajaran untuk kelas X - XII</span>
+            <h4 style="color: #008572;">#ProgrammerMuda</h4>
+            <h1 class="fw-bolder display-3">Change your future with coding </h1>
+            <p>
+                Siapkan masa depan yang cerah <br>
+                Modul ini menyediakan pembelajaran untuk kelas X - XII
+            </p>
         </div>
         <div>
             <img src="{{ url('img/uwong.png') }}" alt="" width="378px">

@@ -12,95 +12,50 @@ class LatihanHTMLController extends Controller
         $cek3 = $request->jawaban3;
         $cek4 = $request->jawaban4;
         $cek5 = $request->jawaban5;
-        $cek6 = $request->jawaban6;
-        $cek7 = $request->jawaban7;
-        $cek8 = $request->jawaban8;
-        $cek9 = $request->jawaban9;
-        $cek10 = $request->jawaban10;
 
-        if ($cek1 == "center") {
+        if ($cek1 == "p") {
             # code...
             $cek1 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek1 = "Jawaban Anda Salah, Jawaban Yang Benar : center";
+            $cek1 = "Jawaban Anda Salah, Jawaban Yang Benar : p";
         }
-        if ($cek2 == "right") {
+        if ($cek2 == "h1") {
             # code...
             $cek2 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek2 = "Jawaban Anda Salah, Jawaban Yang Benar : right";
+            $cek2 = "Jawaban Anda Salah, Jawaban Yang Benar : h1";
         }
-        if ($cek3 == "src") {
+        if ($cek3 == "<br>") {
             # code...
             $cek3 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek3 = "Jawaban Anda Salah, Jawaban Yang Benar : src";
+            $cek3 = "Jawaban Anda Salah, Jawaban Yang Benar : <br>";
         }
-        if ($cek4 == "height") {
+        if ($cek4 == "<hr>") {
             # code...
             $cek4 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek4 = "Jawaban Anda Salah, Jawaban Yang Benar : height";
+            $cek4 = "Jawaban Anda Salah, Jawaban Yang Benar : <hr>";
         }
-        if ($cek5 == "width") {
+        if ($cek5 == "h6") {
             # code...
             $cek5 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek5 = "Jawaban Anda Salah, Jawaban Yang Benar : width";
-        }
-        if ($cek6 == "color") {
-            # code...
-            $cek6 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek6 = "Jawaban Anda Salah, Jawaban Yang Benar : color";
-        }
-        if ($cek7 == "12pt") {
-            # code...
-            $cek7 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek7 = "Jawaban Anda Salah, Jawaban Yang Benar : 12pt";
-        }
-        if ($cek8 == "href") {
-            # code...
-            $cek8 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek8 = "Jawaban Anda Salah, Jawaban Yang Benar : href";
-        }
-        if ($cek9 == "h6") {
-            # code...
-            $cek9 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek9 = "Jawaban Anda Salah, Jawaban Yang Benar : h6";
-        }
-        if ($cek10 == "blue") {
-            # code...
-            $cek10 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek10 = "Jawaban Anda Salah, Jawaban Yang Benar : blue";
+            $cek5 = "Jawaban Anda Salah, Jawaban Yang Benar : h6";
         }
         $jawab1 = $request->jawaban1;
         $jawab2 = $request->jawaban2;
         $jawab3 = $request->jawaban3;
         $jawab4 = $request->jawaban4;
         $jawab5 = $request->jawaban5;
-        $jawab6 = $request->jawaban6;
-        $jawab7 = $request->jawaban7;
-        $jawab8 = $request->jawaban8;
-        $jawab9 = $request->jawaban9;
-        $jawab10 = $request->jawaban10;
 
-        return view('latihan.html.hasil.hasil-basic',compact('cek1','cek2','cek3','cek4','cek5','cek6','cek7','cek8','cek9','cek10',
-        'jawab1','jawab2','jawab3','jawab4','jawab5','jawab6','jawab7','jawab8','jawab9','jawab10'));
+        return view('latihan.html.hasil.hasil-basic',compact('cek1','cek2','cek3','cek4','cek5',
+        'jawab1','jawab2','jawab3','jawab4','jawab5'));
 
     }
     public function cekHTMLMenengah(Request $request){
@@ -109,11 +64,6 @@ class LatihanHTMLController extends Controller
         $cek3 = $request->jawaban3;
         $cek4 = $request->jawaban4;
         $cek5 = $request->jawaban5;
-        $cek6 = $request->jawaban6;
-        $cek7 = $request->jawaban7;
-        $cek8 = $request->jawaban8;
-        $cek9 = $request->jawaban9;
-        $cek10 = $request->jawaban10;
 
         if ($cek1 == "i") {
             # code...
@@ -152,53 +102,13 @@ class LatihanHTMLController extends Controller
             # code...
             $cek5 = "Jawaban Anda Salah, Jawaban Yang Benar : width";
         }
-        if ($cek6 == "color") {
-            # code...
-            $cek6 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek6 = "Jawaban Anda Salah, Jawaban Yang Benar : color";
-        }
-        if ($cek7 == "12pt") {
-            # code...
-            $cek7 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek7 = "Jawaban Anda Salah, Jawaban Yang Benar : 12pt";
-        }
-        if ($cek8 == "href") {
-            # code...
-            $cek8 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek8 = "Jawaban Anda Salah, Jawaban Yang Benar : href";
-        }
-        if ($cek9 == "h6") {
-            # code...
-            $cek9 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek9 = "Jawaban Anda Salah, Jawaban Yang Benar : h6";
-        }
-        if ($cek10 == "blue") {
-            # code...
-            $cek10 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek10 = "Jawaban Anda Salah, Jawaban Yang Benar : blue";
-        }
         $jawab1 = $request->jawaban1;
         $jawab2 = $request->jawaban2;
         $jawab3 = $request->jawaban3;
         $jawab4 = $request->jawaban4;
         $jawab5 = $request->jawaban5;
-        $jawab6 = $request->jawaban6;
-        $jawab7 = $request->jawaban7;
-        $jawab8 = $request->jawaban8;
-        $jawab9 = $request->jawaban9;
-        $jawab10 = $request->jawaban10;
-        return view('latihan.html.hasil.hasil-menengah',compact('cek1','cek2','cek3','cek4','cek5','cek6','cek7','cek8','cek9','cek10',
-        'jawab1','jawab2','jawab3','jawab4','jawab5','jawab6','jawab7','jawab8','jawab9','jawab10'));
+        return view('latihan.html.hasil.hasil-menengah',compact('cek1','cek2','cek3','cek4','cek5',
+        'jawab1','jawab2','jawab3','jawab4','jawab5'));
     }
     public function cekHTMLLanjutan(Request $request){
         $cek1 = $request->jawaban1;
@@ -206,93 +116,48 @@ class LatihanHTMLController extends Controller
         $cek3 = $request->jawaban3;
         $cek4 = $request->jawaban4;
         $cek5 = $request->jawaban5;
-        $cek6 = $request->jawaban6;
-        $cek7 = $request->jawaban7;
-        $cek8 = $request->jawaban8;
-        $cek9 = $request->jawaban9;
-        $cek10 = $request->jawaban10;
 
-        if ($cek1 == "center") {
+        if ($cek1 == 'type="A"') {
             # code...
             $cek1 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek1 = "Jawaban Anda Salah, Jawaban Yang Benar : center";
+            $cek1 = 'Jawaban Anda Salah, Jawaban Yang Benar : type="A"';
         }
-        if ($cek2 == "right") {
+        if ($cek2 == 'width="300px"') {
             # code...
             $cek2 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek2 = "Jawaban Anda Salah, Jawaban Yang Benar : right";
+            $cek2 = 'Jawaban Anda Salah, Jawaban Yang Benar : width="300px"';
         }
-        if ($cek3 == "src") {
+        if ($cek3 == 'input type="button" value="OK"') {
             # code...
             $cek3 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek3 = "Jawaban Anda Salah, Jawaban Yang Benar : src";
+            $cek3 = 'Jawaban Anda Salah, Jawaban Yang Benar : input type="button" value="OK"';
         }
-        if ($cek4 == "height") {
+        if ($cek4 == 'input type="radio" name="hobi"') {
             # code...
             $cek4 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek4 = "Jawaban Anda Salah, Jawaban Yang Benar : height";
+            $cek4 = 'Jawaban Anda Salah, Jawaban Yang Benar : input type="radio" name="hobi"';
         }
-        if ($cek5 == "width") {
+        if ($cek5 == "disabled") {
             # code...
             $cek5 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek5 = "Jawaban Anda Salah, Jawaban Yang Benar : width";
-        }
-        if ($cek6 == "color") {
-            # code...
-            $cek6 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek6 = "Jawaban Anda Salah, Jawaban Yang Benar : color";
-        }
-        if ($cek7 == "12pt") {
-            # code...
-            $cek7 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek7 = "Jawaban Anda Salah, Jawaban Yang Benar : 12pt";
-        }
-        if ($cek8 == "href") {
-            # code...
-            $cek8 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek8 = "Jawaban Anda Salah, Jawaban Yang Benar : href";
-        }
-        if ($cek9 == "h6") {
-            # code...
-            $cek9 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek9 = "Jawaban Anda Salah, Jawaban Yang Benar : h6";
-        }
-        if ($cek10 == "blue") {
-            # code...
-            $cek10 = "Jawaban Anda Benar";
-        }else {
-            # code...
-            $cek10 = "Jawaban Anda Salah, Jawaban Yang Benar : blue";
+            $cek5 = "Jawaban Anda Salah, Jawaban Yang Benar : disabled";
         }
         $jawab1 = $request->jawaban1;
         $jawab2 = $request->jawaban2;
         $jawab3 = $request->jawaban3;
         $jawab4 = $request->jawaban4;
         $jawab5 = $request->jawaban5;
-        $jawab6 = $request->jawaban6;
-        $jawab7 = $request->jawaban7;
-        $jawab8 = $request->jawaban8;
-        $jawab9 = $request->jawaban9;
-        $jawab10 = $request->jawaban10;
-        return view('latihan.html.hasil.hasil-lanjutan',compact('cek1','cek2','cek3','cek4','cek5','cek6','cek7','cek8','cek9','cek10',
-        'jawab1','jawab2','jawab3','jawab4','jawab5','jawab6','jawab7','jawab8','jawab9','jawab10'));
+        return view('latihan.html.hasil.hasil-lanjutan',compact('cek1','cek2','cek3','cek4','cek5',
+        'jawab1','jawab2','jawab3','jawab4','jawab5'));
     }
 }
