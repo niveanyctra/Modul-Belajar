@@ -3,7 +3,9 @@
 [class*="fontawesome-"]:before {
     font-family: "fontawesome", sans-serif;
   }
-
+body{
+  scroll-behavior: smooth;
+}
 * {
   font-family: 'Poppins', sans-serif;
 }
@@ -53,6 +55,42 @@
 .sub {
   height: 30px;
 }
+
+/* Landing Page */
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: normal;
+
+  margin: 15px 0 15px 0;
+  width: 177px;
+  padding: 9px 0px;
+  border-radius: 200px;
+}
+
+.button-1 {
+  background-color: #7EFDD0;
+  color: black;
+}
+.button-2 {
+  background-color: #ffed74;
+  color: black;
+}
+.button-3 {
+  background-color: #809bce;
+  color: white;
+}
+/* End Landing Page */
 
 .dropdown-menu .dropdown-item {
   align-items: center;
