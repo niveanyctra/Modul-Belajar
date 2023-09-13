@@ -13,5 +13,8 @@
             <img src="{{ url('img/uwong.png') }}" alt="" width="378px">
         </div>
     </div>
+    <div class="d-flex align-items-center bg-danger justify-content-center vh-100">
+        
+    </div>
     @include('layouts.footer')
 @endsection
