@@ -18,6 +18,9 @@
                             <label for="nama" class="form-label">Title</label>
                             <input type="text" name="title" class="form-control" id="nama" required="required" value="{{old('title')??$post->title}}">
                         </div>
+                                                    @error('tool')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
                         <div class="mb-3">
                             <label for="nama" class="form-label">Category</label>
                             <select type="text" name="category" class="form-control" id="nama">
@@ -135,6 +138,9 @@
                             </style>
                             <trix-editor input="x" class="trix-content form-control"></trix-editor>
                         </div>
+                            @error('video_id')
+    <div class="text-danger">{{ $message }}</div>
+    @enderror
                         <div class="mb-3">
                             <label for="nama" class="form-label">Link YouTube</label>
                             <input type="text" name="id_yt" class="form-control" required="required" id="nama" value="https://youtu.be/{{old('id_yt')??$post->id_yt}}">

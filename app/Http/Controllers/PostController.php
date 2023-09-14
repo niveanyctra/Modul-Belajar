@@ -67,9 +67,16 @@ preg_match(
     $request->id_yt,
     $match
 );
+if (!$match) {
+    # code...
+    return redirect()->back()->withErrors(['video_id' => 'Link tidak valid!']);
+}
         $youtube_id = $match[1];
 
-
+        if (empty($request->tool)) {
+            # code...
+                return redirect()->back()->withErrors(['tool' => 'Mohon pilih minimal 1 tool!']);
+        }
         $tool = implode(',', $request->tool);
         $rep = strtolower($request->title);
         Post::insert([
@@ -123,7 +130,7 @@ preg_match(
             return redirect('/post');
         }else {
             # code...
-            
+
             return view('admin.post.edit', compact('post','user'));
         }
     }
@@ -140,9 +147,16 @@ preg_match(
     $request->id_yt,
     $match
 );
+if (!$match) {
+    # code...
+    return redirect()->back()->withErrors(['video_id' => 'Link tidak valid!']);
+}
         $youtube_id = $match[1];
 
-
+        if (empty($request->tool)) {
+            # code...
+                return redirect()->back()->withErrors(['tool' => 'Mohon pilih minimal 1 tool!']);
+        }
         $tool = implode(',', $request->tool);
         $rep = strtolower($request->title);
         if ($post->id_user !== $user->id) {
