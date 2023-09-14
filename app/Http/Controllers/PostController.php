@@ -123,6 +123,7 @@ preg_match(
             return redirect('/post');
         }else {
             # code...
+            
             return view('admin.post.edit', compact('post','user'));
         }
     }

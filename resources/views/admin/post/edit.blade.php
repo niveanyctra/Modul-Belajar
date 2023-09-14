@@ -137,7 +137,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="nama" class="form-label">Link YouTube</label>
-                            <input type="text" name="id_yt" class="form-control" required="required" id="nama" value="{{old('id_yt')??$post->id_yt}}">
+                            <input type="text" name="id_yt" class="form-control" required="required" id="nama" value="https://youtu.be/{{old('id_yt')??$post->id_yt}}">
                         </div>
 
 

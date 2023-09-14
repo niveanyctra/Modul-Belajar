@@ -41,6 +41,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('post', PostController::class)->only([
     'index', 'create','show', 'store', 'edit', 'update', 'destroy'
     ]);
+    Route::get('/post/{post:slug}/edit',[PostController::class,'edit']);
+    // Route::put('/post/{post:slug}/edit',PostController::class,'update');
 });
 
 require __DIR__.'/auth.php';

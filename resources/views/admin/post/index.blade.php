@@ -27,7 +27,7 @@
                                 <td>
                                     <div class="flex gap-1">
 
-                                        <a href="{{ route('post.edit', $item->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                                        <a href="{{ url('/post/'.$item->slug.'/edit') }}" class="btn btn-warning btn-sm">Edit</a>
 
                                         <form action="{{ route('post.destroy', $item->id) }}" method="POST">
                                             @csrf
