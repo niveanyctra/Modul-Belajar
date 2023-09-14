@@ -39,31 +39,26 @@ class PostController extends Controller
     public function store(Request $request)
     {
 
-        // // Define the custom validation rule using regex
-        // $customRules = [
-        //     'id_yt' => 'regex:/^[A-Za-z0-9_-]{11}$/', // YouTube video ID validation regex
-        // ];
-
-        // // Custom error messages
-        // $customMessages = [
-        //     'id_yt.regex' => 'The :attribute is not a valid YouTube video ID.',
-        // ];
-
-        // // Run the validation
-        // $validator = Validator::make($request->all(), $customRules, $customMessages);
-
-        // // Check if validation fails
-        // if ($validator->fails()) {
-        //     return redirect()->back()
-        //         ->withErrors($validator)
-        //         ->withInput();
-        // }
-
-        //  $url = $request->id_yt;
-        // parse_str( parse_url( $url, PHP_URL_QUERY ), $validid );
 
 preg_match(
     "/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user|shorts|live)\/))([^\?&\"'>]+)/",
+    //supported link :
+    // youtube.com/v/vidid
+    // youtube.com/vi/vidid
+    // youtube.com/?v=vidid
+    // youtube.com/?vi=vidid
+    // youtube.com/watch?v=vidid
+    // youtube.com/watch?vi=vidid
+    // youtu.be/vidid
+    // youtube.com/embed/vidid
+    // http://youtube.com/v/vidid
+    // http://www.youtube.com/v/vidid
+    // https://www.youtube.com/v/vidid
+    // youtube.com/watch?v=vidid&wtv=wtv
+    // http://www.youtube.com/watch?dev=inprogress&v=vidid&feature=related
+    // https://m.youtube.com/watch?v=vidid
+    // youtube.com/shorts/vididc
+    // youtube.com/live/vididc
     $request->id_yt,
     $match
 );
@@ -144,6 +139,24 @@ if (!$match) {
 
 preg_match(
     "/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user|shorts|live)\/))([^\?&\"'>]+)/",
+    //supported link :
+    // youtube.com/v/vidid
+    // youtube.com/vi/vidid
+    // youtube.com/?v=vidid
+    // youtube.com/?vi=vidid
+    // youtube.com/watch?v=vidid
+    // youtube.com/watch?vi=vidid
+    // youtu.be/vidid
+    // youtube.com/embed/vidid
+    // http://youtube.com/v/vidid
+    // http://www.youtube.com/v/vidid
+    // https://www.youtube.com/v/vidid
+    // youtube.com/watch?v=vidid&wtv=wtv
+    // http://www.youtube.com/watch?dev=inprogress&v=vidid&feature=related
+    // https://m.youtube.com/watch?v=vidid
+    // youtube.com/shorts/vididc
+    // youtube.com/live/vididc
+
     $request->id_yt,
     $match
 );

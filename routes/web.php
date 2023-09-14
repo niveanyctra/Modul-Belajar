@@ -2,6 +2,7 @@
 
 use App\Models\Post;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\LatihanController;
@@ -28,7 +29,9 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('admin.dashboard');
+    $user = Auth::user();
+    $posts = Post::where('id_user', $user->id)->get();
+    return view('admin.dashboard',compact('posts','user'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
