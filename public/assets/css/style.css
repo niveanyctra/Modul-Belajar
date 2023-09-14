@@ -277,7 +277,8 @@ body{
         background-color: tomato;
     }
   .sidebar-mentor{
-    position: fixed;
+    position:fixed;
+    /* margin-bottom: max(500px); */
   }
   .card-mentor .card img{
     height: 14rem;

@@ -3,7 +3,7 @@
 <div class="text-center">
     <h1>{{$posts->title}}</h1>
     <p>Release date {{$posts->created_at->format('F Y')}}   Last updated {{$posts->updated_at->format('F Y')}}</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{$posts->id_yt}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe style="max-width: calc(100% - 30px); width:560px;max-height:250px; height:315px" src="https://www.youtube.com/embed/{{$posts->id_yt}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <br>
     <button type="button" onclick="document.getElementById('about').style.display='block',document.getElementById('tool').style.display='none'">About</button>
     <button type="button" onclick="document.getElementById('about').style.display='none',document.getElementById('tool').style.display='block'">Tool</button>
