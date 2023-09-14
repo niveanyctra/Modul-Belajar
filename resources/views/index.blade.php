@@ -2,6 +2,7 @@
 @section('content')
     <div class="container d-flex align-items-center vh-100">
         <div>
+            {{-- Bagusan NeverGonnaGiveYouUp :/ --}}
             <h4 style="color: #008572;">#ProgrammerMuda</h4>
             <h1 class="fw-bolder display-3">Change your future with coding </h1>
             <p>
@@ -14,7 +15,7 @@
         </div>
     </div>
     <div class="d-flex align-items-center bg-danger justify-content-center vh-100">
-        
+
     </div>
     @include('layouts.footer')
 @endsection

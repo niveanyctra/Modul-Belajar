@@ -6,7 +6,10 @@ use Carbon\Carbon;
 use App\Models\Post;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Auth;
+use App\Rules\YoutubeValidLink;
+use Illuminate\Support\Facades\Validator;
 
 class PostController extends Controller
 {
@@ -36,14 +39,37 @@ class PostController extends Controller
     public function store(Request $request)
     {
 
-        $rules = [
-            'tool' => 'required',
-        ];
-        $messages = [
-            'tool.required' => 'Please select at least one tool',
-            'tool.array' => 'please select tool from the list'
-        ];
-        $request->validate($rules,$messages);
+        // // Define the custom validation rule using regex
+        // $customRules = [
+        //     'id_yt' => 'regex:/^[A-Za-z0-9_-]{11}$/', // YouTube video ID validation regex
+        // ];
+
+        // // Custom error messages
+        // $customMessages = [
+        //     'id_yt.regex' => 'The :attribute is not a valid YouTube video ID.',
+        // ];
+
+        // // Run the validation
+        // $validator = Validator::make($request->all(), $customRules, $customMessages);
+
+        // // Check if validation fails
+        // if ($validator->fails()) {
+        //     return redirect()->back()
+        //         ->withErrors($validator)
+        //         ->withInput();
+        // }
+
+        //  $url = $request->id_yt;
+        // parse_str( parse_url( $url, PHP_URL_QUERY ), $validid );
+
+preg_match(
+    "/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user|shorts|live)\/))([^\?&\"'>]+)/",
+    $request->id_yt,
+    $match
+);
+        $youtube_id = $match[1];
+
+
         $tool = implode(',', $request->tool);
         $rep = strtolower($request->title);
         Post::insert([
@@ -54,7 +80,7 @@ class PostController extends Controller
             'level' => $request->level,
             'tool' => $tool,
             'about' => $request->about,
-            'id_yt' => $request->id_yt,
+            'id_yt' => $youtube_id,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
 
@@ -108,6 +134,14 @@ class PostController extends Controller
     {
         $user = Auth::user();
 
+preg_match(
+    "/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user|shorts|live)\/))([^\?&\"'>]+)/",
+    $request->id_yt,
+    $match
+);
+        $youtube_id = $match[1];
+
+
         $tool = implode(',', $request->tool);
         $rep = strtolower($request->title);
         if ($post->id_user !== $user->id) {
@@ -123,7 +157,7 @@ class PostController extends Controller
             'level' => $request->level,
             'tool' => $tool,
             'about' => $request->about,
-            'id_yt' => $request->id_yt,
+            'id_yt' => $youtube_id,
             'updated_at' => Carbon::now(),
         ]);
         }

@@ -136,10 +136,10 @@
                             <trix-editor input="x" class="trix-content form-control"></trix-editor>
                         </div>
                         <div class="mb-3">
-                            <label for="nama" class="form-label">ID YouTube</label>
+                            <label for="nama" class="form-label">Link YouTube</label>
                             <input type="text" name="id_yt" class="form-control" required="required" id="nama" value="{{old('id_yt')??$post->id_yt}}">
                         </div>
-                    
+
 
 
                         <div class="mb-3">
