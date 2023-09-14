@@ -117,40 +117,40 @@ class LatihanPHPController extends Controller
         $cek4 = $request->jawaban4;
         $cek5 = $request->jawaban5;
 
-        if ($cek1 == "center") {
+        if ($cek1 == "foreach") {
             # code...
             $cek1 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek1 = "Jawaban Anda Salah, Jawaban Yang Benar : center";
+            $cek1 = "Jawaban Anda Salah, Jawaban Yang Benar : foreach";
         }
-        if ($cek2 == "right") {
+        if ($cek2 == '$_GET["nama"]') {
             # code...
             $cek2 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek2 = "Jawaban Anda Salah, Jawaban Yang Benar : right";
+            $cek2 = 'Jawaban Anda Salah, Jawaban Yang Benar : $_GET["nama"]';
         }
-        if ($cek3 == "src") {
+        if ($cek3 == "!=") {
             # code...
             $cek3 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek3 = "Jawaban Anda Salah, Jawaban Yang Benar : src";
+            $cek3 = "Jawaban Anda Salah, Jawaban Yang Benar : !=";
         }
-        if ($cek4 == "height") {
+        if ($cek4 == "default:") {
             # code...
             $cek4 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek4 = "Jawaban Anda Salah, Jawaban Yang Benar : height";
+            $cek4 = "Jawaban Anda Salah, Jawaban Yang Benar : default:";
         }
-        if ($cek5 == "width") {
+        if ($cek5 == '$_POST["nama_kota"]') {
             # code...
             $cek5 = "Jawaban Anda Benar";
         }else {
             # code...
-            $cek5 = "Jawaban Anda Salah, Jawaban Yang Benar : width";
+            $cek5 = 'Jawaban Anda Salah, Jawaban Yang Benar : $_POST["nama_kota"]';
         }
         $jawab1 = $request->jawaban1;
         $jawab2 = $request->jawaban2;
