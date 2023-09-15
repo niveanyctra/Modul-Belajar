@@ -20,14 +20,90 @@
                 <h1 class="fw-bold display-4">HTML</h1>
                 <h6 class="fw-bold">Bahasa untuk memuat halaman web</h6>
                 <div class="buttons">
-                    <a href="" class="button-1">Tutorial</a>
-                    <a href="" class="button-2">Latihan</a>
-                    <a href="" class="button-3">Kelas Mentor</a>
+                    <a href="{{ url('/belajar/html') }}" class="button-1">Tutorial</a>
+                    <a href="{{ url('/latihan/html/basic') }}" class="button-2">Latihan</a>
+                    <a href="{{ url('/kelas-mentor/html') }}" class="button-3">Kelas Mentor</a>
                 </div>
             </div>
             <div class="d-none d-md-grid align-items-center ms-5">
                 <div class="kartu">
                     <h6>HTML Example</h6>
+                    <div class="code"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center vh-100" style="background-color: #86DAFD;">
+        <div class="d-flex justify-content-center">
+            <div class="d-grid text-center align-items-center">
+                <h1 class="fw-bold display-4">CSS</h1>
+                <h6 class="fw-bold">Bahasa untuk memuat halaman web</h6>
+                <div class="buttons">
+                    <a href="{{ url('/belajar/css') }}" class="button-1">Tutorial</a>
+                    <a href="{{ url('/latihan/css/basic') }}" class="button-2">Latihan</a>
+                    <a href="{{ url('/kelas-mentor/css') }}" class="button-3">Kelas Mentor</a>
+                </div>
+            </div>
+            <div class="d-none d-md-grid align-items-center ms-5">
+                <div class="kartu">
+                    <h6>CSS Example</h6>
+                    <div class="code"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center vh-100" style="background-color: #809BCE;">
+        <div class="d-flex justify-content-center">
+            <div class="d-grid text-center align-items-center">
+                <h1 class="fw-bold display-4">PHP</h1>
+                <h6 class="fw-bold">Bahasa untuk memuat halaman web</h6>
+                <div class="buttons">
+                    <a href="{{ url('/belajar/php') }}" class="button-1">Tutorial</a>
+                    <a href="{{ url('/latihan/php/basic') }}" class="button-2">Latihan</a>
+                    <a href="{{ url('/kelas-mentor/php') }}" class="button-3 bg-white text-dark">Kelas Mentor</a>
+                </div>
+            </div>
+            <div class="d-none d-md-grid align-items-center ms-5">
+                <div class="kartu">
+                    <h6>PHP Example</h6>
+                    <div class="code"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center vh-100" style="background-color: #FFED74;">
+        <div class="d-flex justify-content-center">
+            <div class="d-grid text-center align-items-center">
+                <h1 class="fw-bold display-4">JavaScript</h1>
+                <h6 class="fw-bold">Bahasa untuk memuat halaman web</h6>
+                <div class="buttons">
+                    <a href="{{ url('/belajar/js') }}" class="button-1">Tutorial</a>
+                    <a href="{{ url('/latihan/js/basic') }}" class="button-2 bg-white text-dark">Latihan</a>
+                    <a href="{{ url('/kelas-mentor/js') }}" class="button-3">Kelas Mentor</a>
+                </div>
+            </div>
+            <div class="d-none d-md-grid align-items-center ms-5">
+                <div class="kartu">
+                    <h6>JavaScript Example</h6>
+                    <div class="code"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center vh-100" style="background-color: #7EFDD0;">
+        <div class="d-flex justify-content-center">
+            <div class="d-grid text-center align-items-center">
+                <h1 class="fw-bold display-4">SQL</h1>
+                <h6 class="fw-bold">Bahasa untuk memuat halaman web</h6>
+                <div class="buttons">
+                    <a href="{{ url('/belajar/sql') }}" class="button-1 bg-white text-dark">Tutorial</a>
+                    <a href="{{ url('/latihan/sql/basic') }}" class="button-2">Latihan</a>
+                    <a href="{{ url('/kelas-mentor/sql') }}" class="button-3">Kelas Mentor</a>
+                </div>
+            </div>
+            <div class="d-none d-md-grid align-items-center ms-5">
+                <div class="kartu">
+                    <h6>SQL Example</h6>
                     <div class="code"></div>
                 </div>
             </div>
