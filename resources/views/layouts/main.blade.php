@@ -69,12 +69,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
     <script src="https://buildwithangga.com/scripts/keypress/keypress-2.1.5.min.js"></script>
     <script type="text/javascript" src="{{ asset('assets/js/quickSearchModal.js') }}"></script>
+    {{-- <script type="text/javascript" src="{{ asset('assets/js/jquery-3.6.0.js') }}"></script> --}}
     <script type="text/javascript" src="{{ asset('assets/js/loadMoreSearchResult.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('assets/js/catalog-course.js') }}"></script>
+    {{-- <script type="text/javascript" src="{{ asset('assets/js/catalog-course.js') }}"></script> --}}
 
     {{-- <script type="text/javascript">
         var path = "{{ route('autocomplete') }}";
-      
+
         $('.search-input').typeahead({
             source: function (query, process) {
                 return $.get(path, {
@@ -84,7 +85,7 @@
                 });
             }
         });
-      
+
     </script> --}}
     <script>
         var courseConfig = new Bloodhound({
@@ -151,12 +152,15 @@
                     </div>`);
                 // <a href="${appUrl}/kelas/${data.slug_kelas}?main_leads=searchsuggestion" class="stretched-link"></a>
             },
-            footer: `<div class="p-3 pb-5 d-flex justify-content-center" id="loadMoreCourses">
-                            <button type="button" class="text-center mx-auto btn-secondary btn-sm text-sm" data-skip="1">Load More</button>
-                            <div id="loaderGif" class="mx-auto d-none">
-                                <img src="https://buildwithangga.com/vendor/laravel-filemanager/img/loader.svg" width="50" alt="load">
-                            </div>
-                            </div>`,
+            footer: `<p class="text-center text-xs text-grey m-0">
+                        End of result 
+                    </p>`,
+            // footer: `<div class="p-3 pb-5 d-flex justify-content-center" id="loadMoreCourses">
+            //                 <button type="button" class="text-center mx-auto btn-secondary btn-sm text-sm" data-skip="1">Load More</button>
+            //                 <div id="loaderGif" class="mx-auto d-none">
+            //                     <img src="https://buildwithangga.com/vendor/laravel-filemanager/img/loader.svg" width="50" alt="load">
+            //                 </div>
+            //                 </div>`,
         }
     }
 
