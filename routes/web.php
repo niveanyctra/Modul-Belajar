@@ -5,6 +5,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\LatihanController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\LatihanJSController;
@@ -26,6 +27,12 @@ use App\Http\Controllers\LatihanHTMLController;
 
 Route::get('/', function () {
     return view('index');
+});
+
+Route::controller(SearchController::class)->group(function(){
+    Route::get('search', 'index');
+    Route::get('autocomplete', 'autocomplete')->name('autocomplete');
+    Route::get('find', 'find')->name('find');
 });
 
 Route::get('/dashboard', function () {
