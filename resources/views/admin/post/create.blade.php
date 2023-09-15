@@ -34,12 +34,15 @@
                                 <option value="menengah">Menengah</option>
                             </select>
                         </div>
+                                                    @error('tool')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
                         <div class="mb-3">
                             <label for="tool">Tool</label>
                             <div class="row">
                                 <div class="col-3">
                                     <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="vscode" checked>
+                                    <input type="checkbox" id="tool" name="tool[]" value="vscode">
                                     VSCode</label>
                                 </div>
                                 <div class="col-3">
@@ -122,16 +125,19 @@
                             <input id="x" type="hidden" name="about" value="" />
                             <trix-editor input="x" class="trix-content form-control"></trix-editor>
                         </div>
+                            @error('video_id')
+                            <div class="text-danger">{{ $message }}</div>
+                            @enderror
                         <div class="mb-3">
-                            <label for="nama" class="form-label">ID YouTube</label>
+                            <label for="nama" class="form-label">Link YouTube</label>
                             <input type="text" name="id_yt" class="form-control" required="required" id="nama">
                         </div>
-                    
-                        
+
+
                         <div class="mb-3">
                             <button type="submit" class="btn btn-outline-success">Simpan Data</button>
                         </div>
-                        
+
                     </div>
 
                     </form>

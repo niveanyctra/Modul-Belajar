@@ -99,8 +99,8 @@
             {{$cek5}}
         </div>
 
-        <a href="{{url('/latihan/php/basic')}}" class="btn btn-primary">Coba Lagi</a>
-        <a href="{{url('/latihan/php/menengah')}}" class="btn btn-primary">Lanjut</a>
+        <a href="{{url('/latihan/php/menengah')}}" class="btn btn-primary">Coba Lagi</a>
+        <a href="{{url('/latihan/php/lanjutan')}}" class="btn btn-primary">Lanjut</a>
     </div>
 </section>
 @endsection

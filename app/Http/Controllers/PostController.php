@@ -6,7 +6,10 @@ use Carbon\Carbon;
 use App\Models\Post;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Auth;
+use App\Rules\YoutubeValidLink;
+use Illuminate\Support\Facades\Validator;
 
 class PostController extends Controller
 {
@@ -36,14 +39,39 @@ class PostController extends Controller
     public function store(Request $request)
     {
 
-        $rules = [
-            'tool' => 'required',
-        ];
-        $messages = [
-            'tool.required' => 'Please select at least one tool',
-            'tool.array' => 'please select tool from the list'
-        ];
-        $request->validate($rules,$messages);
+
+preg_match(
+    "/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user|shorts|live)\/))([^\?&\"'>]+)/",
+    //supported link :
+    // youtube.com/v/vidid
+    // youtube.com/vi/vidid
+    // youtube.com/?v=vidid
+    // youtube.com/?vi=vidid
+    // youtube.com/watch?v=vidid
+    // youtube.com/watch?vi=vidid
+    // youtu.be/vidid
+    // youtube.com/embed/vidid
+    // http://youtube.com/v/vidid
+    // http://www.youtube.com/v/vidid
+    // https://www.youtube.com/v/vidid
+    // youtube.com/watch?v=vidid&wtv=wtv
+    // http://www.youtube.com/watch?dev=inprogress&v=vidid&feature=related
+    // https://m.youtube.com/watch?v=vidid
+    // youtube.com/shorts/vididc
+    // youtube.com/live/vididc
+    $request->id_yt,
+    $match
+);
+if (!$match) {
+    # code...
+    return redirect()->back()->withErrors(['video_id' => 'Link tidak valid!']);
+}
+        $youtube_id = $match[1];
+
+        if (empty($request->tool)) {
+            # code...
+                return redirect()->back()->withErrors(['tool' => 'Mohon pilih minimal 1 tool!']);
+        }
         $tool = implode(',', $request->tool);
         $rep = strtolower($request->title);
         Post::insert([
@@ -54,7 +82,7 @@ class PostController extends Controller
             'level' => $request->level,
             'tool' => $tool,
             'about' => $request->about,
-            'id_yt' => $request->id_yt,
+            'id_yt' => $youtube_id,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
 
@@ -97,6 +125,7 @@ class PostController extends Controller
             return redirect('/post');
         }else {
             # code...
+
             return view('admin.post.edit', compact('post','user'));
         }
     }
@@ -108,6 +137,39 @@ class PostController extends Controller
     {
         $user = Auth::user();
 
+preg_match(
+    "/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user|shorts|live)\/))([^\?&\"'>]+)/",
+    //supported link :
+    // youtube.com/v/vidid
+    // youtube.com/vi/vidid
+    // youtube.com/?v=vidid
+    // youtube.com/?vi=vidid
+    // youtube.com/watch?v=vidid
+    // youtube.com/watch?vi=vidid
+    // youtu.be/vidid
+    // youtube.com/embed/vidid
+    // http://youtube.com/v/vidid
+    // http://www.youtube.com/v/vidid
+    // https://www.youtube.com/v/vidid
+    // youtube.com/watch?v=vidid&wtv=wtv
+    // http://www.youtube.com/watch?dev=inprogress&v=vidid&feature=related
+    // https://m.youtube.com/watch?v=vidid
+    // youtube.com/shorts/vididc
+    // youtube.com/live/vididc
+
+    $request->id_yt,
+    $match
+);
+if (!$match) {
+    # code...
+    return redirect()->back()->withErrors(['video_id' => 'Link tidak valid!']);
+}
+        $youtube_id = $match[1];
+
+        if (empty($request->tool)) {
+            # code...
+                return redirect()->back()->withErrors(['tool' => 'Mohon pilih minimal 1 tool!']);
+        }
         $tool = implode(',', $request->tool);
         $rep = strtolower($request->title);
         if ($post->id_user !== $user->id) {
@@ -123,7 +185,7 @@ class PostController extends Controller
             'level' => $request->level,
             'tool' => $tool,
             'about' => $request->about,
-            'id_yt' => $request->id_yt,
+            'id_yt' => $youtube_id,
             'updated_at' => Carbon::now(),
         ]);
         }
