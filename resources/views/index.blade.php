@@ -15,7 +15,7 @@
     </div>
     <div class="d-flex align-items-center justify-content-center vh-100" style="background-color: #FFD6A5;">
         <div class="d-flex justify-content-center">
-            <div class="d-grid text-center align-items-center">
+            <div class="d-grid text-center align-items-center me-4">
                 <h1 class="fw-bold display-4">HTML</h1>
                 <h6 class="fw-bold">Bahasa untuk memuat halaman web</h6>
                 <div class="buttons">
@@ -24,8 +24,11 @@
                     <a href="" class="button-3">Kelas Mentor</a>
                 </div>
             </div>
-            <div>
-
+            <div class="d-md-grid align-items-center ms-4 d-sm-none">
+                <div class="kartu">
+                    <h6>HTML Example</h6>
+                    <div class="code"></div>
+                </div>
             </div>
         </div>
     </div>
