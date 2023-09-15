@@ -25,7 +25,7 @@
                     <a href="" class="button-3">Kelas Mentor</a>
                 </div>
             </div>
-            <div class="d-md-grid align-items-center ms-5 d-sm-none">
+            <div class="d-none d-md-grid align-items-center ms-5">
                 <div class="kartu">
                     <h6>HTML Example</h6>
                     <div class="code"></div>
