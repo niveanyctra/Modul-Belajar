@@ -10,8 +10,8 @@
                 Modul ini menyediakan pembelajaran untuk kelas X - XII
             </p>
         </div>
-        <div>
-            <img class="gbr1" src="{{ url('img/uwong.png') }}" alt="" width="378px">
+        <div class="d-none d-lg-block">
+            <img src="{{ url('img/uwong.png') }}" alt="" width="378px">
         </div>
     </div>
     <div class="d-flex align-items-center justify-content-center vh-100" style="background-color: #FFD6A5;">
@@ -25,8 +25,11 @@
                     <a href="" class="button-3">Kelas Mentor</a>
                 </div>
             </div>
-            <div>
-
+            <div class="d-none d-md-grid align-items-center ms-5">
+                <div class="kartu">
+                    <h6>HTML Example</h6>
+                    <div class="code"></div>
+                </div>
             </div>
         </div>
     </div>

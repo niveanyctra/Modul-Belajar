@@ -164,6 +164,12 @@
                 </ul>
                 <ul class="navbar-nav right-menu ms-auto">
                     <li class="nav-item">
+                        <button type="button" class="btn-secondary" data-bs-toggle="modal" data-bs-target="#quickSearchModal">
+                            <img class="search" src="https://buildwithangga.com/themes/front/images/ic_search.svg" alt="search buildwith angga">
+                            </button>
+                        {{-- <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Cari</button> --}}
+                    </li>
+                    <li class="nav-item">
                         <a target="_blank" href="https://discord.gg/VqPZbNKrzD" class="nav-link">Join Community</a>
                     </li>
                 </ul>
