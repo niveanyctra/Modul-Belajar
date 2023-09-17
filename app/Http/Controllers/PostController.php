@@ -122,7 +122,7 @@ if (!$match) {
         $user = Auth::user();
         if ($post->id_user !== $user->id) {
            # code...
-            return redirect('/post');
+            return redirect('/post')->withErrors(['not_auth' => 'Akses Tidak Diberikan!']);
         }else {
             # code...
 
@@ -202,7 +202,7 @@ if (!$match) {
         $user = Auth::user();
         if ($post->id_user !== $user->id) {
            # code...
-            return redirect('/post');
+            return redirect('/post')->withErrors(['not_auth' => 'Akses Tidak Diberikan!']);
         }else {
             # code...
             Post::where('id', $post->id)->delete();
@@ -338,5 +338,24 @@ public function detailUmum(Request $request,Post $post){
         // ]);
         // return view('kelas-mentor.profile-mentor.index', [
         // ]);
+    }
+    function fetch(Request $request)
+    {
+        if($request->get('query'))
+        {
+            $query = $request->get('query');
+            $data = DB::table('post')
+                ->where('title', 'LIKE', "%{$query}%")
+                ->get();
+            $output = '<ul class="dropdown-menu" style="display:block; position:relative;width:100%;">';
+            foreach($data as $row)
+            {
+                $output .= '
+                <li><a class="dropdown-item" href="#">'.$row->title.'</a></li>
+                ';
+            }
+            $output .= '</ul>';
+            echo $output;
+        }
     }
 }

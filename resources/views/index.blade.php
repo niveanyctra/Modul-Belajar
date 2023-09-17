@@ -11,7 +11,7 @@
             </p>
         </div>
         <div>
-            <img src="{{ url('img/uwong.png') }}" alt="" width="378px">
+            <img class="gbr1" src="{{ url('img/uwong.png') }}" alt="" width="378px">
         </div>
     </div>
     <div class="d-flex align-items-center justify-content-center vh-100" style="background-color: #FFD6A5;">
