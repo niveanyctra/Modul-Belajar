@@ -19,7 +19,7 @@ class PostSeeder extends Seeder
                 'title' => 'Post HTML',
                 'category' => 'html',
                 'level' => 'mudah',
-                'tool' => 'vscode, html, nodejs',
+                'tool' => 'vscode, html, nodejs, react, css, bootstrap, laravel, tailwind, github, xampp, figma, js, php, browser',
                 'about' => 'lorem ipsum dolor sit amet, consectetur adip loremin',
                 'id_yt' => 'kcl1OpkDGHU',
             ],

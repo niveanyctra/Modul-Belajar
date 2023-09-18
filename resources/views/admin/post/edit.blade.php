@@ -95,7 +95,7 @@
                                 </div>
                                 <div class="col-3">
                                     <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"tailwind")) checked @endif value="tailwiind">
+                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"tailwind")) checked @endif value="tailwind">
                                     TailWind</label>
                                 </div>
                                 <div class="col-3">
