@@ -18,7 +18,7 @@
                             <label for="nama" class="form-label">Title</label>
                             <input type="text" name="title" class="form-control" id="nama" required="required" value="{{old('title')??$post->title}}">
                         </div>
-                                                    @error('tool')
+                                        @error('tool')
                             <div class="text-danger">{{ $message }}</div>
                             @enderror
                         <div class="mb-3">

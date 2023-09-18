@@ -348,4 +348,10 @@ body{
     .contohmq2{
         background-color: dodgerblue;
     }
+    .gbr1{
+        display: none;
+    }
+    img{
+        max-width: calc(100% - 15px);
+    }
 }
