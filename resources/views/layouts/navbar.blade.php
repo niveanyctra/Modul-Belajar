@@ -162,11 +162,11 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="navbar-nav right-menu ms-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <button type="button" class="btn-secondary" data-bs-toggle="modal" data-bs-target="#quickSearchModal">
+                        <button type="button" class="nav-link btn-secondary" data-bs-toggle="modal" data-bs-target="#quickSearchModal">
                             <img class="search" src="https://buildwithangga.com/themes/front/images/ic_search.svg" alt="search buildwith angga">
-                            </button>
+                        </button>
                         {{-- <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Cari</button> --}}
                     </li>
                     <li class="nav-item">

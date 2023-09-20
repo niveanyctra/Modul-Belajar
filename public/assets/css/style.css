@@ -9,6 +9,9 @@ body{
 * {
   font-family: 'Poppins', sans-serif;
 }
+hr{
+  margin: 1rem 0px 0px 0px;
+}
 .link{
     cursor: pointer;
 }
@@ -101,6 +104,44 @@ body{
 
 .kartu .code{
   min-height: 300px;
+}
+
+.follow-icon a{
+  display: inline-block;
+  margin: 0px 10px;
+  height: 10px;
+  color: #000;
+  font-size: 40px;
+}
+
+.btn-secondary {
+    background: #e5e9f2;
+    border: 0;
+    border-radius: 100px;
+    color: #34364a;
+    font-size: 16px;
+    font-weight: 600;
+    height: -webkit-fit-content!important;
+    height: -moz-fit-content!important;
+    height: fit-content!important;
+    line-height: 24px;
+    transition: all .4s;
+    width: -webkit-fit-content!important;
+    width: -moz-fit-content!important;
+    width: fit-content!important;
+}
+
+.btn-secondary:focus,.btn-secondary:hover {
+    background: #e5e9f2;
+    border: 0;
+    box-shadow: 10px 12px 20px 0 #e7ebf5;
+    color: #34364a;
+    transition: all .4s
+}
+
+.btn-secondary.active {
+    background-color: #34364a!important;
+    color: #fff!important
 }
 /* End Landing Page */
 

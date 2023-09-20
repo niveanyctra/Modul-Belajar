@@ -1,10 +1,10 @@
-<footer style="">
-    <div class="container-fluid">
-        <div class="text-center">
+<div style="">
+    <div class="container-fluid py-4">
+        <div class="text-center follow-icon">
             <h5>Follow Us</h5>
-            <a href="https://www.instagram.com/rpl_smkn1crb/?hl=id" target="_blank" rel="noopener noreferrer">Logo instagram</a>
-            <a href="https://www.youtube.com/@RPLSMKN1CIREBON" target="_blank" rel="noopener noreferrer">Logo Youtube</a>
-            <a href="https://discord.gg/VqPZbNKrzD" target="_blank" rel="noopener noreferrer">Logo Discord</a>
+            <a href="https://www.instagram.com/rpl_smkn1crb/?hl=id" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@RPLSMKN1CIREBON" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://discord.gg/VqPZbNKrzD" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
         </div>
         <hr>
         <div class="row">
@@ -90,4 +90,4 @@
             </div>
         </div>
     </div>
-</footer>
+</div>
