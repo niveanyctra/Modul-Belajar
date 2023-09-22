@@ -136,12 +136,12 @@ hr{
     border: 0;
     box-shadow: 10px 12px 20px 0 #e7ebf5;
     color: #34364a;
-    transition: all .4s
+    transition: all .4s;
 }
 
 .btn-secondary.active {
-    background-color: #34364a!important;
-    color: #fff!important
+    background-color: #34364a!important; 
+    color: #fff!important;
 }
 /* End Landing Page */
 
@@ -191,6 +191,10 @@ hr{
 .dropdown-item:hover a {
   text-decoration: none;
   color: var(--bs-navbar-active-color);
+}
+
+.dropdown-item:hover {
+  background-color: ;
 }
 
 .icon {
@@ -347,6 +351,9 @@ hr{
   .card-mentor .card a.btn{
     text-decoration: none;
     color: white;
+  }
+  .card-title a {
+    color: black;    
   }
 
   @media all and (max-width: 1024px) {
