@@ -12,7 +12,7 @@
     </div>
     <div id="about">
         <h4>Tingkatkan Skillmu</h4>
-        <article class="px-5 text-justify">
+        <article class="text-justify mt-3">
             {!! $posts->about !!}
         </article>
     </div>

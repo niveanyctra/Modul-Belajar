@@ -652,6 +652,30 @@ hr{
     background-color: #e35205;
     color: #fff;
   }
+/* Footer */
+.__footer img{
+    width: 70px;
+    margin-right: 10px;
+}
+
+.__footer .row .j-margin div{
+    margin-bottom: 40px;
+}
+
+.__footer .row .j-margin h6{
+    font-weight: 600;
+}
+
+.__footer .row .j-margin a{
+    font-weight: 400;
+    color: #000;
+}
+
+.__footer .row .j-margin a:hover{
+    color: tomato;
+}
+/* End Footer */
+/* Mentor */
     .contohmq1{
         background-color: dodgerblue;
     }
@@ -681,6 +705,39 @@ hr{
     color: black;
   }
 
+#about article h1{
+    font-size: 1.7em;
+}
+
+#about article blockquote{
+    border: 0 solid #ccc;
+    border-left-width: 0.3em;
+    margin-left: 0.3em;
+    padding-left: 0.6em;
+}
+
+#about article pre{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    font-family: monospace;
+    font-size: 0.9em;
+    padding: 0.5em;
+    white-space: pre;
+    background-color: #eee;
+    overflow-x: auto;
+}
+
+#about article ul{
+    list-style: circle;
+    list-style-position: inside;
+}
+
+#about article ool{
+    list-style: circle;
+    list-style-position: inside;
+}
+/* End Mentor */
   @media all and (max-width: 1024px) {
     .sidebar-mentor {
         display: none;

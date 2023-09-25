@@ -1,32 +1,32 @@
-<div style="">
-    <div class="container-fluid py-4">
+<div class="__footer">
+    <div class="container py-4">
         <div class="text-center follow-icon">
             <h5>Follow Us</h5>
-            <a href="https://www.instagram.com/rpl_smkn1crb/?hl=id" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@RPLSMKN1CIREBON" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://discord.gg/VqPZbNKrzD" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.instagram.com/rpl_smkn1crb/?hl=id" target="_blank" rel="noopener noreferrer"><i style="color: #d82d7e;" class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@RPLSMKN1CIREBON" target="_blank" rel="noopener noreferrer"><i style="color: #e43535;" class="fa-brands fa-youtube"></i></a>
+            <a href="https://discord.gg/VqPZbNKrzD" target="_blank" rel="noopener noreferrer"><i style="color: #5865f2;" class="fa-brands fa-discord"></i></a>
         </div>
-        <hr>
-        <div class="row">
-            <div class="col-lg-3 col-12">
-                <img src="{{ asset('img/logo.png') }}" alt="" class="img-fluid" width="100px">
-                <img src="{{ asset('img/neper.png') }}" alt="" class="img-fluid" width="100px">
-                <p>Jl. Perjuangan By Pass Sunyaragi, Cirebon, Indonesia 45132</p>
+        <div class="row mt-4">
+            <div class="col-lg-4 col-12">
+                <div class="mb-2">
+                    <img src="{{ asset('img/logo.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('img/neper.png') }}" alt="" class="img-fluid">
+                </div>
+                <p>Jl. Perjuangan By Pass Sunyaragi, <br>Cirebon, Indonesia 45132</p>
                 <p>Telp & Fax: +62-0231-480202</p>
                 <p>Email: info@smkn1-cirebon.sch.id</p>
             </div>
-            <div class="col-lg-1 col-12"></div>
             <div class="col-lg-8 col-12">
-                <div class="row">
-                    <div class="col-4">
-                        <h6>
-                            Lihat Perjalanan Karir
+                <div class="row j-margin">
+                    <div class="col-4 d-flex flex-column">
+                        <h6 class="text-nowrap">
+                            Perjalanan Karir
                         </h6>
-                        <a href="{{ url('/alur-belajar/back-end') }}">Back End</a>
-                        <a href="{{ url('/alur-belajar/front-end') }}">Front End</a>
+                        <a href="{{ url('/alur-belajar/back-end') }}">Back End Developer</a>
+                        <a href="{{ url('/alur-belajar/front-end') }}">Front End Developer</a>
                         <a href="{{ url('/alur-belajar/ux-designer') }}">UX Design</a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 d-flex flex-column">
                         <h6>
                             Belajar Bahasa Pemograman
                         </h6>
@@ -46,8 +46,8 @@
                             <span>Belajar SQL</span>
                         </a>
                     </div>
-                    <div class="col-4">
-                        <h6>
+                    <div class="col-4 d-flex flex-column">
+                        <h6 class="text-nowrap">
                             Latihan
                         </h6>
                         <a href="{{ url('/latihan/html/basic') }}">
@@ -66,8 +66,8 @@
                             <span>Latihan SQL</span>
                         </a>
                     </div>
-                    <div class="col-4">
-                        <h6>
+                    <div class="col-4 d-flex flex-column">
+                        <h6 class="text-nowrap">
                             Belajar dari Para Mentor
                         </h6>
                         <a href="{{ url('/kelas-mentor/html') }}">
