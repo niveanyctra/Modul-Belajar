@@ -1214,8 +1214,39 @@ a,a:hover {
     padding: 11px
 }
 
+.btn-secondary {
+    background: #e5e9f2;
+    border: 0;
+    border-radius: 100px;
+    color: #34364a;
+    font-size: 16px;
+    font-weight: 600;
+    height: -webkit-fit-content!important;
+    height: -moz-fit-content!important;
+    height: fit-content!important;
+    line-height: 24px;
+    padding: 12px 24px;
+    transition: all .4s;
+    width: -webkit-fit-content!important;
+    width: -moz-fit-content!important;
+    width: fit-content!important
+}
+
 .btn-secondary.w-50 {
     width: 50%!important
+}
+
+.btn-secondary:focus,.btn-secondary:hover {
+    background: #e5e9f2;
+    border: 0;
+    box-shadow: 10px 12px 20px 0 #e7ebf5;
+    color: #34364a;
+    transition: all .4s
+}
+
+.btn-secondary.active {
+    background-color: #34364a!important;
+    color: #fff!important
 }
 
 .btn-secondary.btn-materi.btn-preview-materi {
@@ -2409,6 +2440,56 @@ a,a:hover {
         padding-left:16px;
         padding-right: 16px
     }
+}
+
+button[data-bs-target="#quickSearchModal"] {
+    padding: 12px
+}
+
+#quickSearchModal .navbar-input-column {
+    background: 0 0;
+    border-radius: 0;
+    padding: 0 48px
+}
+
+#quickSearchModal .navbar-input-column:focus {
+    box-shadow: none
+}
+
+#quickSearchModal .tt-menu {
+    min-height: 55vh
+}
+
+#quickSearchModal .ic_search {
+    left: 12px
+}
+
+#quickSearchModal .clear-field-x {
+    right: 12px;
+    z-index: 10
+}
+
+#quickSearchModal .clear-field-x,#quickSearchModal .ic_search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px
+}
+
+#quickSearchModal .most-searched-course-desktop {
+    min-height: 55vh;
+    position: static;
+    top: 0
+}
+
+#quickSearchModal .btn-close {
+    filter: invert(99%) sepia(23%) saturate(0) hue-rotate(217deg) brightness(111%) contrast(100%);
+    right: 50px;
+    top: 50px
+}
+
+#quickSearchModal .modal-body {
+    min-height: 60vh
 }
 
 .mobile-showcase .user-profile .pro-avatar {
@@ -13429,7 +13510,7 @@ main.browseKelas .skeleton-card .skeleton-footer {
 
 .modal-content .modal-header {
     background-color: #f6f8fd;
-    border-radius: 16px 16px 0 0;
+    border-radius: 16px 16px 0 0
 }
 
 .confetti {

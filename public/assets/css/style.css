@@ -105,6 +105,299 @@ hr{
 .kartu .code{
   min-height: 300px;
 }
+/* Navbar */
+.form-control {
+    background-color: #e5e9f2;
+    border: 0;
+    border-radius: 100px !important;
+    color: #34364a;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    padding: 11px 20px
+}
+
+
+.most-searched-course,.most-searched-course-desktop,.tt-menu {
+    background-color: #fff;
+    border-radius: 8px;
+    max-height: 340px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    z-index: 500
+}
+
+.most-searched-course-desktop::-webkit-scrollbar,.most-searched-course::-webkit-scrollbar,.tt-menu::-webkit-scrollbar {
+    display: none;
+    width: 0
+}
+
+@media(min-width: 768px) {
+    .most-searched-course-desktop::-webkit-scrollbar,.most-searched-course::-webkit-scrollbar,.tt-menu::-webkit-scrollbar {
+        display:block;
+        width: 6px
+    }
+}
+
+.most-searched-course-desktop::-webkit-scrollbar-thumb,.most-searched-course::-webkit-scrollbar-thumb,.tt-menu::-webkit-scrollbar-thumb {
+    background: #e5e9f2;
+    border-radius: 10px
+}
+
+.most-searched-course .course-content,.most-searched-course-desktop .course-content,.tt-menu .course-content {
+    align-items: center;
+    border-bottom: 1px solid #f6f8fd;
+    cursor: pointer;
+    display: flex;
+    gap: 14px;
+    padding: 10px;
+    position: relative;
+    transition: .1s ease-in-out
+}
+
+.most-searched-course .course-content.tt-cursor,.most-searched-course .course-content:hover,.most-searched-course-desktop .course-content.tt-cursor,.most-searched-course-desktop .course-content:hover,.tt-menu .course-content.tt-cursor,.tt-menu .course-content:hover {
+    background: #f6f8fd
+}
+
+.most-searched-course .course-content .thumbnail,.most-searched-course-desktop .course-content .thumbnail,.tt-menu .course-content .thumbnail {
+    height: 80px;
+    width: 120px
+}
+
+.most-searched-course .course-content .thumbnail img,.most-searched-course-desktop .course-content .thumbnail img,.tt-menu .course-content .thumbnail img {
+    border-radius: 8px;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: inherit
+}
+
+.most-searched-course .course-content .thumbnail.skeleton,.most-searched-course-desktop .course-content .thumbnail.skeleton,.tt-menu .course-content .thumbnail.skeleton {
+    min-width: 120px
+}
+
+.most-searched-course .course-content .course-info,.most-searched-course-desktop .course-content .course-info,.tt-menu .course-content .course-info {
+    max-width: 100%;
+    width: 100%
+}
+
+.most-searched-course .course-content .course-title,.most-searched-course-desktop .course-content .course-title,.tt-menu .course-content .course-title {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #34364a;
+    display: -webkit-box;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 8px;
+    max-width: 333px;
+    overflow: hidden
+}
+
+@media screen and (max-width: 500px) {
+    .most-searched-course .course-content .course-title,.most-searched-course-desktop .course-content .course-title,.tt-menu .course-content .course-title {
+        font-size:14px
+    }
+}
+
+.most-searched-course .course-content .course-title.skeleton,.most-searched-course-desktop .course-content .course-title.skeleton,.tt-menu .course-content .course-title.skeleton {
+    height: 24px;
+    width: 300px
+}
+
+.most-searched-course .course-content .course-title.skeleton.navbar,.most-searched-course-desktop .course-content .course-title.skeleton.navbar,.tt-menu .course-content .course-title.skeleton.navbar {
+    width: 100%
+}
+
+@media screen and (max-width: 500px) {
+    .most-searched-course .course-content .course-title.skeleton,.most-searched-course-desktop .course-content .course-title.skeleton,.tt-menu .course-content .course-title.skeleton {
+        width:150px
+    }
+}
+
+.most-searched-course .course-content .price,.most-searched-course-desktop .course-content .price,.tt-menu .course-content .price {
+    align-items: center;
+    color: #999aa4;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 8px
+}
+
+@media screen and (max-width: 500px) {
+    .most-searched-course .course-content .price,.most-searched-course-desktop .course-content .price,.tt-menu .course-content .price {
+        font-size:12px
+    }
+}
+
+.most-searched-course .course-content .price.skeleton,.most-searched-course-desktop .course-content .price.skeleton,.tt-menu .course-content .price.skeleton {
+    height: 20px;
+    width: 220px
+}
+
+.most-searched-course .course-content .price.skeleton.navbar,.most-searched-course-desktop .course-content .price.skeleton.navbar,.tt-menu .course-content .price.skeleton.navbar {
+    width: 75%
+}
+
+@media screen and (max-width: 500px) {
+    .most-searched-course .course-content .price.skeleton,.most-searched-course-desktop .course-content .price.skeleton,.tt-menu .course-content .price.skeleton {
+        width:80px
+    }
+}
+
+.most-searched-course .course-content .labelJoinedCourse,.most-searched-course-desktop .course-content .labelJoinedCourse,.tt-menu .course-content .labelJoinedCourse {
+    padding: 4px 12px!important
+}
+
+.most-searched-course .course-content .labelJoinedCourse img,.most-searched-course-desktop .course-content .labelJoinedCourse img,.tt-menu .course-content .labelJoinedCourse img {
+    height: 20px;
+    width: 20px
+}
+
+.most-searched-course .course-content .labelJoinedCourse .__text,.most-searched-course-desktop .course-content .labelJoinedCourse .__text,.tt-menu .course-content .labelJoinedCourse .__text {
+    font-size: 12px;
+    line-height: 16px
+}
+
+.most-searched-course a.link,.most-searched-course-desktop a.link,.tt-menu a.link {
+    color: #34364a;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center
+}
+
+
+.most-searched-course .course-content .course-title.skeleton,.most-searched-course .course-content .price.skeleton,.most-searched-course .course-content .thumbnail.skeleton,.most-searched-course-desktop .course-content .course-title.skeleton,.most-searched-course-desktop .course-content .price.skeleton,.most-searched-course-desktop .course-content .thumbnail.skeleton,.skeleton-animation,.skeleton-card .detail .title-skeleton,.skeleton-card .detail .type-skeleton,.skeleton-card .img-skeleton,.skeleton-card .skeleton-footer .icon-skeleton,.skeleton-card .skeleton-footer .stars-skeleton,.skeleton-card-mobile .content .info .price-tag,.skeleton-card-mobile .content .info .title-text,.skeleton-card-mobile .content .thumbnail,.skeleton-card-mobile .footer .left,.skeleton-card-mobile .footer .right,.tt-menu .course-content .course-title.skeleton,.tt-menu .course-content .price.skeleton,.tt-menu .course-content .thumbnail.skeleton {
+    -webkit-animation: skeleton-loader .6s linear infinite alternate;
+    animation: skeleton-loader .6s linear infinite alternate;
+    border-radius: .25rem;
+    opacity: .7
+}
+
+.skeleton-card {
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.skeleton-card .img-skeleton {
+    background-color: #999aa4;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height: 198px;
+    width: 100%
+}
+
+.skeleton-card .detail {
+    padding: 0 16px
+}
+
+.skeleton-card .detail .title-skeleton {
+    background-color: #999aa4;
+    height: 37px;
+    margin-bottom: 8px;
+    width: 100%
+}
+
+.skeleton-card .detail .type-skeleton {
+    background-color: #999aa4;
+    height: 24px;
+    width: 35%
+}
+
+.skeleton-card .skeleton-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 16px 16px
+}
+
+.skeleton-card .skeleton-footer .stars-skeleton {
+    background-color: #999aa4;
+    height: 24px;
+    width: 40%
+}
+
+.skeleton-card .skeleton-footer .icon-skeleton {
+    background-color: #999aa4;
+    border-radius: 100px!important;
+    height: 32px;
+    width: 32px
+}
+
+.skeleton-card-mobile {
+    background-color: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    overflow: hidden
+}
+
+.skeleton-card-mobile .content {
+    align-items: center;
+    display: flex;
+    gap: 14px
+}
+
+.skeleton-card-mobile .content .thumbnail {
+    height: 110px;
+    width: 110px
+}
+
+.skeleton-card-mobile .content .info {
+    padding: 14px 8px 0
+}
+
+.skeleton-card-mobile .content .info .title-text {
+    height: 22px;
+    width: 230px
+}
+
+.skeleton-card-mobile .content .info .price-tag {
+    height: 16px;
+    margin-top: 30px;
+    width: 80px
+}
+
+.skeleton-card-mobile .footer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 20px
+}
+
+.skeleton-card-mobile .footer .left {
+    height: 22px;
+    width: 172px
+}
+
+.skeleton-card-mobile .footer .right {
+    border-radius: 100px;
+    height: 32px;
+    width: 32px
+}
+
+
+.tt-hint,.tt-input,.tt-menu,.twitter-typeahead {
+    width: 100%
+}
+
+.modal-content {
+    border: none;
+    border-radius: 16px
+}
+
+.modal-content .modal-header {
+    background-color: #f6f8fd;
+    border-radius: 16px 16px 0 0;
+}
 
 .follow-icon a{
   display: inline-block;
@@ -140,10 +433,42 @@ hr{
 }
 
 .btn-secondary.active {
-    background-color: #34364a!important; 
+    background-color: #34364a!important;
     color: #fff!important;
 }
 /* End Landing Page */
+
+/* Tools */
+.item-review {
+    background: #fff;
+    border-radius: 14px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    padding: 30px;
+}
+
+.item-review .name {
+    color: #34364a;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.item-review .role {
+    color: #999aa4;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 4px;
+}
+
+
+.item-review .photo{
+    border-radius: 100px;
+    height: 70px;
+    width: 70px
+}
+
+
+/* End Tools */
 
 .dropdown-menu .dropdown-item {
   align-items: center;
@@ -193,8 +518,8 @@ hr{
   color: var(--bs-navbar-active-color);
 }
 
-.dropdown-item:hover {
-  background-color: ;
+.dropdown-item:active {
+    background-color: #c3c3c3!important;
 }
 
 .icon {
@@ -353,7 +678,7 @@ hr{
     color: white;
   }
   .card-title a {
-    color: black;    
+    color: black;
   }
 
   @media all and (max-width: 1024px) {
@@ -399,7 +724,7 @@ hr{
     .gbr1{
         display: none;
     }
-    img{
+    .main img{
         max-width: calc(100% - 15px);
     }
 }

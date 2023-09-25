@@ -6,8 +6,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Pengenalan</h1>
-    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
-    <a href="{{ url('/belajar/html/dasar') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between">
+        <a href="{{ url('/') }}" class="btn btn-success">Home</a>
+        <a href="{{ url('/belajar/html/dasar') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="mt-3">Apa Itu HTML?</h3>
     <p class="mx-4">
