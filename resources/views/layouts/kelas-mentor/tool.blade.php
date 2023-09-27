@@ -1,5 +1,5 @@
 <div id="tool" style="display: none" class="container-fluid">
-    <h5>Tools Pendukung</h5>
+    <h2 class="fw-bolder">Tools Pendukung</h2>
     <p>Lengkapi Sebelum Belajar</p>
     <div class="row content mt-3 gy-4">
         @if (str_contains($posts->tool, 'vscode'))

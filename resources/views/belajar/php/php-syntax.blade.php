@@ -23,8 +23,8 @@
     <h4 class="my-3">Contoh Sintaks PHP</h4>
     <div class="code">
         &lt;?php <br>
-        echo "Hello World!";
-        ?>
+        echo "Hello World!";<br>
+        ?&gt;
     </div>
     <div class="note">
         <strong>Note :</strong><span>Semua pernyataan PHP harus diakhiri dengan titik koma (;)!</span>

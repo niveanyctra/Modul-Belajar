@@ -1,6 +1,6 @@
 <div class="__footer">
     <div class="container py-4">
-        <div class="text-center follow-icon">
+        <div class="text-center follow-icon mb-5">
             <h5>Follow Us</h5>
             <a href="https://www.instagram.com/rpl_smkn1crb/?hl=id" target="_blank" rel="noopener noreferrer"><i style="color: #d82d7e;" class="fa-brands fa-instagram"></i></a>
             <a href="https://www.youtube.com/@RPLSMKN1CIREBON" target="_blank" rel="noopener noreferrer"><i style="color: #e43535;" class="fa-brands fa-youtube"></i></a>

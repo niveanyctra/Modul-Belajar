@@ -28,7 +28,26 @@
             <div class="d-none d-md-grid align-items-center ms-5">
                 <div class="kartu">
                     <h6>HTML Example</h6>
-                    <div class="code"></div>
+                    <div class="code">
+                        &lt;!DOCTYPE html&gt; <br>
+    &lt;html&gt;
+    <div class="ps-4">
+
+        &lt;head&gt;
+        <div class="ps-4">
+
+            &lt;title&gt;Judul Halaman&lt;/title&gt;
+        </div>
+        &lt;/head&gt;<br>
+        &lt;body&gt;
+        <div class="ps-4">
+
+            &lt;h1&gt;Hello World&lt;/h1&gt;
+        </div>
+        &lt;/body&gt;
+    </div>
+    &lt;/html&gt;
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,7 +66,15 @@
             <div class="d-none d-md-grid align-items-center ms-5">
                 <div class="kartu">
                     <h6>CSS Example</h6>
-                    <div class="code"></div>
+                    <div class="code">
+                        <span class="t-red">h1</span> {
+            <div class="ps-4">
+
+                <span class="t-red">color</span>: <span class="t-green">red</span>;<br>
+                <span class="t-red">text-align</span>: <span class="t-green">center</span>;
+            </div>
+        }
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,7 +93,11 @@
             <div class="d-none d-md-grid align-items-center ms-5">
                 <div class="kartu">
                     <h6>PHP Example</h6>
-                    <div class="code"></div>
+                    <div class="code">
+                        &lt;?php <br>
+                        echo "Hello World!";<br>
+        ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,7 +116,18 @@
             <div class="d-none d-md-grid align-items-center ms-5">
                 <div class="kartu">
                     <h6>JavaScript Example</h6>
-                    <div class="code"></div>
+                    <div class="code">
+                        &lt;button <span class="t-red">onclick</span>="<span class="t-green">myFunction()</span>"&gt;Click Me!&lt;/button&gt;<br><br>
+                        &lt;script&gt;<br>
+                        function <span class="t-blue">myFunction()</span> { 
+                            <div class="ps-4">
+                                let x = document.getElementById("demo");<br>
+                                x.style.fontSize = "25px";<br>
+                                x.style.color = "red"; 
+                            </div>
+                        } <br>
+                        &lt;/script&gt;
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,10 +146,22 @@
             <div class="d-none d-md-grid align-items-center ms-5">
                 <div class="kartu">
                     <h6>SQL Example</h6>
-                    <div class="code"></div>
+                    <div class="code">
+                        SELECT * FROM siswa <br> 
+                        WHERE kelas LIKE "X RPL 1";
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+	<div class="vh-100 container">
+	   <h1 class="fw-bolder display-3 mt-5">Alur Belajar</h1>
+       <h3 class="fw-bolder display-5">Raih Mimpimu</h3>
+       <div>
+           <div class="kartu" style="background-color: red">
+                    
+            </div>
+       </div>
+	</div>
     @include('layouts.footer')
 @endsection
