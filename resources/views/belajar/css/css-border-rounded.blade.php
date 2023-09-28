@@ -7,7 +7,7 @@
     <h1>CSS Rounded Border</h1>
     <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/css/border-shorthand') }}" class="btn btn-success">Sebelumnya</a>
-        <a href="{{ url('/belajar/css') }}" class="btn btn-success">Home</a>
+        <a href="{{ url('/belajar/css') }}" class="btn btn-success">Selanjutnya</a>
     </div>
         <hr>
     <p>Kita juga bisa membuat ujung border melengkubg dengan properti <span class="mark">border-radius</span> <br><br>
@@ -26,7 +26,7 @@
     <p style="border: 1px solid red;border-radius:10px">&nbsp;</p>
     <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/css/border-shorthand') }}" class="btn btn-success">Sebelumnya</a>
-        <a href="{{ url('/belajar/css') }}" class="btn btn-success">Home</a>
+        <a href="{{ url('/belajar/css') }}" class="btn btn-success">Selanjutnya</a>
     </div>
 </section>
 @endsection

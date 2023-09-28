@@ -7,7 +7,7 @@
     <h1>HTML Ordered List</h1>
     <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/html/unordered-list') }}" class="btn btn-success">Sebelumnya</a>
-        <a href="{{ url('/belajar/html/other-list') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/html/form') }}" class="btn btn-success">Selanjutnya</a>
     </div>
     <hr>
     <h3 class="my-3">Ordered List</h3>
@@ -53,7 +53,7 @@
     </div>
     <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/html/unordered-list') }}" class="btn btn-success">Sebelumnya</a>
-        <a href="{{ url('/belajar/html/other-list') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/html/form') }}" class="btn btn-success">Selanjutnya</a>
     </div>
 </section>
 @endsection
