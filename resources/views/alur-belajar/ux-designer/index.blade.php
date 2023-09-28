@@ -5,4 +5,5 @@
 <div class="container">
     <img src="{{ asset('img/ux.png') }}" alt="" width="100%">
 </div>
+@include('layouts.footer')
 @endsection
