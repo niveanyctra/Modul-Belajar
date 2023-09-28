@@ -682,10 +682,36 @@ hr{
     .contohmq2{
         background-color: tomato;
     }
-  .sidebar-mentor{
-    position:fixed;
-    /* margin-bottom: max(500px); */
-  }
+
+.wrapper-kelas{
+    display: flex;
+    justify-content: space-between;
+}
+.header-kelas{
+    color: #34364a;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+.main-kelas{
+    width: 75%;
+}
+.sidebar-kelas{
+    width: 25%;
+    height: 25vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 200px;
+}
+.sidebar-kelas label, .sidebar-kelas input{
+    cursor: pointer;
+}
+.sidebar-kelas label{
+    color: #34364a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
   .card-mentor .card img{
     height: 14rem;
     object-fit: cover;
@@ -739,21 +765,18 @@ hr{
 }
 /* End Mentor */
   @media all and (max-width: 1024px) {
-    .sidebar-mentor {
-        display: none;
-    }
-    .sidebar.toggled {
-      left: 0;
-      margin-top: 3px;
-      z-index: 10;
-      box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.8);
-    }
-    .sidebar.toggled + .main {
-      overflow: hidden;
-    }
+      .sidebar.toggled {
+          left: 0;
+          margin-top: 3px;
+          z-index: 10;
+          box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.8);
+        }
+        .sidebar.toggled + .main {
+            overflow: hidden;
+        }
 
-    .sidebar {
-      left: -260px;
+        .sidebar {
+            left: -260px;
     }
 
     .main {
@@ -769,6 +792,12 @@ hr{
     }
     .sub-nav {
       margin-left: 60px;
+    }
+    .sidebar-kelas {
+        display: none;
+    }
+    .main-kelas{
+        width: 100%;
     }
 }
 @media screen and (max-width:720px){

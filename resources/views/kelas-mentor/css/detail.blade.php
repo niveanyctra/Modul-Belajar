@@ -1,25 +1,51 @@
 @extends('layouts.main')
 @section('content')
-<div class="text-center">
-    <h1>{{$posts->title}}</h1>
-    <p>Release date {{$posts->created_at->format('F Y')}}   Last updated {{$posts->updated_at->format('F Y')}}</p>
-    <iframe  style="max-width: calc(100% - 30px); width:560px;max-height:250px; height:315px" src="https://www.youtube.com/embed/{{$posts->id_yt}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <br>
-    <button type="button" onclick="document.getElementById('about').style.display='block',document.getElementById('tool').style.display='none'">About</button>
-    <button type="button" onclick="document.getElementById('about').style.display='none',document.getElementById('tool').style.display='block'">Tool</button>
+<div class="container">
+    <div class="text-center">
+        <h1 class="my-4 header-kelas">
+            Kelas Online
+            <br>
+            {{$posts->title}}
+        </h1>
+        <div class="mb-5 row d-flex flex-row justify-content-center">
+            <div class="col-5 px-4 d-flex flex-row align-items-center gap-2 justify-content-end">
+                <img src="{{ asset('img/global.svg') }}" alt="icon global" height="24px">
+                <h6 class="fw-normal">
+                    Release date {{$posts->created_at->format('F Y')}}
+                </h6>
+            </div>
+            <div class="col-5 px-4 d-flex flex-row align-items-center gap-2">
+                <img src="{{ asset('img/convert3dcube.svg') }}" alt="icon convert" height="24px">
+                <h6 class="fw-normal">
+                    Last updated {{$posts->updated_at->format('F Y')}}
+                </h6>
+            </div>
+        </div>
+        <iframe class="mt-3 rounded-4" style="max-width: calc(100% - 30px); width:1000px; height: max-content; min-height:500px" src="https://www.youtube.com/embed/{{$posts->id_yt}}?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="my-3 mt-5 d-flex justify-content-start gap-4">
+        <button class="btn btn-secondary" type="button" onclick="document.getElementById('about').style.display='block',document.getElementById('tool').style.display='none'">About</button>
+        <button class="btn btn-secondary" type="button" onclick="document.getElementById('about').style.display='none',document.getElementById('tool').style.display='block'">Tool</button>
+    </div>
     <div id="about">
-        <h4>Tingkatkan Skillmu</h4>
-        {{$posts->about}} <br>
-        {{ $posts->about2 }}
+        <h3 class="fw-bolder my-4">Tingkatkan Skillmu</h3>
+        <article class="text-justify mt-3">
+            {!! $posts->about !!}
+        </article>
     </div>
     @include('layouts.kelas-mentor.tool')
-
-    <h5>Belajar dari mentor</h5>
-    <div>
-        <a href="{{url('/mentor/'.$posts->users->username)}}" class="fw-light font-dark">
-            <h6>{{$posts->users->name}}</h6>
+    <div >
+        <h3 class="my-3 fw-bolder mt-5">Belajar dari mentor</h3>
+        <a href="{{url('/mentor/'.$posts->users->username)}}" style="display: block">
+        <div class="card border-0 ps-2 pe-5" style="box-shadow: 2px 2px 4px; width: max-content;">
+            <div class="card-body">
+                <a href="{{url('/mentor/'.$posts->users->username)}}" >
+                    <h4 class="fw-bolder text-dark">{{$posts->users->name}}</h4>
+                </a>
+                <p>&commat;{{ $posts->users->username }}</p>
+            </div>
+        </div>
         </a>
-        <p>&commat;{{ $posts->users->username }}</p>
     </div>
 </div>
 @include('layouts.footer')
