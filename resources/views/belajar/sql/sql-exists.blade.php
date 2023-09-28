@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Exists</h1>
-    <a href="{{ url('/belajar/sql/having') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/comment') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/having') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/comment') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Operator <span class="mark">EXIST</span> digunakan untuk menguji keberadaan record apa pun di subquery. <br><br>
@@ -72,8 +74,10 @@
         <tr>
             <td>Bandung</td>
         </tr>
-    </table><br>
+    </table>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql/having') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/comment') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/comment') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

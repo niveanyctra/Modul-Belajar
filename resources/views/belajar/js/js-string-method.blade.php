@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript String Method</h1>
-    <a href="{{ url('/belajar/js/event') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/if-else') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/event') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/if-else') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>JavaScript memiliki fungsi untuk memanipulasi string. berikut ini adalah daftar fungsi dan deskripsinya :</p>
     <table class="table table-striped">
@@ -83,7 +85,9 @@
             <td>Fungsi ini akan mengubah string menjadi array dengan menentukan penisahan dengan parameter yang diberikan</td>
         </tr>
     </table>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/js/event') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/if-else') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/js/if-else') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

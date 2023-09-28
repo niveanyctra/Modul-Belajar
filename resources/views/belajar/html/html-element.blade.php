@@ -5,50 +5,52 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Element</h1>
-    <a href="{{ url('/belajar/html/dasar') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/atribut') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/dasar') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/atribut') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <h3 class="mt-3">Elemen HTML?</h3>
-<p>Elemen HTML terdiri dari tag awal,konten dan penutup tag:</p>
-<div class="code">
-    <span class="t-red">&lt;namatag&gt;</span>Konten<span class="t-red">&lt;/namatag&gt;</span>
-</div>
-<p><strong>Elemen</strong> HTML apapun yang memiliki tag awal hingga tag akhir:</p>
-<table class="table table-striped table-border text-center" style="max-width: 700px">
-    <thead>
-        <tr>
-            <th>Tag Awal</th>
-            <th>Konten</th>
-            <th>Tag Akhir</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>&lt;h1&gt;</td>
-            <td>Ini tag Heading</td>
-            <td>&lt;/h1&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;p&gt;</td>
-            <td>Ini tag Paragraf</td>
-            <td>&lt;/p&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;br&gt;</td>
-            <td><i>kosong</i></td>
-            <td><i>kosong</i></td>
-        </tr>
-    </tbody>
-</table>
+    <p>Elemen HTML terdiri dari tag awal,konten dan penutup tag:</p>
+    <div class="code">
+        <span class="t-red">&lt;namatag&gt;</span>Konten<span class="t-red">&lt;/namatag&gt;</span>
+    </div>
+    <p><strong>Elemen</strong> HTML apapun yang memiliki tag awal hingga tag akhir:</p>
+    <table class="table table-striped table-border text-center" style="max-width: 700px">
+        <thead>
+            <tr>
+                <th>Tag Awal</th>
+                <th>Konten</th>
+                <th>Tag Akhir</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;h1&gt;</td>
+                <td>Ini tag Heading</td>
+                <td>&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>Ini tag Paragraf</td>
+                <td>&lt;/p&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;br&gt;</td>
+                <td><i>kosong</i></td>
+                <td><i>kosong</i></td>
+            </tr>
+        </tbody>
+    </table>
 
-<div class="note">
+    <div class="note">
 
-    <p><strong>Note : </strong>Beberapa elemen HTML tidak memiliki konten ( seperti elemen &lt;br&gt; ).
-    Elemen ini disebut <i>empty element</i>
-    </p>
-</div>
-<h3 class="mt-3">Elemen HTML Bersarang</h3>
-<p>Elemen HTML dapat bersarang atau biasa disebut <i>Nested Element</i> yang artinya elemen HTML dapat berada di dalam elemen lain</p>
-<h3 class="mt-3">Contoh</h3>
+        <p><strong>Note : </strong>Beberapa elemen HTML tidak memiliki konten ( seperti elemen &lt;br&gt; ).
+        Elemen ini disebut <i>empty element</i>
+        </p>
+    </div>
+    <h3 class="mt-3">Elemen HTML Bersarang</h3>
+    <p>Elemen HTML dapat bersarang atau biasa disebut <i>Nested Element</i> yang artinya elemen HTML dapat berada di dalam elemen lain</p>
+    <h3 class="mt-3">Contoh</h3>
     <div class="code">
 
     &lt;!DOCTYPE html&gt;<br>
@@ -210,7 +212,9 @@
             </tr>
         </tbody>
     </table>
-    <a href="{{ url('/belajar/html/dasar') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/atribut') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/dasar') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/atribut') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

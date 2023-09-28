@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Border</h1>
-    <a href="{{ url('/belajar/css/background-shorthand') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/border-width') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/background-shorthand') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/border-width') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Border menentukan garis luar yang ditampilkan dari sebuah elemen</p>
     <span class="border border-dark p-2">Contoh border</span>
@@ -28,8 +30,10 @@
         <li><span class="mark">none</span> - Untuk elemen tanpa border</li>
         <li><span class="mark">hidden</span> - Untuk membuat border tidak terlihat</li>
     </ul>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/css/background-shorthand') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/border-width') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/css/border-width') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

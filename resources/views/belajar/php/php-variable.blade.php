@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.php')
 <section class="main">
     <h1>PHP Variable</h1>
-    <a href="{{ url('/belajar/php/comment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/echo-print') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/comment') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/echo-print') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Kita bisa membuat variabel dalam PHP dengan tanda <span class="mark">$</span>. Variabel biasanya digunakan untuk menyimpan informasi. Adapun beberapa peraturan dalam penulisan variabel sebagai berikut :
@@ -30,8 +32,10 @@
         echo "Halo, namaku" .$nama. "; <br>
         ?>
 
-    </div> <br>
-    <a href="{{ url('/belajar/php/comment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/echo-print') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/comment') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/echo-print') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

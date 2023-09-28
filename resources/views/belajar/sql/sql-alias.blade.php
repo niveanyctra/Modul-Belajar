@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Alias</h1>
-    <a href="{{ url('/belajar/sql/count-sum-avg') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/join') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/count-sum-avg') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/join') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Pada SQL kita bisa mengubah nama kolom yang akan ditampilkan di result-set dengan sintaks <span class="mark">ALIAS</span>/<span class="mark">AS</span></p>
     <hr>
@@ -39,8 +41,9 @@
     <div class="note">
         <strong>Note :</strong> Sintaks <span class="mark">ALIAS</span>/<span class="mark">AS</span> <strong>HANYA</strong> mengubah nama kolom pada result-set dan tidak akan mempengaruhi tabel dalam database.
     </div>
-    <br>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql/count-sum-avg') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/join') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/join') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

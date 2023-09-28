@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Border Color</h1>
-    <a href="{{ url('/belajar/css/border-width') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/border-side') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/border-width') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/border-side') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Kita bisa menentukan warna border dengan properti <span class="mark">border-color</span> <br><br>
         Value dari border-color adalah satuan warna seperti HEX, RGB, RGBA dan HSL.
@@ -20,8 +22,10 @@
         } <br>
     </div><br>
     <p>Pada potongan kode diatas kita memiliki elemen &lt;p&gt; yang akan diatur warna bordernya dengan warna merah</p>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/css/border-width') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/border-side') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/css/border-side') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

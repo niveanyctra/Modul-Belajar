@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript If Else</h1>
-    <a href="{{ url('/belajar/js/string-method') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/switch') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/string-method') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/switch') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         If else merupakan pernyataan kondisional berdasarkan parameter yang diberikan yang akan memberikan tindakan berbeda tergantung kondisi
@@ -33,7 +35,7 @@
     </p>
     <h4 class="my-3">Contoh</h4>
     <div class="code">
-                if(kelas = "X RPL 1"){
+        if(kelas = "X RPL 1"){
             <div class="ps-2">
                 teks = "Halo murid SMKN 1 Cirebon kelas X RPL 1";
             </div>
@@ -63,7 +65,7 @@
             </div>
         }else if(kelas = "XII RPL 1"){
             <div class="ps-2">
-               teks = "Halo murid SMKN 1 Cirebon kelas XII RPL 1";
+                teks = "Halo murid SMKN 1 Cirebon kelas XII RPL 1";
             </div>
         }else{
             <div class="ps-2">
@@ -74,5 +76,9 @@
     <p>
         Pada pernyataan diatas teks yang dikembalikan akan berbeda tergantung kondisi yang terpenuhi dan jika tak satupun kondisi terpenuhi, maka akan mengembalikan value pada pernyataan else
     </p>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/string-method') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/switch') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

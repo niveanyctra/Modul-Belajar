@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Table Size</h1>
-    <a href="{{ url('/belajar/html/table-border') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/table-padding-spacing') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/table-border') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/table-padding-spacing') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Kamu bisa mengatur ukuran sel tabel dengan menambah property <span class="mark">width</span> dan <span class="mark">height</span> pada elemen tabel yang kamu mau</p>
     <br>
@@ -51,7 +53,9 @@
     </table>
     <br>
     <p>Pada contoh diatas kolom nama memiliki lebar yang berbeda dengan kolom lain dan baris ke dua juga memiliki yang berbeda dari baris diatasnya</p>
-    <a href="{{ url('/belajar/html/table-border') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/table-padding-spacing') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/table-border') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/table-padding-spacing') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

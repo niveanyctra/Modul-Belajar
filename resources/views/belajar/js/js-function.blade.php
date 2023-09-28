@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Function</h1>
-    <a href="{{ url('/belajar/js/data-type') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/object') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/data-type') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/object') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <div class="info">
         Function dalam JavaScript digunakan untuk mengeksekusi kode yang dimasukan kedalam fungsi <br>
@@ -32,7 +34,9 @@
     <p>
         Pada potongan kode diatas kita membuat fungsi bernama fungsiKali yang akan mengembalikan nilai dari parameter a dan b yang dikali dan dipanggil oleh variabel x yang memberi parameter a dengan nilai 5 dan parameter b dengan nilai 2.
     </p>
-    <a href="{{ url('/belajar/js/data-type') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/object') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/data-type') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/object') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

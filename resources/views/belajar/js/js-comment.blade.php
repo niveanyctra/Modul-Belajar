@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Komentar</h1>
-    <a href="{{ url('/belajar/js/syntax') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/variable') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/syntax') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/variable') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Komentar JavaScript dapat digunakan untuk menjelaskan kode JavaScript, dan membuatnya lebih mudah dibaca. <br><br>
@@ -47,7 +49,9 @@
         document.getElementById("myH").innerHTML = "My First Page"; <br>
         document.getElementById("myP").innerHTML = "My first paragraph.";
     </div>
-    <a href="{{ url('/belajar/js/syntax') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/variable') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/syntax') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/variable') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

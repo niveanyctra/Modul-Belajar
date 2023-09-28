@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Form Input Tipe</h1>
-    <a href="{{ url('/belajar/html/form-atribut') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/input-atribut') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/form-atribut') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/input-atribut') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Berikut ini merupakan tipe dari tag <span class="mark">&lt;input&gt;</span> :</p>
     <table class="table table-striped">
@@ -102,8 +104,9 @@
     <div class="note">
         <strong>Note :</strong> default tipe input adalah text
     </div>
-    <br>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/html/form-atribut') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/input-atribut') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/html/input-atribut') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

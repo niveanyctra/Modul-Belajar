@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Form Input Atribut</h1>
-    <a href="{{ url('/belajar/html/input-type') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/input-type') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">Daftar Atribut pada tag <span class="mark">&lt;input&gt;</span></h3>
     <table class="table table-striped">
@@ -78,7 +80,9 @@
         <input type="text" name="kelas" id="kelas" required placeholder="Masukkan kelas"><br>
     </form><br>
     <p>Dalam form tersebut terdapat atribut <span class="mark">required</span> yang mengharuskan user untuk mengisi field input dan juga atribut <span class="mark">placeholder</span> yang memberikan text bantuan dalam field input</p>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/html/input-type') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/html') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Loop</h1>
-    <a href="{{ url('/belajar/js/switch') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/switch') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Loop berguna untuk menjalankan kode terus menerus dengan value berbeda tiap kali menjalankan kode. <br>
@@ -33,13 +35,15 @@
         text += siswa[4] + "&lt;br&gt;";<br>
         text += siswa[5] + "&lt;br&gt;";
     </div>
-<p>Kita bisa mempersingkat penulisan dengan cara :</p>
-<div class="code">
-    for (let i = 0; i < siswa.length; i++) { <br>
-        text += siswa[i] + "&lt;br&gt;";
-}
-</div>
-    <a href="{{ url('/belajar/js/switch') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js') }}" class="btn btn-success">Selanjutnya</a>
+    <p>Kita bisa mempersingkat penulisan dengan cara :</p>
+    <div class="code">
+        for (let i = 0; i < siswa.length; i++) { <br>
+            text += siswa[i] + "&lt;br&gt;";
+    }
+    </div>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/switch') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

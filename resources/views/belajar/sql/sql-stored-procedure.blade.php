@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Stored Procedure</h1>
-    <a href="{{ url('/belajar/sql/comment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/db-create-db') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/comment') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/db-create-db') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">
         Apa itu stored procedure?
@@ -35,8 +37,10 @@
     <p>Dengan prosedur tersebut kita bisa menjalankan sintaks hanya dengan memanggil prosedur dengan :</p>
     <div class="code">
         EXEC SiswaMenurun;
-    </div><br>
-    <a href="{{ url('/belajar/sql/comment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/db-create-db') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/comment') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/db-create-db') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

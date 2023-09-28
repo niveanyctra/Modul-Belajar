@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Switch</h1>
-    <a href="{{ url('/belajar/js/if-else') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/loop') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/if-else') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/loop') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Pernyataan <span class="mark">switch</span> digunakan untuk melakukan aksi yang berbeda tergantung kondisi yang berbeda.
@@ -86,7 +88,9 @@
     <div class="note">
         <strong>Note :</strong> Pastikan memberikan <span class="mark">break</span> pada akhir blok kode. Bila tidak, blok kode berikutnya akan tereksekusi walaupun kondisinya tidak memenuhi
     </div>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/js/if-else') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/loop') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/js/loop') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

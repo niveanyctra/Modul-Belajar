@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Id</h1>
-    <a href="{{ url('/belajar/html/class') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/table') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/class') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/table') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Atribut <span class="mark">id</span> dalam HTML digunakan untuk menentukan id unik untuk elemen HTML <br><br>
@@ -71,7 +73,9 @@ Cirebon
         Pada contoh diatas kita memiliki link yang menuju ke <span class="mark">"#bookmark"</span> yang jika diklik akan terarah ke bagian bookmark di halaman yang sama.
 
     </p>
-    <a href="{{ url('/belajar/html/class') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/table') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/class') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/table') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

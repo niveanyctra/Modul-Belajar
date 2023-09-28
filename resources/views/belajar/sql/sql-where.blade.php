@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Where</h1>
-    <a href="{{ url('/belajar/sql/select') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/order-by') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/select') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/order-by') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">Klausa WHERE SQL</h3>
     <p>
@@ -41,8 +43,9 @@
 
         </tbody>
     </table>
-    <br>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql/select') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/order-by') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/order-by') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

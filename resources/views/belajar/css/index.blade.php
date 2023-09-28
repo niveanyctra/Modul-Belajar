@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Pengenalan</h1>
-    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
-    <a href="{{ url('/belajar/css/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/') }}" class="btn btn-success">Home</a>
+        <a href="{{ url('/belajar/css/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">
         Apa itu CSS?
@@ -35,8 +37,10 @@
     </div>
     <br>
     <p>CSS umumnya tersimpan secara terpisah dari dokumen HTML sehingga bisa membuat pekerjaan menjadi efisien karena kita hanya mengubah satu file untuk desain keseluruhan</p>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/') }}" class="btn btn-success">Home</a>
-    <a href="{{ url('/belajar/css/syntax') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/css/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

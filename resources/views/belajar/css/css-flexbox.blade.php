@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Fleksibel Boks</h1>
-    <a href="{{ url('/belajar/css/dimensi') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/grid') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/dimensi') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/grid') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">
         Fleksibel Boks
@@ -43,8 +45,10 @@
     <p>
         <span class="mark">flex-direction</span> mendefinisikan kemana arah flex untuk penumpukan. Anda bisa mengisi value dengan <span class="mark">row</span> jika ingin secara horizontal dan <span class="mark">column</span> jika ingin secara vertikal
     </p>
-    <a href="{{ url('/belajar/css/dimensi') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/grid') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/dimensi') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/grid') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

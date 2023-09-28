@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Event</h1>
-    <a href="{{ url('/belajar/js/object') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/string-method') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/object') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/string-method') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Event adalah sesiatu yang akan terjadi pada elemen HTML ketika kita melakukan sesuatu pada elemen tersebut.
@@ -51,7 +53,9 @@
             <td>Ketika browser selesai memuat halaman HTML</td>
         </tr>
     </table>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/js/object') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/string-method') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/js/string-method') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

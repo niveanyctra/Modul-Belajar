@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML List</h1>
-    <a href="{{ url('/belajar/html/table-colspan-rowspan') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/unordered-list') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/table-colspan-rowspan') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/unordered-list') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>List memungkinkan seorang web developer untuk menampilkan data secara urut menggunakan list</p>
     <hr>
@@ -107,8 +109,9 @@
     <div class="note">
         <strong>Note :</strong> tag <span class="mark">&lt;li&gt;</span> dapat diisi dengan elemen HTML lain seperti gambar,link,dll.
     </div>
-    <br>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/html/table-colspan-rowspan') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/unordered-list') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/html/unordered-list') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

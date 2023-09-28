@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.php')
 <section class="main">
     <h1>PHP Database Update Data</h1>
-    <a href="{{ url('/belajar/php/database-create') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/database-delete') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/database-create') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/database-delete') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Kita dapat mengubah data dalam database MySQL melalui sintaks PHP dengan cara sebagai berikut :</p>
     <div class="code">
@@ -26,7 +28,9 @@
         ?>
     </div>
     <p>Pada potongan kode diatas kita akan mengubah data dalam database dan akan melakukan pengecekan dengan klausa <span class="mark">if</span> dengan kondisi berbeda</p>
-    <a href="{{ url('/belajar/php/database-create') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/database-delete') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/database-create') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/database-delete') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

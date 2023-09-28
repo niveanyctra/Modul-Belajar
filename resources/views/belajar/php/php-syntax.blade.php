@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.php')
 <section class="main">
     <h1>PHP Syntax</h1>
-    <a href="{{ url('/belajar/php') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/comment') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/comment') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Sintaks PHP dijalankan dalam server dan hasil HTML nya akan ditampilkan dalam browser</p>
     <hr>
@@ -29,7 +31,9 @@
     <div class="note">
         <strong>Note :</strong><span>Semua pernyataan PHP harus diakhiri dengan titik koma (;)!</span>
     </div>
-    <a href="{{ url('/belajar/php') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/comment') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/comment') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

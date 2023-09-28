@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Primary Key</h1>
-    <a href="{{ url('/belajar/sql/db-constraint') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/db-fk') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/db-constraint') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/db-fk') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Constraint <span class="mark">PRIMARY KEY</span> mengidentifikasikan setiap record secara unik <br><br>
@@ -23,8 +25,10 @@
             kelas varchar(255), <br>
             PRIMARY KEY (NIS) <br>
         );
-    </div><br>
+    </div>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql/db-constraint') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/db-fk') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/db-fk') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

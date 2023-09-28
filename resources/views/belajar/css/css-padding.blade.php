@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Padding</h1>
-    <a href="{{ url('/belajar/css/margin') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/dimensi') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/margin') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/dimensi') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Padding digunakan untuk mengatur jarak antar elemen didalam border. Value dari padding antara lain 'auto', 'jarak'-jarak spesifik menggunakan satuan unit, '%'-presentase berdasarkan container. Value negatif <strong>TIDAK</strong> diperbolehkan dalam margin</p>
     <hr>
@@ -27,8 +29,10 @@
         <li><span class="mark">padding-left</span></li>
         <li><span class="mark">padding-right</span></li>
     </ul>
-    <a href="{{ url('/belajar/css/margin') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/dimensi') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/margin') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/dimensi') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

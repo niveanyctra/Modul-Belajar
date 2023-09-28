@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Table</h1>
-    <a href="{{ url('/belajar/html/id') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/table-border') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/id') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/table-border') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Tabel memungkinkan seorang web develper untuk mengatur data menjadi baris dan kolom.
@@ -134,7 +136,9 @@
             <td>Untuk mengelompokan isi footer dalam sebuah tabel</td>
         </tr>
     </table>
-    <a href="{{ url('/belajar/html/id') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/table-border') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/id') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/table-border') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

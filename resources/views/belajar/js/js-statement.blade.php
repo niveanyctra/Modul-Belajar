@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Statement</h1>
-    <a href="{{ url('/belajar/js/output') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/output') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">
         JavaScript Program
@@ -44,7 +46,7 @@
         let a, b, c;  <br>
         a = 5;        <br>
         b = 6;        <br>
-        c = a + b; 
+        c = a + b;
     </div><br>
     <p>
         Jika dipisahkan dengan titik koma, beberapa pernyataan pada satu baris diperbolehkan:
@@ -144,7 +146,9 @@
             <td>Menerapkan penanganan kesalahan pada blok pernyataan</td>
         </tr>
     </table>
-    <a href="{{ url('/belajar/js/output') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/output') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

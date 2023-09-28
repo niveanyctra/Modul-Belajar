@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Object</h1>
-    <a href="{{ url('/belajar/js/function') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/event') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/function') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/event') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Object merupakan variabel yang memiliki beberapa property dan method yang berbeda-beda
@@ -39,7 +41,9 @@
     <div class="code">
         namaObject["namaProperti"]
     </div>
-    <a href="{{ url('/belajar/js/function') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/event') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/function') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/event') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

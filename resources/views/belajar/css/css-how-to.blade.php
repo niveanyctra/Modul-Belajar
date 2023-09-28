@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Cara Menggunakan</h1>
-    <a href="{{ url('/belajar/css/selector') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/comment') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/selector') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/comment') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
         <hr>
     <h3 class="my-3">
         Cara Menggunakan CSS
@@ -63,9 +65,11 @@
     <p>
         Inline CSS memiliki prioritas tertinggi untuk dijalankan oleh halaman web. Sedangkan External CSS dan Internal CSS memiliki prioritas tergantung peletakannya. Jika External CSS diletakan diatas Internal CSS, maka prioritas kedudukan Internal CSS lebih tinggi, begitupun sebaliknya.
     </p>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/css/selector') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/comment') }}" class="btn btn-success">Selanjutnya</a>
-    
+        <a href="{{ url('/belajar/css/comment') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
+
 </section>
 @endsection
 

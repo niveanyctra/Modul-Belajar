@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.php')
 <section class="main">
     <h1>PHP String</h1>
-    <a href="{{ url('/belajar/php/data-type') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/number') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/data-type') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/number') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>String adalah rangkaian karakter dalam PHP</p>
     <p>Pada bagian ini kita akan mengenal fungsi yang umum digunakan untuk memanipulasi string</p>
@@ -50,7 +52,9 @@
         echo str_replace("World","Arip","Hello World!"); <span class="t-green">// outputnya adalah Hello Arip!</span> <br>
         ?>
     </div>
-    <a href="{{ url('/belajar/php/data-type') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/number') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/data-type') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/number') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

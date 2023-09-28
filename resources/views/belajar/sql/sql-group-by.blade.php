@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Group By</h1>
-    <a href="{{ url('/belajar/sql/join') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/having') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/join') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/having') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Sintaks <span class="mark">GROUP BY</span> digunakan untuk mengelompokan kolom yang memiliki nilai yang sama.</p>
     <hr>
@@ -73,8 +75,9 @@
             <td>Bandung</td>
         </tr>
     </table>
-    <br>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql/join') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/having') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/having') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

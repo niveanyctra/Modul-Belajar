@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL View</h1>
-    <a href="{{ url('/belajar/sql/db-ai') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/db-ai') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         View dalam SQL adalah data virtual berdasarkan result-set. Perbedaan view dan stored procedure adalah view akan menyimpan dalam bentuk tabel result-set, sedangkan stored procedure akan menyimpan dalam bentuk sintaks.
@@ -37,8 +39,9 @@
     <div class="code">
         DROP VIEW XIIRPL1;
     </div>
-
-    <a href="{{ url('/belajar/sql/db-ai') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/db-ai') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

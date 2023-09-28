@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Having</h1>
-    <a href="{{ url('/belajar/sql/group-by') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/exists') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/group-by') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/exists') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Sintaks <span class="mark">HAVING</span> ditambahkan ke SQL karena klausa <span class="mark">WHERE</span> tidak bisa digunakan dengan fungsi pembanding</p>
     <h4 class="my-3">Sintaks</h4>
@@ -70,8 +72,9 @@
             <td>Cirebon</td>
         </tr>
     </table>
-    <br>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql/group-by') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/exists') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/exists') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

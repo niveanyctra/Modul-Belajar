@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Insert</h1>
-    <a href="{{ url('/belajar/sql/operator') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/update') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/operator') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/update') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Kita bisa menambah record dalam database dengan sintaks <span class="mark">INSERT INTO</span>.<br><br>
@@ -24,13 +26,15 @@
 
     </p>
     <p>Kita juga bisa menambah beberapa record dalam satu sintaks <span class="mark">INSERT INTO</span> dengan cara berikut :</p>
-        <div class="code">
-            INSERT INTO siswa <br>
-            VALUES ('Udin','X RPL 1','Laki-laki'), <br>
-            VALUES ('Messi','X RPL 1','Laki-laki'), <br>
-            VALUES ('Ronaldo','X RPL 1','Laki-laki');
-        </div><br>
-    <a href="{{ url('/belajar/sql/operator') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/update') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="code">
+        INSERT INTO siswa <br>
+        VALUES ('Udin','X RPL 1','Laki-laki'), <br>
+        VALUES ('Messi','X RPL 1','Laki-laki'), <br>
+        VALUES ('Ronaldo','X RPL 1','Laki-laki');
+    </div>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/operator') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/update') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

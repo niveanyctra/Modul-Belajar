@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Margin</h1>
-    <a href="{{ url('/belajar/css/color') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/padding') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/color') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/padding') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Margin digunakan untuk mengatur jarak antar elemen diluar border. Value dari margin antara lain 'auto', 'jarak'-jarak spesifik menggunakan satuan unit, '%'-presentase berdasarkan container. Value negatif diperbolehkan dalam margin</p>
     <hr>
@@ -31,8 +33,10 @@
         <li><mark>margin-left</mark></li>
         <li><mark>margin-right</mark></li>
     </ul>
-    <a href="{{ url('/belajar/css/color') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/padding') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/color') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/padding') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Pengenalan</h1>
-    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
-    <a href="{{ url('/belajar/sql/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/') }}" class="btn btn-success">Home</a>
+        <a href="{{ url('/belajar/sql/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         SQL adalah bahasa yang digunakan untuk menyimpan, memanipulasi dan mengambil data dari dalam database <br><br>
@@ -19,7 +21,9 @@
         SELECT * FROM siswa;
     </div>
     <p>Pada contoh diatas kita akan mengambil semua data dari tabel siswa</p>
-    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
-    <a href="{{ url('/belajar/sql/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/') }}" class="btn btn-success">Home</a>
+        <a href="{{ url('/belajar/sql/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

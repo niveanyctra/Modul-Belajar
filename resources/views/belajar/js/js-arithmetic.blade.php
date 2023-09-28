@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Aritmatika</h1>
-    <a href="{{ url('/belajar/js/operator') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/assignment') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/operator') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/assignment') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">Operator aritmatika</h3>
     <p>Operator aritmatika digunakan untuk melakukan perhitungan pada bilangan</p>
@@ -57,9 +59,10 @@
         <span class="t-green">// Maka variabel z memiliki nilai dari x + y</span>
 
     </div>
-<br>
-    <a href="{{ url('/belajar/js/operator') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/assignment') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/operator') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/assignment') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 
 </section>
 @endsection
