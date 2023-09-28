@@ -18,7 +18,7 @@
     <div class="d-flex justify-content-center">
         <div class="d-flex flex-column text-center align-items-center justify-content-center">
             <h1 class="fw-bold display-1 p-3">HTML</h1>
-            <h6 class="fw-bold p-2">Bahasa untuk memuat halaman web</h6>
+            <h6 class="fw-bold p-2">Bahasa untuk membuat halaman web</h6>
             <div class="buttons">
                 <a href="{{ url('/belajar/html') }}" class="button-1">Tutorial</a>
                 <a href="{{ url('/latihan/html/basic') }}" class="button-2">Latihan</a>
@@ -53,7 +53,7 @@
     <div class="d-flex justify-content-center">
         <div class="d-flex flex-column text-center align-items-center justify-content-center">
             <h1 class="fw-bold display-1 p-3">CSS</h1>
-            <h6 class="fw-bold p-2">Bahasa untuk memuat halaman web</h6>
+            <h6 class="fw-bold p-2">Bahasa untuk mempercantik halaman web</h6>
             <div class="buttons">
                 <a href="{{ url('/belajar/css') }}" class="button-1">Tutorial</a>
                 <a href="{{ url('/latihan/css/basic') }}" class="button-2">Latihan</a>
@@ -80,7 +80,7 @@
     <div class="d-flex justify-content-center">
         <div class="d-flex flex-column text-center align-items-center justify-content-center">
             <h1 class="fw-bold display-1 p-3">PHP</h1>
-            <h6 class="fw-bold p-2">Bahasa untuk memuat halaman web</h6>
+            <h6 class="fw-bold p-2">Bahasa pemrograman server web</h6>
             <div class="buttons">
                 <a href="{{ url('/belajar/php') }}" class="button-1">Tutorial</a>
                 <a href="{{ url('/latihan/php/basic') }}" class="button-2">Latihan</a>
@@ -103,7 +103,7 @@
     <div class="d-flex justify-content-center">
         <div class="d-flex flex-column text-center align-items-center justify-content-center">
             <h1 class="fw-bold display-3 p-3">JavaScript</h1>
-            <h6 class="fw-bold p-2">Bahasa untuk memuat halaman web</h6>
+            <h6 class="fw-bold p-2">Bahasa pemrograman untuk halaman web</h6>
             <div class="buttons">
                 <a href="{{ url('/belajar/js') }}" class="button-1">Tutorial</a>
                 <a href="{{ url('/latihan/js/basic') }}" class="button-2 bg-white text-dark">Latihan</a>
@@ -133,7 +133,7 @@
     <div class="d-flex justify-content-center">
         <div class="d-flex flex-column text-center align-items-center justify-content-center">
             <h1 class="fw-bold display-1 p-3">SQL</h1>
-            <h6 class="fw-bold p-2">Bahasa untuk memuat halaman web</h6>
+            <h6 class="fw-bold p-2">Bahasa untuk menggunakan Database</h6>
             <div class="buttons">
                 <a href="{{ url('/belajar/sql') }}" class="button-1 bg-white text-dark">Tutorial</a>
                 <a href="{{ url('/latihan/sql/basic') }}" class="button-2">Latihan</a>
@@ -151,12 +151,12 @@
         </div>
     </div>
 </div>
-<div class="container mt-4 mb-5">
+<div class="container mt-4 py-3">
     <div class="mb-3">
         <h1 class="fw-bolder display-5 mt-5">Alur Belajar</h1>
         <h2 class="fw-bold">Raih Mimpimu</h2>
     </div>
-    <div class="d-flex gap-4 justify-content-center mt-3">
+    <div class="d-flex gap-4 justify-content-center pt-3">
         <div class="kartu alur" style="background-color: white">
             <div class="gambar">
                 Ini ambar
@@ -173,7 +173,7 @@
                 Ini ambar
             </div>
             <div class="judul">
-                <h4 class="fw-bolder">Berkarir sebagai Front End Developer</h4>
+                <h4 class="fw-bolder">Berkarir sebagai Back End Developer</h4>
             </div>
             <div class="app mx-auto">
                 <div class="bg-black" style="width: 50px; height: 50px;"></div>
@@ -188,7 +188,7 @@
                 Ini ambar
             </div>
             <div class="judul">
-                <h4 class="fw-bolder">Berkarir sebagai Front End Developer</h4>
+                <h4 class="fw-bolder">Berkarir sebagai UX Design Developer</h4>
             </div>
             <div class="app">
                 <div class="bg-black" style="width: 50px; height: 50px;"></div>
@@ -196,12 +196,12 @@
         </div>
     </div>
 </div>
-<div class="container mt-5">
+<div class="container mt-5 pt-3 pb-5">
     <div class="mb-3">
         <h1 class="fw-bolder display-5 mt-5">Kelas Online</h1>
         <h2 class="fw-bold">Belajar Dari Para Mentor</h2>
     </div>
-    <div class="d-flex justify-content-center flex-wrap img-mentor">
+    <div class="d-flex justify-content-center flex-wrap img-mentor pt-3">
         <div class="card m-3 {" style="width: 14rem;">
             <a href="{{ url('/kelas-mentor/html/')}}">
                 <img src="https://i.ytimg.com/vi_webp/vcSJ3w2PZ_A/maxresdefault.webp?v=6512c3c4" class="card-img-top" alt="">
@@ -291,6 +291,15 @@
             </div>
         </div>
     </div>
+</div>
+<div class="vh-100 d-flex justify-content-center align-items-center mt-5" style="background: #181230;">
+<div class="container d-flex h-100 justify-content-center align-items-center">
+    <div class="text-white">
+        <h1 class="fw-bolder display-3">Bergabung Bersama Kami di Discord Community</h1>
+    </div>
+    <div class="d-none d-lg-block bg-white rounded-4" style="height: 100%;width: 75%;">
+    </div>
+</div>
 </div>
 @include('layouts.footer')
 @endsection
