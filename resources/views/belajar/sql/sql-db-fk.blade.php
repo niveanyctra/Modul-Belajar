@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Foreign Key</h1>
-    <a href="{{ url('/belajar/sql/db-pk') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/db-default') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/db-pk') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/db-default') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p><span class="mark">FOREIGN KEY</span> digunakan untuk tindakan yang akan merusak relasi antar tabel <br><br>
         <span class="mark">FOREIGN KEY</span> Adalah kolom yang value nya berasal dari <span class="mark">PRIMARY KEY</span> tabel lain
@@ -84,8 +86,9 @@
         ALTER TABLE nilai <br>
         DROP FOREIGN KEY FK_NilaiSiswa;
     </div>
-    <br>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql/db-pk') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/db-default') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/db-default') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

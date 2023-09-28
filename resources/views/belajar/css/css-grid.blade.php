@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Grid</h1>
-    <a href="{{ url('/belajar/css/flexbox') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/display') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/flexbox') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/display') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">
         Grid
@@ -24,8 +26,10 @@
         <div class="bg-warning p-4 m-1 text-center">5</div>
     </div>
     <p>Anda bisa membuat grid dengan menggunakan <span class="mark">display: grid</span></p>
-    <a href="{{ url('/belajar/css/flexbox') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/display') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/flexbox') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/display') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

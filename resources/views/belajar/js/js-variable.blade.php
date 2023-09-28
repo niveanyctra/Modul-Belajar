@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Variable</h1>
-    <a href="{{ url('/belajar/js/comment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/let') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/comment') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/let') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <div class="info">
         <h5>Variabel adalah Wadah untuk Menyimpan Data</h5>
         <p>
@@ -136,7 +138,9 @@
     <p>
         Anda tidak bisa melakukan deklarasi ulang dengan <span class="mark">let</span> atau <span class="mark">const</span>.
     </p>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/js/comment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/let') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/js/let') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

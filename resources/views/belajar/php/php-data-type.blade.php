@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.php')
 <section class="main">
     <h1>PHP Tipe Data</h1>
-    <a href="{{ url('/belajar/php/echo-print') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/string') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/echo-print') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/string') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Variabel bisa menyimpan data dengan beragam tipe data yang tersedia dalam PHP <br><br>
@@ -21,7 +23,9 @@
         <li>Object - Dapat menyimpan data dari objek pada Object Oriented Programing</li>
         <li>Null - Null tidak memiliki value</li>
     </ul>
-    <a href="{{ url('/belajar/php/echo-print') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/string') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/echo-print') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/string') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

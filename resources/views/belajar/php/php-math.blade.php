@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.php')
 <section class="main">
     <h1>PHP Math</h1>
-    <a href="{{ url('/belajar/php/number') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/operator') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/number') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/operator') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     Pada halaman ini kita akan menjelaskan operasi matematika dalam PHP
     <hr>
@@ -27,7 +29,9 @@
     <hr>
     <h3 class="my-3">Fungsi rand()</h3>
     <p>Fungsi rand() akan menampilkan nilai acak</p>
-    <a href="{{ url('/belajar/php/number') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/operator') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/number') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/operator') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

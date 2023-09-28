@@ -5,9 +5,11 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Ordered List</h1>
-    <a href="{{ url('/belajar/html/unordered-list') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/other-list') }}" class="btn btn-success">Selanjutnya</a>
-        <hr>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/unordered-list') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/other-list') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
+    <hr>
     <h3 class="my-3">Ordered List</h3>
     <p>Ordered list adalah list yang disediakan HTML dengan menggunakan icon sebagai tanda yang defaultnya adalah angka berurut. Kita dapat membuat list ini menggunakan elemen <span class="mark">&lt;ol&gt;</span> dan diakhiri dengan <span class="mark">&lt;/ol&gt;</span></p>
     <div class="code">
@@ -49,8 +51,9 @@
     <div class="note">
         <strong>Note :</strong> tag <span class="mark">&lt;li&gt;</span> dapat diisi dengan elemen HTML lain seperti gambar,link,dll.
     </div>
-    <br>
-    <a href="{{ url('/belajar/html/unordered-list') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/other-list') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/unordered-list') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/other-list') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Join</h1>
-    <a href="{{ url('/belajar/sql/alias') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/group-by') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/alias') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/group-by') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Klausa <span class="mark">JOIN</span> berfungsi untuk menghubungkan beberapa tabel berdasarkan kolom yang saling terkait antara tabel tersebut</p>
     <hr>
@@ -304,8 +306,9 @@
             <td><i>null</i></td>
         </tr>
     </table>
-    <br>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql/alias') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/group-by') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/group-by') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

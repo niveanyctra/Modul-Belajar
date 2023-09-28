@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.php')
 <section class="main">
     <h1>PHP Operator</h1>
-    <a href="{{ url('/belajar/php/math') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/if-else') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/math') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/if-else') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Pada modul ini kita hanya akan menbahas tentang :</p>
     <ul>
@@ -186,7 +188,9 @@
             <td>Jika false akan jalan</td>
         </tr>
     </table>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/php/math') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/if-else') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/php/if-else') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

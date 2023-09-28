@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.php')
 <section class="main">
     <h1>PHP For Loop</h1>
-    <a href="{{ url('/belajar/php/do-while-loop') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/foreach-loop') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/do-while-loop') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/foreach-loop') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Perulangan <span class="mark">for</span> akan terus mengulang blok kode sampai batas yang ditentukan</p>
     <h4 class="my-3">Contoh</h4>
@@ -18,7 +20,9 @@ for ($x = 0; $x <= 10; $x++) { <br>
 ?> <br>
     </div>
     <p>Pada potongan kode diatas kita mengulang variabel $x yang dimulai dari 0 yang berulang sampai nilainya kurang dari atau sama dengan 10</p>
-    <a href="{{ url('/belajar/php/do-while-loop') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/foreach-loop') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/do-while-loop') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/foreach-loop') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

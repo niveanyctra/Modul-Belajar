@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Count, Sum dan Average</h1>
-    <a href="{{ url('/belajar/sql/min-max') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/alias') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/min-max') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/alias') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">
         Fungsi COUNT()
@@ -49,7 +51,9 @@
         SELECT AVG(nilai) FROM nilaiSiswa WHERE kelas = 'XII RPL 1';
     </div>
     <p>Pada sintaks diatas kita akan menentukan rata-rata nilai yang memiliki record kelas 'XII RPL 1'</p>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql/min-max') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/alias') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/alias') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

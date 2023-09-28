@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.php')
 <section class="main">
     <h1>PHP Form Handling</h1>
-    <a href="{{ url('/belajar/php/foreach-loop') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/form-require') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/foreach-loop') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/form-require') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         PHP memiliki variabel global untuk mengelola form yaitu <span class="mark">$_POST</span> dan <span class="mark">$_GET</span> yang dikirim melalui form HTML <a href="{{url('/belajar/html/form-atribut')}}" class="text-dark">Pelajari kembali form HTML</a>
@@ -39,7 +41,9 @@ Alamat emailmu adalah: &lt;?php echo $_POST["email"]; ?&gt; <br>
 &lt;/body&gt; <br>
 &lt;/html&gt; <br>
     </div>
-    <a href="{{ url('/belajar/php/foreach-loop') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/form-require') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/foreach-loop') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/form-require') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

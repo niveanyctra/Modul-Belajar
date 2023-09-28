@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Where To</h1>
-    <a href="{{ url('/belajar/js') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/output') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/output') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">
         Tag &lt;script&gt;
@@ -175,8 +177,10 @@
     </p>
     <div class="code">
         &lt;script <span class="text-danger">src</span><span class="text-success">="myScript.js"</span>&gt;&lt;/script&gt;
-    </div><br>
-    <a href="{{ url('/belajar/js') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/output') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/output') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

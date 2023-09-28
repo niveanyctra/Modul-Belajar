@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Background Shorthand</h1>
-    <a href="{{ url('/belajar/css/background-attachment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/border') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/background-attachment') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/border') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Kita bisa menghemat penulisan background dengan cara sebagai berikut :</p>
         <div class="code">
@@ -17,8 +19,10 @@
         } <br>
     </div><br>
     <p>Potongan kode diatas dapat menghemat penulisan menjadi lebih singkat</p>
-    <a href="{{ url('/belajar/css/background-attachment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/border') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/background-attachment') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/border') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

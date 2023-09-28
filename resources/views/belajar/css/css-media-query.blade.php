@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Media Query</h1>
-    <a href="{{ url('/belajar/css/display') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/background-color') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/display') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/background-color') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Media query digunakan untuk mengatur tampilan menjadi responsif dengan membedakan tampilan berdasarkan ukuran layar pengguna</p><br>
     <hr>
@@ -50,8 +52,10 @@
     </div>
     <br>
     <p>Pada potongan kode diatas kita menggunakan media query yang akan mempengaruhi ukuran layar pengguna dibawah 720px yang menyebabkan warna dari class contoh satu menjadi dodger blue dan contoh2 menjadi tomato. Namun jika layar pengguna lebih besar dari 720px maka class contoh1 adalah tomato dan contoh2 menjadi dodger blue.</p>
-    <a href="{{ url('/belajar/css/display') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/background-color') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/display') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/background-color') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

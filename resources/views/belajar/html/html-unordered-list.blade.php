@@ -5,9 +5,11 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Unordered List</h1>
-    <a href="{{ url('/belajar/html/list') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/ordered-list') }}" class="btn btn-success">Selanjutnya</a>
-        <hr>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/list') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/ordered-list') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
+    <hr>
     <h3 class="my-3">Unordered List</h3>
     <p>Unordered list adalah list yang disediakan HTML dengan menggunakan icon sebagai tanda yang defaultnya adalah titik hitam. Kita dapat membuat list ini menggunakan elemen <span class="mark">&lt;ul&gt;</span> dan diakhiri dengan <span class="mark">&lt;/ul&gt;</span></p>
     <div class="code">
@@ -41,8 +43,10 @@
             <td>none</td>
             <td>Icon list menjadi hilang</td>
         </tr>
-    </table><br>
-    <a href="{{ url('/belajar/html/list') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/ordered-list') }}" class="btn btn-success">Selanjutnya</a>
+    </table>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/list') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/ordered-list') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

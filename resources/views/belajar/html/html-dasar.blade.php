@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Dasar</h1>
-    <a href="{{ url('/belajar/html') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/element') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/element') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Di bagian ini kita akan menunjukan contoh HTML dasar. <br><br>
     Jangan khawatir jika kita menggunakan tag yang belum kamu pelajari.
@@ -79,7 +81,7 @@
     &lt;p&gt;Ini sebuah paragraf&lt;/p&gt; <br>
     &lt;p&gt;Ini paragraf lain&lt;/p&gt;
 
-</div>
+    </div>
     <hr>
     <h3 class="mt-3">Tautan HTML</h3>
     <p>Tautan HTML didefinisikan dengan tag <span class="mark">&lt;a&gt;</span> :</p>
@@ -87,9 +89,9 @@
 
     &lt;a <span class="t-red">href</span><span class="t-green">="https://smkn1-cirebon.sch.id"</span>&gt;Ini sebuah Tautan&lt;/a&gt;
 
-</div>
-<p>Tujuan tautan ditentukan dalam atribut <span class="mark">href</span> <br><br>
-Atribut digunakan untuk memberikan informasi tambahan tentang elemen HTML</p>
+    </div>
+    <p>Tujuan tautan ditentukan dalam atribut <span class="mark">href</span> <br><br>
+    Atribut digunakan untuk memberikan informasi tambahan tentang elemen HTML</p>
     <hr>
     <h3 class="mt-3">Gambar HTML</h3>
     <p>Gambar dalam HTML didefinisikan dengan tag <span class="mark">&lt;img&gt;</span>. <br><br>
@@ -99,15 +101,17 @@ Atribut digunakan untuk memberikan informasi tambahan tentang elemen HTML</p>
 
     &lt;img <span class="t-red">src</span><span class="t-green">="image.png"</span> <span class="t-red">alt</span><span class="t-green">="gambar" </span><span class="t-red">width</span><span class="t-green">="100"</span> <span class="t-red">height</span><span class="t-green">="100"</span>&gt;
 
-</div>
-<hr>
-<h3 class="mt-3">Cara Melihat Sumber Kode HTML</h3>
-<p>Berikut ini adalah cara melihat sumber kode dan memeriksa elemen HTML : </p>
-<h3 class="mt-3">Melihat Kode Sumber HTML</h3>
-<p>Klik kanan di halaman HTML lalu pilih opsi "Lihat Sumber". Ini akan membuka halaman baru yang berisi kode sumber HTML di halaman tersebut</p>
-<h3 class="mt-3">Periksa Elemen HTML</h3>
-<p>Klik kanan pada sebuah elemen(atau area kosong) lalu pilih opsi "Inspeksi" untuk melihat elemen dan atribut yang digunakan(Anda akan melihat HTML dan CSS). Anda juga dapat mengedit HTML atau CSS tersebut.</p><br>
-    <a href="{{ url('/belajar/html') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/element') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
+    <hr>
+    <h3 class="mt-3">Cara Melihat Sumber Kode HTML</h3>
+    <p>Berikut ini adalah cara melihat sumber kode dan memeriksa elemen HTML : </p>
+    <h3 class="mt-3">Melihat Kode Sumber HTML</h3>
+    <p>Klik kanan di halaman HTML lalu pilih opsi "Lihat Sumber". Ini akan membuka halaman baru yang berisi kode sumber HTML di halaman tersebut</p>
+    <h3 class="mt-3">Periksa Elemen HTML</h3>
+    <p>Klik kanan pada sebuah elemen(atau area kosong) lalu pilih opsi "Inspeksi" untuk melihat elemen dan atribut yang digunakan(Anda akan melihat HTML dan CSS). Anda juga dapat mengedit HTML atau CSS tersebut.</p>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/element') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Block & Inline</h1>
-    <a href="{{ url('/belajar/html/favicon') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/class') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/favicon') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/class') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Setiap elemen HTML memiliki nilai tampilan default, tergantung pada jenis elemennya. <br><br>
@@ -156,8 +158,10 @@
         &lt;p&gt;
             Bunga Mawar Berwarna &lt;span <span class="t-red">style</span>=<span class="t-green">"color:red;font-weight:bold;"</span>&gt;Merah&lt;span&gt;
         &lt;/p&gt;
-    </div><br>
-    <a href="{{ url('/belajar/html/favicon') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/class') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/favicon') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/class') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

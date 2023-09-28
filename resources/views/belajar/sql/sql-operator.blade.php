@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Operator</h1>
-    <a href="{{ url('/belajar/sql/order-by') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/insert') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/order-by') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/insert') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         SQL memiliki beberapa operator yang berguna untuk mengatur kondisi yang ingin ditampilkan dalam result-set. <br><br>
@@ -91,8 +93,9 @@
         SELECT * FROM nilaiSiswa WHERE nilai BETWEEN 70 AND 90;
     </div>
     <p>Pada sintaks diatas kita akan mengambil semua kolom dari tabel nilaiSiswa yang memiliki record nilai antara 70 sampai 90.</p>
-    <br>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql/order-by') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/insert') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/insert') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

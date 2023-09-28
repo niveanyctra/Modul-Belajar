@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Atribut</h1>
-    <a href="{{ url('/belajar/html/element') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/styling') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/element') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/styling') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="mt-3">Atribut HTML</h3>
     <p>Semua elemen HTML dapat memiliki atribut. Atribut dapat memberikan informasi tambahan pada element. Atribut harus ada di tag awal. Atribut biasanya ditulis dengan cara : namaatribut="value"</p>
@@ -27,8 +29,9 @@
         <li><strong>URL Absolut</strong> - Adalah tautan ke website eksternal yang tidak ada di dokumen milik kita</li>
         <li><strong>URL Relatif</strong> - Adalah tautan ke website internal yang ada di dokumen milik kita</li>
     </ul>
-    <br>
-    <a href="{{ url('/belajar/html/element') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/styling') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/element') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/styling') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

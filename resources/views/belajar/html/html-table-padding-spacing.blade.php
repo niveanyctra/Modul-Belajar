@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Table Padding & Spacing</h1>
-    <a href="{{ url('/belajar/html/table-size') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/table-colspan-rowspan') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/table-size') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/table-colspan-rowspan') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">Padding Sel</h3>
     <p>Kamu bisa mengatur jarak teks dengan border menggunakan properti <span class="mark">padding</span> didalam sel tabel</p>
@@ -59,8 +61,9 @@ table {<br>
             <td style="border: 1px solid black;border-collapse:separate;border-spacing:30px">Spacing</td>
         </tr>
     </table>
-    <br>
-    <a href="{{ url('/belajar/html/table-header') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/table-colspan-rowspan') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/table-header') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/table-colspan-rowspan') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

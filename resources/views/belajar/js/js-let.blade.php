@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Let</h1>
-    <a href="{{ url('/belajar/js/variable') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/const') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/variable') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/const') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h6 class="my-3">Berikut ini hal yang harus diperhatikan dalam menggunakan <span class="mark">let</span></h6>
     <ul>
@@ -49,8 +51,10 @@
         { <br>
             <span class="t-blue">let</span> x = 9; <br>
         }
-    </div> <br>
-    <a href="{{ url('/belajar/js/variable') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/const') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/variable') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/const') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

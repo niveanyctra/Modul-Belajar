@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Auto Increment</h1>
-    <a href="{{ url('/belajar/sql/db-default') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/db-view') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/db-default') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/db-view') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Auto increment memungkinkan nomor unik tergenerate untuk mengisi kolom ketika ada record baru. Auto increment biasanya digunakan pada Primary Key.
@@ -27,8 +29,9 @@
     <div class="code">
         INSERT INTO siswa VALUES('Arip', 'Cirebon', 'Laki-laki');
     </div>
-    <br>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql/db-default') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/db-view') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/db-view') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

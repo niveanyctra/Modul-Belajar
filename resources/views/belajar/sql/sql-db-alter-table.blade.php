@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Alter/Pindah Tabel</h1>
-    <a href="{{ url('/belajar/sql/db-drop-table') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/db-constraint') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/db-drop-table') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/db-constraint') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Kita bisa menambah, mengubah, menghapus bahkan memodifikasi kolom dalam tabel menggunakan sintaks <span class="mark">ALTER TABLE</span></p>
    <hr>
@@ -58,7 +60,9 @@
         ALTER column no_tlp int(20);
     </div>
     <p>Sintaks diatas akan mengubah panjang tipedata yang diperbolehkan ketika mengisi kolom sebanyak 20</p>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql/db-drop-table') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/db-constraint') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/db-constraint') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

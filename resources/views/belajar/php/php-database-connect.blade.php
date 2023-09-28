@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.php')
 <section class="main">
     <h1>PHP Database Koneksi</h1>
-    <a href="{{ url('/belajar/php/database') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/database-view') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/database') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/database-view') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Sebelum menggunakan database dalam PHP kita harus melakukan koneksi antara database dan PHP dengan sintaks dibawah ini :</p>
     <p>Versi Singkat :</p>
@@ -33,7 +35,9 @@
         ?>
 
     </div>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/php/database') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/database-view') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/php/database-view') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

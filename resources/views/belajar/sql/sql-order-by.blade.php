@@ -5,16 +5,18 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Order By</h1>
-    <a href="{{ url('/belajar/sql/where') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/operator') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/where') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/operator') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
-<h3 class="my-3">Sintaks ORDER BY SQL</h3>
-<p>
-    Sintaks <span class="mark">ORDER BY</span> digunakan untuk mengurutkan result-set dengan urutan menaik atau menurun. <br><br>
-    Sintaks <span class="mark">ORDER BY</span> akan mengurutkan secara menaik, namun kita bisa mengaturnya dengan kata kunci <span class="mark">DESC</span> untuk menaik dan <span class="mark">ASC</span> untuk menurun.
+    <h3 class="my-3">Sintaks ORDER BY SQL</h3>
+    <p>
+        Sintaks <span class="mark">ORDER BY</span> digunakan untuk mengurutkan result-set dengan urutan menaik atau menurun. <br><br>
+        Sintaks <span class="mark">ORDER BY</span> akan mengurutkan secara menaik, namun kita bisa mengaturnya dengan kata kunci <span class="mark">DESC</span> untuk menaik dan <span class="mark">ASC</span> untuk menurun.
 
-</p>
-<h4 class="my-3">Contoh</h4>
+    </p>
+    <h4 class="my-3">Contoh</h4>
     <div class="code">
         SELECT * FROM nilaiSiswa ORDER BY nilai DESC;
     </div><br>
@@ -61,7 +63,9 @@
         SELECT * FROM nilaiSiswa ORDER BY nilai,nama;
     </div><br>
     <p>Pada sintaks diatas kita akan mengurutkan berdasarkan nilai dan jika ada kolom nama dengan nilai yang sama, maka akan diurutkan berdasarkan nama dari A-Z</p>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql/where') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/operator') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/operator') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

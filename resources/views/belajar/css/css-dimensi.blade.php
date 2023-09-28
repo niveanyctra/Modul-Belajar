@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Height, Width, Max-width</h1>
-    <a href="{{ url('/belajar/css/padding') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/flexbox') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/padding') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/flexbox') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Dimensi digunakan untuk menentukan panjang lebar dari sebuah elemen dengan properti <span class="mark">height</span>, <span class="mark">width</span> dan <span class="mark">max-width</span></p>
     <hr>
@@ -31,8 +33,10 @@
         Jika kita menggunakan <span class="mark">width</span> dan <span class="mark">max-width</span> secara bersamaan dan value <span class="mark">width</span> lebih besar dari <span class="mark">max-width</span>,maka properti yang digunakan adalah <span class="mark">max-width</span> dan properti <span class="mark">width</span> akan diabaikan
 
     </p>
-    <a href="{{ url('/belajar/css/padding') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/flexbox') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/padding') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/flexbox') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

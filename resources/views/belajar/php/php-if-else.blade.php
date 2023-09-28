@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.php')
 <section class="main">
     <h1>PHP Statement if...else...elseif</h1>
-    <a href="{{ url('/belajar/php/operator') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/switch') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/operator') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/switch') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
         <p>
         If else merupakan pernyataan kondisional berdasarkan parameter yang diberikan yang akan memberikan tindakan berbeda tergantung kondisi
@@ -81,7 +83,9 @@
     <p>
         Pada pernyataan diatas teks yang dikembalikan akan berbeda tergantung kondisi yang terpenuhi dan jika tak satupun kondisi terpenuhi, maka akan mengembalikan value pada pernyataan else
     </p>
-    <a href="{{ url('/belajar/php/operator') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/php/switch') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/php/operator') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/php/switch') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

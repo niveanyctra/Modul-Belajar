@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.php')
 <section class="main">
     <h1>PHP Pengenalan</h1>
-    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
-    <a href="{{ url('/belajar/php/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/') }}" class="btn btn-success">Home</a>
+        <a href="{{ url('/belajar/php/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">
         Apa itu PHP
@@ -37,7 +39,9 @@
         <li>Menginstal Database</li>
     </ul>
     <p>Kita akan menggunakan XAMPP pada modul ini <a href="https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.1.17/xampp-windows-x64-8.1.17-0-VS16-installer.exe" class="text-dark">Install XAMPP Disini</a></p>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/') }}" class="btn btn-success">Home</a>
-    <a href="{{ url('/belajar/php/syntax') }}" class="btn btn-success">Selanjutnya</a>  
+        <a href="{{ url('/belajar/php/syntax') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Tipe Data</h1>
-    <a href="{{ url('/belajar/js/assignment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/function') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/assignment') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/function') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <br>
     <div class="info p-4">
         <h5 class="my-2">JavaScript memiliki 8 tipe data</h5>
@@ -53,7 +55,9 @@
         <span class="t-green">// Date object:</span> <br>
         <span class="t-blue">const</span> date = new Date("2022-03-25");
     </div>
-    <a href="{{ url('/belajar/js/assignment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/function') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/assignment') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/function') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

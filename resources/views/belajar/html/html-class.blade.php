@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Class</h1>
-    <a href="{{ url('/belajar/html/block-inline') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/id') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/block-inline') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/id') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Atribut <span class="mark">class</span> HTML digunakan untuk menentukan kelas elemen HTML <br><br>
@@ -55,7 +57,9 @@
             <strong>Note :</strong> Nama class peka terhadap huruf besar-kecil!
         </p>
     </div>
-    <a href="{{ url('/belajar/html/block-inline') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/id') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/block-inline') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/id') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

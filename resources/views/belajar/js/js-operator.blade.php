@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Operator</h1>
-    <a href="{{ url('/belajar/js/const') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/arithmetic') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/const') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/arithmetic') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Pada modul ini kita hanya kan membahas operator
@@ -167,8 +169,9 @@
             <td>Logika NOT</td>
         </tr>
     </table>
-    <br>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/js/const') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/arithmetic') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/js/arithmetic') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

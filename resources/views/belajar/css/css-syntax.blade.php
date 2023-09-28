@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Syntax</h1>
-    <a href="{{ url('/belajar/css') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/selector') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/selector') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <br>
     <h3 class="my-3">
         Sintaks CSS
@@ -28,8 +30,10 @@
         <li><span class="mark">color</span> dan <span class="mark">text-align</span> merupakan properti yang digunakan untuk mendesain</li>
         <li>Teks berwarna hijau merupakan value dari properti yang digunakan</li>
     </ul>
-    <a href="{{ url('/belajar/css') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/selector') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/selector') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Formatting</h1>
-    <a href="{{ url('/belajar/html/styling') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/comment') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/styling') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/comment') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>HTML memiliki beberapa tag spesial yang digunakan untuk menentukan format text seperti :</p>
     <ul>
@@ -20,7 +22,9 @@
         <li><span class="mark">&lt;sub&gt;</span> digunakan untuk membuat font menjadi besar dan berada di bawah Contoh <sub>sub</sub></li>
 
     </ul>
-    <a href="{{ url('/belajar/html/styling') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/comment') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/styling') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/comment') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Display</h1>
-    <a href="{{ url('/belajar/css/grid') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/media-query') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/grid') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/media-query') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>
         Pada pelajaran HTML sebelumnya kalian telah mengenal elemen inline dan block-level<br><br>
@@ -40,8 +42,10 @@
         <button style="display: none;" onclick="document.getElementById('contoh1').style.display='block',getElementById('contoh2').style.display='none'" id="contoh2">Reset</button>
     </div><br>
     <p>Pada contoh diatas kita menggunakan <span class="mark">display: none</span> untuk menghilangkan sebuah elemen</p>
-    <a href="{{ url('/belajar/css/grid') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/media-query') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/grid') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/media-query') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Warna</h1>
-    <a href="{{ url('/belajar/css/comment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/margin') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/comment') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/margin') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Warna dalam CSS bisa diatur dengan value yang sudah ditentukan atau dengan value RGB,HEX,HSL,RGBA,HSLA.</p>
     <hr>
@@ -32,8 +34,10 @@
 
     <p>Selain warna text dan backgroun, kita juga bisa mengatur warna background dengan properti <span class="mark">border-color</span> yang akan menghasilkan elemen seperti berikut :</p>
     <h4 style="border:2px solid tomato">Hello World</h4>
-    <a href="{{ url('/belajar/css/comment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/margin') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/comment') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/margin') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

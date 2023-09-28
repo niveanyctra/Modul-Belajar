@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Select</h1>
-    <a href="{{ url('/belajar/sql/syntax') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/where') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/syntax') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/where') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">
         Sintaks SELECT SQL
@@ -101,7 +103,9 @@
 
         </tbody>
     </table>
-    <a href="{{ url('/belajar/sql/syntax') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/where') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/syntax') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/where') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

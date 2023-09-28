@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Table Border</h1>
-    <a href="{{ url('/belajar/html/table') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/table-size') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/table') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/table-size') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Tabel HTML dapat memiliki border dengan desain dan bentuk yang berbeda-beda</p>
     <hr>
@@ -89,8 +91,9 @@
             border-radius:5px;<br>
         }
     </div>
-    <br>
-    <a href="{{ url('/belajar/html/table') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/table-size') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/table') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/table-size') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

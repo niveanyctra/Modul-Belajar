@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Constraint</h1>
-    <a href="{{ url('/belajar/sql/db-alter-table') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/db-pk') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/db-alter-table') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/db-pk') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>SQL constraint digunakan untuk menentukan aturan untuk data dalam tabel</p>
     <hr>
@@ -15,8 +17,8 @@
     <h4 class="my-3">Sintaks</h4>
     <div class="code">
         CREATE TABLE nama_tabel ( <br>
-    nama_kolom1 tipedata constraint, <br>
-    nama_kolom2 tipedata constraint, <br>
+        nama_kolom1 tipedata constraint, <br>
+        nama_kolom2 tipedata constraint, <br>
     nama_kolom3 tipedata constraint, <br>
     .... <br>
 );
@@ -32,5 +34,9 @@
         <li><span class="mark">DEFAULT</span> - Menetapkan nilai default untuk kolom jika tidak ada nilai yang ditentukan</li>
         <li><span class="mark">UNIQUE</span> - Digunakan untuk membuat dan mengambil data dari database dengan sangat cepat</li>
     </ul>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql/db-alter-table') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/db-pk') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

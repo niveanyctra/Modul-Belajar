@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.sql')
 <section class="main">
     <h1>SQL Syntax</h1>
-    <a href="{{ url('/belajar/sql') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/select') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/sql') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/sql/select') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">Tabel Database</h3>
     <p>
@@ -66,8 +68,9 @@
         <strong>Note :</strong> Semua sintaks SQL <strong>TIDAK</strong> sensitif huruf besar-kecil, jadi <span class="mark">select</span> dan <span class="mark">SELECT</span> memiliki makna yang sama. <br><br>
         <strong>Note :</strong> Tanda titik koma (';') dalam SQL digunakan untuk memisahkan sintaks SQL yang digunakan, namun ada beberapa sistem database yang tidak perlu menggunakan titik koma (';').
     </div>
-    <br>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/sql') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/sql/select') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/sql/select') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

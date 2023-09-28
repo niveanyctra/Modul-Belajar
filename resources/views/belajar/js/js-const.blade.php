@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Const</h1>
-    <a href="{{ url('/belajar/js/let') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/operator') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/let') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/operator') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
         <hr>
     <h6 class="my-3">Berikut ini hal yang harus diperhatikan dalam menggunakan <span class="mark">const</span></h6>
     <ul>
@@ -51,8 +53,10 @@
         { <br>
             <span class="t-blue">const</span> x = 9; <br>
         }
-    </div> <br>
+    </div>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/js/let') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/operator') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/js/operator') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

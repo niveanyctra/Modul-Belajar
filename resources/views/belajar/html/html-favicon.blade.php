@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Favicon</h1>
-    <a href="{{ url('/belajar/html/comment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/block-inline') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/comment') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/block-inline') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Favicon adalah gambar kecil yang ditampilkan disebelah judul halaman di tab browser</p>
     <hr>
@@ -48,7 +50,9 @@
     </div>
     </div>
     <p>Sekarang, simpan file "index.html" dan reload/refresh halaman website. Seharusnya browser tab anda sudah menampilkan gambar favicon anda pada sebelah kiri judul halaman</p>
-    <a href="{{ url('/belajar/html/comment') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/html/block-inline') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/html/comment') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/html/block-inline') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

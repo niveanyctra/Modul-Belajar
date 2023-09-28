@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Background Attachment</h1>
-    <a href="{{ url('/belajar/css/background-repeat') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/background-shorthand') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/background-repeat') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/background-shorthand') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <p>Kita bisa mengatur background untuk bisa discroll atau fixed dengan properti <mark>background-attachment</mark></p><br>
             <div class="code">
@@ -20,8 +22,10 @@
         } <br>
     </div><br>
     <p>Pada potongan kode diatas kita mengatur background agar tidak ikut ketika discroll dan terletak di atas elemen</p>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/css/background-repeat') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/background-shorthand') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/css/background-shorthand') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

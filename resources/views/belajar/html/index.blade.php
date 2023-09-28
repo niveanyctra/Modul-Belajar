@@ -6,7 +6,7 @@
 @include('layouts.belajar.sidebar.html')
 <section class="main">
     <h1>HTML Pengenalan</h1>
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/') }}" class="btn btn-success">Home</a>
         <a href="{{ url('/belajar/html/dasar') }}" class="btn btn-success">Selanjutnya</a>
     </div>
@@ -132,8 +132,10 @@
     <p><strong>Note : </strong>Konten di dalam bagian &lt;body&gt; akan ditampilkan di browser.Konten di dalam elemen  &lt;title&gt; akan ditampilkan di bilah judul browser atau di tab halaman browser</p>
 </div>
 
-    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
-    <a href="{{ url('/belajar/html/dasar') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/') }}" class="btn btn-success">Home</a>
+        <a href="{{ url('/belajar/html/dasar') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 
 @endsection

@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Output</h1>
-    <a href="{{ url('/belajar/js/where-to') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/statement') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/where-to') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/statement') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">
         JavaScript Display Possibilities
@@ -26,7 +28,7 @@
     </h3>
     <p>
         Untuk mengakses sebuah elemen HTML, JavaScript dapat menggunakan metode <span class="mark">document.getElementById(id)</span>. <br><br>
-        Atribut<span class="mark">id</span> mendefinisikan elemen HTML. Properti <span class="mark">innerHTML</span> mendefinisikan konten HTML:  
+        Atribut<span class="mark">id</span> mendefinisikan elemen HTML. Properti <span class="mark">innerHTML</span> mendefinisikan konten HTML:
     </p>
     <div class="code">
         &lt;!DOCTYPE html&gt; <br>
@@ -56,7 +58,7 @@
         Menggunakan document.write()
     </h3>
     <p>
-        Untuk tujuan pengujian, akan lebih mudah menggunakan <span class="mark">document.write()</span>. 
+        Untuk tujuan pengujian, akan lebih mudah menggunakan <span class="mark">document.write()</span>.
     </p>
     <div class="code">
         &lt;!DOCTYPE html&gt; <br>
@@ -212,7 +214,9 @@
         </div>
         &lt;/html&gt;
     </div>
-    <a href="{{ url('/belajar/js/where-to') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/statement') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/where-to') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/statement') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

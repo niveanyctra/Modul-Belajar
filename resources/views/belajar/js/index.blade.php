@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Pengenalan</h1>
-    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
-    <a href="{{ url('/belajar/js/where-to') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/') }}" class="btn btn-success">Home</a>
+        <a href="{{ url('/belajar/js/where-to') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">
         JavaScript Dapat Mengubah Konten HTML
@@ -84,7 +86,9 @@
     <div class="note">
         <p><strong>Note :</strong> Namun perlu diketahui jika ingin mengubah style elemen HTML melalui <span class="mark">class</span> berbeda dengan <span class="mark">id</span></p>
     </div>
-    <a href="{{ url('/') }}" class="btn btn-success">Home</a>
-    <a href="{{ url('/belajar/js/where-to') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/') }}" class="btn btn-success">Home</a>
+        <a href="{{ url('/belajar/js/where-to') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection

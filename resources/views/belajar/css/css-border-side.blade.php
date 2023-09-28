@@ -5,9 +5,11 @@
 @include('layouts.belajar.sidebar.css')
 <section class="main">
     <h1>CSS Border Side</h1>
-    <a href="{{ url('/belajar/css/border-color') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/border-shorthand') }}" class="btn btn-success">Selanjutnya</a>
-        <hr>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/css/border-color') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/css/border-shorthand') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
+    <hr>
     <p>Kita bisa menentukan sisi yang akan diberi border dengan properti <span class="mark">border-top</span>, <span class="mark">border-right</span>, <span class="mark">border-bottom</span>, <span class="mark">border-left</span> <br>
     </p>
         <div class="code">
@@ -22,8 +24,10 @@
         } <br>
     </div><br>
     <p>Pada potongan kode diatas kita memiliki elemen &lt;p&gt; yang akan diatur ketebalan bordernya dengan border atas 2px dan border bawah 5px</p>
+    <div class="d-flex justify-content-between my-4">
         <a href="{{ url('/belajar/css/border-color') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/css/border-shorthand') }}" class="btn btn-success">Selanjutnya</a>
+        <a href="{{ url('/belajar/css/border-shorthand') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
 

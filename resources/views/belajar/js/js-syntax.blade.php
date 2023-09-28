@@ -5,8 +5,10 @@
 @include('layouts.belajar.sidebar.js')
 <section class="main">
     <h1>JavaScript Syntax</h1>
-    <a href="{{ url('/belajar/js/statement') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/comment') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/statement') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/comment') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
     <hr>
     <h3 class="my-3">
         JavaScript Value
@@ -195,7 +197,9 @@
         JavaScript menggunakan rangkaian karakter <strong>Unicode</strong>. <br><br>
         Unicode mencakup (hampir) semua karakter, tanda baca, dan simbol di dunia.
     </p>
-    <a href="{{ url('/belajar/js/statement') }}" class="btn btn-success">Sebelumnya</a>
-    <a href="{{ url('/belajar/js/comment') }}" class="btn btn-success">Selanjutnya</a>
+    <div class="d-flex justify-content-between my-4">
+        <a href="{{ url('/belajar/js/statement') }}" class="btn btn-success">Sebelumnya</a>
+        <a href="{{ url('/belajar/js/comment') }}" class="btn btn-success">Selanjutnya</a>
+    </div>
 </section>
 @endsection
