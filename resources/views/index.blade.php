@@ -4,8 +4,8 @@
     <div>
         {{-- Bagusan NeverGonnaGiveYouUp :/ --}}
         <h4 style="color: #008572;">#ProgrammerMuda</h4>
-        <h1 class="fw-bolder display-3">Change your future with coding </h1>
-        <p>
+        <h1 class="fw-bolder display-3">Change Your Future With Coding </h1>
+        <p class="fw-bold mt-4 fs-3">
             Siapkan masa depan yang cerah <br>
             Modul ini menyediakan pembelajaran untuk kelas X - XII
         </p>
@@ -156,7 +156,7 @@
         <h1 class="fw-bolder display-5 mt-5">Alur Belajar</h1>
         <h2 class="fw-bold">Raih Mimpimu</h2>
     </div>
-    <div class="d-flex gap-4 justify-content-center pt-3">
+    <div class="d-flex gap-4 justify-content-center pt-5">
         <div class="kartu alur" style="background-color: white">
             <div class="gambar">
                 Ini ambar
@@ -201,7 +201,7 @@
         <h1 class="fw-bolder display-5 mt-5">Kelas Online</h1>
         <h2 class="fw-bold">Belajar Dari Para Mentor</h2>
     </div>
-    <div class="d-flex justify-content-center flex-wrap img-mentor">
+    <div class="d-flex justify-content-center flex-wrap img-mentor pt-5">
         @foreach ($posts as $data)
         <!-- card mode -->
         <div class="card m-3 {{ $data->level }}" style="width: 18rem;">
