@@ -201,95 +201,20 @@
         <h1 class="fw-bolder display-5 mt-5">Kelas Online</h1>
         <h2 class="fw-bold">Belajar Dari Para Mentor</h2>
     </div>
-    <div class="d-flex justify-content-center flex-wrap img-mentor pt-3">
-        <div class="card m-3 {" style="width: 14rem;">
-            <a href="{{ url('/kelas-mentor/html/')}}">
-                <img src="https://i.ytimg.com/vi_webp/vcSJ3w2PZ_A/maxresdefault.webp?v=6512c3c4" class="card-img-top" alt="">
+    <div class="d-flex justify-content-center flex-wrap img-mentor">
+        @foreach ($posts as $data)
+        <!-- card mode -->
+        <div class="card m-3 {{ $data->level }}" style="width: 18rem;">
+            <a href="{{ url('/kelas-mentor/html/'.$data->slug)}}">
+                <img src="https://i.ytimg.com/vi/{{ $data->id_yt }}/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCqB6b521V89qG2JHe5M_f8H_ak6w" class="card-img-top" alt="{{ $data->slug }}">
             </a>
             <div class="card-body">
-                <h5 class="card-title"><a href="{{ url('/kelas-mentor/html/')}}">Judul Ini</a></h5>
-                <p class="card-text">Lesti Kembang Api</p>
-                <div id="display-tool">
-                    <div class="row gap-1">
-                        <div class="me-3 col-2">
-                            <img src="{{ asset('img/tools/logo_vs_code.png') }}" class="" alt="" height="40px">
-                        </div>
-                        <div class="me-3 col-2">
-                            <img src="{{ asset('img/javascript-logomark-rounded.svg') }}" class="" alt="" height="40px">
-                        </div>
-                        <div class="me-3 col-2">
-                            <img src="{{ asset('img/tools/logo_php.png') }}" class="" alt="" height="40px">
-                        </div>
-                    </div>
-                </div>
+                <h5 class="card-title"><a href="{{ url('/kelas-mentor/html/'.$data->slug)}}">{{$data->title}}</a></h5>
+                <p class="card-text">{{ $data->users->name  }}</p>
+                @include('layouts.kelas-mentor.display-tool')
             </div>
         </div>
-        <div class="card m-3 {" style="width: 14rem;">
-            <a href="{{ url('/kelas-mentor/html/')}}">
-                <img src="https://i.ytimg.com/vi_webp/vcSJ3w2PZ_A/maxresdefault.webp?v=6512c3c4" class="card-img-top" alt="">
-            </a>
-            <div class="card-body">
-                <h5 class="card-title"><a href="{{ url('/kelas-mentor/html/')}}">Judul Ini</a></h5>
-                <p class="card-text">Lesti Kembang Api</p>
-                <div id="display-tool">
-                    <div class="row gap-1">
-                        <div class="me-3 col-2">
-                            <img src="{{ asset('img/tools/logo_vs_code.png') }}" class="" alt="" height="40px">
-                        </div>
-                        <div class="me-3 col-2">
-                            <img src="{{ asset('img/javascript-logomark-rounded.svg') }}" class="" alt="" height="40px">
-                        </div>
-                        <div class="me-3 col-2">
-                            <img src="{{ asset('img/tools/logo_php.png') }}" class="" alt="" height="40px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card m-3 {" style="width: 14rem;">
-            <a href="{{ url('/kelas-mentor/html/')}}">
-                <img src="https://i.ytimg.com/vi_webp/vcSJ3w2PZ_A/maxresdefault.webp?v=6512c3c4" class="card-img-top" alt="">
-            </a>
-            <div class="card-body">
-                <h5 class="card-title"><a href="{{ url('/kelas-mentor/html/')}}">Judul Ini</a></h5>
-                <p class="card-text">Lesti Kembang Api</p>
-                <div id="display-tool">
-                    <div class="row gap-1">
-                        <div class="me-3 col-2">
-                            <img src="{{ asset('img/tools/logo_vs_code.png') }}" class="" alt="" height="40px">
-                        </div>
-                        <div class="me-3 col-2">
-                            <img src="{{ asset('img/javascript-logomark-rounded.svg') }}" class="" alt="" height="40px">
-                        </div>
-                        <div class="me-3 col-2">
-                            <img src="{{ asset('img/tools/logo_php.png') }}" class="" alt="" height="40px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card m-3 {" style="width: 14rem;">
-            <a href="{{ url('/kelas-mentor/html/')}}">
-                <img src="https://i.ytimg.com/vi_webp/vcSJ3w2PZ_A/maxresdefault.webp?v=6512c3c4" class="card-img-top" alt="">
-            </a>
-            <div class="card-body">
-                <h5 class="card-title"><a href="{{ url('/kelas-mentor/html/')}}">Judul Ini</a></h5>
-                <p class="card-text">Lesti Kembang Api</p>
-                <div id="display-tool">
-                    <div class="row gap-1">
-                        <div class="me-3 col-2">
-                            <img src="{{ asset('img/tools/logo_vs_code.png') }}" class="" alt="" height="40px">
-                        </div>
-                        <div class="me-3 col-2">
-                            <img src="{{ asset('img/javascript-logomark-rounded.svg') }}" class="" alt="" height="40px">
-                        </div>
-                        <div class="me-3 col-2">
-                            <img src="{{ asset('img/tools/logo_php.png') }}" class="" alt="" height="40px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
 <div class="vh-100 d-flex justify-content-center align-items-center mt-5" style="background: #181230;">
