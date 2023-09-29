@@ -1214,27 +1214,9 @@ a,a:hover {
     padding: 11px
 }
 
-.btn-secondary {
-    background: #e5e9f2;
-    border: 0;
-    border-radius: 100px;
-    color: #34364a;
-    font-size: 16px;
-    font-weight: 600;
-    height: -webkit-fit-content!important;
-    height: -moz-fit-content!important;
-    height: fit-content!important;
-    line-height: 24px;
-    padding: 12px 24px;
-    transition: all .4s;
-    width: -webkit-fit-content!important;
-    width: -moz-fit-content!important;
-    width: fit-content!important
-}
-
 .btn-secondary.w-50 {
     width: 50%!important
-}
+}  
 
 .btn-secondary:focus,.btn-secondary:hover {
     background: #e5e9f2;
