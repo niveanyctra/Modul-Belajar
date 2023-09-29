@@ -2,6 +2,7 @@
 
 use App\Models\Post;
 use App\Models\User;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
@@ -26,7 +27,11 @@ use App\Http\Controllers\LatihanHTMLController;
 */
 
 Route::get('/', function () {
-    return view('index');
+            $posts = DB::table('posts')
+            ->orderBy('updated_at')
+            ->limit(5)
+            ->get();
+    return view('index', compact('posts'));
 });
 
 Route::controller(SearchController::class)->group(function(){
