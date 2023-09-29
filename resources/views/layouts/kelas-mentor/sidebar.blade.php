@@ -1,6 +1,6 @@
 <div class="sidebar-kelas">
     <form method="post" action="" >
-        <h3 class="py-2 fw-bolder">Urutkan</h3>
+        <h3 class="py-2 fw-bolder">Tingkatan Level</h3>
             <div class="form-check">
                 <input class="form-check-input" type="radio" onclick="javascript:levelCheck();" name="level" id="noCheck" checked>
                 <label class="form-check-label mb-2" style="display: block;" for="noCheck">
@@ -25,7 +25,7 @@
     <div class="container">
 
         <form action="" method="get">
-            <h3 class="py-2 fw-bolder">Urutkan</h3>
+            <h3 class="py-2 fw-bolder">Tingkatan Level</h3>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="level" value="" id="noCheck" checked>
                 <label class="form-check-label mb-2" style="display: block;" for="noCheck">

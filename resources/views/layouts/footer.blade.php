@@ -6,7 +6,7 @@
             <a href="https://www.youtube.com/@RPLSMKN1CIREBON" target="_blank" rel="noopener noreferrer"><i style="color: #e43535;" class="fa-brands fa-youtube"></i></a>
             <a href="https://discord.gg/VqPZbNKrzD" target="_blank" rel="noopener noreferrer"><i style="color: #5865f2;" class="fa-brands fa-discord"></i></a>
         </div>
-        <div class="row pt-5">
+        <div class="row pt-4">
             <div class="col-lg-4 col-12">
                 <div class="mb-2">
                     <img src="{{ asset('img/logo.png') }}" alt="" class="img-fluid">
