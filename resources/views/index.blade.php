@@ -159,39 +159,46 @@
     <div class="d-flex gap-4 justify-content-center pt-5">
         <div class="kartu alur" style="background-color: white">
             <div class="gambar">
-                Ini ambar
+               <img src="{{ url('img/index/frontend.jpg') }}" alt=""> 
             </div>
             <div class="judul">
                 <h4 class="fw-bolder">Berkarir sebagai Front End Developer</h4>
             </div>
             <div class="app">
-                <div class="bg-black" style="width: 50px; height: 50px;"></div>
+                <img src="{{ url('img\tools\logo_figma.png') }}" alt="">
+                <img src="{{ url('img\tools\logo_css.png') }}" alt="">
+                <img src="{{ url('img\tools\logo_tailwind.png') }}" alt="">
+                <img src="{{ url('img\tools\logo_bootstrap.png') }}" alt="">
+                <img src="{{ url('img\tools\logo_react_js.png') }}" alt="">
             </div>
         </div>
         <div class="kartu alur" style="background-color: white">
             <div class="gambar">
-                Ini ambar
+               <img src="{{ url('img/index/backend.jpg') }}" alt=""> 
             </div>
             <div class="judul">
                 <h4 class="fw-bolder">Berkarir sebagai Back End Developer</h4>
             </div>
             <div class="app mx-auto">
-                <div class="bg-black" style="width: 50px; height: 50px;"></div>
-                <div class="bg-black" style="width: 50px; height: 50px;"></div>
-                <div class="bg-black" style="width: 50px; height: 50px;"></div>
-                <div class="bg-black" style="width: 50px; height: 50px;"></div>
-                <div class="bg-black" style="width: 50px; height: 50px;"></div>
+                <img src="{{ url('img\tools\logo_laravel.png') }}" alt="">
+                <img src="{{ url('img\tools\logo_sql.png') }}" alt="">
+                <img src="{{ url('img\tools\logo_node_js.png') }}" alt="">
+                <img src="{{ url('img\tools\logo_react_js.png') }}" alt="">
+                <img src="{{ url('img\tools\logo_javascript.png') }}" alt="">
             </div>
         </div>
         <div class="kartu alur" style="background-color: white">
             <div class="gambar">
-                Ini ambar
+               <img src="{{ url('img/index/uiux.jpg') }}" alt=""> 
             </div>
             <div class="judul">
                 <h4 class="fw-bolder">Berkarir sebagai UX Design Developer</h4>
             </div>
             <div class="app">
-                <div class="bg-black" style="width: 50px; height: 50px;"></div>
+                <img src="{{ url('img\tools\logo_invision.png') }}" alt="">
+                <img src="{{ url('img\tools\logo_maze.png') }}" alt="" style="object-fit: contain;">
+                <img src="{{ url('img\tools\logo_dribbble.png') }}" alt="">
+                <img src="{{ url('img\tools\logo_whimsical.png') }}" alt="">
             </div>
         </div>
     </div>
