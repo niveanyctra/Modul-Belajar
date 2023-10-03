@@ -156,7 +156,8 @@
         <h1 class="fw-bolder display-5 mt-5">Alur Belajar</h1>
         <h2 class="fw-bold">Raih Mimpimu</h2>
     </div>
-    <div class="d-flex gap-4 justify-content-center pt-5">
+    <div class="d-flex gap-4 justify-content-center pt-5 flex-wrap">
+        <a href="{{ url('alur-belajar/front-end') }}" class="text-dark">
         <div class="kartu alur" style="background-color: white">
             <div class="gambar">
                <img src="{{ url('img/index/frontend.jpg') }}" alt=""> 
@@ -171,7 +172,9 @@
                 <img src="{{ url('img\tools\logo_bootstrap.png') }}" alt="">
                 <img src="{{ url('img\tools\logo_react_js.png') }}" alt="">
             </div>
-        </div>
+        </div> 
+        </a>
+        <a href="{{ url('alur-belajar/back-end') }}" class="text-dark">
         <div class="kartu alur" style="background-color: white">
             <div class="gambar">
                <img src="{{ url('img/index/backend.jpg') }}" alt=""> 
@@ -186,7 +189,9 @@
                 <img src="{{ url('img\tools\logo_react_js.png') }}" alt="">
                 <img src="{{ url('img\tools\logo_javascript.png') }}" alt="">
             </div>
-        </div>
+        </div> 
+        </a>
+        <a href="{{ url('alur-belajar/ux-designer') }}" class="text-dark">
         <div class="kartu alur" style="background-color: white">
             <div class="gambar">
                <img src="{{ url('img/index/uiux.jpg') }}" alt=""> 
@@ -201,6 +206,7 @@
                 <img src="{{ url('img\tools\logo_whimsical.png') }}" alt="">
             </div>
         </div>
+        </a>
     </div>
 </div>
 <div class="container mt-5 pt-3 pb-5">
