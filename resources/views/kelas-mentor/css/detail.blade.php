@@ -36,10 +36,10 @@
     @include('layouts.kelas-mentor.tool')
     <div >
         <h3 class="my-3 fw-bolder mt-5">Belajar dari mentor</h3>
-        <a href="{{url('/mentor/@'.$posts->users->username)}}" style="display: block">
+        <a href="{{url('/mentor/'.$posts->users->username)}}" style="display: block">
         <div class="card border-0 ps-2 pe-5" style="box-shadow: 2px 2px 4px; width: max-content;">
             <div class="card-body">
-                <a href="{{url('/mentor/@'.$posts->users->username)}}" >
+                <a href="{{url('/mentor/'.$posts->users->username)}}" >
                     <h4 class="fw-bolder text-dark">{{$posts->users->name}}</h4>
                 </a>
                 <p>&commat;{{ $posts->users->username }}</p>
