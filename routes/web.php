@@ -57,7 +57,7 @@ Route::middleware('auth')->group(function () {
     'index', 'create','show', 'store', 'edit', 'update', 'destroy'
     ]);
     Route::get('/post/{post:slug}/edit',[PostController::class,'edit']);
-    // Route::put('/post/{post:slug}/edit',PostController::class,'update');
+
 });
 
 require __DIR__.'/auth.php';
@@ -562,8 +562,5 @@ Route::get('/kelas-mentor/sql',[PostController::class,"indexUmum"])->name('index
 Route::get('/kelas-mentor/sql/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
 
 //Route Profile Mentor
-// Route::get('/mentor/{post:id_user}',[PostController::class,"profileMentor"])->name('profileMentor');
 Route::get('/mentor/{username}',[PostController::class,"profileMentor"])->name('profileMentor');
-// Route::get('/mentor/{user:name}',function(User $user,Post $post){
-// Route::get('/latihan/html', [LatihanController::class,"cekJawaban"])->name('cekJawaban');
-// });
+

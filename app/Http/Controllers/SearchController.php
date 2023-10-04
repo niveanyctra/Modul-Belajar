@@ -18,10 +18,9 @@ class SearchController extends Controller
                     ->where('posts.title', 'LIKE', '%'. $request->get('q'). '%')
                     ->orWhere('posts.level', 'LIKE', '%'. $request->get('q'). '%')
                     ->orWhereRelation('users','name', 'LIKE', '%'. $request->get('q'). '%')
-                    // ->limit($limit)
                     ->get();
-     
+
         return response()->json($data);
     }
-    
+
 }
