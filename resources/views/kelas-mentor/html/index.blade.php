@@ -13,6 +13,7 @@
             <div class="d-flex justify-content-center gap-3 flex-wrap img-mentor">
                 @foreach ($posts as $data)
                 <!-- card mode -->
+                <div class="card {{ $data->level }}" style="width: 18rem;">
                     <a href="{{ url('/kelas-mentor/html/'.$data->slug)}}">
                         <img src="https://i.ytimg.com/vi/{{ $data->id_yt }}/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCqB6b521V89qG2JHe5M_f8H_ak6w" class="card-img-top" alt="{{ $data->slug }}">
                     </a>
