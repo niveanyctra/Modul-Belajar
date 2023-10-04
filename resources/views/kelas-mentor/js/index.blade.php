@@ -5,15 +5,15 @@
     <h1 class="fw-bolder display-5">Kelas JavaScript</h1>
     <p >Belajar hal yang paling mendasar untuk menambah wawasan dari para mentor.</p>
 </div>
-<div class="wrapper-kelas container">
+<div class="wrapper-kelas container-fluid px-5">
         {{-- sidebar --}}
         @include('layouts.kelas-mentor.sidebar')
         {{-- main content --}}
         <div class="main-kelas">
-            <div class="d-flex justify-content-center flex-wrap img-mentor">
+            <div class="d-flex justify-content-center gap-3 flex-wrap img-mentor">
                 @foreach ($posts as $data)
                 <!-- card mode -->
-                <div class="card m-3 {{ $data->level }}" style="width: 18rem;">
+                <div class="card {{ $data->level }}" style="width: 18rem;">
                     <a href="{{ url('/kelas-mentor/js/'.$data->slug)}}">
                         <img src="https://i.ytimg.com/vi/{{ $data->id_yt }}/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCqB6b521V89qG2JHe5M_f8H_ak6w" class="card-img-top" alt="{{ $data->slug }}">
                     </a>

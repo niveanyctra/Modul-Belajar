@@ -1,12 +1,12 @@
-<div class="__footer">
-    <div class="container py-4">
+<div class="__footer mt-5">
+    <div class="container py-5">
         <div class="text-center follow-icon mb-5">
             <h5>Follow Us</h5>
             <a href="https://www.instagram.com/rpl_smkn1crb/?hl=id" target="_blank" rel="noopener noreferrer"><i style="color: #d82d7e;" class="fa-brands fa-instagram"></i></a>
             <a href="https://www.youtube.com/@RPLSMKN1CIREBON" target="_blank" rel="noopener noreferrer"><i style="color: #e43535;" class="fa-brands fa-youtube"></i></a>
             <a href="https://discord.gg/VqPZbNKrzD" target="_blank" rel="noopener noreferrer"><i style="color: #5865f2;" class="fa-brands fa-discord"></i></a>
         </div>
-        <div class="row mt-4">
+        <div class="row pt-4">
             <div class="col-lg-4 col-12">
                 <div class="mb-2">
                     <img src="{{ asset('img/logo.png') }}" alt="" class="img-fluid">
@@ -18,7 +18,7 @@
             </div>
             <div class="col-lg-8 col-12">
                 <div class="row j-margin">
-                    <div class="col-4 d-flex flex-column">
+                    <div class="col-sm-6 col-lg-4 d-flex flex-column">
                         <h6 class="text-nowrap">
                             Perjalanan Karir
                         </h6>
@@ -26,7 +26,7 @@
                         <a href="{{ url('/alur-belajar/front-end') }}">Front End Developer</a>
                         <a href="{{ url('/alur-belajar/ux-designer') }}">UX Design</a>
                     </div>
-                    <div class="col-4 d-flex flex-column">
+                    <div class="col-sm-6 col-lg-4 d-flex flex-column">
                         <h6>
                             Belajar Bahasa Pemograman
                         </h6>
@@ -46,7 +46,7 @@
                             <span>Belajar SQL</span>
                         </a>
                     </div>
-                    <div class="col-4 d-flex flex-column">
+                    <div class="col-sm-6 col-lg-4 d-flex flex-column">
                         <h6 class="text-nowrap">
                             Latihan
                         </h6>
@@ -66,7 +66,7 @@
                             <span>Latihan SQL</span>
                         </a>
                     </div>
-                    <div class="col-4 d-flex flex-column">
+                    <div class="col-sm-6 col-lg-4 d-flex flex-column">
                         <h6 class="text-nowrap">
                             Belajar dari Para Mentor
                         </h6>
