@@ -23,7 +23,6 @@
 </div>
 <div class="modal bg-white" tabindex="-1" aria-labelledby="..." aria-hidden="true" id="options">
     <div class="container">
-
         <form action="" method="get">
             <h3 class="py-2 fw-bolder">Tingkatan Level</h3>
             <div class="form-check">
