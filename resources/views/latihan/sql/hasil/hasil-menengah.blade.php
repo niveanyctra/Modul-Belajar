@@ -30,7 +30,7 @@
             class="salah"
         @endif>
                 <div class="code">
-                    <input type="text" readonly value="{{$jawab2}}" name="jawaban2"> siswa SET (nama="Messi",kelas="XII RPL 1",jk="Laki-laki") WHERE nama = "Arip";
+                    <input type="text" readonly value="{{$jawab2}}" name="jawaban2"> siswa SET nama="Messi",kelas="XII RPL 1",jk="Laki-laki" WHERE nama = "Arip";
                 </div>
             {{$cek2}}
         </div>
@@ -56,7 +56,7 @@
             class="salah"
         @endif>
                 <div class="code">
-                    DELETE siswa <input type="text" readonly value="{{$jawab4}}" name="jawaban4"> = "Arip";
+                    DELETE siswa <input type="text" readonly value="{{$jawab4}}" name="jawaban4"> nama = "Arip";
                 </div>
             {{$cek4}}
         </div>
