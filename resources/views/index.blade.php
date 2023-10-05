@@ -214,10 +214,10 @@
         <h1 class="fw-bolder display-5 mt-5">Kelas Online</h1>
         <h2 class="fw-bold">Belajar Dari Para Mentor</h2>
     </div>
-    <div class="d-flex justify-content-lg-center flex-nowrap img-mentor pt-5" style="max-height: 30rem;width:100%; overflow:auto;">
+    <div class="d-flex justify-content-center flex-wrap img-mentor pt-5" style="height: 30rem;">
         @foreach ($posts as $data)
         <!-- card mode -->
-        <div class="card m-3 {{ $data->level }}" style="min-width:20rem;">
+        <div class="card m-3 {{ $data->level }}" style="width:15rem;">
             <a href="{{ url('/kelas-mentor/html/'.$data->slug)}}">
                 <img src="https://i.ytimg.com/vi/{{ $data->id_yt }}/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCqB6b521V89qG2JHe5M_f8H_ak6w" class="card-img-top" alt="{{ $data->slug }}">
             </a>
