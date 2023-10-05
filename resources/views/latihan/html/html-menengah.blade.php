@@ -14,7 +14,7 @@
                 <div class="code">
                     &lt;<input type="text" name="jawaban1" id="jawaban1" value="{{ old('jawaban1') }}">&gt;Text&lt;/<input type="text" name="jawaban1" value="{{ old('jawaban1') }}">&gt;
                 </div>
-                <div class="btn btn-success" onclick="soal2()">Lanjut</div>
+                <div class="btn btn-primary" onclick="soal2()">Lanjut</div>
             </div>
             <div style="display: none" id="soal2">
                 <h2 class="my-3">Soal 2</h2>
@@ -22,8 +22,8 @@
                 <div class="code">
                     &lt;link type="<input type="text" name="jawaban2"> href="/images/favicon.ico"&gt;
                 </div>
-                <div class="btn btn-success" onclick="soal1()">Kembali</div>
-                <div class="btn btn-success" onclick="soal3()">Lanjut</div>
+                <div class="btn btn-danger" onclick="soal1()">Kembali</div>
+                <div class="btn btn-primary" onclick="soal3()">Lanjut</div>
             </div>
             <div style="display: none" id="soal3">
                 <h2 class="my-3">Soal 3</h2>
@@ -31,8 +31,8 @@
                 <div class="code">
                     &lt;link rel="<input type="text" name="jawaban3">" href="/images/favicon.ico"&gt;
                 </div>
-                <div class="btn btn-success" onclick="soal2()">Kembali</div>
-                <div class="btn btn-success" onclick="soal4()">Lanjut</div>
+                <div class="btn btn-danger" onclick="soal2()">Kembali</div>
+                <div class="btn btn-primary" onclick="soal4()">Lanjut</div>
             </div>
             <div style="display: none" id="soal4">
                 <h2 class="my-3">Soal 4</h2>
@@ -40,8 +40,8 @@
                 <div class="code">
                     &lt;img src="image.jpg" <input type="text" name="jawaban4">="100"&gt;
                 </div>
-                <div class="btn btn-success" onclick="soal3()">Kembali</div>
-                <div class="btn btn-success" onclick="soal5()">Lanjut</div>
+                <div class="btn btn-danger" onclick="soal3()">Kembali</div>
+                <div class="btn btn-primary" onclick="soal5()">Lanjut</div>
             </div>
             <div style="display: none" id="soal5">
                 <h2 class="my-3">Soal 5</h2>
@@ -49,8 +49,8 @@
                 <div class="code">
                     &lt;img src="image.jpg" <input type="text" name="jawaban5">="100"&gt;
                 </div>
-                <div class="btn btn-success" onclick="soal4()">Kembali</div>
-                <input type="submit" value="Kirim Jawaban">
+                <div class="btn btn-danger" onclick="soal4()">Kembali</div>
+                <input type="submit" class="btn btn-danger bg-success" value="Kirim Jawaban">
             </div>
         </form>
     </div>

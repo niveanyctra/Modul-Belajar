@@ -10,7 +10,7 @@
             <div class="col-lg-4 col-12">
                 <div class="mb-2">
                     <img src="{{ asset('img/logo.png') }}" alt="" class="img-fluid">
-                    <img src="{{ asset('img/neper.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('img/neper_new_logo.png') }}" alt="" class="img-fluid">
                 </div>
                 <p>Jl. Perjuangan By Pass Sunyaragi, <br>Cirebon, Indonesia 45132</p>
                 <p>Telp & Fax: +62-0231-480202</p>
