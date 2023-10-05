@@ -47,5 +47,5 @@
         </form>
     </div>
 </div>
-<a id="btn-filter" href="#" class="btn btn-secondary btn-filter d-block d-xl-none" data-bs-toggle="modal" data-bs-target="#options">Filter Catalog</a>
+<a id="btn-filter" href="#" class="btn btn-secondary btn-filter d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#options">Filter Catalog</a>
 

@@ -70,29 +70,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
     <script src="https://buildwithangga.com/scripts/keypress/keypress-2.1.5.min.js"></script>
     <script type="text/javascript" src="{{ asset('assets/js/quickSearchModal.js') }}"></script>
-    {{-- <script type="text/javascript" src="{{ asset('assets/js/jquery-3.6.0.js') }}"></script> --}}
     <script type="text/javascript" src="{{ asset('assets/js/loadMoreSearchResult.js') }}"></script>
-    {{-- <script type="text/javascript" src="{{ asset('assets/js/catalog-course.js') }}"></script> --}}
-
-    {{-- <script type="text/javascript">
-        var path = "{{ route('autocomplete') }}";
-
-        $('.search-input').typeahead({
-            source: function (query, process) {
-                return $.get(path, {
-                    query: query
-                }, function (data) {
-                    return process(data);
-                });
-            }
-        });
-
-    </script> --}}
     <script>
         var courseConfig = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.whitespace('q'),
         queryTokenizer: Bloodhound.tokenizers.whitespace,
-        //  prefetch: "https://buildwithangga.com/autocomplete",
         local: courseConfig,
         remote: {
             url: "/autocomplete?q=%QUERY%",
@@ -109,11 +91,9 @@
 
     var dataConfig = {
         source: courseConfig.ttAdapter(),
-        limit: Infinity, //limit display course
+        limit: Infinity,
         display: 'nama_kelas',
-        // This will be appended to "tt-dataset-" to form the class name of the suggestion menu.
         name: 'courses',
-        // the key from the array we want to display (nama_kelas,tipe_kelas,etc...)
         templates: {
             empty: [
                 '<div class="course-content"><div class="course-title">Data kelas tidak ditemukan.</div></div>'
@@ -136,9 +116,7 @@
                     '</div>'
                 );
             },
-            //  header: [
-            //      '<h3 class="league-name">Premium Course</h3>'
-            //  ],
+
             suggestion: function(data) {
                 var thumbnail = (data.id_yt);
 
@@ -151,17 +129,12 @@
                         ${data.users.name}
                     </div>
                     </div>`);
-                // <a href="${appUrl}/kelas/${data.slug_kelas}?main_leads=searchsuggestion" class="stretched-link"></a>
+
             },
             footer: `<p class="text-center text-xs text-grey m-0">
                         End of result
                     </p>`,
-            // footer: `<div class="p-3 pb-5 d-flex justify-content-center" id="loadMoreCourses">
-            //                 <button type="button" class="text-center mx-auto btn-secondary btn-sm text-sm" data-skip="1">Load More</button>
-            //                 <div id="loaderGif" class="mx-auto d-none">
-            //                     <img src="https://buildwithangga.com/vendor/laravel-filemanager/img/loader.svg" width="50" alt="load">
-            //                 </div>
-            //                 </div>`,
+
         }
     }
 
@@ -195,49 +168,7 @@
 
     $(setUpState($("#inputSearchModule3")));
     $('.tt-menu').css('top', '60px');
-    // Set the Options for "Bloodhound" suggestion engine
-        // jQuery(document).ready(function($) {
-        //     // Set the Options for "Bloodhound" suggestion engine
-        //     var engine = new Bloodhound({
-        //         remote: {
-        //             url: '/autocomplete?q=%QUERY%',
-        //             wildcard: '%QUERY%'
-        //         },
-        //         datumTokenizer: Bloodhound.tokenizers.whitespace('q'),
-        //         queryTokenizer: Bloodhound.tokenizers.whitespace
-        //     });
 
-        //     $(".search-input").typeahead({
-        //         hint: true,
-        //         highlight: true,
-        //         minLength: 1
-        //     }, {
-        //         source: engine.ttAdapter(),
-
-        //         // This will be appended to "tt-dataset-" to form the class name of the suggestion menu.
-        //         name: 'postsList',
-
-        //         // the key from the array we want to display (name,id,email,etc...)
-        //         templates: {
-        //             empty: [
-        //                 '<div class="post-list list-group search-results-dropdown"><div class="list-group-item">Nothing found.</div></div>'
-        //             ],
-        //             // header: [
-        //             //     '<div class="list-group search-results-dropdown">'
-        //             // ],
-        //             suggestion: function (data) {
-        //                 return (`<div class="post-content tt-suggestion tt-selectable">
-        //                 <div>
-        //                     <div class="post-title">${data.title}</div>
-        //                     ${data.category}
-        //                     ${data.users.name}
-        //                 </div>
-        //                 </div>`);
-        //                 // return '<a href="' + data.profile.username + '" class="post-content list-group-item">' + data.name + ' - @' + data.profile.username + '</a>'
-        //       }
-        //         }
-        //     });
-        // });
     </script>
 
     <script id="rendered-js">
@@ -255,11 +186,7 @@
         if (topSidebar !== null) {
             sidebar.scrollTop = parseInt(topSidebar, 10);
         }
-        // let main = document.querySelector(".main");
-        // let topMain = sessionStorage.getItem("main-scroll");
-        // if (topMain !== null) {
-        // main.scrollTop = parseInt(topMain, 10);
-        // }
+
 
         window.addEventListener("beforeunload", () => {
             sessionStorage.setItem("sidebar-scroll", sidebar.scrollTop);

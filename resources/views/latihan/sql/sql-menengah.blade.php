@@ -21,7 +21,7 @@
                 <h2 class="my-3">Soal 2</h2>
                 <h6 class="fw-semibold">Bagaimana cara untuk mengubah data tabel siswa dengan nama "Arip"?</h6>
                 <div class="code">
-                    <input type="text" name="jawaban2"> siswa SET (nama="Messi",kelas="XII RPL 1",jk="Laki-laki") WHERE nama = "Arip";
+                    <input type="text" name="jawaban2"> siswa SET nama="Messi",kelas="XII RPL 1",jk="Laki-laki" WHERE nama = "Arip";
                 </div>
                 <div class="btn btn-success" onclick="soal1()">Kembali</div>
                 <div class="btn btn-success" onclick="soal3()">Lanjut</div>
@@ -39,7 +39,7 @@
                 <h2 class="my-3">Soal 4</h2>
                 <h6 class="fw-semibold">Hapus record dari tabel siswa dengan nama "Arip"</h6>
                 <div class="code">
-                    DELETE siswa <input type="text" name="jawaban4"> = "Arip";
+                    DELETE siswa <input type="text" name="jawaban4"> nama = "Arip";
                 </div>
                 <div class="btn btn-success" onclick="soal3()">Kembali</div>
                 <div class="btn btn-success" onclick="soal5()">Lanjut</div>

@@ -2,7 +2,7 @@
 @section('content')
 <div class="container d-flex align-items-center vh-100">
     <div>
-        {{-- Bagusan NeverGonnaGiveYouUp :/ --}}
+
         <h4 style="color: #008572;">#ProgrammerMuda</h4>
         <h1 class="fw-bolder display-3">Change Your Future With Coding </h1>
         <p class="fw-bold mt-4 fs-3">

@@ -3,10 +3,7 @@
         <a class="navbar-brand" href="{{ url('/') }}">
             <img src="{{ url('img/logo.png') }}" width="40" alt="">
         </a>
-        {{-- <button class=" navbar-toggler inline-flex items-center justify-center p-2 rounded-md text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-900 focus:outline-none focus:bg-gray-100 dark:focus:bg-gray-900 focus:text-gray-500 dark:focus:text-gray-400 transition duration-150 ease-in-out" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-label="Toggle navigation">
-            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-            </svg>
-        </button> --}}
+
         <button style="border: none;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -167,7 +164,7 @@
                         <button type="button" class="nav-link btn-secondary opacity-75" data-bs-toggle="modal" data-bs-target="#quickSearchModal">
                             <img class="search" src="https://buildwithangga.com/themes/front/images/ic_search.svg" alt="Searchbar">
                         </button>
-                        {{-- <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Cari</button> --}}
+
                     </li>
                     <li class="nav-item">
                         <a target="_blank" href="https://discord.gg/VqPZbNKrzD" class="nav-link">Join Community</a>
