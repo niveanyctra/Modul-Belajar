@@ -14,7 +14,7 @@
                 <div class="code">
                     &lt;<input type="text" name="jawaban1">&gt;Text&lt;/<input type="text" name="jawaban1">&gt;
                 </div>
-                <div class="btn btn-success" onclick="soal2()">Lanjut</div>
+                <div class="btn btn-primary" onclick="soal2()">Lanjut</div>
             </div>
             <div style="display: none" id="soal2">
                 <h2 class="my-3">Soal 2</h2>
@@ -22,8 +22,8 @@
                 <div class="code">
                     &lt;<input type="text" name="jawaban2">&gt;Judul&lt;/<input type="text" name="jawaban2">&gt;
                 </div>
-                <div class="btn btn-success" onclick="soal1()">Kembali</div>
-                <div class="btn btn-success" onclick="soal3()">Lanjut</div>
+                <div class="btn btn-danger" onclick="soal1()">Kembali</div>
+                <div class="btn btn-primary" onclick="soal3()">Lanjut</div>
             </div>
             <div style="display: none" id="soal3">
                 <h2 class="my-3">Soal 3</h2>
@@ -37,8 +37,8 @@
                     </div>
                     &lt;p&gt;
                 </div>
-                <div class="btn btn-success" onclick="soal2()">Kembali</div>
-                <div class="btn btn-success" onclick="soal4()">Lanjut</div>
+                <div class="btn btn-danger" onclick="soal2()">Kembali</div>
+                <div class="btn btn-primary" onclick="soal4()">Lanjut</div>
             </div>
             <div style="display: none" id="soal4">
                 <h2 class="my-3">Soal 4</h2>
@@ -48,8 +48,8 @@
                     <input type="text" name="jawaban4"> <br>
                     &lt;p&gt; Text paragraf &lt;/p&gt;
                 </div>
-                <div class="btn btn-success" onclick="soal3()">Kembali</div>
-                <div class="btn btn-success" onclick="soal5()">Lanjut</div>
+                <div class="btn btn-danger" onclick="soal3()">Kembali</div>
+                <div class="btn btn-primary" onclick="soal5()">Lanjut</div>
             </div>
             <div style="display: none" id="soal5">
                 <h2 class="my-3">Soal 5</h2>
@@ -57,8 +57,8 @@
                 <div class="code">
                     &lt;<input type="text" name="jawaban5">&gt;Judul&lt;/<input type="text" name="jawaban5">&gt;
                 </div>
-                <div class="btn btn-success" onclick="soal4()">Kembali</div>
-                <input type="submit" value="Kirim Jawaban">
+                <div class="btn btn-danger" onclick="soal4()">Kembali</div>
+                <input type="submit"class="btn btn-primary bg-success" value="Kirim Jawaban">
             </div>
         </form>
     </div>

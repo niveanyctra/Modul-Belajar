@@ -14,7 +14,7 @@
                 <div class="code">
                     <input type="text" name="jawaban1"> * FROM siswa;
                 </div>
-                <div class="btn btn-success" onclick="soal2()">Lanjut</div>
+                <div class="btn btn-primary" onclick="soal2()">Lanjut</div>
             </div>
             <div style="display: none" id="soal2">
                 <h2 class="my-3">Soal 2</h2>
@@ -22,8 +22,8 @@
                 <div class="code">
                     SELECT <input type="text" name="jawaban2"> FROM siswa
                 </div>
-                <div class="btn btn-success" onclick="soal1()">Kembali</div>
-                <div class="btn btn-success" onclick="soal3()">Lanjut</div>
+                <div class="btn btn-danger" onclick="soal1()">Kembali</div>
+                <div class="btn btn-primary" onclick="soal3()">Lanjut</div>
             </div>
             <div style="display: none" id="soal3">
                 <h2 class="my-3">Soal 3</h2>
@@ -31,8 +31,8 @@
                 <div class="code">
                     SELECT * FROM siswa <input type="text" name="jawaban3"> nama = "Arip";
                 </div>
-                <div class="btn btn-success" onclick="soal2()">Kembali</div>
-                <div class="btn btn-success" onclick="soal4()">Lanjut</div>
+                <div class="btn btn-danger" onclick="soal2()">Kembali</div>
+                <div class="btn btn-primary" onclick="soal4()">Lanjut</div>
             </div>
             <div style="display: none" id="soal4">
                 <h2 class="my-3">Soal 4</h2>
@@ -40,8 +40,8 @@
                 <div class="code">
                     SELECT * FROM siswa <input type="text" name="jawaban4"> kelas = "XII RPL 1";
                 </div>
-                <div class="btn btn-success" onclick="soal3()">Kembali</div>
-                <div class="btn btn-success" onclick="soal5()">Lanjut</div>
+                <div class="btn btn-danger" onclick="soal3()">Kembali</div>
+                <div class="btn btn-primary" onclick="soal5()">Lanjut</div>
             </div>
             <div style="display: none" id="soal5">
                 <h2 class="my-3">Soal 5</h2>
@@ -49,8 +49,8 @@
                 <div class="code">
                     SELECT * FROM siswa <input type="text" name="jawaban5"> nama;
                 </div>
-                <div class="btn btn-success" onclick="soal4()">Kembali</div>
-                <input type="submit" value="Kirim Jawaban">
+                <div class="btn btn-danger" onclick="soal4()">Kembali</div>
+                <input type="submit" class="btn btn-danger bg-success" value="Kirim Jawaban">
 
             </div>
 
