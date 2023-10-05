@@ -13,7 +13,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" class="gap-3">
                     <li class="nav-item dropdown fw-medium">
                         <a class="nav-link dropdown-toggle" href="#" id="listBelajarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Tutorial

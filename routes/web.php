@@ -562,5 +562,5 @@ Route::get('/kelas-mentor/sql',[PostController::class,"indexUmum"])->name('index
 Route::get('/kelas-mentor/sql/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
 
 //Route Profile Mentor
-Route::get('/mentor/{username}',[PostController::class,"profileMentor"])->name('profileMentor');
+Route::get('/mentor/@{username}',[PostController::class,"profileMentor"])->name('profileMentor');
 
