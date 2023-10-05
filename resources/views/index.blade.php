@@ -231,12 +231,11 @@
     </div>
 </div>
 <div class="vh-100 d-flex justify-content-center align-items-center mt-5" style="background: #181230;">
-<div class="container d-flex h-100 justify-content-center align-items-center">
+<div class="container d-flex h-100 justify-content-center align-items-center gap-3">
     <div class="text-white">
-        <h1 class="fw-bolder display-3">Bergabung Bersama Kami di Discord Community</h1>
+        <h1 class="fw-bolder display-5"><a href="https://discord.gg/VqPZbNKrzD" class="link-light" target="_blank" rel="noopener noreferrer">Bergabung Bersama Kami di Discord Community <i style="color: #5865f2;" class="fa-brands fa-discord"></i></a></h1>
     </div>
-    <div class="d-none d-lg-block bg-white rounded-4" style="height: 100%;width: 75%;">
-    </div>
+    <img src="{{ url('img\index\Discord YPTT.png') }}" class="d-none d-md-block" alt="" style="width: 95%;">
 </div>
 </div>
 @include('layouts.footer')
