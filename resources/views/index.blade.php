@@ -5,7 +5,7 @@
 
         <h4 style="color: #008572;">#ProgrammerMuda</h4>
         <h1 class="fw-bolder display-3">Change Your Future With Coding </h1>
-        <p class="fw-bold mt-4 fs-3">
+        <p class="fw-bold mt-2" style="font-size: calc(1rem - 4vw);">
             Siapkan masa depan yang cerah <br>
             Modul ini menyediakan pembelajaran untuk kelas X - XII
         </p>
@@ -214,20 +214,22 @@
         <h1 class="fw-bolder display-5 mt-5">Kelas Online</h1>
         <h2 class="fw-bold">Belajar Dari Para Mentor</h2>
     </div>
-    <div class="d-flex justify-content-center flex-wrap img-mentor pt-5" style="height: 30rem;">
-        @foreach ($posts as $data)
-        <!-- card mode -->
-        <div class="card m-3 {{ $data->level }}" style="width:15rem;">
-            <a href="{{ url('/kelas-mentor/html/'.$data->slug)}}">
-                <img src="https://i.ytimg.com/vi/{{ $data->id_yt }}/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCqB6b521V89qG2JHe5M_f8H_ak6w" class="card-img-top" alt="{{ $data->slug }}">
-            </a>
-            <div class="card-body">
-                <h5 class="card-title"><a href="{{ url('/kelas-mentor/html/'.$data->slug)}}">{{$data->title}}</a></h5>
-                <p class="card-text">{{ $data->users->name  }}</p>
-                @include('layouts.kelas-mentor.display-tool')
+    <div class="w-100 overflow-auto">
+        <div class="pt-5 kelas-lp">
+            @foreach ($posts as $data)
+            <!-- card mode -->
+            <div class="card m-3 {{ $data->level }}" style="width:15rem;">
+                <a href="{{ url('/kelas-mentor/html/'.$data->slug)}}">
+                    <img src="https://i.ytimg.com/vi/{{ $data->id_yt }}/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCqB6b521V89qG2JHe5M_f8H_ak6w" class="card-img-top" alt="{{ $data->slug }}">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{{ url('/kelas-mentor/html/'.$data->slug)}}">{{$data->title}}</a></h5>
+                    <p class="card-text">{{ $data->users->name  }}</p>
+                    @include('layouts.kelas-mentor.display-tool')
+                </div>
             </div>
+            @endforeach
         </div>
-        @endforeach
     </div>
 </div>
 <div class="vh-100 d-flex justify-content-center align-items-center mt-5" style="background: #181230;">

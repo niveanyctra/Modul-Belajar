@@ -148,6 +148,22 @@ hr{
   margin: 14px 0px;
   min-height: 300px;
 }
+
+.kelas-lp {
+  display: flex;
+  justify-content: start;
+  flex-wrap: nowrap;
+  width: max-content;
+}
+
+@media screen and (min-width: 768px) {
+  .kelas-lp {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
 /* Navbar */
 .form-control {
     background-color: #e5e9f2;
@@ -552,6 +568,7 @@ hr{
     list-style-position: inside;
 }
 /* End Mentor */
+
   @media all and (max-width: 1024px) {
       .sidebar.toggled {
           left: 0;

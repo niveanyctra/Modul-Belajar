@@ -542,24 +542,24 @@ Route::post('/hasil/php/menengah',[LatihanPHPController::class,"cekPHPMenengah"]
 Route::post('/hasil/php/lanjutan',[LatihanPHPController::class,"cekPHPLanjutan"])->name('cekPHPLanjutan');
 
 //Route Kelas Mentor HTML
-Route::get('/kelas-mentor/html',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/html/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/html',[PostController::class,"indexUmum"])->name('indexUmumHtml');
+Route::get('/kelas-mentor/html/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmumHtml');
 
 //Route Kelas Mentor CSS
-Route::get('/kelas-mentor/css',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/css/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/css',[PostController::class,"indexUmum"])->name('indexUmumCss');
+Route::get('/kelas-mentor/css/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmumCss');
 
 //Route Kelas Mentor PHP
-Route::get('/kelas-mentor/php',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/php/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/php',[PostController::class,"indexUmum"])->name('indexUmumPhp');
+Route::get('/kelas-mentor/php/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmumPhp');
 
 //Route Kelas Mentor JS
-Route::get('/kelas-mentor/js',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/js/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/js',[PostController::class,"indexUmum"])->name('indexUmumJs');
+Route::get('/kelas-mentor/js/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmumJs');
 
 //Route Kelas Mentor SQL
-Route::get('/kelas-mentor/sql',[PostController::class,"indexUmum"])->name('indexUmum');
-Route::get('/kelas-mentor/sql/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmum');
+Route::get('/kelas-mentor/sql',[PostController::class,"indexUmum"])->name('indexUmumSql');
+Route::get('/kelas-mentor/sql/{post:slug}',[PostController::class,"detailUmum"])->name('detailUmumSql');
 
 //Route Profile Mentor
 Route::get('/mentor/@{username}',[PostController::class,"profileMentor"])->name('profileMentor');
