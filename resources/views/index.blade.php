@@ -160,7 +160,7 @@
         <a href="{{ url('alur-belajar/front-end') }}" class="text-dark">
         <div class="kartu alur" style="background-color: white">
             <div class="gambar">
-               <img src="{{ url('img/index/frontend.jpg') }}" alt=""> 
+               <img src="{{ url('img/index/frontend.jpg') }}" alt="">
             </div>
             <div class="judul">
                 <h4 class="fw-bolder">Berkarir sebagai Front End Developer</h4>
@@ -172,12 +172,12 @@
                 <img src="{{ url('img\tools\logo_bootstrap.png') }}" alt="">
                 <img src="{{ url('img\tools\logo_react_js.png') }}" alt="">
             </div>
-        </div> 
+        </div>
         </a>
         <a href="{{ url('alur-belajar/back-end') }}" class="text-dark">
         <div class="kartu alur" style="background-color: white">
             <div class="gambar">
-               <img src="{{ url('img/index/backend.jpg') }}" alt=""> 
+               <img src="{{ url('img/index/backend.jpg') }}" alt="">
             </div>
             <div class="judul">
                 <h4 class="fw-bolder">Berkarir sebagai Back End Developer</h4>
@@ -189,12 +189,12 @@
                 <img src="{{ url('img\tools\logo_react_js.png') }}" alt="">
                 <img src="{{ url('img\tools\logo_javascript.png') }}" alt="">
             </div>
-        </div> 
+        </div>
         </a>
         <a href="{{ url('alur-belajar/ux-designer') }}" class="text-dark">
         <div class="kartu alur" style="background-color: white">
             <div class="gambar">
-               <img src="{{ url('img/index/uiux.jpg') }}" alt=""> 
+               <img src="{{ url('img/index/uiux.jpg') }}" alt="">
             </div>
             <div class="judul">
                 <h4 class="fw-bolder">Berkarir sebagai UX Design Developer</h4>
@@ -214,10 +214,10 @@
         <h1 class="fw-bolder display-5 mt-5">Kelas Online</h1>
         <h2 class="fw-bold">Belajar Dari Para Mentor</h2>
     </div>
-    <div class="d-flex justify-content-center flex-wrap img-mentor pt-5">
+    <div class="d-flex justify-content-center flex-wrap img-mentor pt-5" style="height: 30rem;">
         @foreach ($posts as $data)
         <!-- card mode -->
-        <div class="card m-3 {{ $data->level }}" style="width: 18rem;">
+        <div class="card m-3 {{ $data->level }}" style="width:15rem;">
             <a href="{{ url('/kelas-mentor/html/'.$data->slug)}}">
                 <img src="https://i.ytimg.com/vi/{{ $data->id_yt }}/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCqB6b521V89qG2JHe5M_f8H_ak6w" class="card-img-top" alt="{{ $data->slug }}">
             </a>
