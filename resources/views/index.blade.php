@@ -5,7 +5,7 @@
 
         <h4 style="color: #008572;">#ProgrammerMuda</h4>
         <h1 class="fw-bolder display-3">Change Your Future With Coding </h1>
-        <p class="fw-bold mt-2" style="font-size: calc(1rem - 4vw);">
+        <p class="fw-bold mt-2" style="font-size: calc(1rem + 0.7vw);">
             Siapkan masa depan yang cerah <br>
             Modul ini menyediakan pembelajaran untuk kelas X - XII
         </p>
