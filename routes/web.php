@@ -28,7 +28,7 @@ use App\Http\Controllers\LatihanHTMLController;
 
 Route::get('/', function () {
             $posts = Post::with('users')
-            ->orderBy('updated_at')
+            ->latest()
             ->limit(4)
             ->get();
     return view('index', compact('posts'));
