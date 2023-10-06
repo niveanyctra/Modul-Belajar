@@ -8,7 +8,7 @@
         <h6>Lengkapi potongan kode dibawah!</h6>
         @csrf
         <form action="{{route('cekHTMLLanjutan')}}" method="post">
-            <div id="soal1">
+            <div class="soal" id="soal1">
                 <h2 class="my-3">Soal 1</h2>
                 <h6 class="fw-semibold">Gunakan atribut yang tepat untuk menampilkan huruf (huruf besar ABC) bukan angka</h6>
                 <div class="code">
@@ -20,9 +20,9 @@
                         </div>
                     &lt;ol&gt;
                 </div>
-                <div class="btn btn-primary" onclick="soal2()">Lanjut</div>
+                <div class="btn btn-primary" onclick="soal(2)">Lanjut</div>
             </div>
-            <div style="display: none" id="soal2">
+            <div style="display: none" class="soal" id="soal2">
                 <h2 class="my-3">Soal 2</h2>
                 <h6 class="fw-semibold">Gunakan CSS style untuk membuat lebar tabel menjadi 300 pixel</h6>
                 <div class="code">
@@ -38,10 +38,10 @@
                         </div>
                     &lt;/table&gt;
                 </div>
-                <div class="btn btn-danger" onclick="soal1()">Kembali</div>
-                <div class="btn btn-primary" onclick="soal3()">Lanjut</div>
+                <div class="btn btn-danger" onclick="soal(1)">Kembali</div>
+                <div class="btn btn-primary" onclick="soal(3)">Lanjut</div>
             </div>
-            <div style="display: none" id="soal3">
+            <div style="display: none" class="soal" id="soal3">
                 <h2 class="my-3">Soal 3</h2>
                 <h6 class="fw-semibold">Pada form di bawah ini, tambahkan bidang input dengan tipe "button" dan value "OK".</h6>
                 <div class="code">
@@ -49,10 +49,10 @@
                     &lt;<input type="text" name="jawaban3" id="">&gt; <br>
                     &lt;/form&gt;
                 </div>
-                <div class="btn btn-danger" onclick="soal2()">Kembali</div>
-                <div class="btn btn-primary" onclick="soal4()">Lanjut</div>
+                <div class="btn btn-danger" onclick="soal(2)">Kembali</div>
+                <div class="btn btn-primary" onclick="soal(4)">Lanjut</div>
             </div>
-            <div style="display: none" id="soal4">
+            <div style="display: none" class="soal" id="soal4">
                 <h2 class="my-3">Soal 4</h2>
                 <h6 class="fw-semibold">Tambahkan dua input radio button dengan nama "hobi".</h6>
                 <div class="code">
@@ -61,10 +61,10 @@
                     &lt;<input type="text" name="jawaban4" id=""> value="menulis"&gt; Menulis <br>
                     &lt;/form&gt;
                 </div>
-                <div class="btn btn-danger" onclick="soal3()">Kembali</div>
-                <div class="btn btn-primary" onclick="soal5()">Lanjut</div>
+                <div class="btn btn-danger" onclick="soal(3)">Kembali</div>
+                <div class="btn btn-primary" onclick="soal(5)">Lanjut</div>
             </div>
-            <div style="display: none" id="soal5">
+            <div style="display: none" class="soal" id="soal5">
                 <h2 class="my-3">Soal 5</h2>
                 <h6 class="fw-semibold">Disable form input dibawah ini</h6>
                 <div class="code">
@@ -72,7 +72,7 @@
                     &lt;input type="text" <input type="text" name="jawaban5" id="">&gt; <br>
                     &lt;/form&gt;
                 </div>
-                <div class="btn btn-danger" onclick="soal4()">Kembali</div>
+                <div class="btn btn-danger" onclick="soal(4)">Kembali</div>
                 <input type="submit" class="btn btn-danger bg-success" value="Kirim Jawaban">
             </div>
         </form>
