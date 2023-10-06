@@ -221,9 +221,12 @@ public function indexUmum(Request $request)
         if (request('level')) {
             $posts = Post::where('category', 'html')
                          ->where('level', request('level'))
+                         ->latest()
                          ->get();
         } else {
-            $posts = Post::where('category', 'html')->get();
+            $posts = Post::where('category', 'html')
+                        ->latest()
+                        ->get();
         }
         return view('kelas-mentor.html.index', ['posts' => $posts]);
 
@@ -232,9 +235,12 @@ public function indexUmum(Request $request)
         if (request('level')) {
             $posts = Post::where('category', 'css')
                          ->where('level', request('level'))
+                         ->latest()
                          ->get();
         } else {
-            $posts = Post::where('category', 'css')->get();
+            $posts = Post::where('category', 'css')
+                        ->latest()
+                        ->get();
         }
         return view('kelas-mentor.css.index', ['posts' => $posts]);
 
@@ -243,9 +249,12 @@ public function indexUmum(Request $request)
         if (request('level')) {
             $posts = Post::where('category', 'php')
                          ->where('level', request('level'))
+                         ->latest()
                          ->get();
         } else {
-            $posts = Post::where('category', 'php')->get();
+            $posts = Post::where('category', 'php')
+                        ->latest()
+                        ->get();
         }
         return view('kelas-mentor.php.index', ['posts' => $posts]);
 
@@ -254,9 +263,12 @@ public function indexUmum(Request $request)
         if (request('level')) {
             $posts = Post::where('category', 'js')
                          ->where('level', request('level'))
+                         ->latest()
                          ->get();
         } else {
-            $posts = Post::where('category', 'js')->get();
+            $posts = Post::where('category', 'js')
+                        ->latest()
+                        ->get();
         }
         return view('kelas-mentor.js.index', ['posts' => $posts]);
 
@@ -265,9 +277,12 @@ public function indexUmum(Request $request)
         if (request('level')) {
             $posts = Post::where('category', 'sql')
                          ->where('level', request('level'))
+                         ->latest()
                          ->get();
         } else {
-            $posts = Post::where('category', 'sql')->get();
+            $posts = Post::where('category', 'sql')
+                        ->latest()
+                        ->get();
         }
         return view('kelas-mentor.sql.index', ['posts' => $posts]);
       }else{
@@ -317,26 +332,10 @@ public function detailUmum(Request $request,Post $post){
     public function profileMentor(Post $post, $username){
 
         $user = User::where('username', $username)->firstOrFail();
-        $posts = Post::where('id_user', $user->id)->get();
+        $posts = Post::where('id_user', $user->id)
+                    ->latest()
+                    ->get();
         return view('kelas-mentor.profile-mentor.index', compact('user','posts'));
 
-    }
-    function fetch(Request $request)
-    {
-        if($request->get('query'))
-        {
-            $query = $request->get('query');
-            $data = Post::where('title', 'LIKE', "%{$query}%")
-                ->get();
-            $output = '<ul class="dropdown-menu" style="display:block; position:relative;width:100%;">';
-            foreach($data as $row)
-            {
-                $output .= '
-                <li><a class="dropdown-item" href="#">'.$row->title.'</a></li>
-                ';
-            }
-            $output .= '</ul>';
-            echo $output;
-        }
     }
 }
