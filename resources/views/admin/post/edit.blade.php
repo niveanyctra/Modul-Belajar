@@ -54,73 +54,73 @@
                             <label for="tool">Tool</label>
                             <div class="row">
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"vscode")) checked @endif value="vscode" checked>
+                                    <label for="vscode">
+                                    <input type="checkbox" id="vscode" name="tool[]" @if(str_contains($post->tool,"vscode")) checked @endif value="vscode">
                                     VSCode</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"html")) checked @endif value="html">
+                                    <label for="html">
+                                    <input type="checkbox" id="html" name="tool[]" @if(str_contains($post->tool,"html")) checked @endif value="html">
                                     HTML</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"nodejs")) checked @endif value="nodejs">
+                                    <label for="nodejs">
+                                    <input type="checkbox" id="nodejs" name="tool[]" @if(str_contains($post->tool,"nodejs")) checked @endif value="nodejs">
                                     NodeJs</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"react")) checked @endif value="react">
+                                    <label for="react">
+                                    <input type="checkbox" id="react" name="tool[]" @if(str_contains($post->tool,"react")) checked @endif value="react">
                                     React</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"github")) checked @endif value="github">
+                                    <label for="github">
+                                    <input type="checkbox" id="github" name="tool[]" @if(str_contains($post->tool,"github")) checked @endif value="github">
                                     GitHub</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"css")) checked @endif value="css">
+                                    <label for="css">
+                                    <input type="checkbox" id="css" name="tool[]" @if(str_contains($post->tool,"css")) checked @endif value="css">
                                     CSS</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"bootstrap")) checked @endif value="bootstrap">
+                                    <label for="bootstrap">
+                                    <input type="checkbox" id="bootstrap" name="tool[]" @if(str_contains($post->tool,"bootstrap")) checked @endif value="bootstrap">
                                     Bootstrap</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"laravel")) checked @endif value="laravel">
+                                    <label for="laravel">
+                                    <input type="checkbox" id="laravel" name="tool[]" @if(str_contains($post->tool,"laravel")) checked @endif value="laravel">
                                     Laravel</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"tailwind")) checked @endif value="tailwind">
+                                    <label for="tailwind">
+                                    <input type="checkbox" id="tailwind" name="tool[]" @if(str_contains($post->tool,"tailwind")) checked @endif value="tailwind">
                                     TailWind</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"xampp")) checked @endif value="xampp">
+                                    <label for="xampp">
+                                    <input type="checkbox" id="xampp" name="tool[]" @if(str_contains($post->tool,"xampp")) checked @endif value="xampp">
                                     XAMPP</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"figma")) checked @endif value="figma">
+                                    <label for="figma">
+                                    <input type="checkbox" id="figma" name="tool[]" @if(str_contains($post->tool,"figma")) checked @endif value="figma">
                                     Figma</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"js")) checked @endif value="js">
+                                    <label for="js">
+                                    <input type="checkbox" id="js" name="tool[]" @if(str_contains($post->tool,"js")) checked @endif value="js">
                                     JavaScript</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"php")) checked @endif value="php">
+                                    <label for="php">
+                                    <input type="checkbox" id="php" name="tool[]" @if(str_contains($post->tool,"php")) checked @endif value="php">
                                     PHP</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" @if(str_contains($post->tool,"browser")) checked @endif value="browser">
+                                    <label for="browser">
+                                    <input type="checkbox" id="browser" name="tool[]" @if(str_contains($post->tool,"browser")) checked @endif value="browser">
                                     Browsers</label>
                                 </div>
                             </div>
