@@ -2,7 +2,7 @@
     <nav class="nav-side" id="sidebar-latihan">
         <h3 class="sidebar-header">Latihan HTML</h3>
             <a href="{{url('/latihan/html/basic')}}" class="basicNav {{ request()->is('latihan/html/basic') ? 'active' : '' }} {{ request()->is('hasil/html/basic') ? 'active' : '' }}">HTML Basic</a>
-            <div onclick="soal(1)" class="ps-5 link basic active-sub" style="display:none;">Soal 1</div>
+            <div onclick="soal(1)" class="ps-5 link basic" style="display:none;">Soal 1</div>
             <div onclick="soal(2)" class="ps-5 link basic" style="display:none;">Soal 2</div>
             <div onclick="soal(3)" class="ps-5 link basic" style="display:none;">Soal 3</div>
             <div onclick="soal(4)" class="ps-5 link basic" style="display:none;">Soal 4</div>

@@ -23,9 +23,9 @@
         </div>
         <iframe class="mt-3 rounded-4" style="max-width: calc(100% - 30px); width:1000px; height: max-content; min-height:500px" src="https://www.youtube.com/embed/{{$posts->id_yt}}?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <div class="my-3 mt-5 d-flex justify-content-start gap-4">
-        <button class="btn btn-secondary" type="button" onclick="document.getElementById('about').style.display='block',document.getElementById('tool').style.display='none'">About</button>
-        <button class="btn btn-secondary" type="button" onclick="document.getElementById('about').style.display='none',document.getElementById('tool').style.display='block'">Tool</button>
+    <div class="my-3 mt-5 d-flex justify-content-start gap-4" id="buttons">
+        <button class="btn-mentor btn-secondary active" type="button" onclick="document.getElementById('about').style.display='block',document.getElementById('tool').style.display='none'">About</button>
+        <button class="btn-mentor btn-secondary" type="button" onclick="document.getElementById('about').style.display='none',document.getElementById('tool').style.display='block'">Tool</button>
     </div>
     <div id="about">
         <h3 class="fw-bolder my-4">Tingkatkan Skillmu</h3>

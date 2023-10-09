@@ -196,7 +196,7 @@
                <img src="{{ url('img/index/uiux.jpg') }}" alt="">
             </div>
             <div class="judul">
-                <h4 class="fw-bolder">Berkarir sebagai UX Design Developer</h4>
+                <h4 class="fw-bolder">Berkarir sebagai UX Desainer</h4>
             </div>
             <div class="app">
                 <img src="{{ url('img\tools\logo_invision.png') }}" alt="">

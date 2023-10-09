@@ -1,30 +1,16 @@
 <?php
 
 use App\Models\Post;
-use App\Models\User;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\SearchController;
-use App\Http\Controllers\LatihanController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\LatihanJSController;
 use App\Http\Controllers\LatihanCSSController;
 use App\Http\Controllers\LatihanPHPController;
 use App\Http\Controllers\LatihanSQLController;
 use App\Http\Controllers\LatihanHTMLController;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
 Route::get('/', function () {
             $posts = Post::with('users')
