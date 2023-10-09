@@ -18,7 +18,7 @@
                             <input type="text" required="required" name="title" class="form-control" id="nama">
                         </div>
                         <div class="mb-3">
-                            <label for="nama" class="form-label">category</label>
+                            <label for="nama" class="form-label">Category</label>
                             <select type="text" required="required" name="category" class="form-control" id="nama">
                                 <option value="html">HTML</option>
                                 <option value="css">CSS</option>
@@ -28,7 +28,7 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="nama" class="form-label">level</label>
+                            <label for="nama" class="form-label">Level</label>
                             <select type="text"  required="required" name="level" class="form-control" id="nama">
                                 <option value="mudah">Mudah</option>
                                 <option value="menengah">Menengah</option>
@@ -41,73 +41,73 @@
                             <label for="tool">Tool</label>
                             <div class="row">
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="vscode">
+                                    <label for="vscode">
+                                    <input type="checkbox" id="vscode" name="tool[]" value="vscode">
                                     VSCode</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="html">
+                                    <label for="html">
+                                    <input type="checkbox" id="html" name="tool[]" value="html">
                                     HTML</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="nodejs">
+                                    <label for="nodejs">
+                                    <input type="checkbox" id="nodejs" name="tool[]" value="nodejs">
                                     NodeJs</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="react">
-                                    React</label>
+                                    <label for="react">
+                                    <input type="checkbox" id="react" name="tool[]" value="react">
+                                    React JS</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="github">
+                                    <label for="github">
+                                    <input type="checkbox" id="github" name="tool[]" value="github">
                                     Git Hub</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="css">
+                                    <label for="css">
+                                    <input type="checkbox" id="css" name="tool[]" value="css">
                                     CSS</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="bootstrap">
+                                    <label for="bootstrap">
+                                    <input type="checkbox" id="bootstrap" name="tool[]" value="bootstrap">
                                     Bootstrap</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="laravel">
+                                    <label for="laravel">
+                                    <input type="checkbox" id="laravel" name="tool[]" value="laravel">
                                     Laravel</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="tailwind">
+                                    <label for="tailwind">
+                                    <input type="checkbox" id="tailwind" name="tool[]" value="tailwind">
                                     TailWind</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="xampp">
+                                    <label for="xampp">
+                                    <input type="checkbox" id="xampp" name="tool[]" value="xampp">
                                     XAMPP</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="figma">
+                                    <label for="figma">
+                                    <input type="checkbox" id="figma" name="tool[]" value="figma">
                                     Figma</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="js">
+                                    <label for="js">
+                                    <input type="checkbox" id="js" name="tool[]" value="js">
                                     JavaScript</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="php">
+                                    <label for="php">
+                                    <input type="checkbox" id="php" name="tool[]" value="php">
                                     PHP</label>
                                 </div>
                                 <div class="col-3">
-                                    <label for="tool">
-                                    <input type="checkbox" id="tool" name="tool[]" value="browser">
+                                    <label for="browser">
+                                    <input type="checkbox" id="browser" name="tool[]" value="browser">
                                     Browers</label>
                                 </div>
                             </div>
