@@ -34,9 +34,9 @@
                                 <option value="menengah">Menengah</option>
                             </select>
                         </div>
-                                                    @error('tool')
+                        @error('tool')
                             <div class="text-danger">{{ $message }}</div>
-                            @enderror
+                        @enderror
                         <div class="mb-3">
                             <label for="tool">Tool</label>
                             <div class="row">

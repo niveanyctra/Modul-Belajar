@@ -41,29 +41,37 @@
     <div class="modal fade" id="quickSearchModal" tabindex="-1" aria-labelledby="quickSearchModalLabel" aria-hidden="true">
         <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content overflow-hidden position-relative">
-        <div class="modal-header">
-<form autocomplete="off" class="position-relative quick-search-modal w-100" method="GET" action="https://buildwithangga.com/search" id="quickSearchForm">
-<div class="position-relative">
-<span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" value="" minlength="2" class="navbar-input-column form-control tt-hint" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0px 0px / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><input type="text" value="" name="keyword" minlength="2" placeholder="Cari kelas, cth: Web development, Freelancer, App development" class="navbar-input-column form-control tt-input" id="inputSearchModule3" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Poppins, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 500; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu tt-open tt-empty" style="position: absolute; top: 60px; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-courses"></div></div></span>
-<svg width="24" height="24" viewBox="0 0 24 24" class="ic_search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4ZM2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z" fill="currentColor"></path>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2929 14.2929C14.6834 13.9024 15.3166 13.9024 15.7071 14.2929L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L14.2929 15.7071C13.9024 15.3166 13.9024 14.6834 14.2929 14.2929Z" fill="currentColor"></path>
-</svg>
-<a href="javascript:void(0);" class="clear-field-x d-none" id="clear_field">
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18 6L6 18" stroke="#999AA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-<path d="M6 6L18 18" stroke="#999AA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-</a>
-</div>
-</form>
+            <div class="modal-content overflow-hidden position-relative">
+                <div class="modal-header">
+                    <form autocomplete="off" class="position-relative quick-search-modal w-100" method="GET" action="https://buildwithangga.com/search" id="quickSearchForm">
+                        <div class="position-relative">
+                            <span class="twitter-typeahead" style="position: relative; display: inline-block;">
+                                <input type="text" value="" minlength="2" class="navbar-input-column form-control tt-hint" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0px 0px / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);">
+                                <input type="text" value="" name="keyword" minlength="2" placeholder="Cari kelas, cth: Web development, Freelancer, App development" class="navbar-input-column form-control tt-input" id="inputSearchModule3" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;">
+                                <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Poppins, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 500; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+                                <div class="tt-menu tt-open tt-empty" style="position: absolute; top: 60px; left: 0px; z-index: 100; display: none;">
+                                    <div class="tt-dataset tt-dataset-courses"></div>
+                                </div>
+                            </span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" class="ic_search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4ZM2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z" fill="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2929 14.2929C14.6834 13.9024 15.3166 13.9024 15.7071 14.2929L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L14.2929 15.7071C13.9024 15.3166 13.9024 14.6834 14.2929 14.2929Z" fill="currentColor"></path>
+                            </svg>
+                            <a href="javascript:void(0);" class="clear-field-x d-none" id="clear_field">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18" stroke="#999AA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M6 6L18 18" stroke="#999AA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-body" style="height: 60vh;">
+
+                </div>
+            </div>
         </div>
-        <div class="modal-body" style="height: 60vh;">
-        </div>
-        </div>
-        </div>
-        </div>
+    </div>
     @yield('script')
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

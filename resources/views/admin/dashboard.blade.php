@@ -12,12 +12,16 @@
                     {{ __("You're logged in!") }}
                     Halo, {{$user->name}}
                 </div>
+                <div class="p-6 mt-5 text-gray-900 dark:text-gray-100">
+                    Total Kelas Yang Kamu Buat <br>
+                    {{ $posts->count() }}
+                </div>
             </div>
         </div>
     </div>
     <div>
 
- 
+
 
 
 </x-app-layout>

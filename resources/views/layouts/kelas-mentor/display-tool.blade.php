@@ -22,7 +22,7 @@
         @endif
         @if (str_contains($data->tool, 'nodejs'))
             <div class="me-3 col-2">
-                <img src="{{ asset('img/nodejs.svg') }}" class="" alt="" width="60px" height="40px">
+                <img src="{{ asset('img/tools/logo_node_js.png') }}" class="" alt="" height="40px">
             </div>
         @endif
         @if (str_contains($data->tool, 'bootstrap'))

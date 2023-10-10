@@ -231,7 +231,7 @@
         </div>
     </div>
 </div>
-<div class="vh-100 d-flex justify-content-center align-items-center mt-5" style="background: #181230;">
+<div class="d-none d-md-block vh-100 d-flex justify-content-center align-items-center mt-5" style="background: #181230;">
     <div class="container d-flex h-100 justify-content-center align-items-center gap-3">
         <div class="text-white">
             <h1 class="fw-bolder display-5"><a href="https://discord.gg/VqPZbNKrzD" class="link-light" target="_blank" rel="noopener noreferrer">Bergabung Bersama Kami di Discord Community <i style="color: #5865f2;" class="fa-brands fa-discord"></i></a></h1>
