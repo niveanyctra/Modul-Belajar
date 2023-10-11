@@ -29,7 +29,14 @@ Route::controller(SearchController::class)->group(function(){
 Route::get('/dashboard', function () {
     $user = Auth::user();
     $posts = Post::where('id_user', $user->id)->get();
-    return view('admin.dashboard',compact('posts','user'));
+    $postHtml = Post::where('id_user', $user->id)->where('category', 'html')->get();
+    $postCss = Post::where('id_user', $user->id)->where('category', 'css')->get();
+    $postPhp = Post::where('id_user', $user->id)->where('category', 'php')->get();
+    $postJs = Post::where('id_user', $user->id)->where('category', 'js')->get();
+    $postSql = Post::where('id_user', $user->id)->where('category', 'sql')->get();
+
+    $postArray = array();
+    return view('admin.dashboard',compact('posts','user', 'postHtml','postCss', 'postPhp', 'postJs', 'postSql'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

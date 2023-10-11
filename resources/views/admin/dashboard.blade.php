@@ -32,7 +32,7 @@
                 <div class="col-lg-3 col-6">
                     <div class="small-box bg-danger">
                         <div class="inner">
-                            <h3>3</h3>
+                            <h3>{{ $postHtml->count() }}</h3>
                             <p>Kelas HTML</p>
                         </div>
                         <div class="icon">
@@ -46,7 +46,7 @@
                 <div class="col-lg-3 col-6">
                     <div class="small-box bg-info">
                         <div class="inner">
-                            <h3>3</h3>
+                            <h3>{{ $postCss->count() }}</h3>
                             <p>Kelas CSS</p>
                         </div>
                         <div class="icon">
@@ -60,7 +60,7 @@
                 <div class="col-lg-3 col-6">
                     <div class="small-box" style="background-color: purple">
                         <div class="inner">
-                            <h3>3</h3>
+                            <h3>{{ $postPhp->count() }}</h3>
                             <p>Kelas PHP</p>
                         </div>
                         <div class="icon">
@@ -74,7 +74,7 @@
                 <div class="col-lg-6 col-6">
                     <div class="small-box bg-warning">
                         <div class="inner">
-                            <h3>3</h3>
+                            <h3>{{ $postJs->count() }}</h3>
                             <p>Kelas JS</p>
                         </div>
                         <div class="icon">
@@ -88,7 +88,7 @@
                 <div class="col-lg-6 col-6">
                     <div class="small-box" style="background-color: forestgreen">
                         <div class="inner">
-                            <h3>3</h3>
+                            <h3>{{ $postSql->count() }}</h3>
                             <p>Kelas SQL</p>
                         </div>
                         <div class="icon">
