@@ -38,9 +38,7 @@
                         <div class="icon">
                             <i class="fa-brands fa-html5"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
+                        <div class="small-box-footer" style="height: 30px"></div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
@@ -52,9 +50,7 @@
                         <div class="icon">
                             <i class="fa-brands fa-css3-alt"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
+                        <div class="small-box-footer" style="height: 30px"></div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
@@ -66,9 +62,7 @@
                         <div class="icon">
                             <i class="fa-brands fa-php"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
+                        <div class="small-box-footer" style="height: 30px"></div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-6">
@@ -80,9 +74,7 @@
                         <div class="icon">
                             <i class="fa-brands fa-square-js"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
+                        <div class="small-box-footer" style="height: 30px"></div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-6">
@@ -94,9 +86,7 @@
                         <div class="icon">
                             <i class="fa-solid fa-database"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
+                        <div class="small-box-footer" style="height: 30px"></div>
                     </div>
                 </div>
             </div>
