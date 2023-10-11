@@ -30,13 +30,13 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
-                    <div class="small-box bg-danger">
+                    <div class="small-box" style="background-color: tomato">
                         <div class="inner">
                             <h3>{{ $postHtml->count() }}</h3>
                             <p>Kelas HTML</p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-stats-bars"></i>
+                            <i class="fa-brands fa-html5"></i>
                         </div>
                         <a href="#" class="small-box-footer">
                             More info <i class="fas fa-arrow-circle-right"></i>
@@ -50,7 +50,7 @@
                             <p>Kelas CSS</p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-stats-bars"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
                         </div>
                         <a href="#" class="small-box-footer">
                             More info <i class="fas fa-arrow-circle-right"></i>
@@ -58,13 +58,13 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
-                    <div class="small-box" style="background-color: purple">
+                    <div class="small-box" style="background-color: rgb(147, 0, 147)">
                         <div class="inner">
                             <h3>{{ $postPhp->count() }}</h3>
                             <p>Kelas PHP</p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-stats-bars"></i>
+                            <i class="fa-brands fa-php"></i>
                         </div>
                         <a href="#" class="small-box-footer">
                             More info <i class="fas fa-arrow-circle-right"></i>
@@ -78,7 +78,7 @@
                             <p>Kelas JS</p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-stats-bars"></i>
+                            <i class="fa-brands fa-square-js"></i>
                         </div>
                         <a href="#" class="small-box-footer">
                             More info <i class="fas fa-arrow-circle-right"></i>
@@ -92,7 +92,7 @@
                             <p>Kelas SQL</p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-stats-bars"></i>
+                            <i class="fa-solid fa-database"></i>
                         </div>
                         <a href="#" class="small-box-footer">
                             More info <i class="fas fa-arrow-circle-right"></i>

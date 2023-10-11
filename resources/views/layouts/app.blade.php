@@ -8,9 +8,6 @@
         <title>SMK NEGERI 1 CIREBON | PPLG - Menjadi Seorang Web Developer</title>
         <link rel="icon" href="{{ url('img/logo.png') }}">
 
-        <!-- STYLE LOKAL NYA MANA KOCAK --> 
-        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-
         <!-- FontAwesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -35,6 +32,56 @@
         trix-toolbar [data-trix-button-group="file-tools"]{
             display: none;
         }
+        /* dashboard */
+        .small-box {
+            border-radius: 0.25rem;
+            box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+            display: block;
+            margin-bottom: 20px;
+            position: relative;
+            color: white;
+        }
+        .small-box>.inner {
+            padding: 10px;
+        }
+        .small-box h3 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 0 0 10px;
+            padding: 0;
+            white-space: nowrap;
+        }
+        .small-box h3, .small-box p {
+            z-index: 5;
+        }
+        .small-box .icon {
+            color: rgba(0,0,0,.15);
+            z-index: 0;
+        }
+        .small-box .icon>i.fa, .small-box .icon>i.fab, .small-box .icon>i.fad, .small-box .icon>i.fal, .small-box .icon>i.far, .small-box .icon>i.fas, .small-box .icon>i.ion {
+            font-size: 70px;
+            top: 20px;
+        }
+        .small-box .icon>i, .small-box .icon>svg{
+            font-size: 90px;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            transition: -webkit-transform .3s linear;
+            transition: transform .3s linear;
+            transition: transform .3s linear,-webkit-transform .3s linear;
+        }
+        .small-box>.small-box-footer {
+            background-color: rgba(0,0,0,.1);
+            color: rgba(255,255,255,.8);
+            display: block;
+            padding: 3px 0;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            z-index: 10;
+        }
+        /* end dashboard */
     </style>
 
         <!-- Scripts -->
