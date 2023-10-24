@@ -33,8 +33,8 @@ class AuthenticatedSessionController extends Controller
             return redirect()->route('superadmin.dashboard');
         }else if(Auth::user() && Auth::user()->role == 'admin'){
             return redirect()->route('admin.dashboard');
-        }else if(Auth::user() && Auth::user()->role == 'guru'){
-            return redirect()->route('guru.dashboard');
+        }else if(Auth::user() && Auth::user()->role == 'teacher'){
+            return redirect()->route('teacher.dashboard');
         }else if(Auth::user() && Auth::user()->role == 'mentor'){
             return redirect()->route('mentor.dashboard');
         }else if(Auth::user() && Auth::user()->role == 'user'){

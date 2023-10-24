@@ -13,11 +13,24 @@ use App\Http\Controllers\LatihanSQLController;
 use App\Http\Controllers\LatihanHTMLController;
 
 Route::get('/', function () {
+    if(Auth::user() && Auth::user()->role == 'super admin'){
+        $route = route('superadmin.dashboard');
+    }else if(Auth::user() && Auth::user()->role == 'admin'){
+        $route = route('admin.dashboard');
+    }else if(Auth::user() && Auth::user()->role == 'teacher'){
+        $route = route('teacher.dashboard');
+    }else if(Auth::user() && Auth::user()->role == 'mentor'){
+        $route = route('mentor.dashboard');
+    }else if(Auth::user() && Auth::user()->role == 'user'){
+        $route = route('dashboard');
+    }else{
+        $route = '#';
+    }
             $posts = Post::with('users')
             ->latest()
             ->limit(4)
             ->get();
-    return view('index', compact('posts'));
+    return view('index', compact('posts','route'));
 });
 
 Route::controller(SearchController::class)->group(function(){

@@ -4,10 +4,13 @@
             <img src="{{ url('img/logo.png') }}" width="40" alt="">
         </a>
 
-        <button style="border: none;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-label="Toggle navigation">
+        <button style="border: none;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Menu</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -15,8 +18,9 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav" class="gap-3">
                     <li class="nav-item dropdown fw-medium">
-                        <a class="nav-link dropdown-toggle" href="#" id="listBelajarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Tutorial
+                        <a class="nav-link dropdown-toggle" href="#" id="listBelajarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tutorial
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="listBelajarDropdown">
                             <div class="dd-item-list">
@@ -49,8 +53,9 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown fw-medium">
-                        <a class="nav-link dropdown-toggle" href="#" id="listAlurBelajarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Alur Belajar
+                        <a class="nav-link dropdown-toggle" href="#" id="listAlurBelajarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Alur Belajar
                         </a>
                         <ul class="dropdown-menu __2022" aria-labelledby="listAlurBelajarDropdown">
                             <div class="dd-item" style="min-width: max-content;">
@@ -61,7 +66,7 @@
                                     <a href="{{ url('/alur-belajar/back-end') }}">
                                         <h5 class="title">Back End</h5>
                                         <span class="subtitle">
-                                        Rekomendasi oleh roadmap.sh
+                                            Rekomendasi oleh roadmap.sh
                                         </span>
                                     </a>
                                 </li>
@@ -72,7 +77,7 @@
                                     <a href="{{ url('/alur-belajar/front-end') }}">
                                         <h5 class="title">Front End</h5>
                                         <span class="subtitle">
-                                        Rekomendasi oleh roadmap.sh
+                                            Rekomendasi oleh roadmap.sh
                                         </span>
                                     </a>
                                 </li>
@@ -83,7 +88,7 @@
                                     <a href="{{ url('/alur-belajar/ux-designer') }}">
                                         <h5 class="title">UX Design</h5>
                                         <span class="subtitle">
-                                        Rekomendasi oleh roadmap.sh
+                                            Rekomendasi oleh roadmap.sh
                                         </span>
                                     </a>
                                 </li>
@@ -125,8 +130,9 @@
                         </ul>
                     </li> --}}
                     <li class="nav-item dropdown fw-medium">
-                        <a class="nav-link dropdown-toggle" href="#" id="listKelasMentorDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Kelas Mentor
+                        <a class="nav-link dropdown-toggle" href="#" id="listKelasMentorDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Kelas Mentor
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="listKelasMentorDropdown">
                             <div class="dd-item-list">
@@ -161,14 +167,38 @@
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <button type="button" class="nav-link btn-secondary opacity-75" data-bs-toggle="modal" data-bs-target="#quickSearchModal">
-                            <img class="search" src="https://buildwithangga.com/themes/front/images/ic_search.svg" alt="Searchbar">
+                        <button type="button" class="nav-link btn-secondary opacity-75" data-bs-toggle="modal"
+                            data-bs-target="#quickSearchModal">
+                            <img class="search" src="https://buildwithangga.com/themes/front/images/ic_search.svg"
+                                alt="Searchbar">
                         </button>
 
                     </li>
                     <li class="nav-item">
                         <a target="_blank" href="https://discord.gg/VqPZbNKrzD" class="nav-link">Join Community</a>
                     </li>
+                    <div class="nav-item">
+                        <div class="nav-link">|</div>
+                    </div>
+                    @if (Route::has('login'))
+                        @auth
+                            <li class="nav-item">
+                                <a href="{{ $route }}" class="nav-link">Dashboard</a>
+                            </li>
+                        @else
+                            <li class="nav-item">
+                                <a href="{{ route('login') }}" class="nav-link">Log in</a>
+                            </li>
+                            <div class="nav-item">
+                                <div class="nav-link">/</div>
+                            </div>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a href="{{ route('register') }}" class="nav-link">Register</a>
+                                </li>
+                            @endif
+                        @endauth
+                    @endif
                 </ul>
             </div>
         </div>
