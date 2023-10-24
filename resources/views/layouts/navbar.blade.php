@@ -90,7 +90,7 @@
                             </div>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown fw-medium">
+                    {{-- <li class="nav-item dropdown fw-medium">
                         <a class="nav-link dropdown-toggle" href="#" id="listLatihanDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Latihan
                         </a>
@@ -123,7 +123,7 @@
                                 </li>
                             </div>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li class="nav-item dropdown fw-medium">
                         <a class="nav-link dropdown-toggle" href="#" id="listKelasMentorDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Kelas Mentor
