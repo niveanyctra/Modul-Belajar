@@ -89,7 +89,18 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-            @include('layouts.navigation')
+            {{-- @include('layouts.navigation') --}}
+            @if (Auth::user()->role == 'super admin')
+                @include('layouts.navigation-superadmin')
+            @elseif (Auth::user()->role == 'admin')
+                @include('layouts.navigation-admin')
+            @elseif (Auth::user()->role == 'teacher')
+                @include('layouts.navigation-teacher')
+            @elseif (Auth::user()->role == 'mentor')
+                @include('layouts.navigation-mentor')
+            @elseif (Auth::user()->role == 'user')
+                @include('layouts.navigation-user')
+            @endif
 
             <!-- Page Heading -->
             @if (isset($header))

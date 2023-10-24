@@ -37,7 +37,7 @@ Route::get('/dashboard', function () {
 
     $postArray = array();
     return view('user.dashboard',compact('posts','user', 'postHtml','postCss', 'postPhp', 'postJs', 'postSql'));
-})->middleware(['auth', 'verified', 'role:user'])->name('dashboard');
+})->middleware(['auth', 'verified', 'role:user,super admin'])->name('dashboard');
 
 Route::get('/superadmin/dashboard', function () {
     $user = Auth::user();
@@ -63,7 +63,7 @@ Route::get('/admin/dashboard', function () {
 
     $postArray = array();
     return view('admin.dashboard',compact('posts','user', 'postHtml','postCss', 'postPhp', 'postJs', 'postSql'));
-})->middleware(['auth', 'verified', 'role:admin'])->name('admin.dashboard');
+})->middleware(['auth', 'verified', 'role:admin,super admin'])->name('admin.dashboard');
 
 Route::get('/guru/dashboard', function () {
     $user = Auth::user();
@@ -76,7 +76,7 @@ Route::get('/guru/dashboard', function () {
 
     $postArray = array();
     return view('guru.dashboard',compact('posts','user', 'postHtml','postCss', 'postPhp', 'postJs', 'postSql'));
-})->middleware(['auth', 'verified', 'role:guru'])->name('guru.dashboard');
+})->middleware(['auth', 'verified', 'role:guru,super admin'])->name('guru.dashboard');
 
 Route::get('/mentor/dashboard', function () {
     $user = Auth::user();
@@ -89,21 +89,19 @@ Route::get('/mentor/dashboard', function () {
 
     $postArray = array();
     return view('mentor.dashboard',compact('posts','user', 'postHtml','postCss', 'postPhp', 'postJs', 'postSql'));
-})->middleware(['auth', 'verified', 'role:mentor'])->name('mentor.dashboard');
+})->middleware(['auth', 'verified', 'role:mentor,super admin'])->name('mentor.dashboard');
 
 Route::middleware('auth')->group(function () {
     //Profile
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
-    //Post
-    Route::resource('post', PostController::class)->only([
-    'index', 'create','show', 'store', 'edit', 'update', 'destroy'
-    ]);
-    Route::get('/post/{post:slug}/edit',[PostController::class,'edit']);
-
 });
+//Post
+Route::resource('post', PostController::class)->only([
+'index', 'create','show', 'store', 'edit', 'update', 'destroy'
+])->middleware(['auth', 'verified', 'role:mentor,super admin']);
+Route::get('/post/{post:slug}/edit',[PostController::class,'edit'])->middleware(['auth', 'verified', 'role:mentor,super admin']);
 
 require __DIR__.'/auth.php';
 
