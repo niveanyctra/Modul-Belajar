@@ -36,8 +36,60 @@ Route::get('/dashboard', function () {
     $postSql = Post::where('id_user', $user->id)->where('category', 'sql')->get();
 
     $postArray = array();
+    return view('user.dashboard',compact('posts','user', 'postHtml','postCss', 'postPhp', 'postJs', 'postSql'));
+})->middleware(['auth', 'verified', 'role:user'])->name('dashboard');
+
+Route::get('/superadmin/dashboard', function () {
+    $user = Auth::user();
+    $posts = Post::where('id_user', $user->id)->get();
+    $postHtml = Post::where('id_user', $user->id)->where('category', 'html')->get();
+    $postCss = Post::where('id_user', $user->id)->where('category', 'css')->get();
+    $postPhp = Post::where('id_user', $user->id)->where('category', 'php')->get();
+    $postJs = Post::where('id_user', $user->id)->where('category', 'js')->get();
+    $postSql = Post::where('id_user', $user->id)->where('category', 'sql')->get();
+
+    $postArray = array();
+    return view('superadmin.dashboard',compact('posts','user', 'postHtml','postCss', 'postPhp', 'postJs', 'postSql'));
+})->middleware(['auth', 'verified', 'role:super admin'])->name('superadmin.dashboard');
+
+Route::get('/admin/dashboard', function () {
+    $user = Auth::user();
+    $posts = Post::where('id_user', $user->id)->get();
+    $postHtml = Post::where('id_user', $user->id)->where('category', 'html')->get();
+    $postCss = Post::where('id_user', $user->id)->where('category', 'css')->get();
+    $postPhp = Post::where('id_user', $user->id)->where('category', 'php')->get();
+    $postJs = Post::where('id_user', $user->id)->where('category', 'js')->get();
+    $postSql = Post::where('id_user', $user->id)->where('category', 'sql')->get();
+
+    $postArray = array();
     return view('admin.dashboard',compact('posts','user', 'postHtml','postCss', 'postPhp', 'postJs', 'postSql'));
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth', 'verified', 'role:admin'])->name('admin.dashboard');
+
+Route::get('/guru/dashboard', function () {
+    $user = Auth::user();
+    $posts = Post::where('id_user', $user->id)->get();
+    $postHtml = Post::where('id_user', $user->id)->where('category', 'html')->get();
+    $postCss = Post::where('id_user', $user->id)->where('category', 'css')->get();
+    $postPhp = Post::where('id_user', $user->id)->where('category', 'php')->get();
+    $postJs = Post::where('id_user', $user->id)->where('category', 'js')->get();
+    $postSql = Post::where('id_user', $user->id)->where('category', 'sql')->get();
+
+    $postArray = array();
+    return view('guru.dashboard',compact('posts','user', 'postHtml','postCss', 'postPhp', 'postJs', 'postSql'));
+})->middleware(['auth', 'verified', 'role:guru'])->name('guru.dashboard');
+
+Route::get('/mentor/dashboard', function () {
+    $user = Auth::user();
+    $posts = Post::where('id_user', $user->id)->get();
+    $postHtml = Post::where('id_user', $user->id)->where('category', 'html')->get();
+    $postCss = Post::where('id_user', $user->id)->where('category', 'css')->get();
+    $postPhp = Post::where('id_user', $user->id)->where('category', 'php')->get();
+    $postJs = Post::where('id_user', $user->id)->where('category', 'js')->get();
+    $postSql = Post::where('id_user', $user->id)->where('category', 'sql')->get();
+
+    $postArray = array();
+    return view('mentor.dashboard',compact('posts','user', 'postHtml','postCss', 'postPhp', 'postJs', 'postSql'));
+})->middleware(['auth', 'verified', 'role:mentor'])->name('mentor.dashboard');
 
 Route::middleware('auth')->group(function () {
     //Profile
